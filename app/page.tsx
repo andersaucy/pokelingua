@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 
 type Locale = {
@@ -71,25 +72,25 @@ export default function Home() {
         <a className="nav-cta" href="#locales">Explore the atlas <span>↗</span></a>
       </nav>
 
-      <section className="hero" id="top">
-        <div className="eyebrow"><span className="pulse" /> A living atlas of Pokémon localization</div>
-        <h1>One world.<br /><em>Many Pokémon.</em></h1>
-        <p className="hero-copy">Tracing how names, stories, and creatures crossed borders—and what changed along the way.</p>
-        <div className="hero-actions">
-          <a className="primary-button" href="#locales">Explore by locale <span>↓</span></a>
-          <a className="text-link" href="#timeline">Travel through time <span>→</span></a>
+      <section className="hero-poster" id="top" aria-labelledby="hero-title">
+        <h1 className="visually-hidden" id="hero-title">Pokélingua — One world. Many Pokémon.</h1>
+        <Image
+          className="hero-poster-image"
+          src="/og.png"
+          alt="A globe surrounded by Japanese, Spanish, French, Korean, Chinese, German, Thai, Italian, Portuguese, Arabic, and Russian labels."
+          width={1731}
+          height={909}
+          priority
+          sizes="100vw"
+        />
+        <div className="hero-poster-bar">
+          <p>Tracing how names, stories, and creatures crossed borders—and what changed along the way.</p>
+          <div className="hero-actions">
+            <a className="primary-button" href="#locales">Explore by locale <span>↓</span></a>
+            <a className="text-link" href="#timeline">Travel through time <span>→</span></a>
+          </div>
+          <span className="hero-period">Since 1996 · Across borders, screens & scripts</span>
         </div>
-        <div className="orbit" aria-hidden="true">
-          <div className="orbit-ring ring-one" />
-          <div className="orbit-ring ring-two" />
-          <div className="orbit-core"><span>ポケ</span><span>MON</span></div>
-          <span className="orbit-word word-fr">SALAMÈCHE</span>
-          <span className="orbit-word word-kr">피카츄</span>
-          <span className="orbit-word word-cn">妙蛙种子</span>
-          <span className="orbit-word word-de">SCHIGGY</span>
-          <span className="orbit-word word-hi">पोकेमॉन</span>
-        </div>
-        <div className="hero-foot"><span>Since 1996</span><span>•</span><span>Across borders, screens & scripts</span></div>
       </section>
 
       <section className="intro-section" id="locales">
