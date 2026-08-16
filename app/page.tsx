@@ -13,18 +13,21 @@ type Locale = {
   status: "Chapter live" | "Researching";
   note: string;
   years: string;
+  coreGame: string;
 };
 
 const locales: Locale[] = [
-  { id: "kr", slug: "south-korea", flag: "KR", place: "South Korea", local: "대한민국", languages: "Korean", status: "Chapter live", note: "A localization story shaped by cultural policy, broadcasting, and a dedicated regional company.", years: "1998—today" },
-  { id: "fr", slug: "france", flag: "FR", place: "France", local: "France", languages: "French", status: "Researching", note: "One of the most inventive naming systems, built around wordplay rather than simple transliteration.", years: "1999—today" },
-  { id: "it", slug: "italy", flag: "IT", place: "Italy", local: "Italia", languages: "Italian", status: "Chapter live", note: "English species spellings, Italian pronunciation, and a small set of revealing translated exceptions.", years: "1999—today" },
-  { id: "tw", slug: "taiwan", flag: "TW", place: "Taiwan", local: "台灣", languages: "Mandarin · Traditional Chinese", status: "Chapter live", note: "Decades of Taiwan-specific anime and publishing history meet a coordinated Chinese-language game localization.", years: "1998—today" },
-  { id: "hk", slug: "hong-kong", flag: "HK", place: "Hong Kong", local: "香港", languages: "Cantonese · Traditional Chinese", status: "Chapter live", note: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone.", years: "1998—today" },
-  { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", status: "Chapter live", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today" },
-  { id: "in", slug: "india", flag: "IN", place: "India", local: "भारत", languages: "Hindi · Tamil · Telugu +", status: "Researching", note: "A multilingual broadcast and digital story now unfolding across official regional channels.", years: "2003—today" },
-  { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", status: "Researching", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today" },
-  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Chapter live", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today" },
+  { id: "us", slug: "united-states", flag: "US", place: "United States", local: "United States", languages: "English (US)", status: "Chapter live", note: "The first international reinvention—and the English vocabulary that became a base for later markets.", years: "1998—today", coreGame: "28 Sep 1998 · Red / Blue" },
+  { id: "it", slug: "italy", flag: "IT", place: "Italy", local: "Italia", languages: "Italian", status: "Chapter live", note: "English species spellings, Italian pronunciation, and a small set of revealing translated exceptions.", years: "1999—today", coreGame: "05 Oct 1999 · Rosso / Blu" },
+  { id: "fr", slug: "france", flag: "FR", place: "France", local: "France", languages: "French", status: "Chapter live", note: "One of the most inventive naming systems, built around wordplay rather than simple transliteration.", years: "1999—today", coreGame: "08 Oct 1999 · Rouge / Bleu" },
+  { id: "kr", slug: "south-korea", flag: "KR", place: "South Korea", local: "대한민국", languages: "Korean", status: "Chapter live", note: "A localization story shaped by cultural policy, broadcasting, and a dedicated regional company.", years: "1998—today", coreGame: "24 Apr 2002 · Gold / Silver" },
+  { id: "hk", slug: "hong-kong", flag: "HK", place: "Hong Kong", local: "香港", languages: "Cantonese · Traditional Chinese", status: "Chapter live", note: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon" },
+  { id: "tw", slug: "taiwan", flag: "TW", place: "Taiwan", local: "台灣", languages: "Mandarin · Traditional Chinese", status: "Chapter live", note: "Decades of Taiwan-specific anime and publishing history meet a coordinated Chinese-language game localization.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon" },
+  { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", status: "Chapter live", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today", coreGame: "18 Nov 2016 · Sun / Moon" },
+  { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", status: "Researching", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today", coreGame: "Announced for 2027 · Winds / Waves" },
+  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Chapter live", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today", coreGame: "No Vietnamese core-game edition" },
+  { id: "in", slug: "india", flag: "IN", place: "India", local: "भारत", languages: "Hindi · Tamil · Telugu +", status: "Researching", note: "A multilingual broadcast and digital story now unfolding across official regional channels.", years: "2003—today", coreGame: "No regional-language core-game edition" },
+  { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Parallel archive", languages: "Fan translations · bootlegs · ROM hacks", status: "Chapter live", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology" },
 ];
 
 const milestones = [
@@ -49,7 +52,7 @@ export default function Home() {
     const q = query.trim().toLowerCase();
     if (!q) return locales;
     return locales.filter((locale) =>
-      [locale.place, locale.local, locale.languages, locale.note].join(" ").toLowerCase().includes(q),
+      [locale.place, locale.local, locale.languages, locale.note, locale.coreGame].join(" ").toLowerCase().includes(q),
     );
   }, [query]);
 
@@ -101,6 +104,7 @@ export default function Home() {
           <div>
             <p>A locale is more than a translation. It is a particular meeting of language, territory, broadcaster, distributor, policy, and time.</p>
             <p>Each chapter follows those decisions—and preserves the versions that came before.</p>
+            <p className="locale-order-note"><b>Archive order:</b> first localized core-series release. Locales without one follow announced editions, then earliest official market arrival.</p>
           </div>
         </div>
         <label className="search-box">
@@ -115,6 +119,7 @@ export default function Home() {
               <div className="locale-local">{locale.local}</div>
               <h3>{locale.place}</h3>
               <div className="locale-language">{locale.languages}</div>
+              <div className="locale-game-release"><span>Core-series marker</span><b>{locale.coreGame}</b></div>
               <p>{locale.note}</p>
               <div className="locale-bottom"><span>{locale.years}</span><span>Read chapter ↗</span></div>
             </a>

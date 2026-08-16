@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { EnglishUsPokedex } from "../../components/EnglishUsPokedex";
 import { FrenchPokedex } from "../../components/FrenchPokedex";
 import { ItalianPokedex } from "../../components/ItalianPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
 import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
 const chapters = {
+  unofficial: { code: "ALT", place: "Unofficial editions", local: "Fan translations · bootlegs · ROM hacks", language: "Multiple languages & markets", period: "1990s—today", live: true, deck: "The unofficial routes that carried Pokémon across language barriers before—or beyond—authorized localization." },
+  "united-states": { code: "US", place: "United States", local: "United States", language: "English · en-US", period: "1998—today", live: true, deck: "The first international reinvention: how Japanese names, dialogue, branding, and animation became the English Pokémon vocabulary used around the world." },
   "south-korea": {
     code: "KR", place: "South Korea", local: "대한민국", language: "Korean · 한국어", period: "1998—today", live: true,
     deck: "How cultural policy, Korean-language media, and a dedicated regional company shaped a distinct Pokémon locale.",
@@ -95,6 +98,10 @@ function ChineseChapter({ locale }: { locale: keyof typeof chineseCopy }) {
       <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
       <article><p className="dropcap">{copy.opening}</p><p>{copy.note}</p><aside><b>Why this is its own locale</b><p>{copy.eyebrow} Pokélingua attaches every term to territory, spoken language, script, medium, and date instead of treating “Chinese” as one undifferentiated field.</p></aside></article>
     </section>
+    {locale === "mainland-china" && <section className="unofficial-context china-unofficial" id="unofficial-chinese-games">
+      <div><span>Unofficial translation layer</span><time>BEFORE 2016</time></div>
+      <article><h2>The language gap was already being filled.</h2><p>Before Sun and Moon delivered the first official Chinese core-game localization, Chinese-language ROM hacks and bootleg cartridges circulated widely. Their terminology was inconsistent and unauthorized, but their existence records sustained demand for games that players could read locally.</p><p>Pokélingua does not merge those names into the official Pokédex. It preserves them as context: the 2016 terminology arrived after years of unofficial translation practice, not into an empty market.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_mainland_China" target="_blank" rel="noreferrer">Unofficial and official game history ↗</a></article>
+    </section>}
     <section className="chapter-timeline">
       <div className="chapter-rail"><span>Time marker</span><b>02</b></div>
       <div className="chapter-events"><article><time>{copy.date.split(" ").map((part) => <span key={part}>{part}<br /></span>)}</time><div><span>Game language / naming policy</span><h2>{copy.event}</h2><p>{copy.eventText}</p><a href={copy.official} target="_blank" rel="noreferrer">Current official regional Pokédex ↗</a></div></article></div>
@@ -129,6 +136,34 @@ function FrenchChapter() {
     </section>
     <FrenchPokedex />
     <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.com/fr/pokedex" target="_blank" rel="noreferrer">01 · Official French Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_France" target="_blank" rel="noreferrer">02 · Pokémon in France</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_French_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · French name index</a><a href="https://www.leparisien.fr/archives/ils-ont-invente-les-noms-des-pokemon-29-12-2000-2001854436.php" target="_blank" rel="noreferrer">04 · 2000 team profile</a></section>
+  </>;
+}
+
+function UnitedStatesChapter() {
+  return <>
+    <section className="arrival-brief us-arrival">
+      <div className="arrival-heading"><span>International debut & naming frame</span><h2>America received<br /><em>a newly named world.</em></h2><p>The United States was not simply another language stop. Its 1998 edition established the English names, terminology, slogan, and media presentation that would become source material for many later international localizations.</p></div>
+      <div className="arrival-markers">
+        <article><time>07 SEP 1998</time><span>Earliest national media arrival</span><h3>The animated series enters syndication</h3><p><i>Pokémon—I Choose You!</i> introduced Ash, Misty, Brock, and the English species names on American television. The broadcast arrived before the games, so many viewers first heard the localized vocabulary as dialogue and character performance.</p></article>
+        <article><time>28 SEP 1998</time><span>First localized core-series release</span><h3>Pokémon Red and Blue launch</h3><p>North America became the franchise’s first market outside Japan to receive the core games. Red and Blue combined Japanese source material with an English script, new species names, adapted place names, and a coordinated marketing identity.</p></article>
+      </div>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions" target="_blank" rel="noreferrer">North American game and release record ↗</a>
+    </section>
+    <section className="chapter-opening us-opening">
+      <div className="chapter-rail"><span>Localization method</span><b>01</b></div>
+      <article><p className="dropcap">English naming aimed to make each creature immediately legible to American children. フシギダネ <i>Fushigidane</i> became Bulbasaur; ヒトカゲ <i>Hitokage</i> became Charmander. The new names compressed appearance, element, behavior, and wordplay into forms that could work across games, television, cards, toys, and playground conversation.</p><p>Contemporary participants describe a Nintendo of America naming group that worked from Game Freak’s creature concepts. Bill Giese and Sara Bush have discussed proposing names; Hiro Nakamura helped lead the broader U.S. localization. Nob Ogasawara translated the game text, but later stressed that the prominent all-capital terms—including species and character names—were handled separately.</p><aside><b>Editorial note</b><p>Pokélingua separates species naming, script translation, dubbing, and marketing credit. They formed one coordinated launch, but they were not necessarily written by the same people.</p></aside></article>
+    </section>
+    <section className="chapter-timeline us-timeline">
+      <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
+      <div className="chapter-events">
+        <article><time>27 FEB<br />1996</time><div><span>Source edition / Japan</span><h2>The original naming system begins</h2><p>Pokémon Red and Green launched in Japan with 151 Japanese species names. The U.S. edition would inherit the creatures and concepts two and a half years later, but not treat their names as an untouchable layer.</p><a href="https://corporate.pokemon.co.jp/en/aboutus/history/" target="_blank" rel="noreferrer">Official corporate history ↗</a></div></article>
+        <article className="us-launch-event"><time>SEP<br />1998</time><div><span>English localization / coordinated launch</span><h2>Names become a transmedia system</h2><p>Television began on 7 September and Red and Blue followed on 28 September. Ash, Pallet Town, Pokédex terminology, “Gotta Catch ’Em All,” and the English species names were designed to circulate together rather than remain isolated inside a cartridge.</p><a href="https://time.com/6796536/history-origins-pokemon/" target="_blank" rel="noreferrer">U.S. localization history · TIME ↗</a></div></article>
+        <article><time>FEB<br />2001</time><div><span>Company structure</span><h2>Pokémon USA is established</h2><p>The creation of Pokémon USA, Inc.—later part of The Pokémon Company International—gave the franchise a dedicated American organization. English-language stewardship was becoming permanent infrastructure rather than a single launch project.</p><a href="https://corporate.pokemon.co.jp/en/aboutus/history/" target="_blank" rel="noreferrer">Official company history ↗</a></div></article>
+        <article><time>12 OCT<br />2013</time><div><span>Worldwide release model</span><h2>English no longer waits for Japan</h2><p>Pokémon X and Y became the first core-series titles released simultaneously worldwide. The U.S. edition moved from delayed export to one selectable language inside a coordinated global launch.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_X_and_Y" target="_blank" rel="noreferrer">Worldwide release record ↗</a></div></article>
+      </div>
+    </section>
+    <EnglishUsPokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.com/us/pokedex" target="_blank" rel="noreferrer">01 · Official U.S. Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions" target="_blank" rel="noreferrer">02 · Red and Blue release record</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_in_Japanese" target="_blank" rel="noreferrer">03 · Japanese name index</a><a href="https://time.com/6796536/history-origins-pokemon/" target="_blank" rel="noreferrer">04 · U.S. localization oral history</a><a href="https://www.youtube.com/watch?v=YZ0xJ1x5kMA" target="_blank" rel="noreferrer">05 · Nob Ogasawara interview</a></section>
   </>;
 }
 
@@ -174,6 +209,11 @@ function VietnamChapter() {
       <div className="chapter-rail"><span>Naming method</span><b>01</b></div>
       <article><p className="dropcap">A Vietnamese Pokémon name was often neither an English import nor a Vietnamese descriptive translation. Official anime, merchandise, social media, and web material largely rendered the Japanese species name in Latin letters: Bulbasaur became Fushigidane, Charmander became Hitokage, while Pikachu remained Pikachu.</p><p>That made Vietnam a distinct naming locale even though the spellings often pointed back to Japan. The Vietnamese language shaped dialogue, moves, abilities, items, and surrounding descriptions; the species-name layer followed a different policy.</p><aside><b>Editorial note</b><p>Pokélingua labels these as earlier Vietnam-market spellings—not “Vietnamese translations.” Most are romanizations of Japanese names, and four documented forms—Mizugrou, Peplipper, Kewassu, and Shigarogo—depart notably from the corresponding Japanese romanizations.</p></aside></article>
     </section>
+    <section className="unofficial-context vietnamese-crystal" id="unofficial-vietnamese-crystal">
+      <div><span>Bootleg folklore / translation relay</span><time>c. 2001</time></div>
+      <article><h2>“Vietnamese Crystal” was not actually Vietnamese.</h2><p>The infamous cartridge earned its nickname because a copy was reportedly purchased in Vietnam. Its game text is English—not Vietnamese—and researchers believe it most likely passed from the original Japanese through an unlicensed Chinese translation and then into broken English.</p><p>Each relay compounded errors until Pokémon became “elf,” ordinary dialogue produced lines such as “I am a monster,” and a household meal became the internet-famous “Volcano Bakemeat.” The joke is also a useful warning: a cartridge’s sales location, language, translation path, and nickname are four different pieces of evidence.</p><aside><b>Archive status</b><p>Unofficial, origin uncertain, and excluded from the official Vietnamese name table. It belongs here because bootlegs were one way Pokémon crossed language borders when authorized local editions did not exist.</p></aside><a href="https://ecruteakforest.com/vietcrystal" target="_blank" rel="noreferrer">Translation-chain investigation ↗</a>
+      </article>
+    </section>
     <section className="chapter-timeline vietnam-timeline">
       <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
       <div className="chapter-events">
@@ -185,7 +225,40 @@ function VietnamChapter() {
       </div>
     </section>
     <VietnamesePokedex />
-    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://vn.portal-pokemon.com/topics/post-5775/" target="_blank" rel="noreferrer">01 · Official 2026 naming notice</a><a href="https://vn.portal-pokemon.com/play/pokedex" target="_blank" rel="noreferrer">02 · Current official Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">03 · Vietnam history index</a><a href="https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Vietnamese_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">04 · Earlier-name index</a><a href="https://vtv.vn/goc-khan-gia/hom-nay-28-9-pokemon-tro-lai-tren-song-vtv2-20150928154959873.htm" target="_blank" rel="noreferrer">05 · VTV contemporary archive</a></section>
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://vn.portal-pokemon.com/topics/post-5775/" target="_blank" rel="noreferrer">01 · Official 2026 naming notice</a><a href="https://vn.portal-pokemon.com/play/pokedex" target="_blank" rel="noreferrer">02 · Current official Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">03 · Vietnam history index</a><a href="https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Vietnamese_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">04 · Earlier-name index</a><a href="https://vtv.vn/goc-khan-gia/hom-nay-28-9-pokemon-tro-lai-tren-song-vtv2-20150928154959873.htm" target="_blank" rel="noreferrer">05 · VTV contemporary archive</a><a href="https://ecruteakforest.com/vietcrystal" target="_blank" rel="noreferrer">06 · Vietnamese Crystal investigation</a></section>
+  </>;
+}
+
+function UnofficialChapter() {
+  return <>
+    <section className="unofficial-hub-intro">
+      <span>Parallel circulation / contextual archive</span>
+      <h2>Not official.<br /><em>Still part of the history.</em></h2>
+      <div><p>Fan translations, bootleg cartridges, and ROM hacks often appeared where official localization was late or absent. They can reveal demand, terminology experiments, technical constraints, and the strange paths a text took between languages.</p><p>This index never treats unofficial wording as an official Pokémon name. Every record is labeled by evidence level and linked back to the locale where it circulated or matters historically.</p></div>
+    </section>
+    <section className="unofficial-archive-grid">
+      <article>
+        <div className="unofficial-card-meta"><span>ALT / 001</span><time>c. 2001</time><b>Bootleg cartridge</b></div>
+        <h2>Pokémon “Vietnamese” Crystal</h2>
+        <p className="unofficial-route">Japanese <i>→</i> unlicensed Chinese <i>→</i> broken English</p>
+        <p>Despite the nickname, the surviving game is not in Vietnamese. A cartridge reportedly bought in Vietnam became famous for a likely double translation that turned Pokémon into “elf” and produced surreal phrases such as “Volcano Bakemeat.”</p>
+        <div className="evidence-badge">Origin uncertain · unofficial · excluded from name tables</div>
+        <a href="/locales/vietnam#unofficial-vietnamese-crystal">Read it in the Vietnam chapter →</a>
+      </article>
+      <article>
+        <div className="unofficial-card-meta"><span>ALT / 002</span><time>Pre-2016</time><b>ROM hacks & bootlegs</b></div>
+        <h2>Chinese games before official Chinese games</h2>
+        <p className="unofficial-route">Japanese / English games <i>→</i> community and pirate translations</p>
+        <p>Before Sun and Moon introduced official Simplified and Traditional Chinese in the core series, unofficial Chinese-language hacks and cartridges circulated across the market. Their competing terminology records demand, but not an official standard.</p>
+        <div className="evidence-badge">Documented circulation · terminology varies · unofficial</div>
+        <a href="/locales/mainland-china#unofficial-chinese-games">Read it in the mainland China chapter →</a>
+      </article>
+    </section>
+    <section className="unofficial-method">
+      <span>Admission rule</span><p>A story enters this index only when it materially explains how Pokémon crossed a language barrier and has a traceable evidence trail. Popularity alone is not enough.</p>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_mainland_China" target="_blank" rel="noreferrer">Chinese unofficial-game record ↗</a>
+      <a href="https://ecruteakforest.com/vietcrystal" target="_blank" rel="noreferrer">Vietnamese Crystal investigation ↗</a>
+    </section>
   </>;
 }
 
@@ -206,7 +279,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "france" ? <FrenchChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>

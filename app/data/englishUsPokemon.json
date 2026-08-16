@@ -1,0 +1,8202 @@
+[
+  {
+    "id": 1,
+    "english": "Bulbasaur",
+    "kana": "フシギダネ",
+    "hepburn": "Fushigidane",
+    "trademark": "Fushigidane",
+    "retained": false
+  },
+  {
+    "id": 2,
+    "english": "Ivysaur",
+    "kana": "フシギソウ",
+    "hepburn": "Fushigisō",
+    "trademark": "Fushigisou",
+    "retained": false
+  },
+  {
+    "id": 3,
+    "english": "Venusaur",
+    "kana": "フシギバナ",
+    "hepburn": "Fushigibana",
+    "trademark": "Fushigibana",
+    "retained": false
+  },
+  {
+    "id": 4,
+    "english": "Charmander",
+    "kana": "ヒトカゲ",
+    "hepburn": "Hitokage",
+    "trademark": "Hitokage",
+    "retained": false
+  },
+  {
+    "id": 5,
+    "english": "Charmeleon",
+    "kana": "リザード",
+    "hepburn": "Rizādo",
+    "trademark": "Lizardo",
+    "retained": false
+  },
+  {
+    "id": 6,
+    "english": "Charizard",
+    "kana": "リザードン",
+    "hepburn": "Rizādon",
+    "trademark": "Lizardon",
+    "retained": false
+  },
+  {
+    "id": 7,
+    "english": "Squirtle",
+    "kana": "ゼニガメ",
+    "hepburn": "Zenigame",
+    "trademark": "Zenigame",
+    "retained": false
+  },
+  {
+    "id": 8,
+    "english": "Wartortle",
+    "kana": "カメール",
+    "hepburn": "Kamēru",
+    "trademark": "Kameil",
+    "retained": false
+  },
+  {
+    "id": 9,
+    "english": "Blastoise",
+    "kana": "カメックス",
+    "hepburn": "Kamekkusu",
+    "trademark": "Kamex",
+    "retained": false
+  },
+  {
+    "id": 10,
+    "english": "Caterpie",
+    "kana": "キャタピー",
+    "hepburn": "Kyatapī",
+    "trademark": "Caterpie",
+    "retained": true
+  },
+  {
+    "id": 11,
+    "english": "Metapod",
+    "kana": "トランセル",
+    "hepburn": "Toranseru",
+    "trademark": "Transel",
+    "retained": false
+  },
+  {
+    "id": 12,
+    "english": "Butterfree",
+    "kana": "バタフリー",
+    "hepburn": "Batafurī",
+    "trademark": "Butterfree",
+    "retained": true
+  },
+  {
+    "id": 13,
+    "english": "Weedle",
+    "kana": "ビードル",
+    "hepburn": "Bīdoru",
+    "trademark": "Beedle",
+    "retained": false
+  },
+  {
+    "id": 14,
+    "english": "Kakuna",
+    "kana": "コクーン",
+    "hepburn": "Kokūn",
+    "trademark": "Cocoon",
+    "retained": false
+  },
+  {
+    "id": 15,
+    "english": "Beedrill",
+    "kana": "スピアー",
+    "hepburn": "Supiā",
+    "trademark": "Spear",
+    "retained": false
+  },
+  {
+    "id": 16,
+    "english": "Pidgey",
+    "kana": "ポッポ",
+    "hepburn": "Poppo",
+    "trademark": "Poppo",
+    "retained": false
+  },
+  {
+    "id": 17,
+    "english": "Pidgeotto",
+    "kana": "ピジョン",
+    "hepburn": "Pijon",
+    "trademark": "Pigeon",
+    "retained": false
+  },
+  {
+    "id": 18,
+    "english": "Pidgeot",
+    "kana": "ピジョット",
+    "hepburn": "Pijotto",
+    "trademark": "Pigeot",
+    "retained": false
+  },
+  {
+    "id": 19,
+    "english": "Rattata",
+    "kana": "コラッタ",
+    "hepburn": "Koratta",
+    "trademark": "Koratta",
+    "retained": false
+  },
+  {
+    "id": 20,
+    "english": "Raticate",
+    "kana": "ラッタ",
+    "hepburn": "Ratta",
+    "trademark": "Ratta",
+    "retained": false
+  },
+  {
+    "id": 21,
+    "english": "Spearow",
+    "kana": "オニスズメ",
+    "hepburn": "Onisuzume",
+    "trademark": "Onisuzume",
+    "retained": false
+  },
+  {
+    "id": 22,
+    "english": "Fearow",
+    "kana": "オニドリル",
+    "hepburn": "Onidoriru",
+    "trademark": "Onidrill",
+    "retained": false
+  },
+  {
+    "id": 23,
+    "english": "Ekans",
+    "kana": "アーボ",
+    "hepburn": "Ābo",
+    "trademark": "Arbo",
+    "retained": false
+  },
+  {
+    "id": 24,
+    "english": "Arbok",
+    "kana": "アーボック",
+    "hepburn": "Ābokku",
+    "trademark": "Arbok",
+    "retained": true
+  },
+  {
+    "id": 25,
+    "english": "Pikachu",
+    "kana": "ピカチュウ",
+    "hepburn": "Pikachū",
+    "trademark": "Pikachu",
+    "retained": true
+  },
+  {
+    "id": 26,
+    "english": "Raichu",
+    "kana": "ライチュウ",
+    "hepburn": "Raichū",
+    "trademark": "Raichu",
+    "retained": true
+  },
+  {
+    "id": 27,
+    "english": "Sandshrew",
+    "kana": "サンド",
+    "hepburn": "Sando",
+    "trademark": "Sand",
+    "retained": false
+  },
+  {
+    "id": 28,
+    "english": "Sandslash",
+    "kana": "サンドパン",
+    "hepburn": "Sandopan",
+    "trademark": "Sandpan",
+    "retained": false
+  },
+  {
+    "id": 29,
+    "english": "Nidoran♀",
+    "kana": "ニドラン♀",
+    "hepburn": "Nidoran Mesu",
+    "trademark": "Nidoran♀",
+    "retained": true
+  },
+  {
+    "id": 30,
+    "english": "Nidorina",
+    "kana": "ニドリーナ",
+    "hepburn": "Nidorīna",
+    "trademark": "Nidorina",
+    "retained": true
+  },
+  {
+    "id": 31,
+    "english": "Nidoqueen",
+    "kana": "ニドクイン",
+    "hepburn": "Nidokuin",
+    "trademark": "Nidoqueen",
+    "retained": true
+  },
+  {
+    "id": 32,
+    "english": "Nidoran♂",
+    "kana": "ニドラン♂",
+    "hepburn": "Nidoran Osu",
+    "trademark": "Nidoran♂",
+    "retained": true
+  },
+  {
+    "id": 33,
+    "english": "Nidorino",
+    "kana": "ニドリーノ",
+    "hepburn": "Nidorīno",
+    "trademark": "Nidorino",
+    "retained": true
+  },
+  {
+    "id": 34,
+    "english": "Nidoking",
+    "kana": "ニドキング",
+    "hepburn": "Nidokingu",
+    "trademark": "Nidoking",
+    "retained": true
+  },
+  {
+    "id": 35,
+    "english": "Clefairy",
+    "kana": "ピッピ",
+    "hepburn": "Pippi",
+    "trademark": "Pippi",
+    "retained": false
+  },
+  {
+    "id": 36,
+    "english": "Clefable",
+    "kana": "ピクシー",
+    "hepburn": "Pikushī",
+    "trademark": "Pixy",
+    "retained": false
+  },
+  {
+    "id": 37,
+    "english": "Vulpix",
+    "kana": "ロコン",
+    "hepburn": "Rokon",
+    "trademark": "Rokon",
+    "retained": false
+  },
+  {
+    "id": 38,
+    "english": "Ninetales",
+    "kana": "キュウコン",
+    "hepburn": "Kyūkon",
+    "trademark": "Kyukon",
+    "retained": false
+  },
+  {
+    "id": 39,
+    "english": "Jigglypuff",
+    "kana": "プリン",
+    "hepburn": "Purin",
+    "trademark": "Purin",
+    "retained": false
+  },
+  {
+    "id": 40,
+    "english": "Wigglytuff",
+    "kana": "プクリン",
+    "hepburn": "Pukurin",
+    "trademark": "Pukurin",
+    "retained": false
+  },
+  {
+    "id": 41,
+    "english": "Zubat",
+    "kana": "ズバット",
+    "hepburn": "Zubatto",
+    "trademark": "Zubat",
+    "retained": true
+  },
+  {
+    "id": 42,
+    "english": "Golbat",
+    "kana": "ゴルバット",
+    "hepburn": "Gorubatto",
+    "trademark": "Golbat",
+    "retained": true
+  },
+  {
+    "id": 43,
+    "english": "Oddish",
+    "kana": "ナゾノクサ",
+    "hepburn": "Nazonokusa",
+    "trademark": "Nazonokusa",
+    "retained": false
+  },
+  {
+    "id": 44,
+    "english": "Gloom",
+    "kana": "クサイハナ",
+    "hepburn": "Kusaihana",
+    "trademark": "Kusaihana",
+    "retained": false
+  },
+  {
+    "id": 45,
+    "english": "Vileplume",
+    "kana": "ラフレシア",
+    "hepburn": "Rafureshia",
+    "trademark": "Ruffresia",
+    "retained": false
+  },
+  {
+    "id": 46,
+    "english": "Paras",
+    "kana": "パラス",
+    "hepburn": "Parasu",
+    "trademark": "Paras",
+    "retained": true
+  },
+  {
+    "id": 47,
+    "english": "Parasect",
+    "kana": "パラセクト",
+    "hepburn": "Parasekuto",
+    "trademark": "Parasect",
+    "retained": true
+  },
+  {
+    "id": 48,
+    "english": "Venonat",
+    "kana": "コンパン",
+    "hepburn": "Konpan",
+    "trademark": "Kongpang",
+    "retained": false
+  },
+  {
+    "id": 49,
+    "english": "Venomoth",
+    "kana": "モルフォン",
+    "hepburn": "Morufon",
+    "trademark": "Morphon",
+    "retained": false
+  },
+  {
+    "id": 50,
+    "english": "Diglett",
+    "kana": "ディグダ",
+    "hepburn": "Diguda",
+    "trademark": "Digda",
+    "retained": false
+  },
+  {
+    "id": 51,
+    "english": "Dugtrio",
+    "kana": "ダグトリオ",
+    "hepburn": "Dagutorio",
+    "trademark": "Dugtrio",
+    "retained": true
+  },
+  {
+    "id": 52,
+    "english": "Meowth",
+    "kana": "ニャース",
+    "hepburn": "Nyāsu",
+    "trademark": "Nyarth",
+    "retained": false
+  },
+  {
+    "id": 53,
+    "english": "Persian",
+    "kana": "ペルシアン",
+    "hepburn": "Perushian",
+    "trademark": "Persian",
+    "retained": true
+  },
+  {
+    "id": 54,
+    "english": "Psyduck",
+    "kana": "コダック",
+    "hepburn": "Kodakku",
+    "trademark": "Koduck",
+    "retained": false
+  },
+  {
+    "id": 55,
+    "english": "Golduck",
+    "kana": "ゴルダック",
+    "hepburn": "Gorudakku",
+    "trademark": "Golduck",
+    "retained": true
+  },
+  {
+    "id": 56,
+    "english": "Mankey",
+    "kana": "マンキー",
+    "hepburn": "Mankī",
+    "trademark": "Mankey",
+    "retained": true
+  },
+  {
+    "id": 57,
+    "english": "Primeape",
+    "kana": "オコリザル",
+    "hepburn": "Okorizaru",
+    "trademark": "Okorizaru",
+    "retained": false
+  },
+  {
+    "id": 58,
+    "english": "Growlithe",
+    "kana": "ガーディ",
+    "hepburn": "Gādi",
+    "trademark": "Gardie",
+    "retained": false
+  },
+  {
+    "id": 59,
+    "english": "Arcanine",
+    "kana": "ウインディ",
+    "hepburn": "Uindi",
+    "trademark": "Windie",
+    "retained": false
+  },
+  {
+    "id": 60,
+    "english": "Poliwag",
+    "kana": "ニョロモ",
+    "hepburn": "Nyoromo",
+    "trademark": "Nyoromo",
+    "retained": false
+  },
+  {
+    "id": 61,
+    "english": "Poliwhirl",
+    "kana": "ニョロゾ",
+    "hepburn": "Nyorozo",
+    "trademark": "Nyorozo",
+    "retained": false
+  },
+  {
+    "id": 62,
+    "english": "Poliwrath",
+    "kana": "ニョロボン",
+    "hepburn": "Nyorobon",
+    "trademark": "Nyorobon",
+    "retained": false
+  },
+  {
+    "id": 63,
+    "english": "Abra",
+    "kana": "ケーシィ",
+    "hepburn": "Kēshī",
+    "trademark": "Casey",
+    "retained": false
+  },
+  {
+    "id": 64,
+    "english": "Kadabra",
+    "kana": "ユンゲラー",
+    "hepburn": "Yungerā",
+    "trademark": "Yungerer",
+    "retained": false
+  },
+  {
+    "id": 65,
+    "english": "Alakazam",
+    "kana": "フーディン",
+    "hepburn": "Fūdin",
+    "trademark": "Foodin",
+    "retained": false
+  },
+  {
+    "id": 66,
+    "english": "Machop",
+    "kana": "ワンリキー",
+    "hepburn": "Wanrikī",
+    "trademark": "Wanriky",
+    "retained": false
+  },
+  {
+    "id": 67,
+    "english": "Machoke",
+    "kana": "ゴーリキー",
+    "hepburn": "Gōrikī",
+    "trademark": "Goriky",
+    "retained": false
+  },
+  {
+    "id": 68,
+    "english": "Machamp",
+    "kana": "カイリキー",
+    "hepburn": "Kairikī",
+    "trademark": "Kairiky",
+    "retained": false
+  },
+  {
+    "id": 69,
+    "english": "Bellsprout",
+    "kana": "マダツボミ",
+    "hepburn": "Madatsubomi",
+    "trademark": "Madatsubomi",
+    "retained": false
+  },
+  {
+    "id": 70,
+    "english": "Weepinbell",
+    "kana": "ウツドン",
+    "hepburn": "Utsudon",
+    "trademark": "Utsudon",
+    "retained": false
+  },
+  {
+    "id": 71,
+    "english": "Victreebel",
+    "kana": "ウツボット",
+    "hepburn": "Utsubotto",
+    "trademark": "Utsubot",
+    "retained": false
+  },
+  {
+    "id": 72,
+    "english": "Tentacool",
+    "kana": "メノクラゲ",
+    "hepburn": "Menokurage",
+    "trademark": "Menokurage",
+    "retained": false
+  },
+  {
+    "id": 73,
+    "english": "Tentacruel",
+    "kana": "ドククラゲ",
+    "hepburn": "Dokukurage",
+    "trademark": "Dokukurage",
+    "retained": false
+  },
+  {
+    "id": 74,
+    "english": "Geodude",
+    "kana": "イシツブテ",
+    "hepburn": "Ishitsubute",
+    "trademark": "Isitsubute",
+    "retained": false
+  },
+  {
+    "id": 75,
+    "english": "Graveler",
+    "kana": "ゴローン",
+    "hepburn": "Gorōn",
+    "trademark": "Golone",
+    "retained": false
+  },
+  {
+    "id": 76,
+    "english": "Golem",
+    "kana": "ゴローニャ",
+    "hepburn": "Gorōnya",
+    "trademark": "Golonya",
+    "retained": false
+  },
+  {
+    "id": 77,
+    "english": "Ponyta",
+    "kana": "ポニータ",
+    "hepburn": "Ponīta",
+    "trademark": "Ponyta",
+    "retained": true
+  },
+  {
+    "id": 78,
+    "english": "Rapidash",
+    "kana": "ギャロップ",
+    "hepburn": "Gyaroppu",
+    "trademark": "Gallop",
+    "retained": false
+  },
+  {
+    "id": 79,
+    "english": "Slowpoke",
+    "kana": "ヤドン",
+    "hepburn": "Yadon",
+    "trademark": "Yadon",
+    "retained": false
+  },
+  {
+    "id": 80,
+    "english": "Slowbro",
+    "kana": "ヤドラン",
+    "hepburn": "Yadoran",
+    "trademark": "Yadoran",
+    "retained": false
+  },
+  {
+    "id": 81,
+    "english": "Magnemite",
+    "kana": "コイル",
+    "hepburn": "Koiru",
+    "trademark": "Coil",
+    "retained": false
+  },
+  {
+    "id": 82,
+    "english": "Magneton",
+    "kana": "レアコイル",
+    "hepburn": "Reakoiru",
+    "trademark": "Rarecoil",
+    "retained": false
+  },
+  {
+    "id": 83,
+    "english": "Farfetch'd",
+    "kana": "カモネギ",
+    "hepburn": "Kamonegi",
+    "trademark": "Kamonegi",
+    "retained": false
+  },
+  {
+    "id": 84,
+    "english": "Doduo",
+    "kana": "ドードー",
+    "hepburn": "Dōdō",
+    "trademark": "Dodo",
+    "retained": false
+  },
+  {
+    "id": 85,
+    "english": "Dodrio",
+    "kana": "ドードリオ",
+    "hepburn": "Dōdorio",
+    "trademark": "Dodorio",
+    "retained": false
+  },
+  {
+    "id": 86,
+    "english": "Seel",
+    "kana": "パウワウ",
+    "hepburn": "Pauwau",
+    "trademark": "Pawou",
+    "retained": false
+  },
+  {
+    "id": 87,
+    "english": "Dewgong",
+    "kana": "ジュゴン",
+    "hepburn": "Jugon",
+    "trademark": "Jugon",
+    "retained": false
+  },
+  {
+    "id": 88,
+    "english": "Grimer",
+    "kana": "ベトベター",
+    "hepburn": "Betobetā",
+    "trademark": "Betbeter",
+    "retained": false
+  },
+  {
+    "id": 89,
+    "english": "Muk",
+    "kana": "ベトベトン",
+    "hepburn": "Betobeton",
+    "trademark": "Betbeton",
+    "retained": false
+  },
+  {
+    "id": 90,
+    "english": "Shellder",
+    "kana": "シェルダー",
+    "hepburn": "Sherudā",
+    "trademark": "Shellder",
+    "retained": true
+  },
+  {
+    "id": 91,
+    "english": "Cloyster",
+    "kana": "パルシェン",
+    "hepburn": "Parushen",
+    "trademark": "Parshen",
+    "retained": false
+  },
+  {
+    "id": 92,
+    "english": "Gastly",
+    "kana": "ゴース",
+    "hepburn": "Gōsu",
+    "trademark": "Ghos",
+    "retained": false
+  },
+  {
+    "id": 93,
+    "english": "Haunter",
+    "kana": "ゴースト",
+    "hepburn": "Gōsuto",
+    "trademark": "Ghost",
+    "retained": false
+  },
+  {
+    "id": 94,
+    "english": "Gengar",
+    "kana": "ゲンガー",
+    "hepburn": "Gengā",
+    "trademark": "Gangar",
+    "retained": false
+  },
+  {
+    "id": 95,
+    "english": "Onix",
+    "kana": "イワーク",
+    "hepburn": "Iwāku",
+    "trademark": "Iwark",
+    "retained": false
+  },
+  {
+    "id": 96,
+    "english": "Drowzee",
+    "kana": "スリープ",
+    "hepburn": "Surīpu",
+    "trademark": "Sleepe",
+    "retained": false
+  },
+  {
+    "id": 97,
+    "english": "Hypno",
+    "kana": "スリーパー",
+    "hepburn": "Surīpā",
+    "trademark": "Sleeper",
+    "retained": false
+  },
+  {
+    "id": 98,
+    "english": "Krabby",
+    "kana": "クラブ",
+    "hepburn": "Kurabu",
+    "trademark": "Crab",
+    "retained": false
+  },
+  {
+    "id": 99,
+    "english": "Kingler",
+    "kana": "キングラー",
+    "hepburn": "Kingurā",
+    "trademark": "Kingler",
+    "retained": true
+  },
+  {
+    "id": 100,
+    "english": "Voltorb",
+    "kana": "ビリリダマ",
+    "hepburn": "Biriridama",
+    "trademark": "Biriridama",
+    "retained": false
+  },
+  {
+    "id": 101,
+    "english": "Electrode",
+    "kana": "マルマイン",
+    "hepburn": "Marumain",
+    "trademark": "Marumine",
+    "retained": false
+  },
+  {
+    "id": 102,
+    "english": "Exeggcute",
+    "kana": "タマタマ",
+    "hepburn": "Tamatama",
+    "trademark": "Tamatama",
+    "retained": false
+  },
+  {
+    "id": 103,
+    "english": "Exeggutor",
+    "kana": "ナッシー",
+    "hepburn": "Nasshī",
+    "trademark": "Nassy",
+    "retained": false
+  },
+  {
+    "id": 104,
+    "english": "Cubone",
+    "kana": "カラカラ",
+    "hepburn": "Karakara",
+    "trademark": "Karakara",
+    "retained": false
+  },
+  {
+    "id": 105,
+    "english": "Marowak",
+    "kana": "ガラガラ",
+    "hepburn": "Garagara",
+    "trademark": "Garagara",
+    "retained": false
+  },
+  {
+    "id": 106,
+    "english": "Hitmonlee",
+    "kana": "サワムラー",
+    "hepburn": "Sawamurā",
+    "trademark": "Sawamular",
+    "retained": false
+  },
+  {
+    "id": 107,
+    "english": "Hitmonchan",
+    "kana": "エビワラー",
+    "hepburn": "Ebiwarā",
+    "trademark": "Ebiwalar",
+    "retained": false
+  },
+  {
+    "id": 108,
+    "english": "Lickitung",
+    "kana": "ベロリンガ",
+    "hepburn": "Beroringa",
+    "trademark": "Beroringa",
+    "retained": false
+  },
+  {
+    "id": 109,
+    "english": "Koffing",
+    "kana": "ドガース",
+    "hepburn": "Dogāsu",
+    "trademark": "Dogars",
+    "retained": false
+  },
+  {
+    "id": 110,
+    "english": "Weezing",
+    "kana": "マタドガス",
+    "hepburn": "Matadogasu",
+    "trademark": "Matadogas",
+    "retained": false
+  },
+  {
+    "id": 111,
+    "english": "Rhyhorn",
+    "kana": "サイホーン",
+    "hepburn": "Saihōn",
+    "trademark": "Sihorn",
+    "retained": false
+  },
+  {
+    "id": 112,
+    "english": "Rhydon",
+    "kana": "サイドン",
+    "hepburn": "Saidon",
+    "trademark": "Sidon",
+    "retained": false
+  },
+  {
+    "id": 113,
+    "english": "Chansey",
+    "kana": "ラッキー",
+    "hepburn": "Rakkī",
+    "trademark": "Lucky",
+    "retained": false
+  },
+  {
+    "id": 114,
+    "english": "Tangela",
+    "kana": "モンジャラ",
+    "hepburn": "Monjara",
+    "trademark": "Monjara",
+    "retained": false
+  },
+  {
+    "id": 115,
+    "english": "Kangaskhan",
+    "kana": "ガルーラ",
+    "hepburn": "Garūra",
+    "trademark": "Garura",
+    "retained": false
+  },
+  {
+    "id": 116,
+    "english": "Horsea",
+    "kana": "タッツー",
+    "hepburn": "Tattsū",
+    "trademark": "Tattu",
+    "retained": false
+  },
+  {
+    "id": 117,
+    "english": "Seadra",
+    "kana": "シードラ",
+    "hepburn": "Shīdora",
+    "trademark": "Seadra",
+    "retained": true
+  },
+  {
+    "id": 118,
+    "english": "Goldeen",
+    "kana": "トサキント",
+    "hepburn": "Tosakinto",
+    "trademark": "Tosakinto",
+    "retained": false
+  },
+  {
+    "id": 119,
+    "english": "Seaking",
+    "kana": "アズマオウ",
+    "hepburn": "Azumaō",
+    "trademark": "Azumao",
+    "retained": false
+  },
+  {
+    "id": 120,
+    "english": "Staryu",
+    "kana": "ヒトデマン",
+    "hepburn": "Hitodeman",
+    "trademark": "Hitodeman",
+    "retained": false
+  },
+  {
+    "id": 121,
+    "english": "Starmie",
+    "kana": "スターミー",
+    "hepburn": "Sutāmī",
+    "trademark": "Starmie",
+    "retained": true
+  },
+  {
+    "id": 122,
+    "english": "Mr. Mime",
+    "kana": "バリヤード",
+    "hepburn": "Bariyādo",
+    "trademark": "Barrierd",
+    "retained": false
+  },
+  {
+    "id": 123,
+    "english": "Scyther",
+    "kana": "ストライク",
+    "hepburn": "Sutoraiku",
+    "trademark": "Strike",
+    "retained": false
+  },
+  {
+    "id": 124,
+    "english": "Jynx",
+    "kana": "ルージュラ",
+    "hepburn": "Rūjura",
+    "trademark": "Rougela",
+    "retained": false
+  },
+  {
+    "id": 125,
+    "english": "Electabuzz",
+    "kana": "エレブー",
+    "hepburn": "Erebū",
+    "trademark": "Eleboo",
+    "retained": false
+  },
+  {
+    "id": 126,
+    "english": "Magmar",
+    "kana": "ブーバー",
+    "hepburn": "Būbā",
+    "trademark": "Boober",
+    "retained": false
+  },
+  {
+    "id": 127,
+    "english": "Pinsir",
+    "kana": "カイロス",
+    "hepburn": "Kairosu",
+    "trademark": "Kailios",
+    "retained": false
+  },
+  {
+    "id": 128,
+    "english": "Tauros",
+    "kana": "ケンタロス",
+    "hepburn": "Kentarosu",
+    "trademark": "Kentauros",
+    "retained": false
+  },
+  {
+    "id": 129,
+    "english": "Magikarp",
+    "kana": "コイキング",
+    "hepburn": "Koikingu",
+    "trademark": "Koiking",
+    "retained": false
+  },
+  {
+    "id": 130,
+    "english": "Gyarados",
+    "kana": "ギャラドス",
+    "hepburn": "Gyaradosu",
+    "trademark": "Gyarados",
+    "retained": true
+  },
+  {
+    "id": 131,
+    "english": "Lapras",
+    "kana": "ラプラス",
+    "hepburn": "Rapurasu",
+    "trademark": "Laplace",
+    "retained": false
+  },
+  {
+    "id": 132,
+    "english": "Ditto",
+    "kana": "メタモン",
+    "hepburn": "Metamon",
+    "trademark": "Metamon",
+    "retained": false
+  },
+  {
+    "id": 133,
+    "english": "Eevee",
+    "kana": "イーブイ",
+    "hepburn": "Ībui",
+    "trademark": "Eievui",
+    "retained": false
+  },
+  {
+    "id": 134,
+    "english": "Vaporeon",
+    "kana": "シャワーズ",
+    "hepburn": "Shawāzu",
+    "trademark": "Showers",
+    "retained": false
+  },
+  {
+    "id": 135,
+    "english": "Jolteon",
+    "kana": "サンダース",
+    "hepburn": "Sandāsu",
+    "trademark": "Thunders",
+    "retained": false
+  },
+  {
+    "id": 136,
+    "english": "Flareon",
+    "kana": "ブースター",
+    "hepburn": "Būsutā",
+    "trademark": "Booster",
+    "retained": false
+  },
+  {
+    "id": 137,
+    "english": "Porygon",
+    "kana": "ポリゴン",
+    "hepburn": "Porigon",
+    "trademark": "Porygon",
+    "retained": true
+  },
+  {
+    "id": 138,
+    "english": "Omanyte",
+    "kana": "オムナイト",
+    "hepburn": "Omunaito",
+    "trademark": "Omnite",
+    "retained": false
+  },
+  {
+    "id": 139,
+    "english": "Omastar",
+    "kana": "オムスター",
+    "hepburn": "Omusutā",
+    "trademark": "Omstar",
+    "retained": false
+  },
+  {
+    "id": 140,
+    "english": "Kabuto",
+    "kana": "カブト",
+    "hepburn": "Kabuto",
+    "trademark": "Kabuto",
+    "retained": true
+  },
+  {
+    "id": 141,
+    "english": "Kabutops",
+    "kana": "カブトプス",
+    "hepburn": "Kabutopusu",
+    "trademark": "Kabutops",
+    "retained": true
+  },
+  {
+    "id": 142,
+    "english": "Aerodactyl",
+    "kana": "プテラ",
+    "hepburn": "Putera",
+    "trademark": "Ptera",
+    "retained": false
+  },
+  {
+    "id": 143,
+    "english": "Snorlax",
+    "kana": "カビゴン",
+    "hepburn": "Kabigon",
+    "trademark": "Kabigon",
+    "retained": false
+  },
+  {
+    "id": 144,
+    "english": "Articuno",
+    "kana": "フリーザー",
+    "hepburn": "Furīzā",
+    "trademark": "Freezer",
+    "retained": false
+  },
+  {
+    "id": 145,
+    "english": "Zapdos",
+    "kana": "サンダー",
+    "hepburn": "Sandā",
+    "trademark": "Thunder",
+    "retained": false
+  },
+  {
+    "id": 146,
+    "english": "Moltres",
+    "kana": "ファイヤー",
+    "hepburn": "Faiyā",
+    "trademark": "Fire",
+    "retained": false
+  },
+  {
+    "id": 147,
+    "english": "Dratini",
+    "kana": "ミニリュウ",
+    "hepburn": "Miniryū",
+    "trademark": "Miniryu",
+    "retained": false
+  },
+  {
+    "id": 148,
+    "english": "Dragonair",
+    "kana": "ハクリュー",
+    "hepburn": "Hakuryū",
+    "trademark": "Hakuryu",
+    "retained": false
+  },
+  {
+    "id": 149,
+    "english": "Dragonite",
+    "kana": "カイリュー",
+    "hepburn": "Kairyū",
+    "trademark": "Kairyu",
+    "retained": false
+  },
+  {
+    "id": 150,
+    "english": "Mewtwo",
+    "kana": "ミュウツー",
+    "hepburn": "Myūtsū",
+    "trademark": "Mewtwo",
+    "retained": true
+  },
+  {
+    "id": 151,
+    "english": "Mew",
+    "kana": "ミュウ",
+    "hepburn": "Myū",
+    "trademark": "Mew",
+    "retained": true
+  },
+  {
+    "id": 152,
+    "english": "Chikorita",
+    "kana": "チコリータ",
+    "hepburn": "Chikorīta",
+    "trademark": "Chicorita",
+    "retained": true
+  },
+  {
+    "id": 153,
+    "english": "Bayleef",
+    "kana": "ベイリーフ",
+    "hepburn": "Beirīfu",
+    "trademark": "Bayleaf",
+    "retained": false
+  },
+  {
+    "id": 154,
+    "english": "Meganium",
+    "kana": "メガニウム",
+    "hepburn": "Meganiumu",
+    "trademark": "Meganium",
+    "retained": true
+  },
+  {
+    "id": 155,
+    "english": "Cyndaquil",
+    "kana": "ヒノアラシ",
+    "hepburn": "Hinoarashi",
+    "trademark": "Hinoarashi",
+    "retained": false
+  },
+  {
+    "id": 156,
+    "english": "Quilava",
+    "kana": "マグマラシ",
+    "hepburn": "Magumarashi",
+    "trademark": "Magmarashi",
+    "retained": false
+  },
+  {
+    "id": 157,
+    "english": "Typhlosion",
+    "kana": "バクフーン",
+    "hepburn": "Bakufūn",
+    "trademark": "Bakphoon",
+    "retained": false
+  },
+  {
+    "id": 158,
+    "english": "Totodile",
+    "kana": "ワニノコ",
+    "hepburn": "Waninoko",
+    "trademark": "Waninoko",
+    "retained": false
+  },
+  {
+    "id": 159,
+    "english": "Croconaw",
+    "kana": "アリゲイツ",
+    "hepburn": "Arigeitsu",
+    "trademark": "Alligates",
+    "retained": false
+  },
+  {
+    "id": 160,
+    "english": "Feraligatr",
+    "kana": "オーダイル",
+    "hepburn": "Ōdairu",
+    "trademark": "Ordile",
+    "retained": false
+  },
+  {
+    "id": 161,
+    "english": "Sentret",
+    "kana": "オタチ",
+    "hepburn": "Otachi",
+    "trademark": "Otachi",
+    "retained": false
+  },
+  {
+    "id": 162,
+    "english": "Furret",
+    "kana": "オオタチ",
+    "hepburn": "Ōtachi",
+    "trademark": "Ootachi",
+    "retained": false
+  },
+  {
+    "id": 163,
+    "english": "Hoothoot",
+    "kana": "ホーホー",
+    "hepburn": "Hōhō",
+    "trademark": "Hoho",
+    "retained": false
+  },
+  {
+    "id": 164,
+    "english": "Noctowl",
+    "kana": "ヨルノズク",
+    "hepburn": "Yorunozuku",
+    "trademark": "Yorunozuku",
+    "retained": false
+  },
+  {
+    "id": 165,
+    "english": "Ledyba",
+    "kana": "レディバ",
+    "hepburn": "Rediba",
+    "trademark": "Rediba",
+    "retained": false
+  },
+  {
+    "id": 166,
+    "english": "Ledian",
+    "kana": "レディアン",
+    "hepburn": "Redian",
+    "trademark": "Redian",
+    "retained": false
+  },
+  {
+    "id": 167,
+    "english": "Spinarak",
+    "kana": "イトマル",
+    "hepburn": "Itomaru",
+    "trademark": "Itomaru",
+    "retained": false
+  },
+  {
+    "id": 168,
+    "english": "Ariados",
+    "kana": "アリアドス",
+    "hepburn": "Ariadosu",
+    "trademark": "Ariados",
+    "retained": true
+  },
+  {
+    "id": 169,
+    "english": "Crobat",
+    "kana": "クロバット",
+    "hepburn": "Kurobatto",
+    "trademark": "Crobat",
+    "retained": true
+  },
+  {
+    "id": 170,
+    "english": "Chinchou",
+    "kana": "チョンチー",
+    "hepburn": "Chonchī",
+    "trademark": "Chonchie",
+    "retained": false
+  },
+  {
+    "id": 171,
+    "english": "Lanturn",
+    "kana": "ランターン",
+    "hepburn": "Rantān",
+    "trademark": "Lantern",
+    "retained": false
+  },
+  {
+    "id": 172,
+    "english": "Pichu",
+    "kana": "ピチュー",
+    "hepburn": "Pichū",
+    "trademark": "Pichu",
+    "retained": true
+  },
+  {
+    "id": 173,
+    "english": "Cleffa",
+    "kana": "ピィ",
+    "hepburn": "Pī",
+    "trademark": "Py",
+    "retained": false
+  },
+  {
+    "id": 174,
+    "english": "Igglybuff",
+    "kana": "ププリン",
+    "hepburn": "Pupurin",
+    "trademark": "Pupurin",
+    "retained": false
+  },
+  {
+    "id": 175,
+    "english": "Togepi",
+    "kana": "トゲピー",
+    "hepburn": "Togepī",
+    "trademark": "Togepy",
+    "retained": true
+  },
+  {
+    "id": 176,
+    "english": "Togetic",
+    "kana": "トゲチック",
+    "hepburn": "Togechikku",
+    "trademark": "Togechick",
+    "retained": false
+  },
+  {
+    "id": 177,
+    "english": "Natu",
+    "kana": "ネイティ",
+    "hepburn": "Neiti",
+    "trademark": "Naty",
+    "retained": false
+  },
+  {
+    "id": 178,
+    "english": "Xatu",
+    "kana": "ネイティオ",
+    "hepburn": "Neitio",
+    "trademark": "Natio",
+    "retained": false
+  },
+  {
+    "id": 179,
+    "english": "Mareep",
+    "kana": "メリープ",
+    "hepburn": "Merīpu",
+    "trademark": "Merriep",
+    "retained": false
+  },
+  {
+    "id": 180,
+    "english": "Flaaffy",
+    "kana": "モココ",
+    "hepburn": "Mokoko",
+    "trademark": "Mokoko",
+    "retained": false
+  },
+  {
+    "id": 181,
+    "english": "Ampharos",
+    "kana": "デンリュウ",
+    "hepburn": "Denryū",
+    "trademark": "Denryu",
+    "retained": false
+  },
+  {
+    "id": 182,
+    "english": "Bellossom",
+    "kana": "キレイハナ",
+    "hepburn": "Kireihana",
+    "trademark": "Kireihana",
+    "retained": false
+  },
+  {
+    "id": 183,
+    "english": "Marill",
+    "kana": "マリル",
+    "hepburn": "Mariru",
+    "trademark": "Maril",
+    "retained": false
+  },
+  {
+    "id": 184,
+    "english": "Azumarill",
+    "kana": "マリルリ",
+    "hepburn": "Mariruri",
+    "trademark": "Marilli",
+    "retained": false
+  },
+  {
+    "id": 185,
+    "english": "Sudowoodo",
+    "kana": "ウソッキー",
+    "hepburn": "Usokkī",
+    "trademark": "Usokkie",
+    "retained": false
+  },
+  {
+    "id": 186,
+    "english": "Politoed",
+    "kana": "ニョロトノ",
+    "hepburn": "Nyorotono",
+    "trademark": "Nyorotono",
+    "retained": false
+  },
+  {
+    "id": 187,
+    "english": "Hoppip",
+    "kana": "ハネッコ",
+    "hepburn": "Hanekko",
+    "trademark": "Hanecco",
+    "retained": false
+  },
+  {
+    "id": 188,
+    "english": "Skiploom",
+    "kana": "ポポッコ",
+    "hepburn": "Popokko",
+    "trademark": "Popocco",
+    "retained": false
+  },
+  {
+    "id": 189,
+    "english": "Jumpluff",
+    "kana": "ワタッコ",
+    "hepburn": "Watakko",
+    "trademark": "Watacco",
+    "retained": false
+  },
+  {
+    "id": 190,
+    "english": "Aipom",
+    "kana": "エイパム",
+    "hepburn": "Eipamu",
+    "trademark": "Eipam",
+    "retained": false
+  },
+  {
+    "id": 191,
+    "english": "Sunkern",
+    "kana": "ヒマナッツ",
+    "hepburn": "Himanattsu",
+    "trademark": "Himanuts",
+    "retained": false
+  },
+  {
+    "id": 192,
+    "english": "Sunflora",
+    "kana": "キマワリ",
+    "hepburn": "Kimawari",
+    "trademark": "Kimawari",
+    "retained": false
+  },
+  {
+    "id": 193,
+    "english": "Yanma",
+    "kana": "ヤンヤンマ",
+    "hepburn": "Yan'yanma",
+    "trademark": "Yanyanma",
+    "retained": false
+  },
+  {
+    "id": 194,
+    "english": "Wooper",
+    "kana": "ウパー",
+    "hepburn": "Upā",
+    "trademark": "Upah",
+    "retained": false
+  },
+  {
+    "id": 195,
+    "english": "Quagsire",
+    "kana": "ヌオー",
+    "hepburn": "Nuō",
+    "trademark": "Nuoh",
+    "retained": false
+  },
+  {
+    "id": 196,
+    "english": "Espeon",
+    "kana": "エーフィ",
+    "hepburn": "Ēfi",
+    "trademark": "Eifie",
+    "retained": false
+  },
+  {
+    "id": 197,
+    "english": "Umbreon",
+    "kana": "ブラッキー",
+    "hepburn": "Burakkī",
+    "trademark": "Bracky",
+    "retained": false
+  },
+  {
+    "id": 198,
+    "english": "Murkrow",
+    "kana": "ヤミカラス",
+    "hepburn": "Yamikarasu",
+    "trademark": "Yamikarasu",
+    "retained": false
+  },
+  {
+    "id": 199,
+    "english": "Slowking",
+    "kana": "ヤドキング",
+    "hepburn": "Yadokingu",
+    "trademark": "Yadoking",
+    "retained": false
+  },
+  {
+    "id": 200,
+    "english": "Misdreavus",
+    "kana": "ムウマ",
+    "hepburn": "Mūma",
+    "trademark": "Muma",
+    "retained": false
+  },
+  {
+    "id": 201,
+    "english": "Unown",
+    "kana": "アンノーン",
+    "hepburn": "Annōn",
+    "trademark": "Unknown",
+    "retained": false
+  },
+  {
+    "id": 202,
+    "english": "Wobbuffet",
+    "kana": "ソーナンス",
+    "hepburn": "Sōnansu",
+    "trademark": "Sonans",
+    "retained": false
+  },
+  {
+    "id": 203,
+    "english": "Girafarig",
+    "kana": "キリンリキ",
+    "hepburn": "Kirinriki",
+    "trademark": "Kirinriki",
+    "retained": false
+  },
+  {
+    "id": 204,
+    "english": "Pineco",
+    "kana": "クヌギダマ",
+    "hepburn": "Kunugidama",
+    "trademark": "Kunugidama",
+    "retained": false
+  },
+  {
+    "id": 205,
+    "english": "Forretress",
+    "kana": "フォレトス",
+    "hepburn": "Foretosu",
+    "trademark": "Foretos",
+    "retained": false
+  },
+  {
+    "id": 206,
+    "english": "Dunsparce",
+    "kana": "ノコッチ",
+    "hepburn": "Nokotchi",
+    "trademark": "Nokocchi",
+    "retained": false
+  },
+  {
+    "id": 207,
+    "english": "Gligar",
+    "kana": "グライガー",
+    "hepburn": "Guraigā",
+    "trademark": "Gliger",
+    "retained": false
+  },
+  {
+    "id": 208,
+    "english": "Steelix",
+    "kana": "ハガネール",
+    "hepburn": "Haganēru",
+    "trademark": "Haganeil",
+    "retained": false
+  },
+  {
+    "id": 209,
+    "english": "Snubbull",
+    "kana": "ブルー",
+    "hepburn": "Burū",
+    "trademark": "Bulu",
+    "retained": false
+  },
+  {
+    "id": 210,
+    "english": "Granbull",
+    "kana": "グランブル",
+    "hepburn": "Guranburu",
+    "trademark": "Granbulu",
+    "retained": false
+  },
+  {
+    "id": 211,
+    "english": "Qwilfish",
+    "kana": "ハリーセン",
+    "hepburn": "Harīsen",
+    "trademark": "Harysen",
+    "retained": false
+  },
+  {
+    "id": 212,
+    "english": "Scizor",
+    "kana": "ハッサム",
+    "hepburn": "Hassamu",
+    "trademark": "Hassam",
+    "retained": false
+  },
+  {
+    "id": 213,
+    "english": "Shuckle",
+    "kana": "ツボツボ",
+    "hepburn": "Tsubotsubo",
+    "trademark": "Tsubotsubo",
+    "retained": false
+  },
+  {
+    "id": 214,
+    "english": "Heracross",
+    "kana": "ヘラクロス",
+    "hepburn": "Herakurosu",
+    "trademark": "Heracros",
+    "retained": false
+  },
+  {
+    "id": 215,
+    "english": "Sneasel",
+    "kana": "ニューラ",
+    "hepburn": "Nyūra",
+    "trademark": "Nyula",
+    "retained": false
+  },
+  {
+    "id": 216,
+    "english": "Teddiursa",
+    "kana": "ヒメグマ",
+    "hepburn": "Himeguma",
+    "trademark": "Himeguma",
+    "retained": false
+  },
+  {
+    "id": 217,
+    "english": "Ursaring",
+    "kana": "リングマ",
+    "hepburn": "Ringuma",
+    "trademark": "Ringuma",
+    "retained": false
+  },
+  {
+    "id": 218,
+    "english": "Slugma",
+    "kana": "マグマッグ",
+    "hepburn": "Magumaggu",
+    "trademark": "Magmag",
+    "retained": false
+  },
+  {
+    "id": 219,
+    "english": "Magcargo",
+    "kana": "マグカルゴ",
+    "hepburn": "Magukarugo",
+    "trademark": "Magcargot",
+    "retained": false
+  },
+  {
+    "id": 220,
+    "english": "Swinub",
+    "kana": "ウリムー",
+    "hepburn": "Urimū",
+    "trademark": "Urimoo",
+    "retained": false
+  },
+  {
+    "id": 221,
+    "english": "Piloswine",
+    "kana": "イノムー",
+    "hepburn": "Inomū",
+    "trademark": "Inomoo",
+    "retained": false
+  },
+  {
+    "id": 222,
+    "english": "Corsola",
+    "kana": "サニーゴ",
+    "hepburn": "Sanīgo",
+    "trademark": "Sunnygo",
+    "retained": false
+  },
+  {
+    "id": 223,
+    "english": "Remoraid",
+    "kana": "テッポウオ",
+    "hepburn": "Teppouo",
+    "trademark": "Teppouo",
+    "retained": false
+  },
+  {
+    "id": 224,
+    "english": "Octillery",
+    "kana": "オクタン",
+    "hepburn": "Okutan",
+    "trademark": "Okutank",
+    "retained": false
+  },
+  {
+    "id": 225,
+    "english": "Delibird",
+    "kana": "デリバード",
+    "hepburn": "Deribādo",
+    "trademark": "Delibird",
+    "retained": true
+  },
+  {
+    "id": 226,
+    "english": "Mantine",
+    "kana": "マンタイン",
+    "hepburn": "Mantain",
+    "trademark": "Mantain",
+    "retained": false
+  },
+  {
+    "id": 227,
+    "english": "Skarmory",
+    "kana": "エアームド",
+    "hepburn": "Eāmudo",
+    "trademark": "Airmd",
+    "retained": false
+  },
+  {
+    "id": 228,
+    "english": "Houndour",
+    "kana": "デルビル",
+    "hepburn": "Derubiru",
+    "trademark": "Delvil",
+    "retained": false
+  },
+  {
+    "id": 229,
+    "english": "Houndoom",
+    "kana": "ヘルガー",
+    "hepburn": "Herugā",
+    "trademark": "Hellgar",
+    "retained": false
+  },
+  {
+    "id": 230,
+    "english": "Kingdra",
+    "kana": "キングドラ",
+    "hepburn": "Kingudora",
+    "trademark": "Kingdra",
+    "retained": true
+  },
+  {
+    "id": 231,
+    "english": "Phanpy",
+    "kana": "ゴマゾウ",
+    "hepburn": "Gomazō",
+    "trademark": "Gomazou",
+    "retained": false
+  },
+  {
+    "id": 232,
+    "english": "Donphan",
+    "kana": "ドンファン",
+    "hepburn": "Donfan",
+    "trademark": "Donfan",
+    "retained": false
+  },
+  {
+    "id": 233,
+    "english": "Porygon2",
+    "kana": "ポリゴン２",
+    "hepburn": "Porigon Tsū",
+    "trademark": "Porygon2",
+    "retained": true
+  },
+  {
+    "id": 234,
+    "english": "Stantler",
+    "kana": "オドシシ",
+    "hepburn": "Odoshishi",
+    "trademark": "Odoshishi",
+    "retained": false
+  },
+  {
+    "id": 235,
+    "english": "Smeargle",
+    "kana": "ドーブル",
+    "hepburn": "Dōburu",
+    "trademark": "Doble",
+    "retained": false
+  },
+  {
+    "id": 236,
+    "english": "Tyrogue",
+    "kana": "バルキー",
+    "hepburn": "Barukī",
+    "trademark": "Balkie",
+    "retained": false
+  },
+  {
+    "id": 237,
+    "english": "Hitmontop",
+    "kana": "カポエラー",
+    "hepburn": "Kapoerā",
+    "trademark": "Kapoerer",
+    "retained": false
+  },
+  {
+    "id": 238,
+    "english": "Smoochum",
+    "kana": "ムチュール",
+    "hepburn": "Muchūru",
+    "trademark": "Muchul",
+    "retained": false
+  },
+  {
+    "id": 239,
+    "english": "Elekid",
+    "kana": "エレキッド",
+    "hepburn": "Erekiddo",
+    "trademark": "Elekid",
+    "retained": true
+  },
+  {
+    "id": 240,
+    "english": "Magby",
+    "kana": "ブビィ",
+    "hepburn": "Bubī",
+    "trademark": "Buby",
+    "retained": false
+  },
+  {
+    "id": 241,
+    "english": "Miltank",
+    "kana": "ミルタンク",
+    "hepburn": "Mirutanku",
+    "trademark": "Miltank",
+    "retained": true
+  },
+  {
+    "id": 242,
+    "english": "Blissey",
+    "kana": "ハピナス",
+    "hepburn": "Hapinasu",
+    "trademark": "Happinas",
+    "retained": false
+  },
+  {
+    "id": 243,
+    "english": "Raikou",
+    "kana": "ライコウ",
+    "hepburn": "Raikō",
+    "trademark": "Raikou",
+    "retained": true
+  },
+  {
+    "id": 244,
+    "english": "Entei",
+    "kana": "エンテイ",
+    "hepburn": "Entei",
+    "trademark": "Entei",
+    "retained": true
+  },
+  {
+    "id": 245,
+    "english": "Suicune",
+    "kana": "スイクン",
+    "hepburn": "Suikun",
+    "trademark": "Suicune",
+    "retained": true
+  },
+  {
+    "id": 246,
+    "english": "Larvitar",
+    "kana": "ヨーギラス",
+    "hepburn": "Yōgirasu",
+    "trademark": "Yogiras",
+    "retained": false
+  },
+  {
+    "id": 247,
+    "english": "Pupitar",
+    "kana": "サナギラス",
+    "hepburn": "Sanagirasu",
+    "trademark": "Sanagiras",
+    "retained": false
+  },
+  {
+    "id": 248,
+    "english": "Tyranitar",
+    "kana": "バンギラス",
+    "hepburn": "Bangirasu",
+    "trademark": "Bangiras",
+    "retained": false
+  },
+  {
+    "id": 249,
+    "english": "Lugia",
+    "kana": "ルギア",
+    "hepburn": "Rugia",
+    "trademark": "Lugia",
+    "retained": true
+  },
+  {
+    "id": 250,
+    "english": "Ho-Oh",
+    "kana": "ホウオウ",
+    "hepburn": "Hōō",
+    "trademark": "Houou",
+    "retained": false
+  },
+  {
+    "id": 251,
+    "english": "Celebi",
+    "kana": "セレビィ",
+    "hepburn": "Serebī",
+    "trademark": "Celebi",
+    "retained": true
+  },
+  {
+    "id": 252,
+    "english": "Treecko",
+    "kana": "キモリ",
+    "hepburn": "Kimori",
+    "trademark": "Kimori",
+    "retained": false
+  },
+  {
+    "id": 253,
+    "english": "Grovyle",
+    "kana": "ジュプトル",
+    "hepburn": "Juputoru",
+    "trademark": "Juptile",
+    "retained": false
+  },
+  {
+    "id": 254,
+    "english": "Sceptile",
+    "kana": "ジュカイン",
+    "hepburn": "Jukain",
+    "trademark": "Jukain",
+    "retained": false
+  },
+  {
+    "id": 255,
+    "english": "Torchic",
+    "kana": "アチャモ",
+    "hepburn": "Achamo",
+    "trademark": "Achamo",
+    "retained": false
+  },
+  {
+    "id": 256,
+    "english": "Combusken",
+    "kana": "ワカシャモ",
+    "hepburn": "Wakashamo",
+    "trademark": "Wakasyamo",
+    "retained": false
+  },
+  {
+    "id": 257,
+    "english": "Blaziken",
+    "kana": "バシャーモ",
+    "hepburn": "Bashāmo",
+    "trademark": "Bursyamo",
+    "retained": false
+  },
+  {
+    "id": 258,
+    "english": "Mudkip",
+    "kana": "ミズゴロウ",
+    "hepburn": "Mizugorō",
+    "trademark": "Mizugorou",
+    "retained": false
+  },
+  {
+    "id": 259,
+    "english": "Marshtomp",
+    "kana": "ヌマクロー",
+    "hepburn": "Numakurō",
+    "trademark": "Numacraw",
+    "retained": false
+  },
+  {
+    "id": 260,
+    "english": "Swampert",
+    "kana": "ラグラージ",
+    "hepburn": "Ragurāji",
+    "trademark": "Laglarge",
+    "retained": false
+  },
+  {
+    "id": 261,
+    "english": "Poochyena",
+    "kana": "ポチエナ",
+    "hepburn": "Pochiena",
+    "trademark": "Pochiena",
+    "retained": false
+  },
+  {
+    "id": 262,
+    "english": "Mightyena",
+    "kana": "グラエナ",
+    "hepburn": "Guraena",
+    "trademark": "Graena",
+    "retained": false
+  },
+  {
+    "id": 263,
+    "english": "Zigzagoon",
+    "kana": "ジグザグマ",
+    "hepburn": "Jiguzaguma",
+    "trademark": "Jiguzaguma",
+    "retained": false
+  },
+  {
+    "id": 264,
+    "english": "Linoone",
+    "kana": "マッスグマ",
+    "hepburn": "Massuguma",
+    "trademark": "Massuguma",
+    "retained": false
+  },
+  {
+    "id": 265,
+    "english": "Wurmple",
+    "kana": "ケムッソ",
+    "hepburn": "Kemusso",
+    "trademark": "Kemusso",
+    "retained": false
+  },
+  {
+    "id": 266,
+    "english": "Silcoon",
+    "kana": "カラサリス",
+    "hepburn": "Karasarisu",
+    "trademark": "Karasalis",
+    "retained": false
+  },
+  {
+    "id": 267,
+    "english": "Beautifly",
+    "kana": "アゲハント",
+    "hepburn": "Agehanto",
+    "trademark": "Agehunt",
+    "retained": false
+  },
+  {
+    "id": 268,
+    "english": "Cascoon",
+    "kana": "マユルド",
+    "hepburn": "Mayurudo",
+    "trademark": "Mayuld",
+    "retained": false
+  },
+  {
+    "id": 269,
+    "english": "Dustox",
+    "kana": "ドクケイル",
+    "hepburn": "Dokukeiru",
+    "trademark": "Dokucale",
+    "retained": false
+  },
+  {
+    "id": 270,
+    "english": "Lotad",
+    "kana": "ハスボー",
+    "hepburn": "Hasubō",
+    "trademark": "Hassboh",
+    "retained": false
+  },
+  {
+    "id": 271,
+    "english": "Lombre",
+    "kana": "ハスブレロ",
+    "hepburn": "Hasuburero",
+    "trademark": "Hasubrero",
+    "retained": false
+  },
+  {
+    "id": 272,
+    "english": "Ludicolo",
+    "kana": "ルンパッパ",
+    "hepburn": "Runpappa",
+    "trademark": "Runpappa",
+    "retained": false
+  },
+  {
+    "id": 273,
+    "english": "Seedot",
+    "kana": "タネボー",
+    "hepburn": "Tanebō",
+    "trademark": "Taneboh",
+    "retained": false
+  },
+  {
+    "id": 274,
+    "english": "Nuzleaf",
+    "kana": "コノハナ",
+    "hepburn": "Konohana",
+    "trademark": "Konohana",
+    "retained": false
+  },
+  {
+    "id": 275,
+    "english": "Shiftry",
+    "kana": "ダーテング",
+    "hepburn": "Dātengu",
+    "trademark": "Dirteng",
+    "retained": false
+  },
+  {
+    "id": 276,
+    "english": "Taillow",
+    "kana": "スバメ",
+    "hepburn": "Subame",
+    "trademark": "Subame",
+    "retained": false
+  },
+  {
+    "id": 277,
+    "english": "Swellow",
+    "kana": "オオスバメ",
+    "hepburn": "Ōsubame",
+    "trademark": "Ohsubame",
+    "retained": false
+  },
+  {
+    "id": 278,
+    "english": "Wingull",
+    "kana": "キャモメ",
+    "hepburn": "Kyamome",
+    "trademark": "Camome",
+    "retained": false
+  },
+  {
+    "id": 279,
+    "english": "Pelipper",
+    "kana": "ペリッパー",
+    "hepburn": "Perippā",
+    "trademark": "Pelipper",
+    "retained": true
+  },
+  {
+    "id": 280,
+    "english": "Ralts",
+    "kana": "ラルトス",
+    "hepburn": "Rarutosu",
+    "trademark": "Ralts",
+    "retained": true
+  },
+  {
+    "id": 281,
+    "english": "Kirlia",
+    "kana": "キルリア",
+    "hepburn": "Kiruria",
+    "trademark": "Kirlia",
+    "retained": true
+  },
+  {
+    "id": 282,
+    "english": "Gardevoir",
+    "kana": "サーナイト",
+    "hepburn": "Sānaito",
+    "trademark": "Sirnight",
+    "retained": false
+  },
+  {
+    "id": 283,
+    "english": "Surskit",
+    "kana": "アメタマ",
+    "hepburn": "Ametama",
+    "trademark": "Ametama",
+    "retained": false
+  },
+  {
+    "id": 284,
+    "english": "Masquerain",
+    "kana": "アメモース",
+    "hepburn": "Amemōsu",
+    "trademark": "Amemoth",
+    "retained": false
+  },
+  {
+    "id": 285,
+    "english": "Shroomish",
+    "kana": "キノココ",
+    "hepburn": "Kinokoko",
+    "trademark": "Kinococo",
+    "retained": false
+  },
+  {
+    "id": 286,
+    "english": "Breloom",
+    "kana": "キノガッサ",
+    "hepburn": "Kinogassa",
+    "trademark": "Kinogassa",
+    "retained": false
+  },
+  {
+    "id": 287,
+    "english": "Slakoth",
+    "kana": "ナマケロ",
+    "hepburn": "Namakero",
+    "trademark": "Namakero",
+    "retained": false
+  },
+  {
+    "id": 288,
+    "english": "Vigoroth",
+    "kana": "ヤルキモノ",
+    "hepburn": "Yarukimono",
+    "trademark": "Yarukimono",
+    "retained": false
+  },
+  {
+    "id": 289,
+    "english": "Slaking",
+    "kana": "ケッキング",
+    "hepburn": "Kekkingu",
+    "trademark": "Kekking",
+    "retained": false
+  },
+  {
+    "id": 290,
+    "english": "Nincada",
+    "kana": "ツチニン",
+    "hepburn": "Tsuchinin",
+    "trademark": "Tutinin",
+    "retained": false
+  },
+  {
+    "id": 291,
+    "english": "Ninjask",
+    "kana": "テッカニン",
+    "hepburn": "Tekkanin",
+    "trademark": "Tekkanin",
+    "retained": false
+  },
+  {
+    "id": 292,
+    "english": "Shedinja",
+    "kana": "ヌケニン",
+    "hepburn": "Nukenin",
+    "trademark": "Nukenin",
+    "retained": false
+  },
+  {
+    "id": 293,
+    "english": "Whismur",
+    "kana": "ゴニョニョ",
+    "hepburn": "Gonyonyo",
+    "trademark": "Gonyonyo",
+    "retained": false
+  },
+  {
+    "id": 294,
+    "english": "Loudred",
+    "kana": "ドゴーム",
+    "hepburn": "Dogōmu",
+    "trademark": "Dogohmb",
+    "retained": false
+  },
+  {
+    "id": 295,
+    "english": "Exploud",
+    "kana": "バクオング",
+    "hepburn": "Bakuongu",
+    "trademark": "Bakuong",
+    "retained": false
+  },
+  {
+    "id": 296,
+    "english": "Makuhita",
+    "kana": "マクノシタ",
+    "hepburn": "Makunoshita",
+    "trademark": "Makunoshita",
+    "retained": false
+  },
+  {
+    "id": 297,
+    "english": "Hariyama",
+    "kana": "ハリテヤマ",
+    "hepburn": "Hariteyama",
+    "trademark": "Hariteyama",
+    "retained": false
+  },
+  {
+    "id": 298,
+    "english": "Azurill",
+    "kana": "ルリリ",
+    "hepburn": "Ruriri",
+    "trademark": "Ruriri",
+    "retained": false
+  },
+  {
+    "id": 299,
+    "english": "Nosepass",
+    "kana": "ノズパス",
+    "hepburn": "Nozupasu",
+    "trademark": "Nosepass",
+    "retained": true
+  },
+  {
+    "id": 300,
+    "english": "Skitty",
+    "kana": "エネコ",
+    "hepburn": "Eneko",
+    "trademark": "Eneco",
+    "retained": false
+  },
+  {
+    "id": 301,
+    "english": "Delcatty",
+    "kana": "エネコロロ",
+    "hepburn": "Enekororo",
+    "trademark": "Enekororo",
+    "retained": false
+  },
+  {
+    "id": 302,
+    "english": "Sableye",
+    "kana": "ヤミラミ",
+    "hepburn": "Yamirami",
+    "trademark": "Yamirami",
+    "retained": false
+  },
+  {
+    "id": 303,
+    "english": "Mawile",
+    "kana": "クチート",
+    "hepburn": "Kuchīto",
+    "trademark": "Kucheat",
+    "retained": false
+  },
+  {
+    "id": 304,
+    "english": "Aron",
+    "kana": "ココドラ",
+    "hepburn": "Kokodora",
+    "trademark": "Cokodora",
+    "retained": false
+  },
+  {
+    "id": 305,
+    "english": "Lairon",
+    "kana": "コドラ",
+    "hepburn": "Kodora",
+    "trademark": "Kodora",
+    "retained": false
+  },
+  {
+    "id": 306,
+    "english": "Aggron",
+    "kana": "ボスゴドラ",
+    "hepburn": "Bosugodora",
+    "trademark": "Bossgodora",
+    "retained": false
+  },
+  {
+    "id": 307,
+    "english": "Meditite",
+    "kana": "アサナン",
+    "hepburn": "Asanan",
+    "trademark": "Asanan",
+    "retained": false
+  },
+  {
+    "id": 308,
+    "english": "Medicham",
+    "kana": "チャーレム",
+    "hepburn": "Chāremu",
+    "trademark": "Charem",
+    "retained": false
+  },
+  {
+    "id": 309,
+    "english": "Electrike",
+    "kana": "ラクライ",
+    "hepburn": "Rakurai",
+    "trademark": "Rakurai",
+    "retained": false
+  },
+  {
+    "id": 310,
+    "english": "Manectric",
+    "kana": "ライボルト",
+    "hepburn": "Raiboruto",
+    "trademark": "Livolt",
+    "retained": false
+  },
+  {
+    "id": 311,
+    "english": "Plusle",
+    "kana": "プラスル",
+    "hepburn": "Purasuru",
+    "trademark": "Prasle",
+    "retained": false
+  },
+  {
+    "id": 312,
+    "english": "Minun",
+    "kana": "マイナン",
+    "hepburn": "Mainan",
+    "trademark": "Minun",
+    "retained": true
+  },
+  {
+    "id": 313,
+    "english": "Volbeat",
+    "kana": "バルビート",
+    "hepburn": "Barubīto",
+    "trademark": "Barubeat",
+    "retained": false
+  },
+  {
+    "id": 314,
+    "english": "Illumise",
+    "kana": "イルミーゼ",
+    "hepburn": "Irumīze",
+    "trademark": "Illumise",
+    "retained": true
+  },
+  {
+    "id": 315,
+    "english": "Roselia",
+    "kana": "ロゼリア",
+    "hepburn": "Rozeria",
+    "trademark": "Roselia",
+    "retained": true
+  },
+  {
+    "id": 316,
+    "english": "Gulpin",
+    "kana": "ゴクリン",
+    "hepburn": "Gokurin",
+    "trademark": "Gokulin",
+    "retained": false
+  },
+  {
+    "id": 317,
+    "english": "Swalot",
+    "kana": "マルノーム",
+    "hepburn": "Marunōmu",
+    "trademark": "Marunoom",
+    "retained": false
+  },
+  {
+    "id": 318,
+    "english": "Carvanha",
+    "kana": "キバニア",
+    "hepburn": "Kibania",
+    "trademark": "Kibanha",
+    "retained": false
+  },
+  {
+    "id": 319,
+    "english": "Sharpedo",
+    "kana": "サメハダー",
+    "hepburn": "Samehadā",
+    "trademark": "Samehader",
+    "retained": false
+  },
+  {
+    "id": 320,
+    "english": "Wailmer",
+    "kana": "ホエルコ",
+    "hepburn": "Hoeruko",
+    "trademark": "Hoeruko",
+    "retained": false
+  },
+  {
+    "id": 321,
+    "english": "Wailord",
+    "kana": "ホエルオー",
+    "hepburn": "Hoeruō",
+    "trademark": "Whaloh",
+    "retained": false
+  },
+  {
+    "id": 322,
+    "english": "Numel",
+    "kana": "ドンメル",
+    "hepburn": "Donmeru",
+    "trademark": "Donmel",
+    "retained": false
+  },
+  {
+    "id": 323,
+    "english": "Camerupt",
+    "kana": "バクーダ",
+    "hepburn": "Bakūda",
+    "trademark": "Bakuuda",
+    "retained": false
+  },
+  {
+    "id": 324,
+    "english": "Torkoal",
+    "kana": "コータス",
+    "hepburn": "Kōtasu",
+    "trademark": "Cotoise",
+    "retained": false
+  },
+  {
+    "id": 325,
+    "english": "Spoink",
+    "kana": "バネブー",
+    "hepburn": "Banebū",
+    "trademark": "Baneboo",
+    "retained": false
+  },
+  {
+    "id": 326,
+    "english": "Grumpig",
+    "kana": "ブーピッグ",
+    "hepburn": "Būpiggu",
+    "trademark": "Boopig",
+    "retained": false
+  },
+  {
+    "id": 327,
+    "english": "Spinda",
+    "kana": "パッチール",
+    "hepburn": "Patchīru",
+    "trademark": "Patcheel",
+    "retained": false
+  },
+  {
+    "id": 328,
+    "english": "Trapinch",
+    "kana": "ナックラー",
+    "hepburn": "Nakkurā",
+    "trademark": "Nuckrar",
+    "retained": false
+  },
+  {
+    "id": 329,
+    "english": "Vibrava",
+    "kana": "ビブラーバ",
+    "hepburn": "Biburāba",
+    "trademark": "Vibrava",
+    "retained": true
+  },
+  {
+    "id": 330,
+    "english": "Flygon",
+    "kana": "フライゴン",
+    "hepburn": "Furaigon",
+    "trademark": "Flygon",
+    "retained": true
+  },
+  {
+    "id": 331,
+    "english": "Cacnea",
+    "kana": "サボネア",
+    "hepburn": "Sabonea",
+    "trademark": "Sabonea",
+    "retained": false
+  },
+  {
+    "id": 332,
+    "english": "Cacturne",
+    "kana": "ノクタス",
+    "hepburn": "Nokutasu",
+    "trademark": "Noctus",
+    "retained": false
+  },
+  {
+    "id": 333,
+    "english": "Swablu",
+    "kana": "チルット",
+    "hepburn": "Chirutto",
+    "trademark": "Tyltto",
+    "retained": false
+  },
+  {
+    "id": 334,
+    "english": "Altaria",
+    "kana": "チルタリス",
+    "hepburn": "Chirutarisu",
+    "trademark": "Tyltalis",
+    "retained": false
+  },
+  {
+    "id": 335,
+    "english": "Zangoose",
+    "kana": "ザングース",
+    "hepburn": "Zangūsu",
+    "trademark": "Zangoose",
+    "retained": true
+  },
+  {
+    "id": 336,
+    "english": "Seviper",
+    "kana": "ハブネーク",
+    "hepburn": "Habunēku",
+    "trademark": "Habunake",
+    "retained": false
+  },
+  {
+    "id": 337,
+    "english": "Lunatone",
+    "kana": "ルナトーン",
+    "hepburn": "Runatōn",
+    "trademark": "Lunatone",
+    "retained": true
+  },
+  {
+    "id": 338,
+    "english": "Solrock",
+    "kana": "ソルロック",
+    "hepburn": "Sorurokku",
+    "trademark": "Solrock",
+    "retained": true
+  },
+  {
+    "id": 339,
+    "english": "Barboach",
+    "kana": "ドジョッチ",
+    "hepburn": "Dojotchi",
+    "trademark": "Dojoach",
+    "retained": false
+  },
+  {
+    "id": 340,
+    "english": "Whiscash",
+    "kana": "ナマズン",
+    "hepburn": "Namazun",
+    "trademark": "Namazun",
+    "retained": false
+  },
+  {
+    "id": 341,
+    "english": "Corphish",
+    "kana": "ヘイガニ",
+    "hepburn": "Heigani",
+    "trademark": "Heigani",
+    "retained": false
+  },
+  {
+    "id": 342,
+    "english": "Crawdaunt",
+    "kana": "シザリガー",
+    "hepburn": "Shizarigā",
+    "trademark": "Shizariger",
+    "retained": false
+  },
+  {
+    "id": 343,
+    "english": "Baltoy",
+    "kana": "ヤジロン",
+    "hepburn": "Yajiron",
+    "trademark": "Yajilon",
+    "retained": false
+  },
+  {
+    "id": 344,
+    "english": "Claydol",
+    "kana": "ネンドール",
+    "hepburn": "Nendōru",
+    "trademark": "Nendoll",
+    "retained": false
+  },
+  {
+    "id": 345,
+    "english": "Lileep",
+    "kana": "リリーラ",
+    "hepburn": "Rirīra",
+    "trademark": "Lilyla",
+    "retained": false
+  },
+  {
+    "id": 346,
+    "english": "Cradily",
+    "kana": "ユレイドル",
+    "hepburn": "Yureidoru",
+    "trademark": "Yuradle",
+    "retained": false
+  },
+  {
+    "id": 347,
+    "english": "Anorith",
+    "kana": "アノプス",
+    "hepburn": "Anopusu",
+    "trademark": "Anopth",
+    "retained": false
+  },
+  {
+    "id": 348,
+    "english": "Armaldo",
+    "kana": "アーマルド",
+    "hepburn": "Āmarudo",
+    "trademark": "Armaldo",
+    "retained": true
+  },
+  {
+    "id": 349,
+    "english": "Feebas",
+    "kana": "ヒンバス",
+    "hepburn": "Hinbasu",
+    "trademark": "Hinbass",
+    "retained": false
+  },
+  {
+    "id": 350,
+    "english": "Milotic",
+    "kana": "ミロカロス",
+    "hepburn": "Mirokarosu",
+    "trademark": "Milokaross",
+    "retained": false
+  },
+  {
+    "id": 351,
+    "english": "Castform",
+    "kana": "ポワルン",
+    "hepburn": "Powarun",
+    "trademark": "Powalen",
+    "retained": false
+  },
+  {
+    "id": 352,
+    "english": "Kecleon",
+    "kana": "カクレオン",
+    "hepburn": "Kakureon",
+    "trademark": "Kakureon",
+    "retained": false
+  },
+  {
+    "id": 353,
+    "english": "Shuppet",
+    "kana": "カゲボウズ",
+    "hepburn": "Kagebōzu",
+    "trademark": "Kagebouzu",
+    "retained": false
+  },
+  {
+    "id": 354,
+    "english": "Banette",
+    "kana": "ジュペッタ",
+    "hepburn": "Jupetta",
+    "trademark": "Juppeta",
+    "retained": false
+  },
+  {
+    "id": 355,
+    "english": "Duskull",
+    "kana": "ヨマワル",
+    "hepburn": "Yomawaru",
+    "trademark": "Yomawaru",
+    "retained": false
+  },
+  {
+    "id": 356,
+    "english": "Dusclops",
+    "kana": "サマヨール",
+    "hepburn": "Samayōru",
+    "trademark": "Samayouru",
+    "retained": false
+  },
+  {
+    "id": 357,
+    "english": "Tropius",
+    "kana": "トロピウス",
+    "hepburn": "Toropiusu",
+    "trademark": "Tropius",
+    "retained": true
+  },
+  {
+    "id": 358,
+    "english": "Chimecho",
+    "kana": "チリーン",
+    "hepburn": "Chirīn",
+    "trademark": "Chirean",
+    "retained": false
+  },
+  {
+    "id": 359,
+    "english": "Absol",
+    "kana": "アブソル",
+    "hepburn": "Abusoru",
+    "trademark": "Absol",
+    "retained": true
+  },
+  {
+    "id": 360,
+    "english": "Wynaut",
+    "kana": "ソーナノ",
+    "hepburn": "Sōnano",
+    "trademark": "Sohnano",
+    "retained": false
+  },
+  {
+    "id": 361,
+    "english": "Snorunt",
+    "kana": "ユキワラシ",
+    "hepburn": "Yukiwarashi",
+    "trademark": "Yukiwarashi",
+    "retained": false
+  },
+  {
+    "id": 362,
+    "english": "Glalie",
+    "kana": "オニゴーリ",
+    "hepburn": "Onigōri",
+    "trademark": "Onigohri",
+    "retained": false
+  },
+  {
+    "id": 363,
+    "english": "Spheal",
+    "kana": "タマザラシ",
+    "hepburn": "Tamazarashi",
+    "trademark": "Tamazarashi",
+    "retained": false
+  },
+  {
+    "id": 364,
+    "english": "Sealeo",
+    "kana": "トドグラー",
+    "hepburn": "Todogurā",
+    "trademark": "Todoggler",
+    "retained": false
+  },
+  {
+    "id": 365,
+    "english": "Walrein",
+    "kana": "トドゼルガ",
+    "hepburn": "Todozeruga",
+    "trademark": "Todoseruga",
+    "retained": false
+  },
+  {
+    "id": 366,
+    "english": "Clamperl",
+    "kana": "パールル",
+    "hepburn": "Pāruru",
+    "trademark": "Pearlulu",
+    "retained": false
+  },
+  {
+    "id": 367,
+    "english": "Huntail",
+    "kana": "ハンテール",
+    "hepburn": "Hantēru",
+    "trademark": "Huntail",
+    "retained": true
+  },
+  {
+    "id": 368,
+    "english": "Gorebyss",
+    "kana": "サクラビス",
+    "hepburn": "Sakurabisu",
+    "trademark": "Sakurabyss",
+    "retained": false
+  },
+  {
+    "id": 369,
+    "english": "Relicanth",
+    "kana": "ジーランス",
+    "hepburn": "Jīransu",
+    "trademark": "Glanth",
+    "retained": false
+  },
+  {
+    "id": 370,
+    "english": "Luvdisc",
+    "kana": "ラブカス",
+    "hepburn": "Rabukasu",
+    "trademark": "Lovecus",
+    "retained": false
+  },
+  {
+    "id": 371,
+    "english": "Bagon",
+    "kana": "タツベイ",
+    "hepburn": "Tatsubei",
+    "trademark": "Tatsubay",
+    "retained": false
+  },
+  {
+    "id": 372,
+    "english": "Shelgon",
+    "kana": "コモルー",
+    "hepburn": "Komorū",
+    "trademark": "Komoruu",
+    "retained": false
+  },
+  {
+    "id": 373,
+    "english": "Salamence",
+    "kana": "ボーマンダ",
+    "hepburn": "Bōmanda",
+    "trademark": "Bohmander",
+    "retained": false
+  },
+  {
+    "id": 374,
+    "english": "Beldum",
+    "kana": "ダンバル",
+    "hepburn": "Danbaru",
+    "trademark": "Dumbber",
+    "retained": false
+  },
+  {
+    "id": 375,
+    "english": "Metang",
+    "kana": "メタング",
+    "hepburn": "Metangu",
+    "trademark": "Metang",
+    "retained": true
+  },
+  {
+    "id": 376,
+    "english": "Metagross",
+    "kana": "メタグロス",
+    "hepburn": "Metagurosu",
+    "trademark": "Metagross",
+    "retained": true
+  },
+  {
+    "id": 377,
+    "english": "Regirock",
+    "kana": "レジロック",
+    "hepburn": "Rejirokku",
+    "trademark": "Regirock",
+    "retained": true
+  },
+  {
+    "id": 378,
+    "english": "Regice",
+    "kana": "レジアイス",
+    "hepburn": "Rejiaisu",
+    "trademark": "Regice",
+    "retained": true
+  },
+  {
+    "id": 379,
+    "english": "Registeel",
+    "kana": "レジスチル",
+    "hepburn": "Rejisuchiru",
+    "trademark": "Registeel",
+    "retained": true
+  },
+  {
+    "id": 380,
+    "english": "Latias",
+    "kana": "ラティアス",
+    "hepburn": "Ratiasu",
+    "trademark": "Latias",
+    "retained": true
+  },
+  {
+    "id": 381,
+    "english": "Latios",
+    "kana": "ラティオス",
+    "hepburn": "Ratiosu",
+    "trademark": "Latios",
+    "retained": true
+  },
+  {
+    "id": 382,
+    "english": "Kyogre",
+    "kana": "カイオーガ",
+    "hepburn": "Kaiōga",
+    "trademark": "Kyogre",
+    "retained": true
+  },
+  {
+    "id": 383,
+    "english": "Groudon",
+    "kana": "グラードン",
+    "hepburn": "Gurādon",
+    "trademark": "Groudon",
+    "retained": true
+  },
+  {
+    "id": 384,
+    "english": "Rayquaza",
+    "kana": "レックウザ",
+    "hepburn": "Rekkūza",
+    "trademark": "Rayquaza",
+    "retained": true
+  },
+  {
+    "id": 385,
+    "english": "Jirachi",
+    "kana": "ジラーチ",
+    "hepburn": "Jirāchi",
+    "trademark": "Jirachi",
+    "retained": true
+  },
+  {
+    "id": 386,
+    "english": "Deoxys",
+    "kana": "デオキシス",
+    "hepburn": "Deokishisu",
+    "trademark": "Deoxys",
+    "retained": true
+  },
+  {
+    "id": 387,
+    "english": "Turtwig",
+    "kana": "ナエトル",
+    "hepburn": "Naetoru",
+    "trademark": "Naetle",
+    "retained": false
+  },
+  {
+    "id": 388,
+    "english": "Grotle",
+    "kana": "ハヤシガメ",
+    "hepburn": "Hayashigame",
+    "trademark": "Hayashigame",
+    "retained": false
+  },
+  {
+    "id": 389,
+    "english": "Torterra",
+    "kana": "ドダイトス",
+    "hepburn": "Dodaitosu",
+    "trademark": "Dodaitose",
+    "retained": false
+  },
+  {
+    "id": 390,
+    "english": "Chimchar",
+    "kana": "ヒコザル",
+    "hepburn": "Hikozaru",
+    "trademark": "Hikozaru",
+    "retained": false
+  },
+  {
+    "id": 391,
+    "english": "Monferno",
+    "kana": "モウカザル",
+    "hepburn": "Mōkazaru",
+    "trademark": "Moukazaru",
+    "retained": false
+  },
+  {
+    "id": 392,
+    "english": "Infernape",
+    "kana": "ゴウカザル",
+    "hepburn": "Gōkazaru",
+    "trademark": "Goukazaru",
+    "retained": false
+  },
+  {
+    "id": 393,
+    "english": "Piplup",
+    "kana": "ポッチャマ",
+    "hepburn": "Potchama",
+    "trademark": "Pochama",
+    "retained": false
+  },
+  {
+    "id": 394,
+    "english": "Prinplup",
+    "kana": "ポッタイシ",
+    "hepburn": "Pottaishi",
+    "trademark": "Pottaishi",
+    "retained": false
+  },
+  {
+    "id": 395,
+    "english": "Empoleon",
+    "kana": "エンペルト",
+    "hepburn": "Enperuto",
+    "trademark": "Emperte",
+    "retained": false
+  },
+  {
+    "id": 396,
+    "english": "Starly",
+    "kana": "ムックル",
+    "hepburn": "Mukkuru",
+    "trademark": "Mukkuru",
+    "retained": false
+  },
+  {
+    "id": 397,
+    "english": "Staravia",
+    "kana": "ムクバード",
+    "hepburn": "Mukubādo",
+    "trademark": "Mukubird",
+    "retained": false
+  },
+  {
+    "id": 398,
+    "english": "Staraptor",
+    "kana": "ムクホーク",
+    "hepburn": "Mukuhōku",
+    "trademark": "Mukuhawk",
+    "retained": false
+  },
+  {
+    "id": 399,
+    "english": "Bidoof",
+    "kana": "ビッパ",
+    "hepburn": "Bippa",
+    "trademark": "Bippa",
+    "retained": false
+  },
+  {
+    "id": 400,
+    "english": "Bibarel",
+    "kana": "ビーダル",
+    "hepburn": "Bīdaru",
+    "trademark": "Beadaru",
+    "retained": false
+  },
+  {
+    "id": 401,
+    "english": "Kricketot",
+    "kana": "コロボーシ",
+    "hepburn": "Korobōshi",
+    "trademark": "Korobohshi",
+    "retained": false
+  },
+  {
+    "id": 402,
+    "english": "Kricketune",
+    "kana": "コロトック",
+    "hepburn": "Korotokku",
+    "trademark": "Korotock",
+    "retained": false
+  },
+  {
+    "id": 403,
+    "english": "Shinx",
+    "kana": "コリンク",
+    "hepburn": "Korinku",
+    "trademark": "Kolink",
+    "retained": false
+  },
+  {
+    "id": 404,
+    "english": "Luxio",
+    "kana": "ルクシオ",
+    "hepburn": "Rukushio",
+    "trademark": "Luxio",
+    "retained": true
+  },
+  {
+    "id": 405,
+    "english": "Luxray",
+    "kana": "レントラー",
+    "hepburn": "Rentorā",
+    "trademark": "Rentorar",
+    "retained": false
+  },
+  {
+    "id": 406,
+    "english": "Budew",
+    "kana": "スボミー",
+    "hepburn": "Subomī",
+    "trademark": "Subomie",
+    "retained": false
+  },
+  {
+    "id": 407,
+    "english": "Roserade",
+    "kana": "ロズレイド",
+    "hepburn": "Rozureido",
+    "trademark": "Roserade",
+    "retained": true
+  },
+  {
+    "id": 408,
+    "english": "Cranidos",
+    "kana": "ズガイドス",
+    "hepburn": "Zugaidosu",
+    "trademark": "Zugaidos",
+    "retained": false
+  },
+  {
+    "id": 409,
+    "english": "Rampardos",
+    "kana": "ラムパルド",
+    "hepburn": "Ramuparudo",
+    "trademark": "Rampald",
+    "retained": false
+  },
+  {
+    "id": 410,
+    "english": "Shieldon",
+    "kana": "タテトプス",
+    "hepburn": "Tatetopusu",
+    "trademark": "Tatetops",
+    "retained": false
+  },
+  {
+    "id": 411,
+    "english": "Bastiodon",
+    "kana": "トリデプス",
+    "hepburn": "Toridepusu",
+    "trademark": "Torideps",
+    "retained": false
+  },
+  {
+    "id": 412,
+    "english": "Burmy",
+    "kana": "ミノムッチ",
+    "hepburn": "Minomutchi",
+    "trademark": "Minomucchi",
+    "retained": false
+  },
+  {
+    "id": 413,
+    "english": "Wormadam",
+    "kana": "ミノマダム",
+    "hepburn": "Minomadamu",
+    "trademark": "Minomadam",
+    "retained": false
+  },
+  {
+    "id": 414,
+    "english": "Mothim",
+    "kana": "ガーメイル",
+    "hepburn": "Gāmeiru",
+    "trademark": "Gamale",
+    "retained": false
+  },
+  {
+    "id": 415,
+    "english": "Combee",
+    "kana": "ミツハニー",
+    "hepburn": "Mitsuhanī",
+    "trademark": "Mitsuhoney",
+    "retained": false
+  },
+  {
+    "id": 416,
+    "english": "Vespiquen",
+    "kana": "ビークイン",
+    "hepburn": "Bīkuin",
+    "trademark": "Beequen",
+    "retained": false
+  },
+  {
+    "id": 417,
+    "english": "Pachirisu",
+    "kana": "パチリス",
+    "hepburn": "Pachirisu",
+    "trademark": "Pachirisu",
+    "retained": true
+  },
+  {
+    "id": 418,
+    "english": "Buizel",
+    "kana": "ブイゼル",
+    "hepburn": "Buizeru",
+    "trademark": "Buoysel",
+    "retained": false
+  },
+  {
+    "id": 419,
+    "english": "Floatzel",
+    "kana": "フローゼル",
+    "hepburn": "Furōzeru",
+    "trademark": "Floazel",
+    "retained": false
+  },
+  {
+    "id": 420,
+    "english": "Cherubi",
+    "kana": "チェリンボ",
+    "hepburn": "Cherinbo",
+    "trademark": "Cherinbo",
+    "retained": false
+  },
+  {
+    "id": 421,
+    "english": "Cherrim",
+    "kana": "チェリム",
+    "hepburn": "Cherimu",
+    "trademark": "Cherrim",
+    "retained": true
+  },
+  {
+    "id": 422,
+    "english": "Shellos",
+    "kana": "カラナクシ",
+    "hepburn": "Karanakushi",
+    "trademark": "Karanakushi",
+    "retained": false
+  },
+  {
+    "id": 423,
+    "english": "Gastrodon",
+    "kana": "トリトドン",
+    "hepburn": "Toritodon",
+    "trademark": "Tritodon",
+    "retained": false
+  },
+  {
+    "id": 424,
+    "english": "Ambipom",
+    "kana": "エテボース",
+    "hepburn": "Etebōsu",
+    "trademark": "Eteboth",
+    "retained": false
+  },
+  {
+    "id": 425,
+    "english": "Drifloon",
+    "kana": "フワンテ",
+    "hepburn": "Fuwante",
+    "trademark": "Fuwante",
+    "retained": false
+  },
+  {
+    "id": 426,
+    "english": "Drifblim",
+    "kana": "フワライド",
+    "hepburn": "Fuwaraido",
+    "trademark": "Fuwaride",
+    "retained": false
+  },
+  {
+    "id": 427,
+    "english": "Buneary",
+    "kana": "ミミロル",
+    "hepburn": "Mimiroru",
+    "trademark": "Mimirol",
+    "retained": false
+  },
+  {
+    "id": 428,
+    "english": "Lopunny",
+    "kana": "ミミロップ",
+    "hepburn": "Mimiroppu",
+    "trademark": "Mimilop",
+    "retained": false
+  },
+  {
+    "id": 429,
+    "english": "Mismagius",
+    "kana": "ムウマージ",
+    "hepburn": "Mūmāji",
+    "trademark": "Mumargi",
+    "retained": false
+  },
+  {
+    "id": 430,
+    "english": "Honchkrow",
+    "kana": "ドンカラス",
+    "hepburn": "Donkarasu",
+    "trademark": "Dongkarasu",
+    "retained": false
+  },
+  {
+    "id": 431,
+    "english": "Glameow",
+    "kana": "ニャルマー",
+    "hepburn": "Nyarumā",
+    "trademark": "Nyarmar",
+    "retained": false
+  },
+  {
+    "id": 432,
+    "english": "Purugly",
+    "kana": "ブニャット",
+    "hepburn": "Bunyatto",
+    "trademark": "Bunyatto",
+    "retained": false
+  },
+  {
+    "id": 433,
+    "english": "Chingling",
+    "kana": "リーシャン",
+    "hepburn": "Rīshan",
+    "trademark": "Lisyan",
+    "retained": false
+  },
+  {
+    "id": 434,
+    "english": "Stunky",
+    "kana": "スカンプー",
+    "hepburn": "Sukanpū",
+    "trademark": "Skunpuu",
+    "retained": false
+  },
+  {
+    "id": 435,
+    "english": "Skuntank",
+    "kana": "スカタンク",
+    "hepburn": "Sukatanku",
+    "trademark": "Skutank",
+    "retained": false
+  },
+  {
+    "id": 436,
+    "english": "Bronzor",
+    "kana": "ドーミラー",
+    "hepburn": "Dōmirā",
+    "trademark": "Dohmirror",
+    "retained": false
+  },
+  {
+    "id": 437,
+    "english": "Bronzong",
+    "kana": "ドータクン",
+    "hepburn": "Dōtakun",
+    "trademark": "Dohtakun",
+    "retained": false
+  },
+  {
+    "id": 438,
+    "english": "Bonsly",
+    "kana": "ウソハチ",
+    "hepburn": "Usohachi",
+    "trademark": "Usohachi",
+    "retained": false
+  },
+  {
+    "id": 439,
+    "english": "Mime Jr.",
+    "kana": "マネネ",
+    "hepburn": "Manene",
+    "trademark": "Manene",
+    "retained": false
+  },
+  {
+    "id": 440,
+    "english": "Happiny",
+    "kana": "ピンプク",
+    "hepburn": "Pinpuku",
+    "trademark": "Pinpuku",
+    "retained": false
+  },
+  {
+    "id": 441,
+    "english": "Chatot",
+    "kana": "ペラップ",
+    "hepburn": "Perappu",
+    "trademark": "Perap",
+    "retained": false
+  },
+  {
+    "id": 442,
+    "english": "Spiritomb",
+    "kana": "ミカルゲ",
+    "hepburn": "Mikaruge",
+    "trademark": "Mikaruge",
+    "retained": false
+  },
+  {
+    "id": 443,
+    "english": "Gible",
+    "kana": "フカマル",
+    "hepburn": "Fukamaru",
+    "trademark": "Fukamaru",
+    "retained": false
+  },
+  {
+    "id": 444,
+    "english": "Gabite",
+    "kana": "ガバイト",
+    "hepburn": "Gabaito",
+    "trademark": "Gabite",
+    "retained": true
+  },
+  {
+    "id": 445,
+    "english": "Garchomp",
+    "kana": "ガブリアス",
+    "hepburn": "Gaburiasu",
+    "trademark": "Gaburias",
+    "retained": false
+  },
+  {
+    "id": 446,
+    "english": "Munchlax",
+    "kana": "ゴンベ",
+    "hepburn": "Gonbe",
+    "trademark": "Gonbe",
+    "retained": false
+  },
+  {
+    "id": 447,
+    "english": "Riolu",
+    "kana": "リオル",
+    "hepburn": "Rioru",
+    "trademark": "Riolu",
+    "retained": true
+  },
+  {
+    "id": 448,
+    "english": "Lucario",
+    "kana": "ルカリオ",
+    "hepburn": "Rukario",
+    "trademark": "Lucario",
+    "retained": true
+  },
+  {
+    "id": 449,
+    "english": "Hippopotas",
+    "kana": "ヒポポタス",
+    "hepburn": "Hipopotasu",
+    "trademark": "Hippopotas",
+    "retained": true
+  },
+  {
+    "id": 450,
+    "english": "Hippowdon",
+    "kana": "カバルドン",
+    "hepburn": "Kabarudon",
+    "trademark": "Kabaldon",
+    "retained": false
+  },
+  {
+    "id": 451,
+    "english": "Skorupi",
+    "kana": "スコルピ",
+    "hepburn": "Sukorupi",
+    "trademark": "Scorupi",
+    "retained": false
+  },
+  {
+    "id": 452,
+    "english": "Drapion",
+    "kana": "ドラピオン",
+    "hepburn": "Dorapion",
+    "trademark": "Dorapion",
+    "retained": false
+  },
+  {
+    "id": 453,
+    "english": "Croagunk",
+    "kana": "グレッグル",
+    "hepburn": "Guregguru",
+    "trademark": "Gureggru",
+    "retained": false
+  },
+  {
+    "id": 454,
+    "english": "Toxicroak",
+    "kana": "ドクロッグ",
+    "hepburn": "Dokuroggu",
+    "trademark": "Dokurog",
+    "retained": false
+  },
+  {
+    "id": 455,
+    "english": "Carnivine",
+    "kana": "マスキッパ",
+    "hepburn": "Masukippa",
+    "trademark": "Muskippa",
+    "retained": false
+  },
+  {
+    "id": 456,
+    "english": "Finneon",
+    "kana": "ケイコウオ",
+    "hepburn": "Keiko'uo",
+    "trademark": "Keikouo",
+    "retained": false
+  },
+  {
+    "id": 457,
+    "english": "Lumineon",
+    "kana": "ネオラント",
+    "hepburn": "Neoranto",
+    "trademark": "Neolant",
+    "retained": false
+  },
+  {
+    "id": 458,
+    "english": "Mantyke",
+    "kana": "タマンタ",
+    "hepburn": "Tamanta",
+    "trademark": "Tamanta",
+    "retained": false
+  },
+  {
+    "id": 459,
+    "english": "Snover",
+    "kana": "ユキカブリ",
+    "hepburn": "Yukikaburi",
+    "trademark": "Yukikaburi",
+    "retained": false
+  },
+  {
+    "id": 460,
+    "english": "Abomasnow",
+    "kana": "ユキノオー",
+    "hepburn": "Yukinoō",
+    "trademark": "Yukinooh",
+    "retained": false
+  },
+  {
+    "id": 461,
+    "english": "Weavile",
+    "kana": "マニューラ",
+    "hepburn": "Manyūra",
+    "trademark": "Manyula",
+    "retained": false
+  },
+  {
+    "id": 462,
+    "english": "Magnezone",
+    "kana": "ジバコイル",
+    "hepburn": "Jibakoiru",
+    "trademark": "Jibacoil",
+    "retained": false
+  },
+  {
+    "id": 463,
+    "english": "Lickilicky",
+    "kana": "ベロベルト",
+    "hepburn": "Beroberuto",
+    "trademark": "Berobelt",
+    "retained": false
+  },
+  {
+    "id": 464,
+    "english": "Rhyperior",
+    "kana": "ドサイドン",
+    "hepburn": "Dosaidon",
+    "trademark": "Dosidon",
+    "retained": false
+  },
+  {
+    "id": 465,
+    "english": "Tangrowth",
+    "kana": "モジャンボ",
+    "hepburn": "Mojanbo",
+    "trademark": "Mojumbo",
+    "retained": false
+  },
+  {
+    "id": 466,
+    "english": "Electivire",
+    "kana": "エレキブル",
+    "hepburn": "Erekiburu",
+    "trademark": "Elekible",
+    "retained": false
+  },
+  {
+    "id": 467,
+    "english": "Magmortar",
+    "kana": "ブーバーン",
+    "hepburn": "Būbān",
+    "trademark": "Booburn",
+    "retained": false
+  },
+  {
+    "id": 468,
+    "english": "Togekiss",
+    "kana": "トゲキッス",
+    "hepburn": "Togekissu",
+    "trademark": "Togekiss",
+    "retained": true
+  },
+  {
+    "id": 469,
+    "english": "Yanmega",
+    "kana": "メガヤンマ",
+    "hepburn": "Megayanma",
+    "trademark": "Megayanma",
+    "retained": false
+  },
+  {
+    "id": 470,
+    "english": "Leafeon",
+    "kana": "リーフィア",
+    "hepburn": "Rīfia",
+    "trademark": "Leafia",
+    "retained": false
+  },
+  {
+    "id": 471,
+    "english": "Glaceon",
+    "kana": "グレイシア",
+    "hepburn": "Gureishia",
+    "trademark": "Glacia",
+    "retained": false
+  },
+  {
+    "id": 472,
+    "english": "Gliscor",
+    "kana": "グライオン",
+    "hepburn": "Guraion",
+    "trademark": "Glion",
+    "retained": false
+  },
+  {
+    "id": 473,
+    "english": "Mamoswine",
+    "kana": "マンムー",
+    "hepburn": "Manmū",
+    "trademark": "Mammoo",
+    "retained": false
+  },
+  {
+    "id": 474,
+    "english": "Porygon-Z",
+    "kana": "ポリゴンＺ",
+    "hepburn": "Porigon Zetto",
+    "trademark": "Porygon-Z",
+    "retained": true
+  },
+  {
+    "id": 475,
+    "english": "Gallade",
+    "kana": "エルレイド",
+    "hepburn": "Erureido",
+    "trademark": "Erureido",
+    "retained": false
+  },
+  {
+    "id": 476,
+    "english": "Probopass",
+    "kana": "ダイノーズ",
+    "hepburn": "Dainōzu",
+    "trademark": "Dainose",
+    "retained": false
+  },
+  {
+    "id": 477,
+    "english": "Dusknoir",
+    "kana": "ヨノワール",
+    "hepburn": "Yonowāru",
+    "trademark": "Yonoir",
+    "retained": false
+  },
+  {
+    "id": 478,
+    "english": "Froslass",
+    "kana": "ユキメノコ",
+    "hepburn": "Yukimenoko",
+    "trademark": "Yukimenoko",
+    "retained": false
+  },
+  {
+    "id": 479,
+    "english": "Rotom",
+    "kana": "ロトム",
+    "hepburn": "Rotomu",
+    "trademark": "Rotom",
+    "retained": true
+  },
+  {
+    "id": 480,
+    "english": "Uxie",
+    "kana": "ユクシー",
+    "hepburn": "Yukushī",
+    "trademark": "Yuxie",
+    "retained": false
+  },
+  {
+    "id": 481,
+    "english": "Mesprit",
+    "kana": "エムリット",
+    "hepburn": "Emuritto",
+    "trademark": "Emrit",
+    "retained": false
+  },
+  {
+    "id": 482,
+    "english": "Azelf",
+    "kana": "アグノム",
+    "hepburn": "Agunomu",
+    "trademark": "Agnome",
+    "retained": false
+  },
+  {
+    "id": 483,
+    "english": "Dialga",
+    "kana": "ディアルガ",
+    "hepburn": "Diaruga",
+    "trademark": "Dialga",
+    "retained": true
+  },
+  {
+    "id": 484,
+    "english": "Palkia",
+    "kana": "パルキア",
+    "hepburn": "Parukia",
+    "trademark": "Palkia",
+    "retained": true
+  },
+  {
+    "id": 485,
+    "english": "Heatran",
+    "kana": "ヒードラン",
+    "hepburn": "Hīdoran",
+    "trademark": "Heatran",
+    "retained": true
+  },
+  {
+    "id": 486,
+    "english": "Regigigas",
+    "kana": "レジギガス",
+    "hepburn": "Rejigigasu",
+    "trademark": "Regigigas",
+    "retained": true
+  },
+  {
+    "id": 487,
+    "english": "Giratina",
+    "kana": "ギラティナ",
+    "hepburn": "Giratina",
+    "trademark": "Giratina",
+    "retained": true
+  },
+  {
+    "id": 488,
+    "english": "Cresselia",
+    "kana": "クレセリア",
+    "hepburn": "Kureseria",
+    "trademark": "Cresselia",
+    "retained": true
+  },
+  {
+    "id": 489,
+    "english": "Phione",
+    "kana": "フィオネ",
+    "hepburn": "Fione",
+    "trademark": "Phione",
+    "retained": true
+  },
+  {
+    "id": 490,
+    "english": "Manaphy",
+    "kana": "マナフィ",
+    "hepburn": "Manafi",
+    "trademark": "Manaphy",
+    "retained": true
+  },
+  {
+    "id": 491,
+    "english": "Darkrai",
+    "kana": "ダークライ",
+    "hepburn": "Dākurai",
+    "trademark": "Darkrai",
+    "retained": true
+  },
+  {
+    "id": 492,
+    "english": "Shaymin",
+    "kana": "シェイミ",
+    "hepburn": "Sheimi",
+    "trademark": "Shaymin",
+    "retained": true
+  },
+  {
+    "id": 493,
+    "english": "Arceus",
+    "kana": "アルセウス",
+    "hepburn": "Aruseusu",
+    "trademark": "Arceus",
+    "retained": true
+  },
+  {
+    "id": 494,
+    "english": "Victini",
+    "kana": "ビクティニ",
+    "hepburn": "Bikutini",
+    "trademark": "Victini",
+    "retained": true
+  },
+  {
+    "id": 495,
+    "english": "Snivy",
+    "kana": "ツタージャ",
+    "hepburn": "Tsutāja",
+    "trademark": "Tsutarja",
+    "retained": false
+  },
+  {
+    "id": 496,
+    "english": "Servine",
+    "kana": "ジャノビー",
+    "hepburn": "Janobī",
+    "trademark": "Janovy",
+    "retained": false
+  },
+  {
+    "id": 497,
+    "english": "Serperior",
+    "kana": "ジャローダ",
+    "hepburn": "Jarōda",
+    "trademark": "Jalorda",
+    "retained": false
+  },
+  {
+    "id": 498,
+    "english": "Tepig",
+    "kana": "ポカブ",
+    "hepburn": "Pokabu",
+    "trademark": "Pokabu",
+    "retained": false
+  },
+  {
+    "id": 499,
+    "english": "Pignite",
+    "kana": "チャオブー",
+    "hepburn": "Chaobū",
+    "trademark": "Chaoboo",
+    "retained": false
+  },
+  {
+    "id": 500,
+    "english": "Emboar",
+    "kana": "エンブオー",
+    "hepburn": "Enbuō",
+    "trademark": "Enbuoh",
+    "retained": false
+  },
+  {
+    "id": 501,
+    "english": "Oshawott",
+    "kana": "ミジュマル",
+    "hepburn": "Mijumaru",
+    "trademark": "Mijumaru",
+    "retained": false
+  },
+  {
+    "id": 502,
+    "english": "Dewott",
+    "kana": "フタチマル",
+    "hepburn": "Futachimaru",
+    "trademark": "Futachimaru",
+    "retained": false
+  },
+  {
+    "id": 503,
+    "english": "Samurott",
+    "kana": "ダイケンキ",
+    "hepburn": "Daikenki",
+    "trademark": "Daikenki",
+    "retained": false
+  },
+  {
+    "id": 504,
+    "english": "Patrat",
+    "kana": "ミネズミ",
+    "hepburn": "Minezumi",
+    "trademark": "Minezumi",
+    "retained": false
+  },
+  {
+    "id": 505,
+    "english": "Watchog",
+    "kana": "ミルホッグ",
+    "hepburn": "Miruhoggu",
+    "trademark": "Miruhog",
+    "retained": false
+  },
+  {
+    "id": 506,
+    "english": "Lillipup",
+    "kana": "ヨーテリー",
+    "hepburn": "Yōterī",
+    "trademark": "Yorterrie",
+    "retained": false
+  },
+  {
+    "id": 507,
+    "english": "Herdier",
+    "kana": "ハーデリア",
+    "hepburn": "Hāderia",
+    "trademark": "Herderrie",
+    "retained": false
+  },
+  {
+    "id": 508,
+    "english": "Stoutland",
+    "kana": "ムーランド",
+    "hepburn": "Mūrando",
+    "trademark": "Mooland",
+    "retained": false
+  },
+  {
+    "id": 509,
+    "english": "Purrloin",
+    "kana": "チョロネコ",
+    "hepburn": "Choroneko",
+    "trademark": "Choroneko",
+    "retained": false
+  },
+  {
+    "id": 510,
+    "english": "Liepard",
+    "kana": "レパルダス",
+    "hepburn": "Reparudasu",
+    "trademark": "Lepardas",
+    "retained": false
+  },
+  {
+    "id": 511,
+    "english": "Pansage",
+    "kana": "ヤナップ",
+    "hepburn": "Yanappu",
+    "trademark": "Yanappu",
+    "retained": false
+  },
+  {
+    "id": 512,
+    "english": "Simisage",
+    "kana": "ヤナッキー",
+    "hepburn": "Yanakkī",
+    "trademark": "Yanakkie",
+    "retained": false
+  },
+  {
+    "id": 513,
+    "english": "Pansear",
+    "kana": "バオップ",
+    "hepburn": "Baoppu",
+    "trademark": "Baoppu",
+    "retained": false
+  },
+  {
+    "id": 514,
+    "english": "Simisear",
+    "kana": "バオッキー",
+    "hepburn": "Baokkī",
+    "trademark": "Baokkie",
+    "retained": false
+  },
+  {
+    "id": 515,
+    "english": "Panpour",
+    "kana": "ヒヤップ",
+    "hepburn": "Hiyappu",
+    "trademark": "Hiyappu",
+    "retained": false
+  },
+  {
+    "id": 516,
+    "english": "Simipour",
+    "kana": "ヒヤッキー",
+    "hepburn": "Hiyakkī",
+    "trademark": "Hiyakkie",
+    "retained": false
+  },
+  {
+    "id": 517,
+    "english": "Munna",
+    "kana": "ムンナ",
+    "hepburn": "Munna",
+    "trademark": "Munna",
+    "retained": true
+  },
+  {
+    "id": 518,
+    "english": "Musharna",
+    "kana": "ムシャーナ",
+    "hepburn": "Mushāna",
+    "trademark": "Musharna",
+    "retained": true
+  },
+  {
+    "id": 519,
+    "english": "Pidove",
+    "kana": "マメパト",
+    "hepburn": "Mamepato",
+    "trademark": "Mamepato",
+    "retained": false
+  },
+  {
+    "id": 520,
+    "english": "Tranquill",
+    "kana": "ハトーボー",
+    "hepburn": "Hatōbō",
+    "trademark": "Hatoboh",
+    "retained": false
+  },
+  {
+    "id": 521,
+    "english": "Unfezant",
+    "kana": "ケンホロウ",
+    "hepburn": "Kenhorō",
+    "trademark": "Kenhallow",
+    "retained": false
+  },
+  {
+    "id": 522,
+    "english": "Blitzle",
+    "kana": "シママ",
+    "hepburn": "Shimama",
+    "trademark": "Shimama",
+    "retained": false
+  },
+  {
+    "id": 523,
+    "english": "Zebstrika",
+    "kana": "ゼブライカ",
+    "hepburn": "Zeburaika",
+    "trademark": "Zebraika",
+    "retained": false
+  },
+  {
+    "id": 524,
+    "english": "Roggenrola",
+    "kana": "ダンゴロ",
+    "hepburn": "Dangoro",
+    "trademark": "Dangoro",
+    "retained": false
+  },
+  {
+    "id": 525,
+    "english": "Boldore",
+    "kana": "ガントル",
+    "hepburn": "Gantoru",
+    "trademark": "Gantle",
+    "retained": false
+  },
+  {
+    "id": 526,
+    "english": "Gigalith",
+    "kana": "ギガイアス",
+    "hepburn": "Gigaiasu",
+    "trademark": "Gigaiath",
+    "retained": false
+  },
+  {
+    "id": 527,
+    "english": "Woobat",
+    "kana": "コロモリ",
+    "hepburn": "Koromori",
+    "trademark": "Koromori",
+    "retained": false
+  },
+  {
+    "id": 528,
+    "english": "Swoobat",
+    "kana": "ココロモリ",
+    "hepburn": "Kokoromori",
+    "trademark": "Kokoromori",
+    "retained": false
+  },
+  {
+    "id": 529,
+    "english": "Drilbur",
+    "kana": "モグリュー",
+    "hepburn": "Moguryū",
+    "trademark": "Mogurew",
+    "retained": false
+  },
+  {
+    "id": 530,
+    "english": "Excadrill",
+    "kana": "ドリュウズ",
+    "hepburn": "Doryūzu",
+    "trademark": "Doryuzu",
+    "retained": false
+  },
+  {
+    "id": 531,
+    "english": "Audino",
+    "kana": "タブンネ",
+    "hepburn": "Tabunne",
+    "trademark": "Tabunne",
+    "retained": false
+  },
+  {
+    "id": 532,
+    "english": "Timburr",
+    "kana": "ドッコラー",
+    "hepburn": "Dokkorā",
+    "trademark": "Dokkorer",
+    "retained": false
+  },
+  {
+    "id": 533,
+    "english": "Gurdurr",
+    "kana": "ドテッコツ",
+    "hepburn": "Dotekkotsu",
+    "trademark": "Dotekkotsu",
+    "retained": false
+  },
+  {
+    "id": 534,
+    "english": "Conkeldurr",
+    "kana": "ローブシン",
+    "hepburn": "Rōbushin",
+    "trademark": "Roubushin",
+    "retained": false
+  },
+  {
+    "id": 535,
+    "english": "Tympole",
+    "kana": "オタマロ",
+    "hepburn": "Otamaro",
+    "trademark": "Otamaro",
+    "retained": false
+  },
+  {
+    "id": 536,
+    "english": "Palpitoad",
+    "kana": "ガマガル",
+    "hepburn": "Gamagaru",
+    "trademark": "Gamagaru",
+    "retained": false
+  },
+  {
+    "id": 537,
+    "english": "Seismitoad",
+    "kana": "ガマゲロゲ",
+    "hepburn": "Gamageroge",
+    "trademark": "Gamageroge",
+    "retained": false
+  },
+  {
+    "id": 538,
+    "english": "Throh",
+    "kana": "ナゲキ",
+    "hepburn": "Nageki",
+    "trademark": "Nageki",
+    "retained": false
+  },
+  {
+    "id": 539,
+    "english": "Sawk",
+    "kana": "ダゲキ",
+    "hepburn": "Dageki",
+    "trademark": "Dageki",
+    "retained": false
+  },
+  {
+    "id": 540,
+    "english": "Sewaddle",
+    "kana": "クルミル",
+    "hepburn": "Kurumiru",
+    "trademark": "Kurumiru",
+    "retained": false
+  },
+  {
+    "id": 541,
+    "english": "Swadloon",
+    "kana": "クルマユ",
+    "hepburn": "Kurumayu",
+    "trademark": "Kurumayu",
+    "retained": false
+  },
+  {
+    "id": 542,
+    "english": "Leavanny",
+    "kana": "ハハコモリ",
+    "hepburn": "Hahakomori",
+    "trademark": "Hahakomori",
+    "retained": false
+  },
+  {
+    "id": 543,
+    "english": "Venipede",
+    "kana": "フシデ",
+    "hepburn": "Fushide",
+    "trademark": "Fushide",
+    "retained": false
+  },
+  {
+    "id": 544,
+    "english": "Whirlipede",
+    "kana": "ホイーガ",
+    "hepburn": "Hoīga",
+    "trademark": "Wheega",
+    "retained": false
+  },
+  {
+    "id": 545,
+    "english": "Scolipede",
+    "kana": "ペンドラー",
+    "hepburn": "Pendorā",
+    "trademark": "Pendror",
+    "retained": false
+  },
+  {
+    "id": 546,
+    "english": "Cottonee",
+    "kana": "モンメン",
+    "hepburn": "Monmen",
+    "trademark": "Monmen",
+    "retained": false
+  },
+  {
+    "id": 547,
+    "english": "Whimsicott",
+    "kana": "エルフーン",
+    "hepburn": "Erufūn",
+    "trademark": "Elfuun",
+    "retained": false
+  },
+  {
+    "id": 548,
+    "english": "Petilil",
+    "kana": "チュリネ",
+    "hepburn": "Churine",
+    "trademark": "Churine",
+    "retained": false
+  },
+  {
+    "id": 549,
+    "english": "Lilligant",
+    "kana": "ドレディア",
+    "hepburn": "Doredia",
+    "trademark": "Dredear",
+    "retained": false
+  },
+  {
+    "id": 550,
+    "english": "Basculin",
+    "kana": "バスラオ",
+    "hepburn": "Basurao",
+    "trademark": "Bassrao",
+    "retained": false
+  },
+  {
+    "id": 551,
+    "english": "Sandile",
+    "kana": "メグロコ",
+    "hepburn": "Meguroko",
+    "trademark": "Meguroco",
+    "retained": false
+  },
+  {
+    "id": 552,
+    "english": "Krokorok",
+    "kana": "ワルビル",
+    "hepburn": "Warubiru",
+    "trademark": "Waruvile",
+    "retained": false
+  },
+  {
+    "id": 553,
+    "english": "Krookodile",
+    "kana": "ワルビアル",
+    "hepburn": "Warubiaru",
+    "trademark": "Waruvial",
+    "retained": false
+  },
+  {
+    "id": 554,
+    "english": "Darumaka",
+    "kana": "ダルマッカ",
+    "hepburn": "Darumakka",
+    "trademark": "Darumakka",
+    "retained": false
+  },
+  {
+    "id": 555,
+    "english": "Darmanitan",
+    "kana": "ヒヒダルマ",
+    "hepburn": "Hihidaruma",
+    "trademark": "Hihidaruma",
+    "retained": false
+  },
+  {
+    "id": 556,
+    "english": "Maractus",
+    "kana": "マラカッチ",
+    "hepburn": "Marakatchi",
+    "trademark": "Maracacchi",
+    "retained": false
+  },
+  {
+    "id": 557,
+    "english": "Dwebble",
+    "kana": "イシズマイ",
+    "hepburn": "Ishizumai",
+    "trademark": "Ishizumai",
+    "retained": false
+  },
+  {
+    "id": 558,
+    "english": "Crustle",
+    "kana": "イワパレス",
+    "hepburn": "Iwaparesu",
+    "trademark": "Iwapalace",
+    "retained": false
+  },
+  {
+    "id": 559,
+    "english": "Scraggy",
+    "kana": "ズルッグ",
+    "hepburn": "Zuruggu",
+    "trademark": "Zuruggu",
+    "retained": false
+  },
+  {
+    "id": 560,
+    "english": "Scrafty",
+    "kana": "ズルズキン",
+    "hepburn": "Zuruzukin",
+    "trademark": "Zuruzukin",
+    "retained": false
+  },
+  {
+    "id": 561,
+    "english": "Sigilyph",
+    "kana": "シンボラー",
+    "hepburn": "Shinborā",
+    "trademark": "Symboler",
+    "retained": false
+  },
+  {
+    "id": 562,
+    "english": "Yamask",
+    "kana": "デスマス",
+    "hepburn": "Desumasu",
+    "trademark": "Desumasu",
+    "retained": false
+  },
+  {
+    "id": 563,
+    "english": "Cofagrigus",
+    "kana": "デスカーン",
+    "hepburn": "Desukān",
+    "trademark": "Desukarn",
+    "retained": false
+  },
+  {
+    "id": 564,
+    "english": "Tirtouga",
+    "kana": "プロトーガ",
+    "hepburn": "Purotōga",
+    "trademark": "Protoga",
+    "retained": false
+  },
+  {
+    "id": 565,
+    "english": "Carracosta",
+    "kana": "アバゴーラ",
+    "hepburn": "Abagōra",
+    "trademark": "Abagoura",
+    "retained": false
+  },
+  {
+    "id": 566,
+    "english": "Archen",
+    "kana": "アーケン",
+    "hepburn": "Āken",
+    "trademark": "Archen",
+    "retained": true
+  },
+  {
+    "id": 567,
+    "english": "Archeops",
+    "kana": "アーケオス",
+    "hepburn": "Ākeosu",
+    "trademark": "Archeos",
+    "retained": false
+  },
+  {
+    "id": 568,
+    "english": "Trubbish",
+    "kana": "ヤブクロン",
+    "hepburn": "Yabukuron",
+    "trademark": "Yabukuron",
+    "retained": false
+  },
+  {
+    "id": 569,
+    "english": "Garbodor",
+    "kana": "ダストダス",
+    "hepburn": "Dasutodasu",
+    "trademark": "Dustdas",
+    "retained": false
+  },
+  {
+    "id": 570,
+    "english": "Zorua",
+    "kana": "ゾロア",
+    "hepburn": "Zoroa",
+    "trademark": "Zorua",
+    "retained": true
+  },
+  {
+    "id": 571,
+    "english": "Zoroark",
+    "kana": "ゾロアーク",
+    "hepburn": "Zoroāku",
+    "trademark": "Zoroark",
+    "retained": true
+  },
+  {
+    "id": 572,
+    "english": "Minccino",
+    "kana": "チラーミィ",
+    "hepburn": "Chirāmī",
+    "trademark": "Chillarmy",
+    "retained": false
+  },
+  {
+    "id": 573,
+    "english": "Cinccino",
+    "kana": "チラチーノ",
+    "hepburn": "Chirachīno",
+    "trademark": "Chillaccino",
+    "retained": false
+  },
+  {
+    "id": 574,
+    "english": "Gothita",
+    "kana": "ゴチム",
+    "hepburn": "Gochimu",
+    "trademark": "Gothimu",
+    "retained": false
+  },
+  {
+    "id": 575,
+    "english": "Gothorita",
+    "kana": "ゴチミル",
+    "hepburn": "Gochimiru",
+    "trademark": "Gothimiru",
+    "retained": false
+  },
+  {
+    "id": 576,
+    "english": "Gothitelle",
+    "kana": "ゴチルゼル",
+    "hepburn": "Gochiruzeru",
+    "trademark": "Gothiruselle",
+    "retained": false
+  },
+  {
+    "id": 577,
+    "english": "Solosis",
+    "kana": "ユニラン",
+    "hepburn": "Yuniran",
+    "trademark": "Uniran",
+    "retained": false
+  },
+  {
+    "id": 578,
+    "english": "Duosion",
+    "kana": "ダブラン",
+    "hepburn": "Daburan",
+    "trademark": "Doublan",
+    "retained": false
+  },
+  {
+    "id": 579,
+    "english": "Reuniclus",
+    "kana": "ランクルス",
+    "hepburn": "Rankurusu",
+    "trademark": "Lanculus",
+    "retained": false
+  },
+  {
+    "id": 580,
+    "english": "Ducklett",
+    "kana": "コアルヒー",
+    "hepburn": "Koaruhī",
+    "trademark": "Koaruhie",
+    "retained": false
+  },
+  {
+    "id": 581,
+    "english": "Swanna",
+    "kana": "スワンナ",
+    "hepburn": "Suwanna",
+    "trademark": "Swanna",
+    "retained": true
+  },
+  {
+    "id": 582,
+    "english": "Vanillite",
+    "kana": "バニプッチ",
+    "hepburn": "Baniputchi",
+    "trademark": "Vanipeti",
+    "retained": false
+  },
+  {
+    "id": 583,
+    "english": "Vanillish",
+    "kana": "バニリッチ",
+    "hepburn": "Baniritchi",
+    "trademark": "Vanirich",
+    "retained": false
+  },
+  {
+    "id": 584,
+    "english": "Vanilluxe",
+    "kana": "バイバニラ",
+    "hepburn": "Baibanira",
+    "trademark": "Baivanilla",
+    "retained": false
+  },
+  {
+    "id": 585,
+    "english": "Deerling",
+    "kana": "シキジカ",
+    "hepburn": "Shikijika",
+    "trademark": "Shikijika",
+    "retained": false
+  },
+  {
+    "id": 586,
+    "english": "Sawsbuck",
+    "kana": "メブキジカ",
+    "hepburn": "Mebukijika",
+    "trademark": "Mebukijika",
+    "retained": false
+  },
+  {
+    "id": 587,
+    "english": "Emolga",
+    "kana": "エモンガ",
+    "hepburn": "Emonga",
+    "trademark": "Emolga",
+    "retained": true
+  },
+  {
+    "id": 588,
+    "english": "Karrablast",
+    "kana": "カブルモ",
+    "hepburn": "Kaburumo",
+    "trademark": "Kaburumo",
+    "retained": false
+  },
+  {
+    "id": 589,
+    "english": "Escavalier",
+    "kana": "シュバルゴ",
+    "hepburn": "Shubarugo",
+    "trademark": "Chevargo",
+    "retained": false
+  },
+  {
+    "id": 590,
+    "english": "Foongus",
+    "kana": "タマゲタケ",
+    "hepburn": "Tamagetake",
+    "trademark": "Tamagetake",
+    "retained": false
+  },
+  {
+    "id": 591,
+    "english": "Amoonguss",
+    "kana": "モロバレル",
+    "hepburn": "Morobareru",
+    "trademark": "Morobareru",
+    "retained": false
+  },
+  {
+    "id": 592,
+    "english": "Frillish",
+    "kana": "プルリル",
+    "hepburn": "Pururiru",
+    "trademark": "Pururill",
+    "retained": false
+  },
+  {
+    "id": 593,
+    "english": "Jellicent",
+    "kana": "ブルンゲル",
+    "hepburn": "Burungeru",
+    "trademark": "Burungel",
+    "retained": false
+  },
+  {
+    "id": 594,
+    "english": "Alomomola",
+    "kana": "ママンボウ",
+    "hepburn": "Mamanbō",
+    "trademark": "Mamanbou",
+    "retained": false
+  },
+  {
+    "id": 595,
+    "english": "Joltik",
+    "kana": "バチュル",
+    "hepburn": "Bachuru",
+    "trademark": "Bachuru",
+    "retained": false
+  },
+  {
+    "id": 596,
+    "english": "Galvantula",
+    "kana": "デンチュラ",
+    "hepburn": "Denchura",
+    "trademark": "Dentula",
+    "retained": false
+  },
+  {
+    "id": 597,
+    "english": "Ferroseed",
+    "kana": "テッシード",
+    "hepburn": "Tesshīdo",
+    "trademark": "Tesseed",
+    "retained": false
+  },
+  {
+    "id": 598,
+    "english": "Ferrothorn",
+    "kana": "ナットレイ",
+    "hepburn": "Nattorei",
+    "trademark": "Nutrey",
+    "retained": false
+  },
+  {
+    "id": 599,
+    "english": "Klink",
+    "kana": "ギアル",
+    "hepburn": "Giaru",
+    "trademark": "Giaru",
+    "retained": false
+  },
+  {
+    "id": 600,
+    "english": "Klang",
+    "kana": "ギギアル",
+    "hepburn": "Gigiaru",
+    "trademark": "Gigiaru",
+    "retained": false
+  },
+  {
+    "id": 601,
+    "english": "Klinklang",
+    "kana": "ギギギアル",
+    "hepburn": "Gigigiaru",
+    "trademark": "Gigigiaru",
+    "retained": false
+  },
+  {
+    "id": 602,
+    "english": "Tynamo",
+    "kana": "シビシラス",
+    "hepburn": "Shibishirasu",
+    "trademark": "Shibishirasu",
+    "retained": false
+  },
+  {
+    "id": 603,
+    "english": "Eelektrik",
+    "kana": "シビビール",
+    "hepburn": "Shibibīru",
+    "trademark": "Shibibeel",
+    "retained": false
+  },
+  {
+    "id": 604,
+    "english": "Eelektross",
+    "kana": "シビルドン",
+    "hepburn": "Shibirudon",
+    "trademark": "Shibirudon",
+    "retained": false
+  },
+  {
+    "id": 605,
+    "english": "Elgyem",
+    "kana": "リグレー",
+    "hepburn": "Rigurē",
+    "trademark": "Ligray",
+    "retained": false
+  },
+  {
+    "id": 606,
+    "english": "Beheeyem",
+    "kana": "オーベム",
+    "hepburn": "Ōbemu",
+    "trademark": "Ohbem",
+    "retained": false
+  },
+  {
+    "id": 607,
+    "english": "Litwick",
+    "kana": "ヒトモシ",
+    "hepburn": "Hitomoshi",
+    "trademark": "Hitomoshi",
+    "retained": false
+  },
+  {
+    "id": 608,
+    "english": "Lampent",
+    "kana": "ランプラー",
+    "hepburn": "Ranpurā",
+    "trademark": "Lampler",
+    "retained": false
+  },
+  {
+    "id": 609,
+    "english": "Chandelure",
+    "kana": "シャンデラ",
+    "hepburn": "Shandera",
+    "trademark": "Chandela",
+    "retained": false
+  },
+  {
+    "id": 610,
+    "english": "Axew",
+    "kana": "キバゴ",
+    "hepburn": "Kibago",
+    "trademark": "Kibago",
+    "retained": false
+  },
+  {
+    "id": 611,
+    "english": "Fraxure",
+    "kana": "オノンド",
+    "hepburn": "Onondo",
+    "trademark": "Onondo",
+    "retained": false
+  },
+  {
+    "id": 612,
+    "english": "Haxorus",
+    "kana": "オノノクス",
+    "hepburn": "Ononokusu",
+    "trademark": "Ononokus",
+    "retained": false
+  },
+  {
+    "id": 613,
+    "english": "Cubchoo",
+    "kana": "クマシュン",
+    "hepburn": "Kumashun",
+    "trademark": "Kumasyun",
+    "retained": false
+  },
+  {
+    "id": 614,
+    "english": "Beartic",
+    "kana": "ツンベアー",
+    "hepburn": "Tsunbeā",
+    "trademark": "Tunbear",
+    "retained": false
+  },
+  {
+    "id": 615,
+    "english": "Cryogonal",
+    "kana": "フリージオ",
+    "hepburn": "Furījio",
+    "trademark": "Freegeo",
+    "retained": false
+  },
+  {
+    "id": 616,
+    "english": "Shelmet",
+    "kana": "チョボマキ",
+    "hepburn": "Chobomaki",
+    "trademark": "Chobomaki",
+    "retained": false
+  },
+  {
+    "id": 617,
+    "english": "Accelgor",
+    "kana": "アギルダー",
+    "hepburn": "Agirudā",
+    "trademark": "Agilder",
+    "retained": false
+  },
+  {
+    "id": 618,
+    "english": "Stunfisk",
+    "kana": "マッギョ",
+    "hepburn": "Maggyo",
+    "trademark": "Maggyo",
+    "retained": false
+  },
+  {
+    "id": 619,
+    "english": "Mienfoo",
+    "kana": "コジョフー",
+    "hepburn": "Kojofū",
+    "trademark": "Kojofu",
+    "retained": false
+  },
+  {
+    "id": 620,
+    "english": "Mienshao",
+    "kana": "コジョンド",
+    "hepburn": "Kojondo",
+    "trademark": "Kojondo",
+    "retained": false
+  },
+  {
+    "id": 621,
+    "english": "Druddigon",
+    "kana": "クリムガン",
+    "hepburn": "Kurimugan",
+    "trademark": "Crimgan",
+    "retained": false
+  },
+  {
+    "id": 622,
+    "english": "Golett",
+    "kana": "ゴビット",
+    "hepburn": "Gobitto",
+    "trademark": "Gobit",
+    "retained": false
+  },
+  {
+    "id": 623,
+    "english": "Golurk",
+    "kana": "ゴルーグ",
+    "hepburn": "Gorūgu",
+    "trademark": "Goloog",
+    "retained": false
+  },
+  {
+    "id": 624,
+    "english": "Pawniard",
+    "kana": "コマタナ",
+    "hepburn": "Komatana",
+    "trademark": "Komatana",
+    "retained": false
+  },
+  {
+    "id": 625,
+    "english": "Bisharp",
+    "kana": "キリキザン",
+    "hepburn": "Kirikizan",
+    "trademark": "Kirikizan",
+    "retained": false
+  },
+  {
+    "id": 626,
+    "english": "Bouffalant",
+    "kana": "バッフロン",
+    "hepburn": "Baffuron",
+    "trademark": "Buffron",
+    "retained": false
+  },
+  {
+    "id": 627,
+    "english": "Rufflet",
+    "kana": "ワシボン",
+    "hepburn": "Washibon",
+    "trademark": "Washibon",
+    "retained": false
+  },
+  {
+    "id": 628,
+    "english": "Braviary",
+    "kana": "ウォーグル",
+    "hepburn": "Wōguru",
+    "trademark": "Warrgle",
+    "retained": false
+  },
+  {
+    "id": 629,
+    "english": "Vullaby",
+    "kana": "バルチャイ",
+    "hepburn": "Baruchai",
+    "trademark": "Valchai",
+    "retained": false
+  },
+  {
+    "id": 630,
+    "english": "Mandibuzz",
+    "kana": "バルジーナ",
+    "hepburn": "Barujīna",
+    "trademark": "Vulgina",
+    "retained": false
+  },
+  {
+    "id": 631,
+    "english": "Heatmor",
+    "kana": "クイタラン",
+    "hepburn": "Kuitaran",
+    "trademark": "Kuitaran",
+    "retained": false
+  },
+  {
+    "id": 632,
+    "english": "Durant",
+    "kana": "アイアント",
+    "hepburn": "Aianto",
+    "trademark": "Aiant",
+    "retained": false
+  },
+  {
+    "id": 633,
+    "english": "Deino",
+    "kana": "モノズ",
+    "hepburn": "Monozu",
+    "trademark": "Monozu",
+    "retained": false
+  },
+  {
+    "id": 634,
+    "english": "Zweilous",
+    "kana": "ジヘッド",
+    "hepburn": "Jiheddo",
+    "trademark": "Dihead",
+    "retained": false
+  },
+  {
+    "id": 635,
+    "english": "Hydreigon",
+    "kana": "サザンドラ",
+    "hepburn": "Sazandora",
+    "trademark": "Sazandora",
+    "retained": false
+  },
+  {
+    "id": 636,
+    "english": "Larvesta",
+    "kana": "メラルバ",
+    "hepburn": "Meraruba",
+    "trademark": "Merlarva",
+    "retained": false
+  },
+  {
+    "id": 637,
+    "english": "Volcarona",
+    "kana": "ウルガモス",
+    "hepburn": "Urugamosu",
+    "trademark": "Ulgamoth",
+    "retained": false
+  },
+  {
+    "id": 638,
+    "english": "Cobalion",
+    "kana": "コバルオン",
+    "hepburn": "Kobaruon",
+    "trademark": "Cobalon",
+    "retained": false
+  },
+  {
+    "id": 639,
+    "english": "Terrakion",
+    "kana": "テラキオン",
+    "hepburn": "Terakion",
+    "trademark": "Terrakion",
+    "retained": true
+  },
+  {
+    "id": 640,
+    "english": "Virizion",
+    "kana": "ビリジオン",
+    "hepburn": "Birijion",
+    "trademark": "Virizion",
+    "retained": true
+  },
+  {
+    "id": 641,
+    "english": "Tornadus",
+    "kana": "トルネロス",
+    "hepburn": "Torunerosu",
+    "trademark": "Tornelos",
+    "retained": false
+  },
+  {
+    "id": 642,
+    "english": "Thundurus",
+    "kana": "ボルトロス",
+    "hepburn": "Borutorosu",
+    "trademark": "Voltolos",
+    "retained": false
+  },
+  {
+    "id": 643,
+    "english": "Reshiram",
+    "kana": "レシラム",
+    "hepburn": "Reshiramu",
+    "trademark": "Reshiram",
+    "retained": true
+  },
+  {
+    "id": 644,
+    "english": "Zekrom",
+    "kana": "ゼクロム",
+    "hepburn": "Zekuromu",
+    "trademark": "Zekrom",
+    "retained": true
+  },
+  {
+    "id": 645,
+    "english": "Landorus",
+    "kana": "ランドロス",
+    "hepburn": "Randorosu",
+    "trademark": "Landlos",
+    "retained": false
+  },
+  {
+    "id": 646,
+    "english": "Kyurem",
+    "kana": "キュレム",
+    "hepburn": "Kyuremu",
+    "trademark": "Kyurem",
+    "retained": true
+  },
+  {
+    "id": 647,
+    "english": "Keldeo",
+    "kana": "ケルディオ",
+    "hepburn": "Kerudio",
+    "trademark": "Keldeo",
+    "retained": true
+  },
+  {
+    "id": 648,
+    "english": "Meloetta",
+    "kana": "メロエッタ",
+    "hepburn": "Meroetta",
+    "trademark": "Meloetta",
+    "retained": true
+  },
+  {
+    "id": 649,
+    "english": "Genesect",
+    "kana": "ゲノセクト",
+    "hepburn": "Genosekuto",
+    "trademark": "Genesect",
+    "retained": true
+  },
+  {
+    "id": 650,
+    "english": "Chespin",
+    "kana": "ハリマロン",
+    "hepburn": "Harimaron",
+    "trademark": "Harimaron",
+    "retained": false
+  },
+  {
+    "id": 651,
+    "english": "Quilladin",
+    "kana": "ハリボーグ",
+    "hepburn": "Haribōgu",
+    "trademark": "Hariborg",
+    "retained": false
+  },
+  {
+    "id": 652,
+    "english": "Chesnaught",
+    "kana": "ブリガロン",
+    "hepburn": "Burigaron",
+    "trademark": "Brigarron",
+    "retained": false
+  },
+  {
+    "id": 653,
+    "english": "Fennekin",
+    "kana": "フォッコ",
+    "hepburn": "Fokko",
+    "trademark": "Fokko",
+    "retained": false
+  },
+  {
+    "id": 654,
+    "english": "Braixen",
+    "kana": "テールナー",
+    "hepburn": "Tērunā",
+    "trademark": "Tairenar",
+    "retained": false
+  },
+  {
+    "id": 655,
+    "english": "Delphox",
+    "kana": "マフォクシー",
+    "hepburn": "Mafokushī",
+    "trademark": "Mahoxy",
+    "retained": false
+  },
+  {
+    "id": 656,
+    "english": "Froakie",
+    "kana": "ケロマツ",
+    "hepburn": "Keromatsu",
+    "trademark": "Keromatsu",
+    "retained": false
+  },
+  {
+    "id": 657,
+    "english": "Frogadier",
+    "kana": "ゲコガシラ",
+    "hepburn": "Gekogashira",
+    "trademark": "Gekogashira",
+    "retained": false
+  },
+  {
+    "id": 658,
+    "english": "Greninja",
+    "kana": "ゲッコウガ",
+    "hepburn": "Gekkōga",
+    "trademark": "Gekkouga",
+    "retained": false
+  },
+  {
+    "id": 659,
+    "english": "Bunnelby",
+    "kana": "ホルビー",
+    "hepburn": "Horubī",
+    "trademark": "Horubee",
+    "retained": false
+  },
+  {
+    "id": 660,
+    "english": "Diggersby",
+    "kana": "ホルード",
+    "hepburn": "Horūdo",
+    "trademark": "Horudo",
+    "retained": false
+  },
+  {
+    "id": 661,
+    "english": "Fletchling",
+    "kana": "ヤヤコマ",
+    "hepburn": "Yayakoma",
+    "trademark": "Yayakoma",
+    "retained": false
+  },
+  {
+    "id": 662,
+    "english": "Fletchinder",
+    "kana": "ヒノヤコマ",
+    "hepburn": "Hinoyakoma",
+    "trademark": "Hinoyakoma",
+    "retained": false
+  },
+  {
+    "id": 663,
+    "english": "Talonflame",
+    "kana": "ファイアロー",
+    "hepburn": "Faiarō",
+    "trademark": "Fiarrow",
+    "retained": false
+  },
+  {
+    "id": 664,
+    "english": "Scatterbug",
+    "kana": "コフキムシ",
+    "hepburn": "Kofukimushi",
+    "trademark": "Kofukimushi",
+    "retained": false
+  },
+  {
+    "id": 665,
+    "english": "Spewpa",
+    "kana": "コフーライ",
+    "hepburn": "Kofūrai",
+    "trademark": "Kofuurai",
+    "retained": false
+  },
+  {
+    "id": 666,
+    "english": "Vivillon",
+    "kana": "ビビヨン",
+    "hepburn": "Bibiyon",
+    "trademark": "Viviyon",
+    "retained": false
+  },
+  {
+    "id": 667,
+    "english": "Litleo",
+    "kana": "シシコ",
+    "hepburn": "Shishiko",
+    "trademark": "Shishiko",
+    "retained": false
+  },
+  {
+    "id": 668,
+    "english": "Pyroar",
+    "kana": "カエンジシ",
+    "hepburn": "Kaenjishi",
+    "trademark": "Kaenjishi",
+    "retained": false
+  },
+  {
+    "id": 669,
+    "english": "Flabébé",
+    "kana": "フラベベ",
+    "hepburn": "Furabebe",
+    "trademark": "Flabebe",
+    "retained": true
+  },
+  {
+    "id": 670,
+    "english": "Floette",
+    "kana": "フラエッテ",
+    "hepburn": "Furaette",
+    "trademark": "Floette",
+    "retained": true
+  },
+  {
+    "id": 671,
+    "english": "Florges",
+    "kana": "フラージェス",
+    "hepburn": "Furājesu",
+    "trademark": "Florges",
+    "retained": true
+  },
+  {
+    "id": 672,
+    "english": "Skiddo",
+    "kana": "メェークル",
+    "hepburn": "Mēkuru",
+    "trademark": "Meecle",
+    "retained": false
+  },
+  {
+    "id": 673,
+    "english": "Gogoat",
+    "kana": "ゴーゴート",
+    "hepburn": "Gōgōto",
+    "trademark": "Gogoat",
+    "retained": true
+  },
+  {
+    "id": 674,
+    "english": "Pancham",
+    "kana": "ヤンチャム",
+    "hepburn": "Yanchamu",
+    "trademark": "Yancham",
+    "retained": false
+  },
+  {
+    "id": 675,
+    "english": "Pangoro",
+    "kana": "ゴロンダ",
+    "hepburn": "Goronda",
+    "trademark": "Goronda",
+    "retained": false
+  },
+  {
+    "id": 676,
+    "english": "Furfrou",
+    "kana": "トリミアン",
+    "hepburn": "Torimian",
+    "trademark": "Trimmien",
+    "retained": false
+  },
+  {
+    "id": 677,
+    "english": "Espurr",
+    "kana": "ニャスパー",
+    "hepburn": "Nyasupā",
+    "trademark": "Nyasper",
+    "retained": false
+  },
+  {
+    "id": 678,
+    "english": "Meowstic",
+    "kana": "ニャオニクス",
+    "hepburn": "Nyaonikusu",
+    "trademark": "Nyaonix",
+    "retained": false
+  },
+  {
+    "id": 679,
+    "english": "Honedge",
+    "kana": "ヒトツキ",
+    "hepburn": "Hitotsuki",
+    "trademark": "Hitotsuki",
+    "retained": false
+  },
+  {
+    "id": 680,
+    "english": "Doublade",
+    "kana": "ニダンギル",
+    "hepburn": "Nidangiru",
+    "trademark": "Nidangill",
+    "retained": false
+  },
+  {
+    "id": 681,
+    "english": "Aegislash",
+    "kana": "ギルガルド",
+    "hepburn": "Girugarudo",
+    "trademark": "Gillgard",
+    "retained": false
+  },
+  {
+    "id": 682,
+    "english": "Spritzee",
+    "kana": "シュシュプ",
+    "hepburn": "Shushupu",
+    "trademark": "Shushupu",
+    "retained": false
+  },
+  {
+    "id": 683,
+    "english": "Aromatisse",
+    "kana": "フレフワン",
+    "hepburn": "Furefuwan",
+    "trademark": "Frefuwan",
+    "retained": false
+  },
+  {
+    "id": 684,
+    "english": "Swirlix",
+    "kana": "ペロッパフ",
+    "hepburn": "Peroppafu",
+    "trademark": "Peroppafu",
+    "retained": false
+  },
+  {
+    "id": 685,
+    "english": "Slurpuff",
+    "kana": "ペロリーム",
+    "hepburn": "Perorīmu",
+    "trademark": "Peroream",
+    "retained": false
+  },
+  {
+    "id": 686,
+    "english": "Inkay",
+    "kana": "マーイーカ",
+    "hepburn": "Māīka",
+    "trademark": "Maaiika",
+    "retained": false
+  },
+  {
+    "id": 687,
+    "english": "Malamar",
+    "kana": "カラマネロ",
+    "hepburn": "Karamanero",
+    "trademark": "Calamanero",
+    "retained": false
+  },
+  {
+    "id": 688,
+    "english": "Binacle",
+    "kana": "カメテテ",
+    "hepburn": "Kametete",
+    "trademark": "Kametete",
+    "retained": false
+  },
+  {
+    "id": 689,
+    "english": "Barbaracle",
+    "kana": "ガメノデス",
+    "hepburn": "Gamenodesu",
+    "trademark": "Gamenodes",
+    "retained": false
+  },
+  {
+    "id": 690,
+    "english": "Skrelp",
+    "kana": "クズモー",
+    "hepburn": "Kuzumō",
+    "trademark": "Kuzumo",
+    "retained": false
+  },
+  {
+    "id": 691,
+    "english": "Dragalge",
+    "kana": "ドラミドロ",
+    "hepburn": "Doramidoro",
+    "trademark": "Dramidoro",
+    "retained": false
+  },
+  {
+    "id": 692,
+    "english": "Clauncher",
+    "kana": "ウデッポウ",
+    "hepburn": "Udeppō",
+    "trademark": "Udeppou",
+    "retained": false
+  },
+  {
+    "id": 693,
+    "english": "Clawitzer",
+    "kana": "ブロスター",
+    "hepburn": "Burosutā",
+    "trademark": "Bloster",
+    "retained": false
+  },
+  {
+    "id": 694,
+    "english": "Helioptile",
+    "kana": "エリキテル",
+    "hepburn": "Erikiteru",
+    "trademark": "Erikiteru",
+    "retained": false
+  },
+  {
+    "id": 695,
+    "english": "Heliolisk",
+    "kana": "エレザード",
+    "hepburn": "Erezādo",
+    "trademark": "Elezard",
+    "retained": false
+  },
+  {
+    "id": 696,
+    "english": "Tyrunt",
+    "kana": "チゴラス",
+    "hepburn": "Chigorasu",
+    "trademark": "Chigoras",
+    "retained": false
+  },
+  {
+    "id": 697,
+    "english": "Tyrantrum",
+    "kana": "ガチゴラス",
+    "hepburn": "Gachigorasu",
+    "trademark": "Gachigoras",
+    "retained": false
+  },
+  {
+    "id": 698,
+    "english": "Amaura",
+    "kana": "アマルス",
+    "hepburn": "Amarusu",
+    "trademark": "Amarus",
+    "retained": false
+  },
+  {
+    "id": 699,
+    "english": "Aurorus",
+    "kana": "アマルルガ",
+    "hepburn": "Amaruruga",
+    "trademark": "Amaruruga",
+    "retained": false
+  },
+  {
+    "id": 700,
+    "english": "Sylveon",
+    "kana": "ニンフィア",
+    "hepburn": "Ninfia",
+    "trademark": "Nymphia",
+    "retained": false
+  },
+  {
+    "id": 701,
+    "english": "Hawlucha",
+    "kana": "ルチャブル",
+    "hepburn": "Ruchaburu",
+    "trademark": "Luchabull",
+    "retained": false
+  },
+  {
+    "id": 702,
+    "english": "Dedenne",
+    "kana": "デデンネ",
+    "hepburn": "Dedenne",
+    "trademark": "Dedenne",
+    "retained": true
+  },
+  {
+    "id": 703,
+    "english": "Carbink",
+    "kana": "メレシー",
+    "hepburn": "Mereshī",
+    "trademark": "Melecie",
+    "retained": false
+  },
+  {
+    "id": 704,
+    "english": "Goomy",
+    "kana": "ヌメラ",
+    "hepburn": "Numera",
+    "trademark": "Numera",
+    "retained": false
+  },
+  {
+    "id": 705,
+    "english": "Sliggoo",
+    "kana": "ヌメイル",
+    "hepburn": "Numeiru",
+    "trademark": "Numeil",
+    "retained": false
+  },
+  {
+    "id": 706,
+    "english": "Goodra",
+    "kana": "ヌメルゴン",
+    "hepburn": "Numerugon",
+    "trademark": "Numelgon",
+    "retained": false
+  },
+  {
+    "id": 707,
+    "english": "Klefki",
+    "kana": "クレッフィ",
+    "hepburn": "Kureffi",
+    "trademark": "Cleffy",
+    "retained": false
+  },
+  {
+    "id": 708,
+    "english": "Phantump",
+    "kana": "ボクレー",
+    "hepburn": "Bokurē",
+    "trademark": "Bokurei",
+    "retained": false
+  },
+  {
+    "id": 709,
+    "english": "Trevenant",
+    "kana": "オーロット",
+    "hepburn": "Ōrotto",
+    "trademark": "Ohrot",
+    "retained": false
+  },
+  {
+    "id": 710,
+    "english": "Pumpkaboo",
+    "kana": "バケッチャ",
+    "hepburn": "Baketcha",
+    "trademark": "Bakeccha",
+    "retained": false
+  },
+  {
+    "id": 711,
+    "english": "Gourgeist",
+    "kana": "パンプジン",
+    "hepburn": "Panpujin",
+    "trademark": "Pumpjin",
+    "retained": false
+  },
+  {
+    "id": 712,
+    "english": "Bergmite",
+    "kana": "カチコール",
+    "hepburn": "Kachikōru",
+    "trademark": "Kachikohru",
+    "retained": false
+  },
+  {
+    "id": 713,
+    "english": "Avalugg",
+    "kana": "クレベース",
+    "hepburn": "Kurebēsu",
+    "trademark": "Crebase",
+    "retained": false
+  },
+  {
+    "id": 714,
+    "english": "Noibat",
+    "kana": "オンバット",
+    "hepburn": "Onbatto",
+    "trademark": "Onbat",
+    "retained": false
+  },
+  {
+    "id": 715,
+    "english": "Noivern",
+    "kana": "オンバーン",
+    "hepburn": "Onbān",
+    "trademark": "Onvern",
+    "retained": false
+  },
+  {
+    "id": 716,
+    "english": "Xerneas",
+    "kana": "ゼルネアス",
+    "hepburn": "Zeruneasu",
+    "trademark": "Xerneas",
+    "retained": true
+  },
+  {
+    "id": 717,
+    "english": "Yveltal",
+    "kana": "イベルタル",
+    "hepburn": "Iberutaru",
+    "trademark": "Yveltal",
+    "retained": true
+  },
+  {
+    "id": 718,
+    "english": "Zygarde",
+    "kana": "ジガルデ",
+    "hepburn": "Jigarude",
+    "trademark": "Zygarde",
+    "retained": true
+  },
+  {
+    "id": 719,
+    "english": "Diancie",
+    "kana": "ディアンシー",
+    "hepburn": "Dianshī",
+    "trademark": "Diancie",
+    "retained": true
+  },
+  {
+    "id": 720,
+    "english": "Hoopa",
+    "kana": "フーパ",
+    "hepburn": "Fūpa",
+    "trademark": "Hoopa",
+    "retained": true
+  },
+  {
+    "id": 721,
+    "english": "Volcanion",
+    "kana": "ボルケニオン",
+    "hepburn": "Borukenion",
+    "trademark": "Volcanion",
+    "retained": true
+  },
+  {
+    "id": 722,
+    "english": "Rowlet",
+    "kana": "モクロー",
+    "hepburn": "Mokurō",
+    "trademark": "Mokuroh",
+    "retained": false
+  },
+  {
+    "id": 723,
+    "english": "Dartrix",
+    "kana": "フクスロー",
+    "hepburn": "Fukusurō",
+    "trademark": "Fukuthrow",
+    "retained": false
+  },
+  {
+    "id": 724,
+    "english": "Decidueye",
+    "kana": "ジュナイパー",
+    "hepburn": "Junaipā",
+    "trademark": "Junaiper",
+    "retained": false
+  },
+  {
+    "id": 725,
+    "english": "Litten",
+    "kana": "ニャビー",
+    "hepburn": "Nyabī",
+    "trademark": "Nyabby",
+    "retained": false
+  },
+  {
+    "id": 726,
+    "english": "Torracat",
+    "kana": "ニャヒート",
+    "hepburn": "Nyahīto",
+    "trademark": "Nyaheat",
+    "retained": false
+  },
+  {
+    "id": 727,
+    "english": "Incineroar",
+    "kana": "ガオガエン",
+    "hepburn": "Gaogaen",
+    "trademark": "Gaogaen",
+    "retained": false
+  },
+  {
+    "id": 728,
+    "english": "Popplio",
+    "kana": "アシマリ",
+    "hepburn": "Ashimari",
+    "trademark": "Ashimari",
+    "retained": false
+  },
+  {
+    "id": 729,
+    "english": "Brionne",
+    "kana": "オシャマリ",
+    "hepburn": "Oshamari",
+    "trademark": "Osyamari",
+    "retained": false
+  },
+  {
+    "id": 730,
+    "english": "Primarina",
+    "kana": "アシレーヌ",
+    "hepburn": "Ashirēnu",
+    "trademark": "Ashirene",
+    "retained": false
+  },
+  {
+    "id": 731,
+    "english": "Pikipek",
+    "kana": "ツツケラ",
+    "hepburn": "Tsutsukera",
+    "trademark": "Tsutsukera",
+    "retained": false
+  },
+  {
+    "id": 732,
+    "english": "Trumbeak",
+    "kana": "ケララッパ",
+    "hepburn": "Kerarappa",
+    "trademark": "Kerarappa",
+    "retained": false
+  },
+  {
+    "id": 733,
+    "english": "Toucannon",
+    "kana": "ドデカバシ",
+    "hepburn": "Dodekabashi",
+    "trademark": "Dodekabashi",
+    "retained": false
+  },
+  {
+    "id": 734,
+    "english": "Yungoos",
+    "kana": "ヤングース",
+    "hepburn": "Yangūsu",
+    "trademark": "Youngoose",
+    "retained": false
+  },
+  {
+    "id": 735,
+    "english": "Gumshoos",
+    "kana": "デカグース",
+    "hepburn": "Dekagūsu",
+    "trademark": "Dekagoose",
+    "retained": false
+  },
+  {
+    "id": 736,
+    "english": "Grubbin",
+    "kana": "アゴジムシ",
+    "hepburn": "Agojimushi",
+    "trademark": "Agojimushi",
+    "retained": false
+  },
+  {
+    "id": 737,
+    "english": "Charjabug",
+    "kana": "デンヂムシ",
+    "hepburn": "Denjimushi",
+    "trademark": "Dendimushi",
+    "retained": false
+  },
+  {
+    "id": 738,
+    "english": "Vikavolt",
+    "kana": "クワガノン",
+    "hepburn": "Kuwaganon",
+    "trademark": "Kuwagannon",
+    "retained": false
+  },
+  {
+    "id": 739,
+    "english": "Crabrawler",
+    "kana": "マケンカニ",
+    "hepburn": "Makenkani",
+    "trademark": "Makenkani",
+    "retained": false
+  },
+  {
+    "id": 740,
+    "english": "Crabominable",
+    "kana": "ケケンカニ",
+    "hepburn": "Kekenkani",
+    "trademark": "Kekenkani",
+    "retained": false
+  },
+  {
+    "id": 741,
+    "english": "Oricorio",
+    "kana": "オドリドリ",
+    "hepburn": "Odoridori",
+    "trademark": "Odoridori",
+    "retained": false
+  },
+  {
+    "id": 742,
+    "english": "Cutiefly",
+    "kana": "アブリー",
+    "hepburn": "Aburī",
+    "trademark": "Abuly",
+    "retained": false
+  },
+  {
+    "id": 743,
+    "english": "Ribombee",
+    "kana": "アブリボン",
+    "hepburn": "Aburibon",
+    "trademark": "Aburibbon",
+    "retained": false
+  },
+  {
+    "id": 744,
+    "english": "Rockruff",
+    "kana": "イワンコ",
+    "hepburn": "Iwanko",
+    "trademark": "Iwanko",
+    "retained": false
+  },
+  {
+    "id": 745,
+    "english": "Lycanroc",
+    "kana": "ルガルガン",
+    "hepburn": "Rugarugan",
+    "trademark": "Lugarugan",
+    "retained": false
+  },
+  {
+    "id": 746,
+    "english": "Wishiwashi",
+    "kana": "ヨワシ",
+    "hepburn": "Yowashi",
+    "trademark": "Yowashi",
+    "retained": false
+  },
+  {
+    "id": 747,
+    "english": "Mareanie",
+    "kana": "ヒドイデ",
+    "hepburn": "Hidoide",
+    "trademark": "Hidoide",
+    "retained": false
+  },
+  {
+    "id": 748,
+    "english": "Toxapex",
+    "kana": "ドヒドイデ",
+    "hepburn": "Dohidoide",
+    "trademark": "Dohidoide",
+    "retained": false
+  },
+  {
+    "id": 749,
+    "english": "Mudbray",
+    "kana": "ドロバンコ",
+    "hepburn": "Dorobanko",
+    "trademark": "Dorobanko",
+    "retained": false
+  },
+  {
+    "id": 750,
+    "english": "Mudsdale",
+    "kana": "バンバドロ",
+    "hepburn": "Banbadoro",
+    "trademark": "Banbadoro",
+    "retained": false
+  },
+  {
+    "id": 751,
+    "english": "Dewpider",
+    "kana": "シズクモ",
+    "hepburn": "Shizukumo",
+    "trademark": "Shizukumo",
+    "retained": false
+  },
+  {
+    "id": 752,
+    "english": "Araquanid",
+    "kana": "オニシズクモ",
+    "hepburn": "Onishizukumo",
+    "trademark": "Onishizukumo",
+    "retained": false
+  },
+  {
+    "id": 753,
+    "english": "Fomantis",
+    "kana": "カリキリ",
+    "hepburn": "Karikiri",
+    "trademark": "Karikiri",
+    "retained": false
+  },
+  {
+    "id": 754,
+    "english": "Lurantis",
+    "kana": "ラランテス",
+    "hepburn": "Rarantesu",
+    "trademark": "Lalantes",
+    "retained": false
+  },
+  {
+    "id": 755,
+    "english": "Morelull",
+    "kana": "ネマシュ",
+    "hepburn": "Nemashu",
+    "trademark": "Nemasyu",
+    "retained": false
+  },
+  {
+    "id": 756,
+    "english": "Shiinotic",
+    "kana": "マシェード",
+    "hepburn": "Mashēdo",
+    "trademark": "Mashade",
+    "retained": false
+  },
+  {
+    "id": 757,
+    "english": "Salandit",
+    "kana": "ヤトウモリ",
+    "hepburn": "Yatōmori",
+    "trademark": "Yatoumori",
+    "retained": false
+  },
+  {
+    "id": 758,
+    "english": "Salazzle",
+    "kana": "エンニュート",
+    "hepburn": "Ennyūto",
+    "trademark": "Ennewt",
+    "retained": false
+  },
+  {
+    "id": 759,
+    "english": "Stufful",
+    "kana": "ヌイコグマ",
+    "hepburn": "Nuikoguma",
+    "trademark": "Nuikoguma",
+    "retained": false
+  },
+  {
+    "id": 760,
+    "english": "Bewear",
+    "kana": "キテルグマ",
+    "hepburn": "Kiteruguma",
+    "trademark": "Kiteruguma",
+    "retained": false
+  },
+  {
+    "id": 761,
+    "english": "Bounsweet",
+    "kana": "アマカジ",
+    "hepburn": "Amakaji",
+    "trademark": "Amakaji",
+    "retained": false
+  },
+  {
+    "id": 762,
+    "english": "Steenee",
+    "kana": "アママイコ",
+    "hepburn": "Amamaiko",
+    "trademark": "Amamaiko",
+    "retained": false
+  },
+  {
+    "id": 763,
+    "english": "Tsareena",
+    "kana": "アマージョ",
+    "hepburn": "Amājo",
+    "trademark": "Amajo",
+    "retained": false
+  },
+  {
+    "id": 764,
+    "english": "Comfey",
+    "kana": "キュワワー",
+    "hepburn": "Kyuwawā",
+    "trademark": "Cuwawa",
+    "retained": false
+  },
+  {
+    "id": 765,
+    "english": "Oranguru",
+    "kana": "ヤレユータン",
+    "hepburn": "Yareyūtan",
+    "trademark": "Yareyuutan",
+    "retained": false
+  },
+  {
+    "id": 766,
+    "english": "Passimian",
+    "kana": "ナゲツケサル",
+    "hepburn": "Nagetsukesaru",
+    "trademark": "Nagetukesaru",
+    "retained": false
+  },
+  {
+    "id": 767,
+    "english": "Wimpod",
+    "kana": "コソクムシ",
+    "hepburn": "Kosokumushi",
+    "trademark": "Kosokumushi",
+    "retained": false
+  },
+  {
+    "id": 768,
+    "english": "Golisopod",
+    "kana": "グソクムシャ",
+    "hepburn": "Gusokumusha",
+    "trademark": "Gusokumusha",
+    "retained": false
+  },
+  {
+    "id": 769,
+    "english": "Sandygast",
+    "kana": "スナバァ",
+    "hepburn": "Sunabā",
+    "trademark": "Sunaba",
+    "retained": false
+  },
+  {
+    "id": 770,
+    "english": "Palossand",
+    "kana": "シロデスナ",
+    "hepburn": "Shirodesuna",
+    "trademark": "Sirodethna",
+    "retained": false
+  },
+  {
+    "id": 771,
+    "english": "Pyukumuku",
+    "kana": "ナマコブシ",
+    "hepburn": "Namakobushi",
+    "trademark": "Namakobushi",
+    "retained": false
+  },
+  {
+    "id": 772,
+    "english": "Type: Null",
+    "kana": "タイプ：ヌル",
+    "hepburn": "Taipu:Nuru",
+    "trademark": "Type:Null",
+    "retained": true
+  },
+  {
+    "id": 773,
+    "english": "Silvally",
+    "kana": "シルヴァディ",
+    "hepburn": "Shiruvadi",
+    "trademark": "Silvady",
+    "retained": false
+  },
+  {
+    "id": 774,
+    "english": "Minior",
+    "kana": "メテノ",
+    "hepburn": "Meteno",
+    "trademark": "Meteno",
+    "retained": false
+  },
+  {
+    "id": 775,
+    "english": "Komala",
+    "kana": "ネッコアラ",
+    "hepburn": "Nekkoara",
+    "trademark": "Nekkoara",
+    "retained": false
+  },
+  {
+    "id": 776,
+    "english": "Turtonator",
+    "kana": "バクガメス",
+    "hepburn": "Bakugamesu",
+    "trademark": "Bakugames",
+    "retained": false
+  },
+  {
+    "id": 777,
+    "english": "Togedemaru",
+    "kana": "トゲデマル",
+    "hepburn": "Togedemaru",
+    "trademark": "Togedemaru",
+    "retained": true
+  },
+  {
+    "id": 778,
+    "english": "Mimikyu",
+    "kana": "ミミッキュ",
+    "hepburn": "Mimikkyu",
+    "trademark": "Mimikkyu",
+    "retained": false
+  },
+  {
+    "id": 779,
+    "english": "Bruxish",
+    "kana": "ハギギシリ",
+    "hepburn": "Hagigishiri",
+    "trademark": "Hagigishiri",
+    "retained": false
+  },
+  {
+    "id": 780,
+    "english": "Drampa",
+    "kana": "ジジーロン",
+    "hepburn": "Jijīron",
+    "trademark": "Jijilong",
+    "retained": false
+  },
+  {
+    "id": 781,
+    "english": "Dhelmise",
+    "kana": "ダダリン",
+    "hepburn": "Dadarin",
+    "trademark": "Dadarin",
+    "retained": false
+  },
+  {
+    "id": 782,
+    "english": "Jangmo-o",
+    "kana": "ジャラコ",
+    "hepburn": "Jarako",
+    "trademark": "Jyarako",
+    "retained": false
+  },
+  {
+    "id": 783,
+    "english": "Hakamo-o",
+    "kana": "ジャランゴ",
+    "hepburn": "Jarango",
+    "trademark": "Jyarango",
+    "retained": false
+  },
+  {
+    "id": 784,
+    "english": "Kommo-o",
+    "kana": "ジャラランガ",
+    "hepburn": "Jararanga",
+    "trademark": "Jyararanga",
+    "retained": false
+  },
+  {
+    "id": 785,
+    "english": "Tapu Koko",
+    "kana": "カプ・コケコ",
+    "hepburn": "Kapu Kokeko",
+    "trademark": "Kapu-Kokeko",
+    "retained": false
+  },
+  {
+    "id": 786,
+    "english": "Tapu Lele",
+    "kana": "カプ・テテフ",
+    "hepburn": "Kapu Tetefu",
+    "trademark": "Kapu-Tetefu",
+    "retained": false
+  },
+  {
+    "id": 787,
+    "english": "Tapu Bulu",
+    "kana": "カプ・ブルル",
+    "hepburn": "Kapu Bururu",
+    "trademark": "Kapu-Bulul",
+    "retained": false
+  },
+  {
+    "id": 788,
+    "english": "Tapu Fini",
+    "kana": "カプ・レヒレ",
+    "hepburn": "Kapu Rehire",
+    "trademark": "Kapu-Rehire",
+    "retained": false
+  },
+  {
+    "id": 789,
+    "english": "Cosmog",
+    "kana": "コスモッグ",
+    "hepburn": "Kosumoggu",
+    "trademark": "Cosmog",
+    "retained": true
+  },
+  {
+    "id": 790,
+    "english": "Cosmoem",
+    "kana": "コスモウム",
+    "hepburn": "Kosumoumu",
+    "trademark": "Cosmovum",
+    "retained": false
+  },
+  {
+    "id": 791,
+    "english": "Solgaleo",
+    "kana": "ソルガレオ",
+    "hepburn": "Sorugareo",
+    "trademark": "Solgaleo",
+    "retained": true
+  },
+  {
+    "id": 792,
+    "english": "Lunala",
+    "kana": "ルナアーラ",
+    "hepburn": "Runaāra",
+    "trademark": "Lunala",
+    "retained": true
+  },
+  {
+    "id": 793,
+    "english": "Nihilego",
+    "kana": "ウツロイド",
+    "hepburn": "Utsuroido",
+    "trademark": "Uturoid",
+    "retained": false
+  },
+  {
+    "id": 794,
+    "english": "Buzzwole",
+    "kana": "マッシブーン",
+    "hepburn": "Masshibūn",
+    "trademark": "Massivoon",
+    "retained": false
+  },
+  {
+    "id": 795,
+    "english": "Pheromosa",
+    "kana": "フェローチェ",
+    "hepburn": "Ferōche",
+    "trademark": "Pheroache",
+    "retained": false
+  },
+  {
+    "id": 796,
+    "english": "Xurkitree",
+    "kana": "デンジュモク",
+    "hepburn": "Denjumoku",
+    "trademark": "Denjyumoku",
+    "retained": false
+  },
+  {
+    "id": 797,
+    "english": "Celesteela",
+    "kana": "テッカグヤ",
+    "hepburn": "Tekkaguya",
+    "trademark": "Tekkaguya",
+    "retained": false
+  },
+  {
+    "id": 798,
+    "english": "Kartana",
+    "kana": "カミツルギ",
+    "hepburn": "Kamitsurugi",
+    "trademark": "Kamiturugi",
+    "retained": false
+  },
+  {
+    "id": 799,
+    "english": "Guzzlord",
+    "kana": "アクジキング",
+    "hepburn": "Akujikingu",
+    "trademark": "Akuziking",
+    "retained": false
+  },
+  {
+    "id": 800,
+    "english": "Necrozma",
+    "kana": "ネクロズマ",
+    "hepburn": "Nekurozuma",
+    "trademark": "Necrozma",
+    "retained": true
+  },
+  {
+    "id": 801,
+    "english": "Magearna",
+    "kana": "マギアナ",
+    "hepburn": "Magiana",
+    "trademark": "Magearna",
+    "retained": true
+  },
+  {
+    "id": 802,
+    "english": "Marshadow",
+    "kana": "マーシャドー",
+    "hepburn": "Māshadō",
+    "trademark": "Marshadow",
+    "retained": true
+  },
+  {
+    "id": 803,
+    "english": "Poipole",
+    "kana": "ベベノム",
+    "hepburn": "Bebenomu",
+    "trademark": "Bevenom",
+    "retained": false
+  },
+  {
+    "id": 804,
+    "english": "Naganadel",
+    "kana": "アーゴヨン",
+    "hepburn": "Āgoyon",
+    "trademark": "Agoyon",
+    "retained": false
+  },
+  {
+    "id": 805,
+    "english": "Stakataka",
+    "kana": "ツンデツンデ",
+    "hepburn": "Tsundetsunde",
+    "trademark": "Tundetunde",
+    "retained": false
+  },
+  {
+    "id": 806,
+    "english": "Blacephalon",
+    "kana": "ズガドーン",
+    "hepburn": "Zugadōn",
+    "trademark": "Zugadoon",
+    "retained": false
+  },
+  {
+    "id": 807,
+    "english": "Zeraora",
+    "kana": "ゼラオラ",
+    "hepburn": "Zeraora",
+    "trademark": "Zeraora",
+    "retained": true
+  },
+  {
+    "id": 808,
+    "english": "Meltan",
+    "kana": "メルタン",
+    "hepburn": "Merutan",
+    "trademark": "Meltan",
+    "retained": true
+  },
+  {
+    "id": 809,
+    "english": "Melmetal",
+    "kana": "メルメタル",
+    "hepburn": "Merumetaru",
+    "trademark": "Melmetal",
+    "retained": true
+  },
+  {
+    "id": 810,
+    "english": "Grookey",
+    "kana": "サルノリ",
+    "hepburn": "Sarunori",
+    "trademark": "Sarunori",
+    "retained": false
+  },
+  {
+    "id": 811,
+    "english": "Thwackey",
+    "kana": "バチンキー",
+    "hepburn": "Bachinkī",
+    "trademark": "Bachinkey",
+    "retained": false
+  },
+  {
+    "id": 812,
+    "english": "Rillaboom",
+    "kana": "ゴリランダー",
+    "hepburn": "Gorirandā",
+    "trademark": "Gorirander",
+    "retained": false
+  },
+  {
+    "id": 813,
+    "english": "Scorbunny",
+    "kana": "ヒバニー",
+    "hepburn": "Hibanī",
+    "trademark": "Hibanny",
+    "retained": false
+  },
+  {
+    "id": 814,
+    "english": "Raboot",
+    "kana": "ラビフット",
+    "hepburn": "Rabifutto",
+    "trademark": "Rabbifuto",
+    "retained": false
+  },
+  {
+    "id": 815,
+    "english": "Cinderace",
+    "kana": "エースバーン",
+    "hepburn": "Ēsubān",
+    "trademark": "Aceburn",
+    "retained": false
+  },
+  {
+    "id": 816,
+    "english": "Sobble",
+    "kana": "メッソン",
+    "hepburn": "Messon",
+    "trademark": "Messon",
+    "retained": false
+  },
+  {
+    "id": 817,
+    "english": "Drizzile",
+    "kana": "ジメレオン",
+    "hepburn": "Jimereon",
+    "trademark": "Jimereon",
+    "retained": false
+  },
+  {
+    "id": 818,
+    "english": "Inteleon",
+    "kana": "インテレオン",
+    "hepburn": "Intereon",
+    "trademark": "Intereon",
+    "retained": false
+  },
+  {
+    "id": 819,
+    "english": "Skwovet",
+    "kana": "ホシガリス",
+    "hepburn": "Hoshigarisu",
+    "trademark": "Hoshigarisu",
+    "retained": false
+  },
+  {
+    "id": 820,
+    "english": "Greedent",
+    "kana": "ヨクバリス",
+    "hepburn": "Yokubarisu",
+    "trademark": "Yokubarisu",
+    "retained": false
+  },
+  {
+    "id": 821,
+    "english": "Rookidee",
+    "kana": "ココガラ",
+    "hepburn": "Kokogara",
+    "trademark": "Kokogara",
+    "retained": false
+  },
+  {
+    "id": 822,
+    "english": "Corvisquire",
+    "kana": "アオガラス",
+    "hepburn": "Aogarasu",
+    "trademark": "Aogarasu",
+    "retained": false
+  },
+  {
+    "id": 823,
+    "english": "Corviknight",
+    "kana": "アーマーガア",
+    "hepburn": "Āmāgā",
+    "trademark": "Armorga",
+    "retained": false
+  },
+  {
+    "id": 824,
+    "english": "Blipbug",
+    "kana": "サッチムシ",
+    "hepburn": "Satchimushi",
+    "trademark": "Sacchimushi",
+    "retained": false
+  },
+  {
+    "id": 825,
+    "english": "Dottler",
+    "kana": "レドームシ",
+    "hepburn": "Redōmushi",
+    "trademark": "Redomushi",
+    "retained": false
+  },
+  {
+    "id": 826,
+    "english": "Orbeetle",
+    "kana": "イオルブ",
+    "hepburn": "Iorubu",
+    "trademark": "Eolb",
+    "retained": false
+  },
+  {
+    "id": 827,
+    "english": "Nickit",
+    "kana": "クスネ",
+    "hepburn": "Kusune",
+    "trademark": "Kusune",
+    "retained": false
+  },
+  {
+    "id": 828,
+    "english": "Thievul",
+    "kana": "フォクスライ",
+    "hepburn": "Fokusurai",
+    "trademark": "Foxly",
+    "retained": false
+  },
+  {
+    "id": 829,
+    "english": "Gossifleur",
+    "kana": "ヒメンカ",
+    "hepburn": "Himenka",
+    "trademark": "Himenka",
+    "retained": false
+  },
+  {
+    "id": 830,
+    "english": "Eldegoss",
+    "kana": "ワタシラガ",
+    "hepburn": "Watashiraga",
+    "trademark": "Watashiraga",
+    "retained": false
+  },
+  {
+    "id": 831,
+    "english": "Wooloo",
+    "kana": "ウールー",
+    "hepburn": "Ūrū",
+    "trademark": "Wooluu",
+    "retained": false
+  },
+  {
+    "id": 832,
+    "english": "Dubwool",
+    "kana": "バイウールー",
+    "hepburn": "Baiūrū",
+    "trademark": "Baiwooluu",
+    "retained": false
+  },
+  {
+    "id": 833,
+    "english": "Chewtle",
+    "kana": "カムカメ",
+    "hepburn": "Kamukame",
+    "trademark": "Kamukame",
+    "retained": false
+  },
+  {
+    "id": 834,
+    "english": "Drednaw",
+    "kana": "カジリガメ",
+    "hepburn": "Kajirigame",
+    "trademark": "Kajirigame",
+    "retained": false
+  },
+  {
+    "id": 835,
+    "english": "Yamper",
+    "kana": "ワンパチ",
+    "hepburn": "Wanpachi",
+    "trademark": "Wanpachi",
+    "retained": false
+  },
+  {
+    "id": 836,
+    "english": "Boltund",
+    "kana": "パルスワン",
+    "hepburn": "Parusuwan",
+    "trademark": "Pulsewan",
+    "retained": false
+  },
+  {
+    "id": 837,
+    "english": "Rolycoly",
+    "kana": "タンドン",
+    "hepburn": "Tandon",
+    "trademark": "Tandon",
+    "retained": false
+  },
+  {
+    "id": 838,
+    "english": "Carkol",
+    "kana": "トロッゴン",
+    "hepburn": "Toroggon",
+    "trademark": "Toroggon",
+    "retained": false
+  },
+  {
+    "id": 839,
+    "english": "Coalossal",
+    "kana": "セキタンザン",
+    "hepburn": "Sekitanzan",
+    "trademark": "Sekitanzan",
+    "retained": false
+  },
+  {
+    "id": 840,
+    "english": "Applin",
+    "kana": "カジッチュ",
+    "hepburn": "Kajitchu",
+    "trademark": "Kajicchu",
+    "retained": false
+  },
+  {
+    "id": 841,
+    "english": "Flapple",
+    "kana": "アップリュー",
+    "hepburn": "Appuryū",
+    "trademark": "Appryu",
+    "retained": false
+  },
+  {
+    "id": 842,
+    "english": "Appletun",
+    "kana": "タルップル",
+    "hepburn": "Taruppuru",
+    "trademark": "Tarupple",
+    "retained": false
+  },
+  {
+    "id": 843,
+    "english": "Silicobra",
+    "kana": "スナヘビ",
+    "hepburn": "Sunahebi",
+    "trademark": "Sunahebi",
+    "retained": false
+  },
+  {
+    "id": 844,
+    "english": "Sandaconda",
+    "kana": "サダイジャ",
+    "hepburn": "Sadaija",
+    "trademark": "Sadaija",
+    "retained": false
+  },
+  {
+    "id": 845,
+    "english": "Cramorant",
+    "kana": "ウッウ",
+    "hepburn": "U'u",
+    "trademark": "Uu",
+    "retained": false
+  },
+  {
+    "id": 846,
+    "english": "Arrokuda",
+    "kana": "サシカマス",
+    "hepburn": "Sashikamasu",
+    "trademark": "Sasikamasu",
+    "retained": false
+  },
+  {
+    "id": 847,
+    "english": "Barraskewda",
+    "kana": "カマスジョー",
+    "hepburn": "Kamasujō",
+    "trademark": "Kamasujaw",
+    "retained": false
+  },
+  {
+    "id": 848,
+    "english": "Toxel",
+    "kana": "エレズン",
+    "hepburn": "Erezun",
+    "trademark": "Eleson",
+    "retained": false
+  },
+  {
+    "id": 849,
+    "english": "Toxtricity",
+    "kana": "ストリンダー",
+    "hepburn": "Sutorindā",
+    "trademark": "Strinder",
+    "retained": false
+  },
+  {
+    "id": 850,
+    "english": "Sizzlipede",
+    "kana": "ヤクデ",
+    "hepburn": "Yakude",
+    "trademark": "Yakude",
+    "retained": false
+  },
+  {
+    "id": 851,
+    "english": "Centiskorch",
+    "kana": "マルヤクデ",
+    "hepburn": "Maruyakude",
+    "trademark": "Maruyakude",
+    "retained": false
+  },
+  {
+    "id": 852,
+    "english": "Clobbopus",
+    "kana": "タタッコ",
+    "hepburn": "Tatakko",
+    "trademark": "Tatakko",
+    "retained": false
+  },
+  {
+    "id": 853,
+    "english": "Grapploct",
+    "kana": "オトスパス",
+    "hepburn": "Otosupasu",
+    "trademark": "Otosupus",
+    "retained": false
+  },
+  {
+    "id": 854,
+    "english": "Sinistea",
+    "kana": "ヤバチャ",
+    "hepburn": "Yabacha",
+    "trademark": "Yabacha",
+    "retained": false
+  },
+  {
+    "id": 855,
+    "english": "Polteageist",
+    "kana": "ポットデス",
+    "hepburn": "Pottodesu",
+    "trademark": "Potdeath",
+    "retained": false
+  },
+  {
+    "id": 856,
+    "english": "Hatenna",
+    "kana": "ミブリム",
+    "hepburn": "Miburimu",
+    "trademark": "Mibrim",
+    "retained": false
+  },
+  {
+    "id": 857,
+    "english": "Hattrem",
+    "kana": "テブリム",
+    "hepburn": "Teburimu",
+    "trademark": "Tebrim",
+    "retained": false
+  },
+  {
+    "id": 858,
+    "english": "Hatterene",
+    "kana": "ブリムオン",
+    "hepburn": "Burimuon",
+    "trademark": "Brimuon",
+    "retained": false
+  },
+  {
+    "id": 859,
+    "english": "Impidimp",
+    "kana": "ベロバー",
+    "hepburn": "Berobā",
+    "trademark": "Beroba",
+    "retained": false
+  },
+  {
+    "id": 860,
+    "english": "Morgrem",
+    "kana": "ギモー",
+    "hepburn": "Gimō",
+    "trademark": "Gimoh",
+    "retained": false
+  },
+  {
+    "id": 861,
+    "english": "Grimmsnarl",
+    "kana": "オーロンゲ",
+    "hepburn": "Ōronge",
+    "trademark": "Ohlonge",
+    "retained": false
+  },
+  {
+    "id": 862,
+    "english": "Obstagoon",
+    "kana": "タチフサグマ",
+    "hepburn": "Tachifusaguma",
+    "trademark": "Tachifusaguma",
+    "retained": false
+  },
+  {
+    "id": 863,
+    "english": "Perrserker",
+    "kana": "ニャイキング",
+    "hepburn": "Nyaikingu",
+    "trademark": "Nyaiking",
+    "retained": false
+  },
+  {
+    "id": 864,
+    "english": "Cursola",
+    "kana": "サニゴーン",
+    "hepburn": "Sanigōn",
+    "trademark": "Sunigoon",
+    "retained": false
+  },
+  {
+    "id": 865,
+    "english": "Sirfetch'd",
+    "kana": "ネギガナイト",
+    "hepburn": "Negiganaito",
+    "trademark": "Negigaknight",
+    "retained": false
+  },
+  {
+    "id": 866,
+    "english": "Mr. Rime",
+    "kana": "バリコオル",
+    "hepburn": "Barikōru",
+    "trademark": "Barrikohru",
+    "retained": false
+  },
+  {
+    "id": 867,
+    "english": "Runerigus",
+    "kana": "デスバーン",
+    "hepburn": "Desubān",
+    "trademark": "Deathbarn",
+    "retained": false
+  },
+  {
+    "id": 868,
+    "english": "Milcery",
+    "kana": "マホミル",
+    "hepburn": "Mahomiru",
+    "trademark": "Mahomil",
+    "retained": false
+  },
+  {
+    "id": 869,
+    "english": "Alcremie",
+    "kana": "マホイップ",
+    "hepburn": "Mahoippu",
+    "trademark": "Mawhip",
+    "retained": false
+  },
+  {
+    "id": 870,
+    "english": "Falinks",
+    "kana": "タイレーツ",
+    "hepburn": "Tairētsu",
+    "trademark": "Tairetsu",
+    "retained": false
+  },
+  {
+    "id": 871,
+    "english": "Pincurchin",
+    "kana": "バチンウニ",
+    "hepburn": "Bachin'uni",
+    "trademark": "Bachinuni",
+    "retained": false
+  },
+  {
+    "id": 872,
+    "english": "Snom",
+    "kana": "ユキハミ",
+    "hepburn": "Yukihami",
+    "trademark": "Yukihami",
+    "retained": false
+  },
+  {
+    "id": 873,
+    "english": "Frosmoth",
+    "kana": "モスノウ",
+    "hepburn": "Mosunō",
+    "trademark": "Mothnow",
+    "retained": false
+  },
+  {
+    "id": 874,
+    "english": "Stonjourner",
+    "kana": "イシヘンジン",
+    "hepburn": "Ishihenjin",
+    "trademark": "Ishihengin",
+    "retained": false
+  },
+  {
+    "id": 875,
+    "english": "Eiscue",
+    "kana": "コオリッポ",
+    "hepburn": "Kōrippo",
+    "trademark": "Korippo",
+    "retained": false
+  },
+  {
+    "id": 876,
+    "english": "Indeedee",
+    "kana": "イエッサン",
+    "hepburn": "Iessan",
+    "trademark": "Yessan",
+    "retained": false
+  },
+  {
+    "id": 877,
+    "english": "Morpeko",
+    "kana": "モルペコ",
+    "hepburn": "Morupeko",
+    "trademark": "Morpeko",
+    "retained": true
+  },
+  {
+    "id": 878,
+    "english": "Cufant",
+    "kana": "ゾウドウ",
+    "hepburn": "Zōdō",
+    "trademark": "Zoudou",
+    "retained": false
+  },
+  {
+    "id": 879,
+    "english": "Copperajah",
+    "kana": "ダイオウドウ",
+    "hepburn": "Daiōdō",
+    "trademark": "Daioudou",
+    "retained": false
+  },
+  {
+    "id": 880,
+    "english": "Dracozolt",
+    "kana": "パッチラゴン",
+    "hepburn": "Patchiragon",
+    "trademark": "Patchiragon",
+    "retained": false
+  },
+  {
+    "id": 881,
+    "english": "Arctozolt",
+    "kana": "パッチルドン",
+    "hepburn": "Patchirudon",
+    "trademark": "Patchilldon",
+    "retained": false
+  },
+  {
+    "id": 882,
+    "english": "Dracovish",
+    "kana": "ウオノラゴン",
+    "hepburn": "Uonoragon",
+    "trademark": "Uonoragon",
+    "retained": false
+  },
+  {
+    "id": 883,
+    "english": "Arctovish",
+    "kana": "ウオチルドン",
+    "hepburn": "Uochirudon",
+    "trademark": "Uochilldon",
+    "retained": false
+  },
+  {
+    "id": 884,
+    "english": "Duraludon",
+    "kana": "ジュラルドン",
+    "hepburn": "Jurarudon",
+    "trademark": "Duraludon",
+    "retained": true
+  },
+  {
+    "id": 885,
+    "english": "Dreepy",
+    "kana": "ドラメシヤ",
+    "hepburn": "Dorameshiya",
+    "trademark": "Dorameshiya",
+    "retained": false
+  },
+  {
+    "id": 886,
+    "english": "Drakloak",
+    "kana": "ドロンチ",
+    "hepburn": "Doronchi",
+    "trademark": "Doronch",
+    "retained": false
+  },
+  {
+    "id": 887,
+    "english": "Dragapult",
+    "kana": "ドラパルト",
+    "hepburn": "Doraparuto",
+    "trademark": "Dorapult",
+    "retained": false
+  },
+  {
+    "id": 888,
+    "english": "Zacian",
+    "kana": "ザシアン",
+    "hepburn": "Zashian",
+    "trademark": "Zacian",
+    "retained": true
+  },
+  {
+    "id": 889,
+    "english": "Zamazenta",
+    "kana": "ザマゼンタ",
+    "hepburn": "Zamazenta",
+    "trademark": "Zamazenta",
+    "retained": true
+  },
+  {
+    "id": 890,
+    "english": "Eternatus",
+    "kana": "ムゲンダイナ",
+    "hepburn": "Mugendaina",
+    "trademark": "Mugendina",
+    "retained": false
+  },
+  {
+    "id": 891,
+    "english": "Kubfu",
+    "kana": "ダクマ",
+    "hepburn": "Dakuma",
+    "trademark": "Dakuma",
+    "retained": false
+  },
+  {
+    "id": 892,
+    "english": "Urshifu",
+    "kana": "ウーラオス",
+    "hepburn": "Ūraosu",
+    "trademark": "Wulaosu",
+    "retained": false
+  },
+  {
+    "id": 893,
+    "english": "Zarude",
+    "kana": "ザルード",
+    "hepburn": "Zarūdo",
+    "trademark": "Zarude",
+    "retained": true
+  },
+  {
+    "id": 894,
+    "english": "Regieleki",
+    "kana": "レジエレキ",
+    "hepburn": "Rejiereki",
+    "trademark": "Regieleki",
+    "retained": true
+  },
+  {
+    "id": 895,
+    "english": "Regidrago",
+    "kana": "レジドラゴ",
+    "hepburn": "Rejidorago",
+    "trademark": "Regidorago",
+    "retained": false
+  },
+  {
+    "id": 896,
+    "english": "Glastrier",
+    "kana": "ブリザポス",
+    "hepburn": "Burizaposu",
+    "trademark": "Blizzapos",
+    "retained": false
+  },
+  {
+    "id": 897,
+    "english": "Spectrier",
+    "kana": "レイスポス",
+    "hepburn": "Reisuposu",
+    "trademark": "Wraithpos",
+    "retained": false
+  },
+  {
+    "id": 898,
+    "english": "Calyrex",
+    "kana": "バドレックス",
+    "hepburn": "Badorekkusu",
+    "trademark": "Budrex",
+    "retained": false
+  },
+  {
+    "id": 899,
+    "english": "Wyrdeer",
+    "kana": "アヤシシ",
+    "hepburn": "Ayashishi",
+    "trademark": "Ayashishi",
+    "retained": false
+  },
+  {
+    "id": 900,
+    "english": "Kleavor",
+    "kana": "バサギリ",
+    "hepburn": "Basagiri",
+    "trademark": "Basagiri",
+    "retained": false
+  },
+  {
+    "id": 901,
+    "english": "Ursaluna",
+    "kana": "ガチグマ",
+    "hepburn": "Gachiguma",
+    "trademark": "Gachiguma",
+    "retained": false
+  },
+  {
+    "id": 902,
+    "english": "Basculegion",
+    "kana": "イダイトウ",
+    "hepburn": "Idaitō",
+    "trademark": "Idaitou",
+    "retained": false
+  },
+  {
+    "id": 903,
+    "english": "Sneasler",
+    "kana": "オオニューラ",
+    "hepburn": "Ōnyūra",
+    "trademark": "Ohnyula",
+    "retained": false
+  },
+  {
+    "id": 904,
+    "english": "Overqwil",
+    "kana": "ハリーマン",
+    "hepburn": "Harīman",
+    "trademark": "Haryman",
+    "retained": false
+  },
+  {
+    "id": 905,
+    "english": "Enamorus",
+    "kana": "ラブトロス",
+    "hepburn": "Rabutorosu",
+    "trademark": "Lovetolos",
+    "retained": false
+  },
+  {
+    "id": 906,
+    "english": "Sprigatito",
+    "kana": "ニャオハ",
+    "hepburn": "Nyaoha",
+    "trademark": "Nyahoja",
+    "retained": false
+  },
+  {
+    "id": 907,
+    "english": "Floragato",
+    "kana": "ニャローテ",
+    "hepburn": "Nyarōte",
+    "trademark": "Nyarote",
+    "retained": false
+  },
+  {
+    "id": 908,
+    "english": "Meowscarada",
+    "kana": "マスカーニャ",
+    "hepburn": "Masukānya",
+    "trademark": "Masquernya",
+    "retained": false
+  },
+  {
+    "id": 909,
+    "english": "Fuecoco",
+    "kana": "ホゲータ",
+    "hepburn": "Hogēta",
+    "trademark": "Hogator",
+    "retained": false
+  },
+  {
+    "id": 910,
+    "english": "Crocalor",
+    "kana": "アチゲータ",
+    "hepburn": "Achigēta",
+    "trademark": "Achigator",
+    "retained": false
+  },
+  {
+    "id": 911,
+    "english": "Skeledirge",
+    "kana": "ラウドボーン",
+    "hepburn": "Raudobōn",
+    "trademark": "Laudbon",
+    "retained": false
+  },
+  {
+    "id": 912,
+    "english": "Quaxly",
+    "kana": "クワッス",
+    "hepburn": "Kuwassu",
+    "trademark": "Kuwassu",
+    "retained": false
+  },
+  {
+    "id": 913,
+    "english": "Quaxwell",
+    "kana": "ウェルカモ",
+    "hepburn": "Werukamo",
+    "trademark": "Welkamo",
+    "retained": false
+  },
+  {
+    "id": 914,
+    "english": "Quaquaval",
+    "kana": "ウェーニバル",
+    "hepburn": "Wēnibaru",
+    "trademark": "Wanival",
+    "retained": false
+  },
+  {
+    "id": 915,
+    "english": "Lechonk",
+    "kana": "グルトン",
+    "hepburn": "Guruton",
+    "trademark": "Gourton",
+    "retained": false
+  },
+  {
+    "id": 916,
+    "english": "Oinkologne",
+    "kana": "パフュートン",
+    "hepburn": "Pafyūton",
+    "trademark": "Perfuton",
+    "retained": false
+  },
+  {
+    "id": 917,
+    "english": "Tarountula",
+    "kana": "タマンチュラ",
+    "hepburn": "Tamanchura",
+    "trademark": "Tamantula",
+    "retained": false
+  },
+  {
+    "id": 918,
+    "english": "Spidops",
+    "kana": "ワナイダー",
+    "hepburn": "Wanaidā",
+    "trademark": "Wanaider",
+    "retained": false
+  },
+  {
+    "id": 919,
+    "english": "Nymble",
+    "kana": "マメバッタ",
+    "hepburn": "Mamebatta",
+    "trademark": "Mamebatta",
+    "retained": false
+  },
+  {
+    "id": 920,
+    "english": "Lokix",
+    "kana": "エクスレッグ",
+    "hepburn": "Ekusureggu",
+    "trademark": "Exleg",
+    "retained": false
+  },
+  {
+    "id": 921,
+    "english": "Pawmi",
+    "kana": "パモ",
+    "hepburn": "Pamo",
+    "trademark": "Pamo",
+    "retained": false
+  },
+  {
+    "id": 922,
+    "english": "Pawmo",
+    "kana": "パモット",
+    "hepburn": "Pamotto",
+    "trademark": "Pamot",
+    "retained": false
+  },
+  {
+    "id": 923,
+    "english": "Pawmot",
+    "kana": "パーモット",
+    "hepburn": "Pāmotto",
+    "trademark": "Parmot",
+    "retained": false
+  },
+  {
+    "id": 924,
+    "english": "Tandemaus",
+    "kana": "ワッカネズミ",
+    "hepburn": "Wakkanezumi",
+    "trademark": "Wakkanezumi",
+    "retained": false
+  },
+  {
+    "id": 925,
+    "english": "Maushold",
+    "kana": "イッカネズミ",
+    "hepburn": "Ikkanezumi",
+    "trademark": "Ikkanezumi",
+    "retained": false
+  },
+  {
+    "id": 926,
+    "english": "Fidough",
+    "kana": "パピモッチ",
+    "hepburn": "Papimotchi",
+    "trademark": "Pupimocchi",
+    "retained": false
+  },
+  {
+    "id": 927,
+    "english": "Dachsbun",
+    "kana": "バウッツェル",
+    "hepburn": "Bauttseru",
+    "trademark": "Bowtzel",
+    "retained": false
+  },
+  {
+    "id": 928,
+    "english": "Smoliv",
+    "kana": "ミニーブ",
+    "hepburn": "Minību",
+    "trademark": "Minive",
+    "retained": false
+  },
+  {
+    "id": 929,
+    "english": "Dolliv",
+    "kana": "オリーニョ",
+    "hepburn": "Orīnyo",
+    "trademark": "Olinyo",
+    "retained": false
+  },
+  {
+    "id": 930,
+    "english": "Arboliva",
+    "kana": "オリーヴァ",
+    "hepburn": "Orīva",
+    "trademark": "Oliva",
+    "retained": false
+  },
+  {
+    "id": 931,
+    "english": "Squawkabilly",
+    "kana": "イキリンコ",
+    "hepburn": "Ikirinko",
+    "trademark": "Ikirinko",
+    "retained": false
+  },
+  {
+    "id": 932,
+    "english": "Nacli",
+    "kana": "コジオ",
+    "hepburn": "Kojio",
+    "trademark": "Kojio",
+    "retained": false
+  },
+  {
+    "id": 933,
+    "english": "Naclstack",
+    "kana": "ジオヅム",
+    "hepburn": "Jiodzumu",
+    "trademark": "Jiodumu",
+    "retained": false
+  },
+  {
+    "id": 934,
+    "english": "Garganacl",
+    "kana": "キョジオーン",
+    "hepburn": "Kyojiōn",
+    "trademark": "Kyojiohn",
+    "retained": false
+  },
+  {
+    "id": 935,
+    "english": "Charcadet",
+    "kana": "カルボウ",
+    "hepburn": "Karubō",
+    "trademark": "Carbou",
+    "retained": false
+  },
+  {
+    "id": 936,
+    "english": "Armarouge",
+    "kana": "グレンアルマ",
+    "hepburn": "Guren'aruma",
+    "trademark": "Gurenarma",
+    "retained": false
+  },
+  {
+    "id": 937,
+    "english": "Ceruledge",
+    "kana": "ソウブレイズ",
+    "hepburn": "Soubureizu",
+    "trademark": "Soublades",
+    "retained": false
+  },
+  {
+    "id": 938,
+    "english": "Tadbulb",
+    "kana": "ズピカ",
+    "hepburn": "Zupika",
+    "trademark": "Zupika",
+    "retained": false
+  },
+  {
+    "id": 939,
+    "english": "Bellibolt",
+    "kana": "ハラバリー",
+    "hepburn": "Harabarī",
+    "trademark": "Harabarie",
+    "retained": false
+  },
+  {
+    "id": 940,
+    "english": "Wattrel",
+    "kana": "カイデン",
+    "hepburn": "Kaiden",
+    "trademark": "Kaiden",
+    "retained": false
+  },
+  {
+    "id": 941,
+    "english": "Kilowattrel",
+    "kana": "タイカイデン",
+    "hepburn": "Taikaiden",
+    "trademark": "Taikaiden",
+    "retained": false
+  },
+  {
+    "id": 942,
+    "english": "Maschiff",
+    "kana": "オラチフ",
+    "hepburn": "Orachifu",
+    "trademark": "Orachifu",
+    "retained": false
+  },
+  {
+    "id": 943,
+    "english": "Mabosstiff",
+    "kana": "マフィティフ",
+    "hepburn": "Mafitifu",
+    "trademark": "Mafitiff",
+    "retained": false
+  },
+  {
+    "id": 944,
+    "english": "Shroodle",
+    "kana": "シルシュルー",
+    "hepburn": "Shirushurū",
+    "trademark": "Shirushrew",
+    "retained": false
+  },
+  {
+    "id": 945,
+    "english": "Grafaiai",
+    "kana": "タギングル",
+    "hepburn": "Taginguru",
+    "trademark": "Taggingru",
+    "retained": false
+  },
+  {
+    "id": 946,
+    "english": "Bramblin",
+    "kana": "アノクサ",
+    "hepburn": "Anokusa",
+    "trademark": "Anokusa",
+    "retained": false
+  },
+  {
+    "id": 947,
+    "english": "Brambleghast",
+    "kana": "アノホラグサ",
+    "hepburn": "Anohoragusa",
+    "trademark": "Anohoragusa",
+    "retained": false
+  },
+  {
+    "id": 948,
+    "english": "Toedscool",
+    "kana": "ノノクラゲ",
+    "hepburn": "Nonokurage",
+    "trademark": "Nonokurage",
+    "retained": false
+  },
+  {
+    "id": 949,
+    "english": "Toedscruel",
+    "kana": "リククラゲ",
+    "hepburn": "Rikukurage",
+    "trademark": "Rikukurage",
+    "retained": false
+  },
+  {
+    "id": 950,
+    "english": "Klawf",
+    "kana": "ガケガニ",
+    "hepburn": "Gakegani",
+    "trademark": "Gakegani",
+    "retained": false
+  },
+  {
+    "id": 951,
+    "english": "Capsakid",
+    "kana": "カプサイジ",
+    "hepburn": "Kapusaiji",
+    "trademark": "Capsaiji",
+    "retained": false
+  },
+  {
+    "id": 952,
+    "english": "Scovillain",
+    "kana": "スコヴィラン",
+    "hepburn": "Sukoviran",
+    "trademark": "Scovillain",
+    "retained": true
+  },
+  {
+    "id": 953,
+    "english": "Rellor",
+    "kana": "シガロコ",
+    "hepburn": "Shigaroko",
+    "trademark": "Shigaroko",
+    "retained": false
+  },
+  {
+    "id": 954,
+    "english": "Rabsca",
+    "kana": "ベラカス",
+    "hepburn": "Berakasu",
+    "trademark": "Beracas",
+    "retained": false
+  },
+  {
+    "id": 955,
+    "english": "Flittle",
+    "kana": "ヒラヒナ",
+    "hepburn": "Hirahina",
+    "trademark": "Hirahina",
+    "retained": false
+  },
+  {
+    "id": 956,
+    "english": "Espathra",
+    "kana": "クエスパトラ",
+    "hepburn": "Kuesupatora",
+    "trademark": "Cuespatra",
+    "retained": false
+  },
+  {
+    "id": 957,
+    "english": "Tinkatink",
+    "kana": "カヌチャン",
+    "hepburn": "Kanuchan",
+    "trademark": "Kanuchan",
+    "retained": false
+  },
+  {
+    "id": 958,
+    "english": "Tinkatuff",
+    "kana": "ナカヌチャン",
+    "hepburn": "Nakanuchan",
+    "trademark": "Nakanuchan",
+    "retained": false
+  },
+  {
+    "id": 959,
+    "english": "Tinkaton",
+    "kana": "デカヌチャン",
+    "hepburn": "Dekanuchan",
+    "trademark": "Dekanuchan",
+    "retained": false
+  },
+  {
+    "id": 960,
+    "english": "Wiglett",
+    "kana": "ウミディグダ",
+    "hepburn": "Umidiguda",
+    "trademark": "Umidigda",
+    "retained": false
+  },
+  {
+    "id": 961,
+    "english": "Wugtrio",
+    "kana": "ウミトリオ",
+    "hepburn": "Umitorio",
+    "trademark": "Umitrio",
+    "retained": false
+  },
+  {
+    "id": 962,
+    "english": "Bombirdier",
+    "kana": "オトシドリ",
+    "hepburn": "Otoshidori",
+    "trademark": "Otoshidori",
+    "retained": false
+  },
+  {
+    "id": 963,
+    "english": "Finizen",
+    "kana": "ナミイルカ",
+    "hepburn": "Namiiruka",
+    "trademark": "Namiiruka",
+    "retained": false
+  },
+  {
+    "id": 964,
+    "english": "Palafin",
+    "kana": "イルカマン",
+    "hepburn": "Irukaman",
+    "trademark": "Irukaman",
+    "retained": false
+  },
+  {
+    "id": 965,
+    "english": "Varoom",
+    "kana": "ブロロン",
+    "hepburn": "Buroron",
+    "trademark": "Buroron",
+    "retained": false
+  },
+  {
+    "id": 966,
+    "english": "Revavroom",
+    "kana": "ブロロローム",
+    "hepburn": "Burororōmu",
+    "trademark": "Burororoom",
+    "retained": false
+  },
+  {
+    "id": 967,
+    "english": "Cyclizar",
+    "kana": "モトトカゲ",
+    "hepburn": "Mototokage",
+    "trademark": "Mototokage",
+    "retained": false
+  },
+  {
+    "id": 968,
+    "english": "Orthworm",
+    "kana": "ミミズズ",
+    "hepburn": "Mimizuzu",
+    "trademark": "Mimizuzu",
+    "retained": false
+  },
+  {
+    "id": 969,
+    "english": "Glimmet",
+    "kana": "キラーメ",
+    "hepburn": "Kirāme",
+    "trademark": "Kirame",
+    "retained": false
+  },
+  {
+    "id": 970,
+    "english": "Glimmora",
+    "kana": "キラフロル",
+    "hepburn": "Kirafuroru",
+    "trademark": "Kiraflor",
+    "retained": false
+  },
+  {
+    "id": 971,
+    "english": "Greavard",
+    "kana": "ボチ",
+    "hepburn": "Bochi",
+    "trademark": "Bochi",
+    "retained": false
+  },
+  {
+    "id": 972,
+    "english": "Houndstone",
+    "kana": "ハカドッグ",
+    "hepburn": "Hakadoggu",
+    "trademark": "Hakadog",
+    "retained": false
+  },
+  {
+    "id": 973,
+    "english": "Flamigo",
+    "kana": "カラミンゴ",
+    "hepburn": "Karamingo",
+    "trademark": "Karamingo",
+    "retained": false
+  },
+  {
+    "id": 974,
+    "english": "Cetoddle",
+    "kana": "アルクジラ",
+    "hepburn": "Arukujira",
+    "trademark": "Arukujira",
+    "retained": false
+  },
+  {
+    "id": 975,
+    "english": "Cetitan",
+    "kana": "ハルクジラ",
+    "hepburn": "Harukujira",
+    "trademark": "Hulkujira",
+    "retained": false
+  },
+  {
+    "id": 976,
+    "english": "Veluza",
+    "kana": "ミガルーサ",
+    "hepburn": "Migarūsa",
+    "trademark": "Migalusa",
+    "retained": false
+  },
+  {
+    "id": 977,
+    "english": "Dondozo",
+    "kana": "ヘイラッシャ",
+    "hepburn": "Heirassha",
+    "trademark": "Heyrusher",
+    "retained": false
+  },
+  {
+    "id": 978,
+    "english": "Tatsugiri",
+    "kana": "シャリタツ",
+    "hepburn": "Sharitatsu",
+    "trademark": "Syaritatsu",
+    "retained": false
+  },
+  {
+    "id": 979,
+    "english": "Annihilape",
+    "kana": "コノヨザル",
+    "hepburn": "Konoyozaru",
+    "trademark": "Konoyozaru",
+    "retained": false
+  },
+  {
+    "id": 980,
+    "english": "Clodsire",
+    "kana": "ドオー",
+    "hepburn": "Do'ō",
+    "trademark": "Dooh",
+    "retained": false
+  },
+  {
+    "id": 981,
+    "english": "Farigiraf",
+    "kana": "リキキリン",
+    "hepburn": "Rikikirin",
+    "trademark": "Rikikirin",
+    "retained": false
+  },
+  {
+    "id": 982,
+    "english": "Dudunsparce",
+    "kana": "ノココッチ",
+    "hepburn": "Nokokotchi",
+    "trademark": "Nokokocchi",
+    "retained": false
+  },
+  {
+    "id": 983,
+    "english": "Kingambit",
+    "kana": "ドドゲザン",
+    "hepburn": "Dodogezan",
+    "trademark": "Dodogezan",
+    "retained": false
+  },
+  {
+    "id": 984,
+    "english": "Great Tusk",
+    "kana": "イダイナキバ",
+    "hepburn": "Idainakiba",
+    "trademark": "Idainakiba",
+    "retained": false
+  },
+  {
+    "id": 985,
+    "english": "Scream Tail",
+    "kana": "サケブシッポ",
+    "hepburn": "Sakebushippo",
+    "trademark": "Sakebushippo",
+    "retained": false
+  },
+  {
+    "id": 986,
+    "english": "Brute Bonnet",
+    "kana": "アラブルタケ",
+    "hepburn": "Araburutake",
+    "trademark": "Araburutake",
+    "retained": false
+  },
+  {
+    "id": 987,
+    "english": "Flutter Mane",
+    "kana": "ハバタクカミ",
+    "hepburn": "Habatakukami",
+    "trademark": "Habatakukami",
+    "retained": false
+  },
+  {
+    "id": 988,
+    "english": "Slither Wing",
+    "kana": "チヲハウハネ",
+    "hepburn": "Chiohauhane",
+    "trademark": "Chiwohauhane",
+    "retained": false
+  },
+  {
+    "id": 989,
+    "english": "Sandy Shocks",
+    "kana": "スナノケガワ",
+    "hepburn": "Sunanokegawa",
+    "trademark": "Sunanokegawa",
+    "retained": false
+  },
+  {
+    "id": 990,
+    "english": "Iron Treads",
+    "kana": "テツノワダチ",
+    "hepburn": "Tetsunowadachi",
+    "trademark": "Tetsunowadachi",
+    "retained": false
+  },
+  {
+    "id": 991,
+    "english": "Iron Bundle",
+    "kana": "テツノツツミ",
+    "hepburn": "Tetsunotsutsumi",
+    "trademark": "Tetsunotsutsumi",
+    "retained": false
+  },
+  {
+    "id": 992,
+    "english": "Iron Hands",
+    "kana": "テツノカイナ",
+    "hepburn": "Tetsunokaina",
+    "trademark": "Tetsunokaina",
+    "retained": false
+  },
+  {
+    "id": 993,
+    "english": "Iron Jugulis",
+    "kana": "テツノコウベ",
+    "hepburn": "Tetsunokōbe",
+    "trademark": "Tetsunokoube",
+    "retained": false
+  },
+  {
+    "id": 994,
+    "english": "Iron Moth",
+    "kana": "テツノドクガ",
+    "hepburn": "Tetsunodokuga",
+    "trademark": "Tetsunodokuga",
+    "retained": false
+  },
+  {
+    "id": 995,
+    "english": "Iron Thorns",
+    "kana": "テツノイバラ",
+    "hepburn": "Tetsunoibara",
+    "trademark": "Tetsunoibara",
+    "retained": false
+  },
+  {
+    "id": 996,
+    "english": "Frigibax",
+    "kana": "セビエ",
+    "hepburn": "Sebie",
+    "trademark": "Sebie",
+    "retained": false
+  },
+  {
+    "id": 997,
+    "english": "Arctibax",
+    "kana": "セゴール",
+    "hepburn": "Segōru",
+    "trademark": "Segohru",
+    "retained": false
+  },
+  {
+    "id": 998,
+    "english": "Baxcalibur",
+    "kana": "セグレイブ",
+    "hepburn": "Segureibu",
+    "trademark": "Seglaive",
+    "retained": false
+  },
+  {
+    "id": 999,
+    "english": "Gimmighoul",
+    "kana": "コレクレー",
+    "hepburn": "Korekurē",
+    "trademark": "Collecurei",
+    "retained": false
+  },
+  {
+    "id": 1000,
+    "english": "Gholdengo",
+    "kana": "サーフゴー",
+    "hepburn": "Sāfugō",
+    "trademark": "Surfugo",
+    "retained": false
+  },
+  {
+    "id": 1001,
+    "english": "Wo-Chien",
+    "kana": "チオンジェン",
+    "hepburn": "Chionjen",
+    "trademark": "Chionjen",
+    "retained": false
+  },
+  {
+    "id": 1002,
+    "english": "Chien-Pao",
+    "kana": "パオジアン",
+    "hepburn": "Paojian",
+    "trademark": "Paojian",
+    "retained": false
+  },
+  {
+    "id": 1003,
+    "english": "Ting-Lu",
+    "kana": "ディンルー",
+    "hepburn": "Dinrū",
+    "trademark": "Dinlu",
+    "retained": false
+  },
+  {
+    "id": 1004,
+    "english": "Chi-Yu",
+    "kana": "イーユイ",
+    "hepburn": "Īyui",
+    "trademark": "Yiyui",
+    "retained": false
+  },
+  {
+    "id": 1005,
+    "english": "Roaring Moon",
+    "kana": "トドロクツキ",
+    "hepburn": "Todorokutsuki",
+    "trademark": "Todorokutsuki",
+    "retained": false
+  },
+  {
+    "id": 1006,
+    "english": "Iron Valiant",
+    "kana": "テツノブジン",
+    "hepburn": "Tetsunobujin",
+    "trademark": "Tetsunobujin",
+    "retained": false
+  },
+  {
+    "id": 1007,
+    "english": "Koraidon",
+    "kana": "コライドン",
+    "hepburn": "Koraidon",
+    "trademark": "Koraidon",
+    "retained": true
+  },
+  {
+    "id": 1008,
+    "english": "Miraidon",
+    "kana": "ミライドン",
+    "hepburn": "Miraidon",
+    "trademark": "Miraidon",
+    "retained": true
+  },
+  {
+    "id": 1009,
+    "english": "Walking Wake",
+    "kana": "ウネルミナモ",
+    "hepburn": "Uneruminamo",
+    "trademark": "Uneruminamo",
+    "retained": false
+  },
+  {
+    "id": 1010,
+    "english": "Iron Leaves",
+    "kana": "テツノイサハ",
+    "hepburn": "Tetsunoisaha",
+    "trademark": "Tetsunoisaha",
+    "retained": false
+  },
+  {
+    "id": 1011,
+    "english": "Dipplin",
+    "kana": "カミッチュ",
+    "hepburn": "Kamitchu",
+    "trademark": "Kamicchu",
+    "retained": false
+  },
+  {
+    "id": 1012,
+    "english": "Poltchageist",
+    "kana": "チャデス",
+    "hepburn": "Chadesu",
+    "trademark": "Chadeath",
+    "retained": false
+  },
+  {
+    "id": 1013,
+    "english": "Sinistcha",
+    "kana": "ヤバソチャ",
+    "hepburn": "Yabasocha",
+    "trademark": "Yabasocha",
+    "retained": false
+  },
+  {
+    "id": 1014,
+    "english": "Okidogi",
+    "kana": "イイネイヌ",
+    "hepburn": "Iineinu",
+    "trademark": "Iineinu",
+    "retained": false
+  },
+  {
+    "id": 1015,
+    "english": "Munkidori",
+    "kana": "マシマシラ",
+    "hepburn": "Mashimashira",
+    "trademark": "Mashimashira",
+    "retained": false
+  },
+  {
+    "id": 1016,
+    "english": "Fezandipiti",
+    "kana": "キチキギス",
+    "hepburn": "Kichikigisu",
+    "trademark": "Kichikigisu",
+    "retained": false
+  },
+  {
+    "id": 1017,
+    "english": "Ogerpon",
+    "kana": "オーガポン",
+    "hepburn": "Ōgapon",
+    "trademark": "Ogerpon",
+    "retained": true
+  },
+  {
+    "id": 1018,
+    "english": "Archaludon",
+    "kana": "ブリジュラス",
+    "hepburn": "Burijurasu",
+    "trademark": "Briduras",
+    "retained": false
+  },
+  {
+    "id": 1019,
+    "english": "Hydrapple",
+    "kana": "カミツオロチ",
+    "hepburn": "Kamitsuorochi",
+    "trademark": "Kamitsuorochi",
+    "retained": false
+  },
+  {
+    "id": 1020,
+    "english": "Gouging Fire",
+    "kana": "ウガツホムラ",
+    "hepburn": "Ugatsuhomura",
+    "trademark": "Ugatsuhomura",
+    "retained": false
+  },
+  {
+    "id": 1021,
+    "english": "Raging Bolt",
+    "kana": "タケルライコ",
+    "hepburn": "Takeruraiko",
+    "trademark": "Takeruraiko",
+    "retained": false
+  },
+  {
+    "id": 1022,
+    "english": "Iron Boulder",
+    "kana": "テツノイワオ",
+    "hepburn": "Tetsunoiwao",
+    "trademark": "Tetsunoiwao",
+    "retained": false
+  },
+  {
+    "id": 1023,
+    "english": "Iron Crown",
+    "kana": "テツノカシラ",
+    "hepburn": "Tetsunokashira",
+    "trademark": "Tetsunokashira",
+    "retained": false
+  },
+  {
+    "id": 1024,
+    "english": "Terapagos",
+    "kana": "テラパゴス",
+    "hepburn": "Terapagosu",
+    "trademark": "Terapagos",
+    "retained": true
+  },
+  {
+    "id": 1025,
+    "english": "Pecharunt",
+    "kana": "モモワロウ",
+    "hepburn": "Momowarou",
+    "trademark": "Momowarou",
+    "retained": false
+  }
+]
