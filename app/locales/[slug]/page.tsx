@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FrenchPokedex } from "../../components/FrenchPokedex";
+import { ItalianPokedex } from "../../components/ItalianPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
 import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
@@ -10,6 +11,7 @@ const chapters = {
     deck: "How cultural policy, Korean-language media, and a dedicated regional company shaped a distinct Pokémon locale.",
   },
   france: { code: "FR", place: "France", local: "France", language: "French · français", period: "1998—today", live: true, deck: "How a Nintendo France team turned translation into wordplay—and built one of Pokémon’s most distinctive naming traditions." },
+  italy: { code: "IT", place: "Italy", local: "Italia", language: "Italian · italiano", period: "1999—today", live: true, deck: "How Italy built a fully localized Pokémon world around mostly unchanged species names—and when it chose to translate them." },
   "hong-kong": { code: "HK", place: "Hong Kong", local: "香港", language: "Cantonese · Traditional Chinese", period: "1998—today", live: true, deck: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone." },
   taiwan: { code: "TW", place: "Taiwan", local: "台灣", language: "Mandarin · Traditional Chinese", period: "1998—today", live: true, deck: "From established anime vocabulary to a coordinated Chinese-language game localization." },
   "mainland-china": { code: "CN", place: "Mainland China", local: "中国大陆", language: "Mandarin · Simplified Chinese", period: "2000s—today", live: true, deck: "The mainland record of simplified-script terminology, official distribution, games, cards, and media." },
@@ -130,6 +132,34 @@ function FrenchChapter() {
   </>;
 }
 
+function ItalianChapter() {
+  return <>
+    <section className="arrival-brief italy-arrival">
+      <div className="arrival-heading"><span>Arrival & naming frame</span><h2>Italy translated<br /><em>everything around the name.</em></h2><p>Pokémon entered Italy through localized Game Boy editions in autumn 1999, then became a television phenomenon in January 2000. The games, dialogue, places, moves, and media were Italian—even while nearly every species kept its English spelling.</p></div>
+      <div className="arrival-markers">
+        <article><time>05 OCT 1999</time><span>Earliest documented franchise arrival</span><h3>Pokémon Rosso and Blu launch</h3><p>The Italian Game Boy editions mark the franchise’s first official release in the locale. Their titles and game text were translated, but Bulbasaur, Charmander, Squirtle, and the rest of the species arrived under the English international names.</p></article>
+        <article><time>10 JAN 2000</time><span>Mass-market television arrival</span><h3>Episode one airs on Italia 1</h3><p><i>L’inizio di una grande avventura</i> introduced the animated series through Mediaset’s Italia 1. The dub retained the English adaptation’s character and species names while giving the show an Italian script, cast, and musical identity.</p></article>
+      </div>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Italy" target="_blank" rel="noreferrer">Italy release, broadcast, and dubbing record ↗</a>
+    </section>
+    <section className="chapter-opening italy-opening">
+      <div className="chapter-rail"><span>Naming method</span><b>01</b></div>
+      <article><p className="dropcap">Italian localization made a durable distinction between spelling and speech. Most species names are written exactly as in English, but Italian references describe them as pronounced in a way that approximates the English sound through Italian phonology: Pikachu, for example, becomes roughly <i>pìcaciu</i>.</p><p>This is not an absence of localization. The same editions translate moves, abilities, items, locations, dialogue, Pokédex prose, episode titles, and human character names. Species spellings occupy a protected international layer inside an otherwise Italian world.</p><aside><b>The exception reveals the rule</b><p>Only 21 of the first 1,025 species have a spelling distinct from English: Tipo Zero and 20 Paradox Pokémon. Their descriptive, title-like construction invited translation in a way conventional proper names did not.</p></aside></article>
+    </section>
+    <section className="chapter-timeline italy-timeline">
+      <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
+      <div className="chapter-events">
+        <article><time>05 OCT<br />1999</time><div><span>Core games / naming policy in use</span><h2>An Italian game, international species names</h2><p>Pokémon Rosso and Blu establish the pattern that still defines the locale: translated product text paired with English species spellings. The choice makes Italian notably different from French and German, which rebuilt most names in their own languages.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Italy" target="_blank" rel="noreferrer">Italy franchise record ↗</a></div></article>
+        <article><time>2000—<br />2008</time><div><span>Animation / musical localization</span><h2>Italian television creates its own sound</h2><p>During Mediaset’s first ten seasons, the Italian dub used nine locally created themes, including one for Pokémon Chronicles. Bulbapedia identifies Italy as the only dub outside Asia—apart from English—to create original music for the animated series.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Italy#Music" target="_blank" rel="noreferrer">Italian music and broadcast record ↗</a></div></article>
+        <article className="italy-exception-event"><time>23 NOV<br />2016</time><div><span>Generation VII / first name exception</span><h2>Type: Null becomes Tipo Zero</h2><p>Pokémon Sole and Luna introduced the first species whose official Italian spelling differs from English. Tipo Zero translates the constructed designation rather than treating it like an ordinary proper name, opening a very narrow exception to the long-running policy.</p><a href="https://www.pokemon.com/it/pokedex/silvally" target="_blank" rel="noreferrer">Official Italian Pokédex record ↗</a></div></article>
+        <article className="italy-exception-event"><time>18 NOV<br />2022</time><div><span>Generation IX / translated name family</span><h2>The Paradox Pokémon expand the exception</h2><p>Pokémon Scarlatto and Violetto gave Italian descriptive names to the Paradox species: Great Tusk became Grandizanne, Iron Treads became Solcoferreo, and the pattern continued through the later Paldea additions. Koraidon and Miraidon kept their international spellings.</p><a href="https://www.pokemon.com/it/novita/affronta-grandizanne-e-solcoferreo-nei-raid-teracristal" target="_blank" rel="noreferrer">Official names and release record ↗</a></div></article>
+      </div>
+    </section>
+    <ItalianPokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.com/it/pokedex" target="_blank" rel="noreferrer">01 · Official Italian Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Italy" target="_blank" rel="noreferrer">02 · Pokémon in Italy</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Italian_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · Italian name index</a><a href="https://www.pokemon.com/it/pokedex/silvally" target="_blank" rel="noreferrer">04 · Tipo Zero official record</a><a href="https://www.pokemon.com/it/novita/affronta-grandizanne-e-solcoferreo-nei-raid-teracristal" target="_blank" rel="noreferrer">05 · Paradox names official record</a></section>
+  </>;
+}
+
 function VietnamChapter() {
   return <>
     <section className="arrival-brief vietnam-arrival">
@@ -176,7 +206,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "france" ? <FrenchChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "france" ? <FrenchChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>
