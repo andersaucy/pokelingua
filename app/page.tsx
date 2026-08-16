@@ -23,7 +23,7 @@ const locales: Locale[] = [
   { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", status: "Chapter live", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today" },
   { id: "in", slug: "india", flag: "IN", place: "India", local: "भारत", languages: "Hindi · Tamil · Telugu +", status: "Researching", note: "A multilingual broadcast and digital story now unfolding across official regional channels.", years: "2003—today" },
   { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", status: "Researching", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today" },
-  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Researching", note: "A developing vocabulary whose recent official naming decisions deserve a careful public record.", years: "1990s—today" },
+  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Chapter live", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today" },
 ];
 
 const milestones = [

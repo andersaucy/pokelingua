@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FrenchPokedex } from "../../components/FrenchPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
+import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
 const chapters = {
   "south-korea": {
@@ -14,7 +15,7 @@ const chapters = {
   "mainland-china": { code: "CN", place: "Mainland China", local: "中国大陆", language: "Mandarin · Simplified Chinese", period: "2000s—today", live: true, deck: "The mainland record of simplified-script terminology, official distribution, games, cards, and media." },
   india: { code: "IN", place: "India", local: "भारत", language: "Hindi · Tamil · Telugu +", period: "2003—today", live: false, deck: "Pokémon across a multilingual broadcast market and a growing official digital archive." },
   brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese", period: "1999—today", live: false, deck: "A major dub culture, a passionate fan base, and the late arrival of Portuguese in core games." },
-  vietnam: { code: "VN", place: "Vietnam", local: "Việt Nam", language: "Vietnamese · Tiếng Việt", period: "1990s—today", live: false, deck: "A developing official vocabulary with recent naming decisions still being documented." },
+  vietnam: { code: "VN", place: "Vietnam", local: "Việt Nam", language: "Vietnamese · Tiếng Việt", period: "2002—today", live: true, deck: "From Japanese-rooted species names in Vietnamese media to the English-name standard announced in May 2026." },
 } as const;
 
 type Slug = keyof typeof chapters;
@@ -129,6 +130,35 @@ function FrenchChapter() {
   </>;
 }
 
+function VietnamChapter() {
+  return <>
+    <section className="arrival-brief vietnam-arrival">
+      <div className="arrival-heading"><span>Arrival & naming frame</span><h2>Vietnam localized<br /><em>the world around the names.</em></h2><p>Pokémon reached Vietnamese audiences through television and publishing in the early 2000s. For much of the official record, Vietnamese dialogue and terminology surrounded species names romanized from Japanese rather than newly translated into Vietnamese.</p></div>
+      <div className="arrival-markers">
+        <article><time>2002</time><span>Earliest documented television arrival · exact day pending</span><h3>The original series reaches VTV3</h3><p>The national broadcaster carried the original series as a Vietnamese voice-over translation. A later VTV retrospective confirms that Pokémon had previously appeared in VTV3’s children’s programming; Bulbapedia’s broadcast record dates that first run to 2002.</p></article>
+        <article><time>2003</time><span>Licensed publishing</span><h3>Pokémon Adventures enters print</h3><p>Kim Đồng Publishing House licensed and translated the manga, publishing volumes 1–12 before the first run ended. Print and television therefore formed separate early routes into the locale, each with its own translation choices.</p></article>
+      </div>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">Vietnam franchise and broadcast record ↗</a>
+    </section>
+    <section className="chapter-opening vietnam-opening">
+      <div className="chapter-rail"><span>Naming method</span><b>01</b></div>
+      <article><p className="dropcap">A Vietnamese Pokémon name was often neither an English import nor a Vietnamese descriptive translation. Official anime, merchandise, social media, and web material largely rendered the Japanese species name in Latin letters: Bulbasaur became Fushigidane, Charmander became Hitokage, while Pikachu remained Pikachu.</p><p>That made Vietnam a distinct naming locale even though the spellings often pointed back to Japan. The Vietnamese language shaped dialogue, moves, abilities, items, and surrounding descriptions; the species-name layer followed a different policy.</p><aside><b>Editorial note</b><p>Pokélingua labels these as earlier Vietnam-market spellings—not “Vietnamese translations.” Most are romanizations of Japanese names, and four documented forms—Mizugrou, Peplipper, Kewassu, and Shigarogo—depart notably from the corresponding Japanese romanizations.</p></aside></article>
+    </section>
+    <section className="chapter-timeline vietnam-timeline">
+      <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
+      <div className="chapter-events">
+        <article><time>25 JAN<br />2014</time><div><span>Animation / full dub</span><h2>Black & White begins on HTV3</h2><p>After an audience poll, HTV3 launched a Vietnamese dub based directly on the Japanese version. Characters and Pokémon retained Japanese names while moves, abilities, and items were translated into Vietnamese—a clear record of the locale’s layered naming method.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">Broadcast and dub record ↗</a></div></article>
+        <article><time>28 SEP<br />2015</time><div><span>National television / XY</span><h2>Pokémon returns on VTV2</h2><p>VTV2 introduced Pokémon the Series: XY in its children’s “Giờ ra chơi” block. The broadcaster described the licensed return as a reunion for viewers who remembered the earlier VTV3 run.</p><a href="https://vtv.vn/goc-khan-gia/hom-nay-28-9-pokemon-tro-lai-tren-song-vtv2-20150928154959873.htm" target="_blank" rel="noreferrer">Contemporary announcement · VTV ↗</a></div></article>
+        <article><time>17 MAY<br />2019</time><div><span>Digital archive / episode one</span><h2>The original journey is dubbed online</h2><p>POPS Kids began uploading the original series from episode 1. Unlike the early VTV3 voice-over, this edition was dubbed into Vietnamese from the Japanese version, turning a foundational broadcast memory into an on-demand archive.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">Upload history ↗</a></div></article>
+        <article className="vietnam-policy-event"><time>25 MAY<br />2026</time><div><span>Official naming policy</span><h2>English names become the national standard</h2><p>The official Pokémon Vietnam site announced that all future Pokémon content and services in Vietnam would consistently use the English species names. The notice explicitly acknowledged fans attached to the earlier names while establishing a new forward-looking standard.</p><a href="https://vn.portal-pokemon.com/topics/post-5775/" target="_blank" rel="noreferrer">Primary announcement · Pokémon Vietnam ↗</a></div></article>
+        <article><time>30 MAY<br />2026</time><div><span>Animation / policy in use</span><h2>Horizons arrives on VTV2</h2><p>Pokémon Horizons: The Series premiered in Vietnamese as <i>Pokémon: Chân Trời Mới</i>. The dub uses English species names—Sprigatito and Fuecoco—putting the new naming policy into a mass-broadcast context five days after its announcement.</p><a href="https://vtv.gov.vn/news/vtv-voi-khan-gia/pokemon-tro-lai-tren-song-vtv2-voi-hanh-trinh-phieu-luu-moi-hap-dan" target="_blank" rel="noreferrer">Broadcast record · VTV ↗</a></div></article>
+      </div>
+    </section>
+    <VietnamesePokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://vn.portal-pokemon.com/topics/post-5775/" target="_blank" rel="noreferrer">01 · Official 2026 naming notice</a><a href="https://vn.portal-pokemon.com/play/pokedex" target="_blank" rel="noreferrer">02 · Current official Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Vietnam" target="_blank" rel="noreferrer">03 · Vietnam history index</a><a href="https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Vietnamese_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">04 · Earlier-name index</a><a href="https://vtv.vn/goc-khan-gia/hom-nay-28-9-pokemon-tro-lai-tren-song-vtv2-20150928154959873.htm" target="_blank" rel="noreferrer">05 · VTV contemporary archive</a></section>
+  </>;
+}
+
 export default async function LocalePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const chapter = chapters[slug as Slug];
@@ -146,7 +176,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "france" ? <FrenchChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "france" ? <FrenchChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>

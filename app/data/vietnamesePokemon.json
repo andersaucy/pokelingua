@@ -1,0 +1,7177 @@
+[
+  {
+    "id": 1,
+    "english": "Bulbasaur",
+    "current": "Bulbasaur",
+    "historical": "Fushigidane",
+    "changed": true
+  },
+  {
+    "id": 2,
+    "english": "Ivysaur",
+    "current": "Ivysaur",
+    "historical": "Fushigisou",
+    "changed": true
+  },
+  {
+    "id": 3,
+    "english": "Venusaur",
+    "current": "Venusaur",
+    "historical": "Fushigibana",
+    "changed": true
+  },
+  {
+    "id": 4,
+    "english": "Charmander",
+    "current": "Charmander",
+    "historical": "Hitokage",
+    "changed": true
+  },
+  {
+    "id": 5,
+    "english": "Charmeleon",
+    "current": "Charmeleon",
+    "historical": "Lizardo",
+    "changed": true
+  },
+  {
+    "id": 6,
+    "english": "Charizard",
+    "current": "Charizard",
+    "historical": "Lizardon",
+    "changed": true
+  },
+  {
+    "id": 7,
+    "english": "Squirtle",
+    "current": "Squirtle",
+    "historical": "Zenigame",
+    "changed": true
+  },
+  {
+    "id": 8,
+    "english": "Wartortle",
+    "current": "Wartortle",
+    "historical": "Kameil",
+    "changed": true
+  },
+  {
+    "id": 9,
+    "english": "Blastoise",
+    "current": "Blastoise",
+    "historical": "Kamex",
+    "changed": true
+  },
+  {
+    "id": 10,
+    "english": "Caterpie",
+    "current": "Caterpie",
+    "historical": "Caterpie",
+    "changed": false
+  },
+  {
+    "id": 11,
+    "english": "Metapod",
+    "current": "Metapod",
+    "historical": "Transell",
+    "changed": true
+  },
+  {
+    "id": 12,
+    "english": "Butterfree",
+    "current": "Butterfree",
+    "historical": "Butterfree",
+    "changed": false
+  },
+  {
+    "id": 13,
+    "english": "Weedle",
+    "current": "Weedle",
+    "historical": "Beedle",
+    "changed": true
+  },
+  {
+    "id": 14,
+    "english": "Kakuna",
+    "current": "Kakuna",
+    "historical": "Cocoon",
+    "changed": true
+  },
+  {
+    "id": 15,
+    "english": "Beedrill",
+    "current": "Beedrill",
+    "historical": "Spear",
+    "changed": true
+  },
+  {
+    "id": 16,
+    "english": "Pidgey",
+    "current": "Pidgey",
+    "historical": "Poppo",
+    "changed": true
+  },
+  {
+    "id": 17,
+    "english": "Pidgeotto",
+    "current": "Pidgeotto",
+    "historical": "Pigeon",
+    "changed": true
+  },
+  {
+    "id": 18,
+    "english": "Pidgeot",
+    "current": "Pidgeot",
+    "historical": "Pigeot",
+    "changed": true
+  },
+  {
+    "id": 19,
+    "english": "Rattata",
+    "current": "Rattata",
+    "historical": "Koratta",
+    "changed": true
+  },
+  {
+    "id": 20,
+    "english": "Raticate",
+    "current": "Raticate",
+    "historical": "Ratta",
+    "changed": true
+  },
+  {
+    "id": 21,
+    "english": "Spearow",
+    "current": "Spearow",
+    "historical": "Onisuzume",
+    "changed": true
+  },
+  {
+    "id": 22,
+    "english": "Fearow",
+    "current": "Fearow",
+    "historical": "Onidrill",
+    "changed": true
+  },
+  {
+    "id": 23,
+    "english": "Ekans",
+    "current": "Ekans",
+    "historical": "Arbo",
+    "changed": true
+  },
+  {
+    "id": 24,
+    "english": "Arbok",
+    "current": "Arbok",
+    "historical": "Arbok",
+    "changed": false
+  },
+  {
+    "id": 25,
+    "english": "Pikachu",
+    "current": "Pikachu",
+    "historical": "Pikachu",
+    "changed": false
+  },
+  {
+    "id": 26,
+    "english": "Raichu",
+    "current": "Raichu",
+    "historical": "Raichu",
+    "changed": false
+  },
+  {
+    "id": 27,
+    "english": "Sandshrew",
+    "current": "Sandshrew",
+    "historical": "Sand",
+    "changed": true
+  },
+  {
+    "id": 28,
+    "english": "Sandslash",
+    "current": "Sandslash",
+    "historical": "Sandpan",
+    "changed": true
+  },
+  {
+    "id": 29,
+    "english": "Nidoran♀",
+    "current": "Nidoran♀",
+    "historical": "Nidoran♀",
+    "changed": false
+  },
+  {
+    "id": 30,
+    "english": "Nidorina",
+    "current": "Nidorina",
+    "historical": "Nidorina",
+    "changed": false
+  },
+  {
+    "id": 31,
+    "english": "Nidoqueen",
+    "current": "Nidoqueen",
+    "historical": "Nidoqueen",
+    "changed": false
+  },
+  {
+    "id": 32,
+    "english": "Nidoran♂",
+    "current": "Nidoran♂",
+    "historical": "Nidoran♂",
+    "changed": false
+  },
+  {
+    "id": 33,
+    "english": "Nidorino",
+    "current": "Nidorino",
+    "historical": "Nidorino",
+    "changed": false
+  },
+  {
+    "id": 34,
+    "english": "Nidoking",
+    "current": "Nidoking",
+    "historical": "Nidoking",
+    "changed": false
+  },
+  {
+    "id": 35,
+    "english": "Clefairy",
+    "current": "Clefairy",
+    "historical": "Pippi",
+    "changed": true
+  },
+  {
+    "id": 36,
+    "english": "Clefable",
+    "current": "Clefable",
+    "historical": "Pixy",
+    "changed": true
+  },
+  {
+    "id": 37,
+    "english": "Vulpix",
+    "current": "Vulpix",
+    "historical": "Rokon",
+    "changed": true
+  },
+  {
+    "id": 38,
+    "english": "Ninetales",
+    "current": "Ninetales",
+    "historical": "Kyukon",
+    "changed": true
+  },
+  {
+    "id": 39,
+    "english": "Jigglypuff",
+    "current": "Jigglypuff",
+    "historical": "Purin",
+    "changed": true
+  },
+  {
+    "id": 40,
+    "english": "Wigglytuff",
+    "current": "Wigglytuff",
+    "historical": "Pukurin",
+    "changed": true
+  },
+  {
+    "id": 41,
+    "english": "Zubat",
+    "current": "Zubat",
+    "historical": "Zubat",
+    "changed": false
+  },
+  {
+    "id": 42,
+    "english": "Golbat",
+    "current": "Golbat",
+    "historical": "Golbat",
+    "changed": false
+  },
+  {
+    "id": 43,
+    "english": "Oddish",
+    "current": "Oddish",
+    "historical": "Nazonokusa",
+    "changed": true
+  },
+  {
+    "id": 44,
+    "english": "Gloom",
+    "current": "Gloom",
+    "historical": "Kusaihana",
+    "changed": true
+  },
+  {
+    "id": 45,
+    "english": "Vileplume",
+    "current": "Vileplume",
+    "historical": "Ruffresia",
+    "changed": true
+  },
+  {
+    "id": 46,
+    "english": "Paras",
+    "current": "Paras",
+    "historical": "Paras",
+    "changed": false
+  },
+  {
+    "id": 47,
+    "english": "Parasect",
+    "current": "Parasect",
+    "historical": "Parasect",
+    "changed": false
+  },
+  {
+    "id": 48,
+    "english": "Venonat",
+    "current": "Venonat",
+    "historical": "Kongpang",
+    "changed": true
+  },
+  {
+    "id": 49,
+    "english": "Venomoth",
+    "current": "Venomoth",
+    "historical": "Morphon",
+    "changed": true
+  },
+  {
+    "id": 50,
+    "english": "Diglett",
+    "current": "Diglett",
+    "historical": "Digda",
+    "changed": true
+  },
+  {
+    "id": 51,
+    "english": "Dugtrio",
+    "current": "Dugtrio",
+    "historical": "Dugtrio",
+    "changed": false
+  },
+  {
+    "id": 52,
+    "english": "Meowth",
+    "current": "Meowth",
+    "historical": "Nyasu",
+    "changed": true
+  },
+  {
+    "id": 53,
+    "english": "Persian",
+    "current": "Persian",
+    "historical": "Persian",
+    "changed": false
+  },
+  {
+    "id": 54,
+    "english": "Psyduck",
+    "current": "Psyduck",
+    "historical": "Koduck",
+    "changed": true
+  },
+  {
+    "id": 55,
+    "english": "Golduck",
+    "current": "Golduck",
+    "historical": "Golduck",
+    "changed": false
+  },
+  {
+    "id": 56,
+    "english": "Mankey",
+    "current": "Mankey",
+    "historical": "Mankey",
+    "changed": false
+  },
+  {
+    "id": 57,
+    "english": "Primeape",
+    "current": "Primeape",
+    "historical": "Okorizaru",
+    "changed": true
+  },
+  {
+    "id": 58,
+    "english": "Growlithe",
+    "current": "Growlithe",
+    "historical": "Gardie",
+    "changed": true
+  },
+  {
+    "id": 59,
+    "english": "Arcanine",
+    "current": "Arcanine",
+    "historical": "Windie",
+    "changed": true
+  },
+  {
+    "id": 60,
+    "english": "Poliwag",
+    "current": "Poliwag",
+    "historical": "Nyoromo",
+    "changed": true
+  },
+  {
+    "id": 61,
+    "english": "Poliwhirl",
+    "current": "Poliwhirl",
+    "historical": "Nyorozo",
+    "changed": true
+  },
+  {
+    "id": 62,
+    "english": "Poliwrath",
+    "current": "Poliwrath",
+    "historical": "Nyorobon",
+    "changed": true
+  },
+  {
+    "id": 63,
+    "english": "Abra",
+    "current": "Abra",
+    "historical": "Casey",
+    "changed": true
+  },
+  {
+    "id": 64,
+    "english": "Kadabra",
+    "current": "Kadabra",
+    "historical": "Yungerer",
+    "changed": true
+  },
+  {
+    "id": 65,
+    "english": "Alakazam",
+    "current": "Alakazam",
+    "historical": "Foodin",
+    "changed": true
+  },
+  {
+    "id": 66,
+    "english": "Machop",
+    "current": "Machop",
+    "historical": "Wanriky",
+    "changed": true
+  },
+  {
+    "id": 67,
+    "english": "Machoke",
+    "current": "Machoke",
+    "historical": "Goriky",
+    "changed": true
+  },
+  {
+    "id": 68,
+    "english": "Machamp",
+    "current": "Machamp",
+    "historical": "Kairiky",
+    "changed": true
+  },
+  {
+    "id": 69,
+    "english": "Bellsprout",
+    "current": "Bellsprout",
+    "historical": "Madatsubomi",
+    "changed": true
+  },
+  {
+    "id": 70,
+    "english": "Weepinbell",
+    "current": "Weepinbell",
+    "historical": "Utsudon",
+    "changed": true
+  },
+  {
+    "id": 71,
+    "english": "Victreebel",
+    "current": "Victreebel",
+    "historical": "Utsubot",
+    "changed": true
+  },
+  {
+    "id": 72,
+    "english": "Tentacool",
+    "current": "Tentacool",
+    "historical": "Menokurage",
+    "changed": true
+  },
+  {
+    "id": 73,
+    "english": "Tentacruel",
+    "current": "Tentacruel",
+    "historical": "Dokukurage",
+    "changed": true
+  },
+  {
+    "id": 74,
+    "english": "Geodude",
+    "current": "Geodude",
+    "historical": "Isitsubute",
+    "changed": true
+  },
+  {
+    "id": 75,
+    "english": "Graveler",
+    "current": "Graveler",
+    "historical": "Golone",
+    "changed": true
+  },
+  {
+    "id": 76,
+    "english": "Golem",
+    "current": "Golem",
+    "historical": "Golonya",
+    "changed": true
+  },
+  {
+    "id": 77,
+    "english": "Ponyta",
+    "current": "Ponyta",
+    "historical": "Ponyta",
+    "changed": false
+  },
+  {
+    "id": 78,
+    "english": "Rapidash",
+    "current": "Rapidash",
+    "historical": "Gallop",
+    "changed": true
+  },
+  {
+    "id": 79,
+    "english": "Slowpoke",
+    "current": "Slowpoke",
+    "historical": "Yadon",
+    "changed": true
+  },
+  {
+    "id": 80,
+    "english": "Slowbro",
+    "current": "Slowbro",
+    "historical": "Yadoran",
+    "changed": true
+  },
+  {
+    "id": 81,
+    "english": "Magnemite",
+    "current": "Magnemite",
+    "historical": "Coil",
+    "changed": true
+  },
+  {
+    "id": 82,
+    "english": "Magneton",
+    "current": "Magneton",
+    "historical": "Rarecoil",
+    "changed": true
+  },
+  {
+    "id": 83,
+    "english": "Farfetch'd",
+    "current": "Farfetch'd",
+    "historical": "Kamonegi",
+    "changed": true
+  },
+  {
+    "id": 84,
+    "english": "Doduo",
+    "current": "Doduo",
+    "historical": "Dodo",
+    "changed": true
+  },
+  {
+    "id": 85,
+    "english": "Dodrio",
+    "current": "Dodrio",
+    "historical": "Dodorio",
+    "changed": true
+  },
+  {
+    "id": 86,
+    "english": "Seel",
+    "current": "Seel",
+    "historical": "Pawou",
+    "changed": true
+  },
+  {
+    "id": 87,
+    "english": "Dewgong",
+    "current": "Dewgong",
+    "historical": "Jugon",
+    "changed": true
+  },
+  {
+    "id": 88,
+    "english": "Grimer",
+    "current": "Grimer",
+    "historical": "Betbeter",
+    "changed": true
+  },
+  {
+    "id": 89,
+    "english": "Muk",
+    "current": "Muk",
+    "historical": "Betbeton",
+    "changed": true
+  },
+  {
+    "id": 90,
+    "english": "Shellder",
+    "current": "Shellder",
+    "historical": "Shellder",
+    "changed": false
+  },
+  {
+    "id": 91,
+    "english": "Cloyster",
+    "current": "Cloyster",
+    "historical": "Parshen",
+    "changed": true
+  },
+  {
+    "id": 92,
+    "english": "Gastly",
+    "current": "Gastly",
+    "historical": "Ghos",
+    "changed": true
+  },
+  {
+    "id": 93,
+    "english": "Haunter",
+    "current": "Haunter",
+    "historical": "Ghost",
+    "changed": true
+  },
+  {
+    "id": 94,
+    "english": "Gengar",
+    "current": "Gengar",
+    "historical": "Gangar",
+    "changed": true
+  },
+  {
+    "id": 95,
+    "english": "Onix",
+    "current": "Onix",
+    "historical": "Iwark",
+    "changed": true
+  },
+  {
+    "id": 96,
+    "english": "Drowzee",
+    "current": "Drowzee",
+    "historical": "Sleepe",
+    "changed": true
+  },
+  {
+    "id": 97,
+    "english": "Hypno",
+    "current": "Hypno",
+    "historical": "Sleeper",
+    "changed": true
+  },
+  {
+    "id": 98,
+    "english": "Krabby",
+    "current": "Krabby",
+    "historical": "Crab",
+    "changed": true
+  },
+  {
+    "id": 99,
+    "english": "Kingler",
+    "current": "Kingler",
+    "historical": "Kingler",
+    "changed": false
+  },
+  {
+    "id": 100,
+    "english": "Voltorb",
+    "current": "Voltorb",
+    "historical": "Biriridama",
+    "changed": true
+  },
+  {
+    "id": 101,
+    "english": "Electrode",
+    "current": "Electrode",
+    "historical": "Marumine",
+    "changed": true
+  },
+  {
+    "id": 102,
+    "english": "Exeggcute",
+    "current": "Exeggcute",
+    "historical": "Tamatama",
+    "changed": true
+  },
+  {
+    "id": 103,
+    "english": "Exeggutor",
+    "current": "Exeggutor",
+    "historical": "Nassy",
+    "changed": true
+  },
+  {
+    "id": 104,
+    "english": "Cubone",
+    "current": "Cubone",
+    "historical": "Karakara",
+    "changed": true
+  },
+  {
+    "id": 105,
+    "english": "Marowak",
+    "current": "Marowak",
+    "historical": "Garagara",
+    "changed": true
+  },
+  {
+    "id": 106,
+    "english": "Hitmonlee",
+    "current": "Hitmonlee",
+    "historical": "Sawamular",
+    "changed": true
+  },
+  {
+    "id": 107,
+    "english": "Hitmonchan",
+    "current": "Hitmonchan",
+    "historical": "Ebiwalar",
+    "changed": true
+  },
+  {
+    "id": 108,
+    "english": "Lickitung",
+    "current": "Lickitung",
+    "historical": "Beroringa",
+    "changed": true
+  },
+  {
+    "id": 109,
+    "english": "Koffing",
+    "current": "Koffing",
+    "historical": "Dogars",
+    "changed": true
+  },
+  {
+    "id": 110,
+    "english": "Weezing",
+    "current": "Weezing",
+    "historical": "Matadogas",
+    "changed": true
+  },
+  {
+    "id": 111,
+    "english": "Rhyhorn",
+    "current": "Rhyhorn",
+    "historical": "Sihorn",
+    "changed": true
+  },
+  {
+    "id": 112,
+    "english": "Rhydon",
+    "current": "Rhydon",
+    "historical": "Sidon",
+    "changed": true
+  },
+  {
+    "id": 113,
+    "english": "Chansey",
+    "current": "Chansey",
+    "historical": "Lucky",
+    "changed": true
+  },
+  {
+    "id": 114,
+    "english": "Tangela",
+    "current": "Tangela",
+    "historical": "Monjara",
+    "changed": true
+  },
+  {
+    "id": 115,
+    "english": "Kangaskhan",
+    "current": "Kangaskhan",
+    "historical": "Garura",
+    "changed": true
+  },
+  {
+    "id": 116,
+    "english": "Horsea",
+    "current": "Horsea",
+    "historical": "Tattu",
+    "changed": true
+  },
+  {
+    "id": 117,
+    "english": "Seadra",
+    "current": "Seadra",
+    "historical": "Seadra",
+    "changed": false
+  },
+  {
+    "id": 118,
+    "english": "Goldeen",
+    "current": "Goldeen",
+    "historical": "Tosakinto",
+    "changed": true
+  },
+  {
+    "id": 119,
+    "english": "Seaking",
+    "current": "Seaking",
+    "historical": "Azumao",
+    "changed": true
+  },
+  {
+    "id": 120,
+    "english": "Staryu",
+    "current": "Staryu",
+    "historical": "Hitodeman",
+    "changed": true
+  },
+  {
+    "id": 121,
+    "english": "Starmie",
+    "current": "Starmie",
+    "historical": "Starmie",
+    "changed": false
+  },
+  {
+    "id": 122,
+    "english": "Mr. Mime",
+    "current": "Mr. Mime",
+    "historical": "Barrierd",
+    "changed": true
+  },
+  {
+    "id": 123,
+    "english": "Scyther",
+    "current": "Scyther",
+    "historical": "Strike",
+    "changed": true
+  },
+  {
+    "id": 124,
+    "english": "Jynx",
+    "current": "Jynx",
+    "historical": "Rougela",
+    "changed": true
+  },
+  {
+    "id": 125,
+    "english": "Electabuzz",
+    "current": "Electabuzz",
+    "historical": "Eleboo",
+    "changed": true
+  },
+  {
+    "id": 126,
+    "english": "Magmar",
+    "current": "Magmar",
+    "historical": "Boober",
+    "changed": true
+  },
+  {
+    "id": 127,
+    "english": "Pinsir",
+    "current": "Pinsir",
+    "historical": "Kailios",
+    "changed": true
+  },
+  {
+    "id": 128,
+    "english": "Tauros",
+    "current": "Tauros",
+    "historical": "Kentauros",
+    "changed": true
+  },
+  {
+    "id": 129,
+    "english": "Magikarp",
+    "current": "Magikarp",
+    "historical": "Koiking",
+    "changed": true
+  },
+  {
+    "id": 130,
+    "english": "Gyarados",
+    "current": "Gyarados",
+    "historical": "Gyarados",
+    "changed": false
+  },
+  {
+    "id": 131,
+    "english": "Lapras",
+    "current": "Lapras",
+    "historical": "Lapras",
+    "changed": false
+  },
+  {
+    "id": 132,
+    "english": "Ditto",
+    "current": "Ditto",
+    "historical": "Metamon",
+    "changed": true
+  },
+  {
+    "id": 133,
+    "english": "Eevee",
+    "current": "Eevee",
+    "historical": "Eevui",
+    "changed": true
+  },
+  {
+    "id": 134,
+    "english": "Vaporeon",
+    "current": "Vaporeon",
+    "historical": "Showers",
+    "changed": true
+  },
+  {
+    "id": 135,
+    "english": "Jolteon",
+    "current": "Jolteon",
+    "historical": "Thunders",
+    "changed": true
+  },
+  {
+    "id": 136,
+    "english": "Flareon",
+    "current": "Flareon",
+    "historical": "Booster",
+    "changed": true
+  },
+  {
+    "id": 137,
+    "english": "Porygon",
+    "current": "Porygon",
+    "historical": "Porygon",
+    "changed": false
+  },
+  {
+    "id": 138,
+    "english": "Omanyte",
+    "current": "Omanyte",
+    "historical": "Omnite",
+    "changed": true
+  },
+  {
+    "id": 139,
+    "english": "Omastar",
+    "current": "Omastar",
+    "historical": "Omstar",
+    "changed": true
+  },
+  {
+    "id": 140,
+    "english": "Kabuto",
+    "current": "Kabuto",
+    "historical": "Kabuto",
+    "changed": false
+  },
+  {
+    "id": 141,
+    "english": "Kabutops",
+    "current": "Kabutops",
+    "historical": "Kabutops",
+    "changed": false
+  },
+  {
+    "id": 142,
+    "english": "Aerodactyl",
+    "current": "Aerodactyl",
+    "historical": "Ptera",
+    "changed": true
+  },
+  {
+    "id": 143,
+    "english": "Snorlax",
+    "current": "Snorlax",
+    "historical": "Kabigon",
+    "changed": true
+  },
+  {
+    "id": 144,
+    "english": "Articuno",
+    "current": "Articuno",
+    "historical": "Freezer",
+    "changed": true
+  },
+  {
+    "id": 145,
+    "english": "Zapdos",
+    "current": "Zapdos",
+    "historical": "Thunder",
+    "changed": true
+  },
+  {
+    "id": 146,
+    "english": "Moltres",
+    "current": "Moltres",
+    "historical": "Fire",
+    "changed": true
+  },
+  {
+    "id": 147,
+    "english": "Dratini",
+    "current": "Dratini",
+    "historical": "Miniryu",
+    "changed": true
+  },
+  {
+    "id": 148,
+    "english": "Dragonair",
+    "current": "Dragonair",
+    "historical": "Hakuryu",
+    "changed": true
+  },
+  {
+    "id": 149,
+    "english": "Dragonite",
+    "current": "Dragonite",
+    "historical": "Kairyu",
+    "changed": true
+  },
+  {
+    "id": 150,
+    "english": "Mewtwo",
+    "current": "Mewtwo",
+    "historical": "Mewtwo",
+    "changed": false
+  },
+  {
+    "id": 151,
+    "english": "Mew",
+    "current": "Mew",
+    "historical": "Mew",
+    "changed": false
+  },
+  {
+    "id": 152,
+    "english": "Chikorita",
+    "current": "Chikorita",
+    "historical": "Chicorita",
+    "changed": true
+  },
+  {
+    "id": 153,
+    "english": "Bayleef",
+    "current": "Bayleef",
+    "historical": "Bayleaf",
+    "changed": true
+  },
+  {
+    "id": 154,
+    "english": "Meganium",
+    "current": "Meganium",
+    "historical": "Meganium",
+    "changed": false
+  },
+  {
+    "id": 155,
+    "english": "Cyndaquil",
+    "current": "Cyndaquil",
+    "historical": "Hinoarashi",
+    "changed": true
+  },
+  {
+    "id": 156,
+    "english": "Quilava",
+    "current": "Quilava",
+    "historical": "Magmarashi",
+    "changed": true
+  },
+  {
+    "id": 157,
+    "english": "Typhlosion",
+    "current": "Typhlosion",
+    "historical": "Bakphoon",
+    "changed": true
+  },
+  {
+    "id": 158,
+    "english": "Totodile",
+    "current": "Totodile",
+    "historical": "Waninoko",
+    "changed": true
+  },
+  {
+    "id": 159,
+    "english": "Croconaw",
+    "current": "Croconaw",
+    "historical": "Alligates",
+    "changed": true
+  },
+  {
+    "id": 160,
+    "english": "Feraligatr",
+    "current": "Feraligatr",
+    "historical": "Ordile",
+    "changed": true
+  },
+  {
+    "id": 161,
+    "english": "Sentret",
+    "current": "Sentret",
+    "historical": "Otachi",
+    "changed": true
+  },
+  {
+    "id": 162,
+    "english": "Furret",
+    "current": "Furret",
+    "historical": "Ootachi",
+    "changed": true
+  },
+  {
+    "id": 163,
+    "english": "Hoothoot",
+    "current": "Hoothoot",
+    "historical": "Hoho",
+    "changed": true
+  },
+  {
+    "id": 164,
+    "english": "Noctowl",
+    "current": "Noctowl",
+    "historical": "Yorunozuku",
+    "changed": true
+  },
+  {
+    "id": 165,
+    "english": "Ledyba",
+    "current": "Ledyba",
+    "historical": "Rediba",
+    "changed": true
+  },
+  {
+    "id": 166,
+    "english": "Ledian",
+    "current": "Ledian",
+    "historical": "Redian",
+    "changed": true
+  },
+  {
+    "id": 167,
+    "english": "Spinarak",
+    "current": "Spinarak",
+    "historical": "Itomaru",
+    "changed": true
+  },
+  {
+    "id": 168,
+    "english": "Ariados",
+    "current": "Ariados",
+    "historical": "Ariados",
+    "changed": false
+  },
+  {
+    "id": 169,
+    "english": "Crobat",
+    "current": "Crobat",
+    "historical": "Crobat",
+    "changed": false
+  },
+  {
+    "id": 170,
+    "english": "Chinchou",
+    "current": "Chinchou",
+    "historical": "Chonchie",
+    "changed": true
+  },
+  {
+    "id": 171,
+    "english": "Lanturn",
+    "current": "Lanturn",
+    "historical": "Lantern",
+    "changed": true
+  },
+  {
+    "id": 172,
+    "english": "Pichu",
+    "current": "Pichu",
+    "historical": "Pichu",
+    "changed": false
+  },
+  {
+    "id": 173,
+    "english": "Cleffa",
+    "current": "Cleffa",
+    "historical": "Py",
+    "changed": true
+  },
+  {
+    "id": 174,
+    "english": "Igglybuff",
+    "current": "Igglybuff",
+    "historical": "Pupurin",
+    "changed": true
+  },
+  {
+    "id": 175,
+    "english": "Togepi",
+    "current": "Togepi",
+    "historical": "Togepy",
+    "changed": true
+  },
+  {
+    "id": 176,
+    "english": "Togetic",
+    "current": "Togetic",
+    "historical": "Togechick",
+    "changed": true
+  },
+  {
+    "id": 177,
+    "english": "Natu",
+    "current": "Natu",
+    "historical": "Naty",
+    "changed": true
+  },
+  {
+    "id": 178,
+    "english": "Xatu",
+    "current": "Xatu",
+    "historical": "Natio",
+    "changed": true
+  },
+  {
+    "id": 179,
+    "english": "Mareep",
+    "current": "Mareep",
+    "historical": "Meripu",
+    "changed": true
+  },
+  {
+    "id": 180,
+    "english": "Flaaffy",
+    "current": "Flaaffy",
+    "historical": "Mokoko",
+    "changed": true
+  },
+  {
+    "id": 181,
+    "english": "Ampharos",
+    "current": "Ampharos",
+    "historical": "Denryu",
+    "changed": true
+  },
+  {
+    "id": 182,
+    "english": "Bellossom",
+    "current": "Bellossom",
+    "historical": "Kireihana",
+    "changed": true
+  },
+  {
+    "id": 183,
+    "english": "Marill",
+    "current": "Marill",
+    "historical": "Maril",
+    "changed": true
+  },
+  {
+    "id": 184,
+    "english": "Azumarill",
+    "current": "Azumarill",
+    "historical": "Marilli",
+    "changed": true
+  },
+  {
+    "id": 185,
+    "english": "Sudowoodo",
+    "current": "Sudowoodo",
+    "historical": "Usokkie",
+    "changed": true
+  },
+  {
+    "id": 186,
+    "english": "Politoed",
+    "current": "Politoed",
+    "historical": "Nyorotono",
+    "changed": true
+  },
+  {
+    "id": 187,
+    "english": "Hoppip",
+    "current": "Hoppip",
+    "historical": "Hanecco",
+    "changed": true
+  },
+  {
+    "id": 188,
+    "english": "Skiploom",
+    "current": "Skiploom",
+    "historical": "Popocco",
+    "changed": true
+  },
+  {
+    "id": 189,
+    "english": "Jumpluff",
+    "current": "Jumpluff",
+    "historical": "Watacco",
+    "changed": true
+  },
+  {
+    "id": 190,
+    "english": "Aipom",
+    "current": "Aipom",
+    "historical": "Eipam",
+    "changed": true
+  },
+  {
+    "id": 191,
+    "english": "Sunkern",
+    "current": "Sunkern",
+    "historical": "Himanuts",
+    "changed": true
+  },
+  {
+    "id": 192,
+    "english": "Sunflora",
+    "current": "Sunflora",
+    "historical": "Kimawari",
+    "changed": true
+  },
+  {
+    "id": 193,
+    "english": "Yanma",
+    "current": "Yanma",
+    "historical": "Yanyanma",
+    "changed": true
+  },
+  {
+    "id": 194,
+    "english": "Wooper",
+    "current": "Wooper",
+    "historical": "Upah",
+    "changed": true
+  },
+  {
+    "id": 195,
+    "english": "Quagsire",
+    "current": "Quagsire",
+    "historical": "Nuoh",
+    "changed": true
+  },
+  {
+    "id": 196,
+    "english": "Espeon",
+    "current": "Espeon",
+    "historical": "Eifie",
+    "changed": true
+  },
+  {
+    "id": 197,
+    "english": "Umbreon",
+    "current": "Umbreon",
+    "historical": "Blacky",
+    "changed": true
+  },
+  {
+    "id": 198,
+    "english": "Murkrow",
+    "current": "Murkrow",
+    "historical": "Yamikarasu",
+    "changed": true
+  },
+  {
+    "id": 199,
+    "english": "Slowking",
+    "current": "Slowking",
+    "historical": "Yadoking",
+    "changed": true
+  },
+  {
+    "id": 200,
+    "english": "Misdreavus",
+    "current": "Misdreavus",
+    "historical": "Muma",
+    "changed": true
+  },
+  {
+    "id": 201,
+    "english": "Unown",
+    "current": "Unown",
+    "historical": "Unknown",
+    "changed": true
+  },
+  {
+    "id": 202,
+    "english": "Wobbuffet",
+    "current": "Wobbuffet",
+    "historical": "Sonans",
+    "changed": true
+  },
+  {
+    "id": 203,
+    "english": "Girafarig",
+    "current": "Girafarig",
+    "historical": "Kirinriki",
+    "changed": true
+  },
+  {
+    "id": 204,
+    "english": "Pineco",
+    "current": "Pineco",
+    "historical": "Kunugidama",
+    "changed": true
+  },
+  {
+    "id": 205,
+    "english": "Forretress",
+    "current": "Forretress",
+    "historical": "Foretos",
+    "changed": true
+  },
+  {
+    "id": 206,
+    "english": "Dunsparce",
+    "current": "Dunsparce",
+    "historical": "Nokocchi",
+    "changed": true
+  },
+  {
+    "id": 207,
+    "english": "Gligar",
+    "current": "Gligar",
+    "historical": "Gliger",
+    "changed": true
+  },
+  {
+    "id": 208,
+    "english": "Steelix",
+    "current": "Steelix",
+    "historical": "Haganeil",
+    "changed": true
+  },
+  {
+    "id": 209,
+    "english": "Snubbull",
+    "current": "Snubbull",
+    "historical": "Bulu",
+    "changed": true
+  },
+  {
+    "id": 210,
+    "english": "Granbull",
+    "current": "Granbull",
+    "historical": "Granbulu",
+    "changed": true
+  },
+  {
+    "id": 211,
+    "english": "Qwilfish",
+    "current": "Qwilfish",
+    "historical": "Harysen",
+    "changed": true
+  },
+  {
+    "id": 212,
+    "english": "Scizor",
+    "current": "Scizor",
+    "historical": "Hassam",
+    "changed": true
+  },
+  {
+    "id": 213,
+    "english": "Shuckle",
+    "current": "Shuckle",
+    "historical": "Tsubotsubo",
+    "changed": true
+  },
+  {
+    "id": 214,
+    "english": "Heracross",
+    "current": "Heracross",
+    "historical": "Heracros",
+    "changed": true
+  },
+  {
+    "id": 215,
+    "english": "Sneasel",
+    "current": "Sneasel",
+    "historical": "Nyula",
+    "changed": true
+  },
+  {
+    "id": 216,
+    "english": "Teddiursa",
+    "current": "Teddiursa",
+    "historical": "Himeguma",
+    "changed": true
+  },
+  {
+    "id": 217,
+    "english": "Ursaring",
+    "current": "Ursaring",
+    "historical": "Ringuma",
+    "changed": true
+  },
+  {
+    "id": 218,
+    "english": "Slugma",
+    "current": "Slugma",
+    "historical": "Magmag",
+    "changed": true
+  },
+  {
+    "id": 219,
+    "english": "Magcargo",
+    "current": "Magcargo",
+    "historical": "Magcargot",
+    "changed": true
+  },
+  {
+    "id": 220,
+    "english": "Swinub",
+    "current": "Swinub",
+    "historical": "Urimoo",
+    "changed": true
+  },
+  {
+    "id": 221,
+    "english": "Piloswine",
+    "current": "Piloswine",
+    "historical": "Inomoo",
+    "changed": true
+  },
+  {
+    "id": 222,
+    "english": "Corsola",
+    "current": "Corsola",
+    "historical": "Sunnygo",
+    "changed": true
+  },
+  {
+    "id": 223,
+    "english": "Remoraid",
+    "current": "Remoraid",
+    "historical": "Teppouo",
+    "changed": true
+  },
+  {
+    "id": 224,
+    "english": "Octillery",
+    "current": "Octillery",
+    "historical": "Okutank",
+    "changed": true
+  },
+  {
+    "id": 225,
+    "english": "Delibird",
+    "current": "Delibird",
+    "historical": "Delibird",
+    "changed": false
+  },
+  {
+    "id": 226,
+    "english": "Mantine",
+    "current": "Mantine",
+    "historical": "Mantain",
+    "changed": true
+  },
+  {
+    "id": 227,
+    "english": "Skarmory",
+    "current": "Skarmory",
+    "historical": "Airmd",
+    "changed": true
+  },
+  {
+    "id": 228,
+    "english": "Houndour",
+    "current": "Houndour",
+    "historical": "Delvil",
+    "changed": true
+  },
+  {
+    "id": 229,
+    "english": "Houndoom",
+    "current": "Houndoom",
+    "historical": "Hellgar",
+    "changed": true
+  },
+  {
+    "id": 230,
+    "english": "Kingdra",
+    "current": "Kingdra",
+    "historical": "Kingdra",
+    "changed": false
+  },
+  {
+    "id": 231,
+    "english": "Phanpy",
+    "current": "Phanpy",
+    "historical": "Gomazou",
+    "changed": true
+  },
+  {
+    "id": 232,
+    "english": "Donphan",
+    "current": "Donphan",
+    "historical": "Donfan",
+    "changed": true
+  },
+  {
+    "id": 233,
+    "english": "Porygon2",
+    "current": "Porygon2",
+    "historical": "Porygon2",
+    "changed": false
+  },
+  {
+    "id": 234,
+    "english": "Stantler",
+    "current": "Stantler",
+    "historical": "Odoshishi",
+    "changed": true
+  },
+  {
+    "id": 235,
+    "english": "Smeargle",
+    "current": "Smeargle",
+    "historical": "Doble",
+    "changed": true
+  },
+  {
+    "id": 236,
+    "english": "Tyrogue",
+    "current": "Tyrogue",
+    "historical": "Balkie",
+    "changed": true
+  },
+  {
+    "id": 237,
+    "english": "Hitmontop",
+    "current": "Hitmontop",
+    "historical": "Kapoerer",
+    "changed": true
+  },
+  {
+    "id": 238,
+    "english": "Smoochum",
+    "current": "Smoochum",
+    "historical": "Muchul",
+    "changed": true
+  },
+  {
+    "id": 239,
+    "english": "Elekid",
+    "current": "Elekid",
+    "historical": "Elekid",
+    "changed": false
+  },
+  {
+    "id": 240,
+    "english": "Magby",
+    "current": "Magby",
+    "historical": "Buby",
+    "changed": true
+  },
+  {
+    "id": 241,
+    "english": "Miltank",
+    "current": "Miltank",
+    "historical": "Miltank",
+    "changed": false
+  },
+  {
+    "id": 242,
+    "english": "Blissey",
+    "current": "Blissey",
+    "historical": "Happinas",
+    "changed": true
+  },
+  {
+    "id": 243,
+    "english": "Raikou",
+    "current": "Raikou",
+    "historical": "Raikou",
+    "changed": false
+  },
+  {
+    "id": 244,
+    "english": "Entei",
+    "current": "Entei",
+    "historical": "Entei",
+    "changed": false
+  },
+  {
+    "id": 245,
+    "english": "Suicune",
+    "current": "Suicune",
+    "historical": "Suicune",
+    "changed": false
+  },
+  {
+    "id": 246,
+    "english": "Larvitar",
+    "current": "Larvitar",
+    "historical": "Yogiras",
+    "changed": true
+  },
+  {
+    "id": 247,
+    "english": "Pupitar",
+    "current": "Pupitar",
+    "historical": "Sanagiras",
+    "changed": true
+  },
+  {
+    "id": 248,
+    "english": "Tyranitar",
+    "current": "Tyranitar",
+    "historical": "Bangirasu",
+    "changed": true
+  },
+  {
+    "id": 249,
+    "english": "Lugia",
+    "current": "Lugia",
+    "historical": "Lugia",
+    "changed": false
+  },
+  {
+    "id": 250,
+    "english": "Ho-Oh",
+    "current": "Ho-Oh",
+    "historical": "Houou",
+    "changed": true
+  },
+  {
+    "id": 251,
+    "english": "Celebi",
+    "current": "Celebi",
+    "historical": "Celebi",
+    "changed": false
+  },
+  {
+    "id": 252,
+    "english": "Treecko",
+    "current": "Treecko",
+    "historical": "Kimori",
+    "changed": true
+  },
+  {
+    "id": 253,
+    "english": "Grovyle",
+    "current": "Grovyle",
+    "historical": "Juptile",
+    "changed": true
+  },
+  {
+    "id": 254,
+    "english": "Sceptile",
+    "current": "Sceptile",
+    "historical": "Jukain",
+    "changed": true
+  },
+  {
+    "id": 255,
+    "english": "Torchic",
+    "current": "Torchic",
+    "historical": "Achamo",
+    "changed": true
+  },
+  {
+    "id": 256,
+    "english": "Combusken",
+    "current": "Combusken",
+    "historical": "Wakashamo",
+    "changed": true
+  },
+  {
+    "id": 257,
+    "english": "Blaziken",
+    "current": "Blaziken",
+    "historical": "Burshamo",
+    "changed": true
+  },
+  {
+    "id": 258,
+    "english": "Mudkip",
+    "current": "Mudkip",
+    "historical": "Mizugrou",
+    "changed": true
+  },
+  {
+    "id": 259,
+    "english": "Marshtomp",
+    "current": "Marshtomp",
+    "historical": "Numacraw",
+    "changed": true
+  },
+  {
+    "id": 260,
+    "english": "Swampert",
+    "current": "Swampert",
+    "historical": "Laglarge",
+    "changed": true
+  },
+  {
+    "id": 261,
+    "english": "Poochyena",
+    "current": "Poochyena",
+    "historical": "Pochiena",
+    "changed": true
+  },
+  {
+    "id": 262,
+    "english": "Mightyena",
+    "current": "Mightyena",
+    "historical": "Graena",
+    "changed": true
+  },
+  {
+    "id": 263,
+    "english": "Zigzagoon",
+    "current": "Zigzagoon",
+    "historical": "Zigzagma",
+    "changed": true
+  },
+  {
+    "id": 264,
+    "english": "Linoone",
+    "current": "Linoone",
+    "historical": "Massuguma",
+    "changed": true
+  },
+  {
+    "id": 265,
+    "english": "Wurmple",
+    "current": "Wurmple",
+    "historical": "Kemusso",
+    "changed": true
+  },
+  {
+    "id": 266,
+    "english": "Silcoon",
+    "current": "Silcoon",
+    "historical": "Karasalis",
+    "changed": true
+  },
+  {
+    "id": 267,
+    "english": "Beautifly",
+    "current": "Beautifly",
+    "historical": "Agehunt",
+    "changed": true
+  },
+  {
+    "id": 268,
+    "english": "Cascoon",
+    "current": "Cascoon",
+    "historical": "Mayuld",
+    "changed": true
+  },
+  {
+    "id": 269,
+    "english": "Dustox",
+    "current": "Dustox",
+    "historical": "Dokucale",
+    "changed": true
+  },
+  {
+    "id": 270,
+    "english": "Lotad",
+    "current": "Lotad",
+    "historical": "Hassboh",
+    "changed": true
+  },
+  {
+    "id": 271,
+    "english": "Lombre",
+    "current": "Lombre",
+    "historical": "Hasubrero",
+    "changed": true
+  },
+  {
+    "id": 272,
+    "english": "Ludicolo",
+    "current": "Ludicolo",
+    "historical": "Runpappa",
+    "changed": true
+  },
+  {
+    "id": 273,
+    "english": "Seedot",
+    "current": "Seedot",
+    "historical": "Taneboh",
+    "changed": true
+  },
+  {
+    "id": 274,
+    "english": "Nuzleaf",
+    "current": "Nuzleaf",
+    "historical": "Konohana",
+    "changed": true
+  },
+  {
+    "id": 275,
+    "english": "Shiftry",
+    "current": "Shiftry",
+    "historical": "Dirteng",
+    "changed": true
+  },
+  {
+    "id": 276,
+    "english": "Taillow",
+    "current": "Taillow",
+    "historical": "Subame",
+    "changed": true
+  },
+  {
+    "id": 277,
+    "english": "Swellow",
+    "current": "Swellow",
+    "historical": "Ohsubame",
+    "changed": true
+  },
+  {
+    "id": 278,
+    "english": "Wingull",
+    "current": "Wingull",
+    "historical": "Camome",
+    "changed": true
+  },
+  {
+    "id": 279,
+    "english": "Pelipper",
+    "current": "Pelipper",
+    "historical": "Peplipper",
+    "changed": true
+  },
+  {
+    "id": 280,
+    "english": "Ralts",
+    "current": "Ralts",
+    "historical": "Ralts",
+    "changed": false
+  },
+  {
+    "id": 281,
+    "english": "Kirlia",
+    "current": "Kirlia",
+    "historical": "Kirlia",
+    "changed": false
+  },
+  {
+    "id": 282,
+    "english": "Gardevoir",
+    "current": "Gardevoir",
+    "historical": "Sirnight",
+    "changed": true
+  },
+  {
+    "id": 283,
+    "english": "Surskit",
+    "current": "Surskit",
+    "historical": "Ametama",
+    "changed": true
+  },
+  {
+    "id": 284,
+    "english": "Masquerain",
+    "current": "Masquerain",
+    "historical": "Amemoth",
+    "changed": true
+  },
+  {
+    "id": 285,
+    "english": "Shroomish",
+    "current": "Shroomish",
+    "historical": "Kinococo",
+    "changed": true
+  },
+  {
+    "id": 286,
+    "english": "Breloom",
+    "current": "Breloom",
+    "historical": "Kinogassa",
+    "changed": true
+  },
+  {
+    "id": 287,
+    "english": "Slakoth",
+    "current": "Slakoth",
+    "historical": "Namakero",
+    "changed": true
+  },
+  {
+    "id": 288,
+    "english": "Vigoroth",
+    "current": "Vigoroth",
+    "historical": "Yarukimono",
+    "changed": true
+  },
+  {
+    "id": 289,
+    "english": "Slaking",
+    "current": "Slaking",
+    "historical": "Kekking",
+    "changed": true
+  },
+  {
+    "id": 290,
+    "english": "Nincada",
+    "current": "Nincada",
+    "historical": "Tsuchinin",
+    "changed": true
+  },
+  {
+    "id": 291,
+    "english": "Ninjask",
+    "current": "Ninjask",
+    "historical": "Tekkanin",
+    "changed": true
+  },
+  {
+    "id": 292,
+    "english": "Shedinja",
+    "current": "Shedinja",
+    "historical": "Nukenin",
+    "changed": true
+  },
+  {
+    "id": 293,
+    "english": "Whismur",
+    "current": "Whismur",
+    "historical": "Gonyonyo",
+    "changed": true
+  },
+  {
+    "id": 294,
+    "english": "Loudred",
+    "current": "Loudred",
+    "historical": "Dogohmb",
+    "changed": true
+  },
+  {
+    "id": 295,
+    "english": "Exploud",
+    "current": "Exploud",
+    "historical": "Bakuong",
+    "changed": true
+  },
+  {
+    "id": 296,
+    "english": "Makuhita",
+    "current": "Makuhita",
+    "historical": "Makunoshita",
+    "changed": true
+  },
+  {
+    "id": 297,
+    "english": "Hariyama",
+    "current": "Hariyama",
+    "historical": "Hariteyama",
+    "changed": true
+  },
+  {
+    "id": 298,
+    "english": "Azurill",
+    "current": "Azurill",
+    "historical": "Ruriri",
+    "changed": true
+  },
+  {
+    "id": 299,
+    "english": "Nosepass",
+    "current": "Nosepass",
+    "historical": "Nosepass",
+    "changed": false
+  },
+  {
+    "id": 300,
+    "english": "Skitty",
+    "current": "Skitty",
+    "historical": "Eneco",
+    "changed": true
+  },
+  {
+    "id": 301,
+    "english": "Delcatty",
+    "current": "Delcatty",
+    "historical": "Enekororo",
+    "changed": true
+  },
+  {
+    "id": 302,
+    "english": "Sableye",
+    "current": "Sableye",
+    "historical": "Yamirami",
+    "changed": true
+  },
+  {
+    "id": 303,
+    "english": "Mawile",
+    "current": "Mawile",
+    "historical": "Kucheat",
+    "changed": true
+  },
+  {
+    "id": 304,
+    "english": "Aron",
+    "current": "Aron",
+    "historical": "Cocodora",
+    "changed": true
+  },
+  {
+    "id": 305,
+    "english": "Lairon",
+    "current": "Lairon",
+    "historical": "Kodora",
+    "changed": true
+  },
+  {
+    "id": 306,
+    "english": "Aggron",
+    "current": "Aggron",
+    "historical": "Bossgodora",
+    "changed": true
+  },
+  {
+    "id": 307,
+    "english": "Meditite",
+    "current": "Meditite",
+    "historical": "Asanan",
+    "changed": true
+  },
+  {
+    "id": 308,
+    "english": "Medicham",
+    "current": "Medicham",
+    "historical": "Charem",
+    "changed": true
+  },
+  {
+    "id": 309,
+    "english": "Electrike",
+    "current": "Electrike",
+    "historical": "Rakurai",
+    "changed": true
+  },
+  {
+    "id": 310,
+    "english": "Manectric",
+    "current": "Manectric",
+    "historical": "Livolt",
+    "changed": true
+  },
+  {
+    "id": 311,
+    "english": "Plusle",
+    "current": "Plusle",
+    "historical": "Prasle",
+    "changed": true
+  },
+  {
+    "id": 312,
+    "english": "Minun",
+    "current": "Minun",
+    "historical": "Mainan",
+    "changed": true
+  },
+  {
+    "id": 313,
+    "english": "Volbeat",
+    "current": "Volbeat",
+    "historical": "Barubeat",
+    "changed": true
+  },
+  {
+    "id": 314,
+    "english": "Illumise",
+    "current": "Illumise",
+    "historical": "Illumise",
+    "changed": false
+  },
+  {
+    "id": 315,
+    "english": "Roselia",
+    "current": "Roselia",
+    "historical": "Roselia",
+    "changed": false
+  },
+  {
+    "id": 316,
+    "english": "Gulpin",
+    "current": "Gulpin",
+    "historical": "Gokurin",
+    "changed": true
+  },
+  {
+    "id": 317,
+    "english": "Swalot",
+    "current": "Swalot",
+    "historical": "Marunoom",
+    "changed": true
+  },
+  {
+    "id": 318,
+    "english": "Carvanha",
+    "current": "Carvanha",
+    "historical": "Kibanha",
+    "changed": true
+  },
+  {
+    "id": 319,
+    "english": "Sharpedo",
+    "current": "Sharpedo",
+    "historical": "Samehader",
+    "changed": true
+  },
+  {
+    "id": 320,
+    "english": "Wailmer",
+    "current": "Wailmer",
+    "historical": "Hoeruko",
+    "changed": true
+  },
+  {
+    "id": 321,
+    "english": "Wailord",
+    "current": "Wailord",
+    "historical": "Whaloh",
+    "changed": true
+  },
+  {
+    "id": 322,
+    "english": "Numel",
+    "current": "Numel",
+    "historical": "Donmel",
+    "changed": true
+  },
+  {
+    "id": 323,
+    "english": "Camerupt",
+    "current": "Camerupt",
+    "historical": "Bakuuda",
+    "changed": true
+  },
+  {
+    "id": 324,
+    "english": "Torkoal",
+    "current": "Torkoal",
+    "historical": "Cotoise",
+    "changed": true
+  },
+  {
+    "id": 325,
+    "english": "Spoink",
+    "current": "Spoink",
+    "historical": "Baneboo",
+    "changed": true
+  },
+  {
+    "id": 326,
+    "english": "Grumpig",
+    "current": "Grumpig",
+    "historical": "Boopig",
+    "changed": true
+  },
+  {
+    "id": 327,
+    "english": "Spinda",
+    "current": "Spinda",
+    "historical": "Patcheel",
+    "changed": true
+  },
+  {
+    "id": 328,
+    "english": "Trapinch",
+    "current": "Trapinch",
+    "historical": "Nuckrar",
+    "changed": true
+  },
+  {
+    "id": 329,
+    "english": "Vibrava",
+    "current": "Vibrava",
+    "historical": "Vibrava",
+    "changed": false
+  },
+  {
+    "id": 330,
+    "english": "Flygon",
+    "current": "Flygon",
+    "historical": "Flygon",
+    "changed": false
+  },
+  {
+    "id": 331,
+    "english": "Cacnea",
+    "current": "Cacnea",
+    "historical": "Sabonea",
+    "changed": true
+  },
+  {
+    "id": 332,
+    "english": "Cacturne",
+    "current": "Cacturne",
+    "historical": "Noctus",
+    "changed": true
+  },
+  {
+    "id": 333,
+    "english": "Swablu",
+    "current": "Swablu",
+    "historical": "Tyltto",
+    "changed": true
+  },
+  {
+    "id": 334,
+    "english": "Altaria",
+    "current": "Altaria",
+    "historical": "Tyltalis",
+    "changed": true
+  },
+  {
+    "id": 335,
+    "english": "Zangoose",
+    "current": "Zangoose",
+    "historical": "Zangoose",
+    "changed": false
+  },
+  {
+    "id": 336,
+    "english": "Seviper",
+    "current": "Seviper",
+    "historical": "Habunake",
+    "changed": true
+  },
+  {
+    "id": 337,
+    "english": "Lunatone",
+    "current": "Lunatone",
+    "historical": "Lunatone",
+    "changed": false
+  },
+  {
+    "id": 338,
+    "english": "Solrock",
+    "current": "Solrock",
+    "historical": "Solrock",
+    "changed": false
+  },
+  {
+    "id": 339,
+    "english": "Barboach",
+    "current": "Barboach",
+    "historical": "Dojoach",
+    "changed": true
+  },
+  {
+    "id": 340,
+    "english": "Whiscash",
+    "current": "Whiscash",
+    "historical": "Namazun",
+    "changed": true
+  },
+  {
+    "id": 341,
+    "english": "Corphish",
+    "current": "Corphish",
+    "historical": "Heigani",
+    "changed": true
+  },
+  {
+    "id": 342,
+    "english": "Crawdaunt",
+    "current": "Crawdaunt",
+    "historical": "Shizariga",
+    "changed": true
+  },
+  {
+    "id": 343,
+    "english": "Baltoy",
+    "current": "Baltoy",
+    "historical": "Yajiron",
+    "changed": true
+  },
+  {
+    "id": 344,
+    "english": "Claydol",
+    "current": "Claydol",
+    "historical": "Nendoll",
+    "changed": true
+  },
+  {
+    "id": 345,
+    "english": "Lileep",
+    "current": "Lileep",
+    "historical": "Lilyla",
+    "changed": true
+  },
+  {
+    "id": 346,
+    "english": "Cradily",
+    "current": "Cradily",
+    "historical": "Yuradle",
+    "changed": true
+  },
+  {
+    "id": 347,
+    "english": "Anorith",
+    "current": "Anorith",
+    "historical": "Anopth",
+    "changed": true
+  },
+  {
+    "id": 348,
+    "english": "Armaldo",
+    "current": "Armaldo",
+    "historical": "Armaldo",
+    "changed": false
+  },
+  {
+    "id": 349,
+    "english": "Feebas",
+    "current": "Feebas",
+    "historical": "Hinbass",
+    "changed": true
+  },
+  {
+    "id": 350,
+    "english": "Milotic",
+    "current": "Milotic",
+    "historical": "Milokaross",
+    "changed": true
+  },
+  {
+    "id": 351,
+    "english": "Castform",
+    "current": "Castform",
+    "historical": "Powalen",
+    "changed": true
+  },
+  {
+    "id": 352,
+    "english": "Kecleon",
+    "current": "Kecleon",
+    "historical": "Kakureon",
+    "changed": true
+  },
+  {
+    "id": 353,
+    "english": "Shuppet",
+    "current": "Shuppet",
+    "historical": "Kagebouzu",
+    "changed": true
+  },
+  {
+    "id": 354,
+    "english": "Banette",
+    "current": "Banette",
+    "historical": "Juppeta",
+    "changed": true
+  },
+  {
+    "id": 355,
+    "english": "Duskull",
+    "current": "Duskull",
+    "historical": "Yomawaru",
+    "changed": true
+  },
+  {
+    "id": 356,
+    "english": "Dusclops",
+    "current": "Dusclops",
+    "historical": "Samayouru",
+    "changed": true
+  },
+  {
+    "id": 357,
+    "english": "Tropius",
+    "current": "Tropius",
+    "historical": "Tropius",
+    "changed": false
+  },
+  {
+    "id": 358,
+    "english": "Chimecho",
+    "current": "Chimecho",
+    "historical": "Chirean",
+    "changed": true
+  },
+  {
+    "id": 359,
+    "english": "Absol",
+    "current": "Absol",
+    "historical": "Absol",
+    "changed": false
+  },
+  {
+    "id": 360,
+    "english": "Wynaut",
+    "current": "Wynaut",
+    "historical": "Sohnano",
+    "changed": true
+  },
+  {
+    "id": 361,
+    "english": "Snorunt",
+    "current": "Snorunt",
+    "historical": "Yukiwarashi",
+    "changed": true
+  },
+  {
+    "id": 362,
+    "english": "Glalie",
+    "current": "Glalie",
+    "historical": "Onigohri",
+    "changed": true
+  },
+  {
+    "id": 363,
+    "english": "Spheal",
+    "current": "Spheal",
+    "historical": "Tamazarashi",
+    "changed": true
+  },
+  {
+    "id": 364,
+    "english": "Sealeo",
+    "current": "Sealeo",
+    "historical": "Todoggler",
+    "changed": true
+  },
+  {
+    "id": 365,
+    "english": "Walrein",
+    "current": "Walrein",
+    "historical": "Todoseruga",
+    "changed": true
+  },
+  {
+    "id": 366,
+    "english": "Clamperl",
+    "current": "Clamperl",
+    "historical": "Pearlulu",
+    "changed": true
+  },
+  {
+    "id": 367,
+    "english": "Huntail",
+    "current": "Huntail",
+    "historical": "Huntail",
+    "changed": false
+  },
+  {
+    "id": 368,
+    "english": "Gorebyss",
+    "current": "Gorebyss",
+    "historical": "Sakurabyss",
+    "changed": true
+  },
+  {
+    "id": 369,
+    "english": "Relicanth",
+    "current": "Relicanth",
+    "historical": "Glanth",
+    "changed": true
+  },
+  {
+    "id": 370,
+    "english": "Luvdisc",
+    "current": "Luvdisc",
+    "historical": "Lovecus",
+    "changed": true
+  },
+  {
+    "id": 371,
+    "english": "Bagon",
+    "current": "Bagon",
+    "historical": "Tatsubay",
+    "changed": true
+  },
+  {
+    "id": 372,
+    "english": "Shelgon",
+    "current": "Shelgon",
+    "historical": "Komoruu",
+    "changed": true
+  },
+  {
+    "id": 373,
+    "english": "Salamence",
+    "current": "Salamence",
+    "historical": "Bohmander",
+    "changed": true
+  },
+  {
+    "id": 374,
+    "english": "Beldum",
+    "current": "Beldum",
+    "historical": "Dumbber",
+    "changed": true
+  },
+  {
+    "id": 375,
+    "english": "Metang",
+    "current": "Metang",
+    "historical": "Metang",
+    "changed": false
+  },
+  {
+    "id": 376,
+    "english": "Metagross",
+    "current": "Metagross",
+    "historical": "Metagross",
+    "changed": false
+  },
+  {
+    "id": 377,
+    "english": "Regirock",
+    "current": "Regirock",
+    "historical": "Regirock",
+    "changed": false
+  },
+  {
+    "id": 378,
+    "english": "Regice",
+    "current": "Regice",
+    "historical": "Regice",
+    "changed": false
+  },
+  {
+    "id": 379,
+    "english": "Registeel",
+    "current": "Registeel",
+    "historical": "Registeel",
+    "changed": false
+  },
+  {
+    "id": 380,
+    "english": "Latias",
+    "current": "Latias",
+    "historical": "Latias",
+    "changed": false
+  },
+  {
+    "id": 381,
+    "english": "Latios",
+    "current": "Latios",
+    "historical": "Latios",
+    "changed": false
+  },
+  {
+    "id": 382,
+    "english": "Kyogre",
+    "current": "Kyogre",
+    "historical": "Kaioga",
+    "changed": true
+  },
+  {
+    "id": 383,
+    "english": "Groudon",
+    "current": "Groudon",
+    "historical": "Groudon",
+    "changed": false
+  },
+  {
+    "id": 384,
+    "english": "Rayquaza",
+    "current": "Rayquaza",
+    "historical": "Rayquaza",
+    "changed": false
+  },
+  {
+    "id": 385,
+    "english": "Jirachi",
+    "current": "Jirachi",
+    "historical": "Jirachi",
+    "changed": false
+  },
+  {
+    "id": 386,
+    "english": "Deoxys",
+    "current": "Deoxys",
+    "historical": "Deoxys",
+    "changed": false
+  },
+  {
+    "id": 387,
+    "english": "Turtwig",
+    "current": "Turtwig",
+    "historical": "Naetle",
+    "changed": true
+  },
+  {
+    "id": 388,
+    "english": "Grotle",
+    "current": "Grotle",
+    "historical": "Hayashigame",
+    "changed": true
+  },
+  {
+    "id": 389,
+    "english": "Torterra",
+    "current": "Torterra",
+    "historical": "Dodaitosu",
+    "changed": true
+  },
+  {
+    "id": 390,
+    "english": "Chimchar",
+    "current": "Chimchar",
+    "historical": "Hikozaru",
+    "changed": true
+  },
+  {
+    "id": 391,
+    "english": "Monferno",
+    "current": "Monferno",
+    "historical": "Moukazaru",
+    "changed": true
+  },
+  {
+    "id": 392,
+    "english": "Infernape",
+    "current": "Infernape",
+    "historical": "Goukazaru",
+    "changed": true
+  },
+  {
+    "id": 393,
+    "english": "Piplup",
+    "current": "Piplup",
+    "historical": "Pochama",
+    "changed": true
+  },
+  {
+    "id": 394,
+    "english": "Prinplup",
+    "current": "Prinplup",
+    "historical": "Pottaishi",
+    "changed": true
+  },
+  {
+    "id": 395,
+    "english": "Empoleon",
+    "current": "Empoleon",
+    "historical": "Emperte",
+    "changed": true
+  },
+  {
+    "id": 396,
+    "english": "Starly",
+    "current": "Starly",
+    "historical": "Mukkuru",
+    "changed": true
+  },
+  {
+    "id": 397,
+    "english": "Staravia",
+    "current": "Staravia",
+    "historical": "Mukubird",
+    "changed": true
+  },
+  {
+    "id": 398,
+    "english": "Staraptor",
+    "current": "Staraptor",
+    "historical": "Mukuhawk",
+    "changed": true
+  },
+  {
+    "id": 399,
+    "english": "Bidoof",
+    "current": "Bidoof",
+    "historical": "Bippa",
+    "changed": true
+  },
+  {
+    "id": 400,
+    "english": "Bibarel",
+    "current": "Bibarel",
+    "historical": "Beadaru",
+    "changed": true
+  },
+  {
+    "id": 401,
+    "english": "Kricketot",
+    "current": "Kricketot",
+    "historical": "Korobohshi",
+    "changed": true
+  },
+  {
+    "id": 402,
+    "english": "Kricketune",
+    "current": "Kricketune",
+    "historical": "Korotock",
+    "changed": true
+  },
+  {
+    "id": 403,
+    "english": "Shinx",
+    "current": "Shinx",
+    "historical": "Kolink",
+    "changed": true
+  },
+  {
+    "id": 404,
+    "english": "Luxio",
+    "current": "Luxio",
+    "historical": "Luxio",
+    "changed": false
+  },
+  {
+    "id": 405,
+    "english": "Luxray",
+    "current": "Luxray",
+    "historical": "Rentorar",
+    "changed": true
+  },
+  {
+    "id": 406,
+    "english": "Budew",
+    "current": "Budew",
+    "historical": "Subomie",
+    "changed": true
+  },
+  {
+    "id": 407,
+    "english": "Roserade",
+    "current": "Roserade",
+    "historical": "Roserade",
+    "changed": false
+  },
+  {
+    "id": 408,
+    "english": "Cranidos",
+    "current": "Cranidos",
+    "historical": "Zugaidos",
+    "changed": true
+  },
+  {
+    "id": 409,
+    "english": "Rampardos",
+    "current": "Rampardos",
+    "historical": "Rampald",
+    "changed": true
+  },
+  {
+    "id": 410,
+    "english": "Shieldon",
+    "current": "Shieldon",
+    "historical": "Tatetops",
+    "changed": true
+  },
+  {
+    "id": 411,
+    "english": "Bastiodon",
+    "current": "Bastiodon",
+    "historical": "Torideps",
+    "changed": true
+  },
+  {
+    "id": 412,
+    "english": "Burmy",
+    "current": "Burmy",
+    "historical": "Minomucchi",
+    "changed": true
+  },
+  {
+    "id": 413,
+    "english": "Wormadam",
+    "current": "Wormadam",
+    "historical": "Minomadam",
+    "changed": true
+  },
+  {
+    "id": 414,
+    "english": "Mothim",
+    "current": "Mothim",
+    "historical": "Gamale",
+    "changed": true
+  },
+  {
+    "id": 415,
+    "english": "Combee",
+    "current": "Combee",
+    "historical": "Mitsuhoney",
+    "changed": true
+  },
+  {
+    "id": 416,
+    "english": "Vespiquen",
+    "current": "Vespiquen",
+    "historical": "Beequeen",
+    "changed": true
+  },
+  {
+    "id": 417,
+    "english": "Pachirisu",
+    "current": "Pachirisu",
+    "historical": "Pachirisu",
+    "changed": false
+  },
+  {
+    "id": 418,
+    "english": "Buizel",
+    "current": "Buizel",
+    "historical": "Buoysel",
+    "changed": true
+  },
+  {
+    "id": 419,
+    "english": "Floatzel",
+    "current": "Floatzel",
+    "historical": "Floazel",
+    "changed": true
+  },
+  {
+    "id": 420,
+    "english": "Cherubi",
+    "current": "Cherubi",
+    "historical": "Cherinbo",
+    "changed": true
+  },
+  {
+    "id": 421,
+    "english": "Cherrim",
+    "current": "Cherrim",
+    "historical": "Cherrim",
+    "changed": false
+  },
+  {
+    "id": 422,
+    "english": "Shellos",
+    "current": "Shellos",
+    "historical": "Karanakushi",
+    "changed": true
+  },
+  {
+    "id": 423,
+    "english": "Gastrodon",
+    "current": "Gastrodon",
+    "historical": "Tritodon",
+    "changed": true
+  },
+  {
+    "id": 424,
+    "english": "Ambipom",
+    "current": "Ambipom",
+    "historical": "Eteboth",
+    "changed": true
+  },
+  {
+    "id": 425,
+    "english": "Drifloon",
+    "current": "Drifloon",
+    "historical": "Fuwante",
+    "changed": true
+  },
+  {
+    "id": 426,
+    "english": "Drifblim",
+    "current": "Drifblim",
+    "historical": "Fuwaride",
+    "changed": true
+  },
+  {
+    "id": 427,
+    "english": "Buneary",
+    "current": "Buneary",
+    "historical": "Mimirol",
+    "changed": true
+  },
+  {
+    "id": 428,
+    "english": "Lopunny",
+    "current": "Lopunny",
+    "historical": "Mimilop",
+    "changed": true
+  },
+  {
+    "id": 429,
+    "english": "Mismagius",
+    "current": "Mismagius",
+    "historical": "Mumargi",
+    "changed": true
+  },
+  {
+    "id": 430,
+    "english": "Honchkrow",
+    "current": "Honchkrow",
+    "historical": "Dongkarasu",
+    "changed": true
+  },
+  {
+    "id": 431,
+    "english": "Glameow",
+    "current": "Glameow",
+    "historical": "Nyarmar",
+    "changed": true
+  },
+  {
+    "id": 432,
+    "english": "Purugly",
+    "current": "Purugly",
+    "historical": "Bunyatto",
+    "changed": true
+  },
+  {
+    "id": 433,
+    "english": "Chingling",
+    "current": "Chingling",
+    "historical": "Lisyan",
+    "changed": true
+  },
+  {
+    "id": 434,
+    "english": "Stunky",
+    "current": "Stunky",
+    "historical": "Skunpuu",
+    "changed": true
+  },
+  {
+    "id": 435,
+    "english": "Skuntank",
+    "current": "Skuntank",
+    "historical": "Skutank",
+    "changed": true
+  },
+  {
+    "id": 436,
+    "english": "Bronzor",
+    "current": "Bronzor",
+    "historical": "Dohmirror",
+    "changed": true
+  },
+  {
+    "id": 437,
+    "english": "Bronzong",
+    "current": "Bronzong",
+    "historical": "Dohtakun",
+    "changed": true
+  },
+  {
+    "id": 438,
+    "english": "Bonsly",
+    "current": "Bonsly",
+    "historical": "Usohachi",
+    "changed": true
+  },
+  {
+    "id": 439,
+    "english": "Mime Jr.",
+    "current": "Mime Jr.",
+    "historical": "Manene",
+    "changed": true
+  },
+  {
+    "id": 440,
+    "english": "Happiny",
+    "current": "Happiny",
+    "historical": "Pinpuku",
+    "changed": true
+  },
+  {
+    "id": 441,
+    "english": "Chatot",
+    "current": "Chatot",
+    "historical": "Perap",
+    "changed": true
+  },
+  {
+    "id": 442,
+    "english": "Spiritomb",
+    "current": "Spiritomb",
+    "historical": "Mikaruge",
+    "changed": true
+  },
+  {
+    "id": 443,
+    "english": "Gible",
+    "current": "Gible",
+    "historical": "Fukamaru",
+    "changed": true
+  },
+  {
+    "id": 444,
+    "english": "Gabite",
+    "current": "Gabite",
+    "historical": "Gabite",
+    "changed": false
+  },
+  {
+    "id": 445,
+    "english": "Garchomp",
+    "current": "Garchomp",
+    "historical": "Gaburias",
+    "changed": true
+  },
+  {
+    "id": 446,
+    "english": "Munchlax",
+    "current": "Munchlax",
+    "historical": "Gonbe",
+    "changed": true
+  },
+  {
+    "id": 447,
+    "english": "Riolu",
+    "current": "Riolu",
+    "historical": "Riolu",
+    "changed": false
+  },
+  {
+    "id": 448,
+    "english": "Lucario",
+    "current": "Lucario",
+    "historical": "Lucario",
+    "changed": false
+  },
+  {
+    "id": 449,
+    "english": "Hippopotas",
+    "current": "Hippopotas",
+    "historical": "Hippopotas",
+    "changed": false
+  },
+  {
+    "id": 450,
+    "english": "Hippowdon",
+    "current": "Hippowdon",
+    "historical": "Kabaldon",
+    "changed": true
+  },
+  {
+    "id": 451,
+    "english": "Skorupi",
+    "current": "Skorupi",
+    "historical": "Scorupi",
+    "changed": true
+  },
+  {
+    "id": 452,
+    "english": "Drapion",
+    "current": "Drapion",
+    "historical": "Dorapion",
+    "changed": true
+  },
+  {
+    "id": 453,
+    "english": "Croagunk",
+    "current": "Croagunk",
+    "historical": "Guregguru",
+    "changed": true
+  },
+  {
+    "id": 454,
+    "english": "Toxicroak",
+    "current": "Toxicroak",
+    "historical": "Dokurog",
+    "changed": true
+  },
+  {
+    "id": 455,
+    "english": "Carnivine",
+    "current": "Carnivine",
+    "historical": "Muskippa",
+    "changed": true
+  },
+  {
+    "id": 456,
+    "english": "Finneon",
+    "current": "Finneon",
+    "historical": "Keikouo",
+    "changed": true
+  },
+  {
+    "id": 457,
+    "english": "Lumineon",
+    "current": "Lumineon",
+    "historical": "Neolant",
+    "changed": true
+  },
+  {
+    "id": 458,
+    "english": "Mantyke",
+    "current": "Mantyke",
+    "historical": "Tamanta",
+    "changed": true
+  },
+  {
+    "id": 459,
+    "english": "Snover",
+    "current": "Snover",
+    "historical": "Yukikaburi",
+    "changed": true
+  },
+  {
+    "id": 460,
+    "english": "Abomasnow",
+    "current": "Abomasnow",
+    "historical": "Yukinooh",
+    "changed": true
+  },
+  {
+    "id": 461,
+    "english": "Weavile",
+    "current": "Weavile",
+    "historical": "Manyula",
+    "changed": true
+  },
+  {
+    "id": 462,
+    "english": "Magnezone",
+    "current": "Magnezone",
+    "historical": "Jibacoil",
+    "changed": true
+  },
+  {
+    "id": 463,
+    "english": "Lickilicky",
+    "current": "Lickilicky",
+    "historical": "Berobelt",
+    "changed": true
+  },
+  {
+    "id": 464,
+    "english": "Rhyperior",
+    "current": "Rhyperior",
+    "historical": "Dosidon",
+    "changed": true
+  },
+  {
+    "id": 465,
+    "english": "Tangrowth",
+    "current": "Tangrowth",
+    "historical": "Mojumbo",
+    "changed": true
+  },
+  {
+    "id": 466,
+    "english": "Electivire",
+    "current": "Electivire",
+    "historical": "Elekible",
+    "changed": true
+  },
+  {
+    "id": 467,
+    "english": "Magmortar",
+    "current": "Magmortar",
+    "historical": "Booburn",
+    "changed": true
+  },
+  {
+    "id": 468,
+    "english": "Togekiss",
+    "current": "Togekiss",
+    "historical": "Togekiss",
+    "changed": false
+  },
+  {
+    "id": 469,
+    "english": "Yanmega",
+    "current": "Yanmega",
+    "historical": "Megayanma",
+    "changed": true
+  },
+  {
+    "id": 470,
+    "english": "Leafeon",
+    "current": "Leafeon",
+    "historical": "Leafia",
+    "changed": true
+  },
+  {
+    "id": 471,
+    "english": "Glaceon",
+    "current": "Glaceon",
+    "historical": "Glacia",
+    "changed": true
+  },
+  {
+    "id": 472,
+    "english": "Gliscor",
+    "current": "Gliscor",
+    "historical": "Glion",
+    "changed": true
+  },
+  {
+    "id": 473,
+    "english": "Mamoswine",
+    "current": "Mamoswine",
+    "historical": "Mammoo",
+    "changed": true
+  },
+  {
+    "id": 474,
+    "english": "Porygon-Z",
+    "current": "Porygon-Z",
+    "historical": "Porygon-Z",
+    "changed": false
+  },
+  {
+    "id": 475,
+    "english": "Gallade",
+    "current": "Gallade",
+    "historical": "Erureido",
+    "changed": true
+  },
+  {
+    "id": 476,
+    "english": "Probopass",
+    "current": "Probopass",
+    "historical": "Dainose",
+    "changed": true
+  },
+  {
+    "id": 477,
+    "english": "Dusknoir",
+    "current": "Dusknoir",
+    "historical": "Yonoir",
+    "changed": true
+  },
+  {
+    "id": 478,
+    "english": "Froslass",
+    "current": "Froslass",
+    "historical": "Yukimenoko",
+    "changed": true
+  },
+  {
+    "id": 479,
+    "english": "Rotom",
+    "current": "Rotom",
+    "historical": "Rotom",
+    "changed": false
+  },
+  {
+    "id": 480,
+    "english": "Uxie",
+    "current": "Uxie",
+    "historical": "Yuxie",
+    "changed": true
+  },
+  {
+    "id": 481,
+    "english": "Mesprit",
+    "current": "Mesprit",
+    "historical": "Emrit",
+    "changed": true
+  },
+  {
+    "id": 482,
+    "english": "Azelf",
+    "current": "Azelf",
+    "historical": "Agnome",
+    "changed": true
+  },
+  {
+    "id": 483,
+    "english": "Dialga",
+    "current": "Dialga",
+    "historical": "Dialga",
+    "changed": false
+  },
+  {
+    "id": 484,
+    "english": "Palkia",
+    "current": "Palkia",
+    "historical": "Palkia",
+    "changed": false
+  },
+  {
+    "id": 485,
+    "english": "Heatran",
+    "current": "Heatran",
+    "historical": "Heatran",
+    "changed": false
+  },
+  {
+    "id": 486,
+    "english": "Regigigas",
+    "current": "Regigigas",
+    "historical": "Regigigas",
+    "changed": false
+  },
+  {
+    "id": 487,
+    "english": "Giratina",
+    "current": "Giratina",
+    "historical": "Giratina",
+    "changed": false
+  },
+  {
+    "id": 488,
+    "english": "Cresselia",
+    "current": "Cresselia",
+    "historical": "Cresselia",
+    "changed": false
+  },
+  {
+    "id": 489,
+    "english": "Phione",
+    "current": "Phione",
+    "historical": "Phione",
+    "changed": false
+  },
+  {
+    "id": 490,
+    "english": "Manaphy",
+    "current": "Manaphy",
+    "historical": "Manaphy",
+    "changed": false
+  },
+  {
+    "id": 491,
+    "english": "Darkrai",
+    "current": "Darkrai",
+    "historical": "Darkrai",
+    "changed": false
+  },
+  {
+    "id": 492,
+    "english": "Shaymin",
+    "current": "Shaymin",
+    "historical": "Shaymin",
+    "changed": false
+  },
+  {
+    "id": 493,
+    "english": "Arceus",
+    "current": "Arceus",
+    "historical": "Arceus",
+    "changed": false
+  },
+  {
+    "id": 494,
+    "english": "Victini",
+    "current": "Victini",
+    "historical": "Victini",
+    "changed": false
+  },
+  {
+    "id": 495,
+    "english": "Snivy",
+    "current": "Snivy",
+    "historical": "Tsutarja",
+    "changed": true
+  },
+  {
+    "id": 496,
+    "english": "Servine",
+    "current": "Servine",
+    "historical": "Janovy",
+    "changed": true
+  },
+  {
+    "id": 497,
+    "english": "Serperior",
+    "current": "Serperior",
+    "historical": "Jalorda",
+    "changed": true
+  },
+  {
+    "id": 498,
+    "english": "Tepig",
+    "current": "Tepig",
+    "historical": "Pokabu",
+    "changed": true
+  },
+  {
+    "id": 499,
+    "english": "Pignite",
+    "current": "Pignite",
+    "historical": "Chaoboo",
+    "changed": true
+  },
+  {
+    "id": 500,
+    "english": "Emboar",
+    "current": "Emboar",
+    "historical": "Enbuoh",
+    "changed": true
+  },
+  {
+    "id": 501,
+    "english": "Oshawott",
+    "current": "Oshawott",
+    "historical": "Mijumaru",
+    "changed": true
+  },
+  {
+    "id": 502,
+    "english": "Dewott",
+    "current": "Dewott",
+    "historical": "Futachimaru",
+    "changed": true
+  },
+  {
+    "id": 503,
+    "english": "Samurott",
+    "current": "Samurott",
+    "historical": "Daikenki",
+    "changed": true
+  },
+  {
+    "id": 504,
+    "english": "Patrat",
+    "current": "Patrat",
+    "historical": "Minezumi",
+    "changed": true
+  },
+  {
+    "id": 505,
+    "english": "Watchog",
+    "current": "Watchog",
+    "historical": "Miruhoggu",
+    "changed": true
+  },
+  {
+    "id": 506,
+    "english": "Lillipup",
+    "current": "Lillipup",
+    "historical": "Yorterrie",
+    "changed": true
+  },
+  {
+    "id": 507,
+    "english": "Herdier",
+    "current": "Herdier",
+    "historical": "Haderia",
+    "changed": true
+  },
+  {
+    "id": 508,
+    "english": "Stoutland",
+    "current": "Stoutland",
+    "historical": "Murando",
+    "changed": true
+  },
+  {
+    "id": 509,
+    "english": "Purrloin",
+    "current": "Purrloin",
+    "historical": "Choroneko",
+    "changed": true
+  },
+  {
+    "id": 510,
+    "english": "Liepard",
+    "current": "Liepard",
+    "historical": "Lepardas",
+    "changed": true
+  },
+  {
+    "id": 511,
+    "english": "Pansage",
+    "current": "Pansage",
+    "historical": "Yanappu",
+    "changed": true
+  },
+  {
+    "id": 512,
+    "english": "Simisage",
+    "current": "Simisage",
+    "historical": "Yanakkie",
+    "changed": true
+  },
+  {
+    "id": 513,
+    "english": "Pansear",
+    "current": "Pansear",
+    "historical": "Baoppu",
+    "changed": true
+  },
+  {
+    "id": 514,
+    "english": "Simisear",
+    "current": "Simisear",
+    "historical": "Baokkie",
+    "changed": true
+  },
+  {
+    "id": 515,
+    "english": "Panpour",
+    "current": "Panpour",
+    "historical": "Hiyappu",
+    "changed": true
+  },
+  {
+    "id": 516,
+    "english": "Simipour",
+    "current": "Simipour",
+    "historical": "Hiyakkie",
+    "changed": true
+  },
+  {
+    "id": 517,
+    "english": "Munna",
+    "current": "Munna",
+    "historical": "Munna",
+    "changed": false
+  },
+  {
+    "id": 518,
+    "english": "Musharna",
+    "current": "Musharna",
+    "historical": "Musharna",
+    "changed": false
+  },
+  {
+    "id": 519,
+    "english": "Pidove",
+    "current": "Pidove",
+    "historical": "Mamepato",
+    "changed": true
+  },
+  {
+    "id": 520,
+    "english": "Tranquill",
+    "current": "Tranquill",
+    "historical": "Hatooboo",
+    "changed": true
+  },
+  {
+    "id": 521,
+    "english": "Unfezant",
+    "current": "Unfezant",
+    "historical": "Kenhallow",
+    "changed": true
+  },
+  {
+    "id": 522,
+    "english": "Blitzle",
+    "current": "Blitzle",
+    "historical": "Shimama",
+    "changed": true
+  },
+  {
+    "id": 523,
+    "english": "Zebstrika",
+    "current": "Zebstrika",
+    "historical": "Zeburaika",
+    "changed": true
+  },
+  {
+    "id": 524,
+    "english": "Roggenrola",
+    "current": "Roggenrola",
+    "historical": "Dangoro",
+    "changed": true
+  },
+  {
+    "id": 525,
+    "english": "Boldore",
+    "current": "Boldore",
+    "historical": "Gantle",
+    "changed": true
+  },
+  {
+    "id": 526,
+    "english": "Gigalith",
+    "current": "Gigalith",
+    "historical": "Gigaiasu",
+    "changed": true
+  },
+  {
+    "id": 527,
+    "english": "Woobat",
+    "current": "Woobat",
+    "historical": "Koromori",
+    "changed": true
+  },
+  {
+    "id": 528,
+    "english": "Swoobat",
+    "current": "Swoobat",
+    "historical": "Kokoromori",
+    "changed": true
+  },
+  {
+    "id": 529,
+    "english": "Drilbur",
+    "current": "Drilbur",
+    "historical": "Moguryuu",
+    "changed": true
+  },
+  {
+    "id": 530,
+    "english": "Excadrill",
+    "current": "Excadrill",
+    "historical": "Doryuzu",
+    "changed": true
+  },
+  {
+    "id": 531,
+    "english": "Audino",
+    "current": "Audino",
+    "historical": "Tabunne",
+    "changed": true
+  },
+  {
+    "id": 532,
+    "english": "Timburr",
+    "current": "Timburr",
+    "historical": "Dokkora",
+    "changed": true
+  },
+  {
+    "id": 533,
+    "english": "Gurdurr",
+    "current": "Gurdurr",
+    "historical": "Dotekkotsu",
+    "changed": true
+  },
+  {
+    "id": 534,
+    "english": "Conkeldurr",
+    "current": "Conkeldurr",
+    "historical": "Roubushin",
+    "changed": true
+  },
+  {
+    "id": 535,
+    "english": "Tympole",
+    "current": "Tympole",
+    "historical": "Otamaro",
+    "changed": true
+  },
+  {
+    "id": 536,
+    "english": "Palpitoad",
+    "current": "Palpitoad",
+    "historical": "Gamagaru",
+    "changed": true
+  },
+  {
+    "id": 537,
+    "english": "Seismitoad",
+    "current": "Seismitoad",
+    "historical": "Gamageroge",
+    "changed": true
+  },
+  {
+    "id": 538,
+    "english": "Throh",
+    "current": "Throh",
+    "historical": "Nageki",
+    "changed": true
+  },
+  {
+    "id": 539,
+    "english": "Sawk",
+    "current": "Sawk",
+    "historical": "Dageki",
+    "changed": true
+  },
+  {
+    "id": 540,
+    "english": "Sewaddle",
+    "current": "Sewaddle",
+    "historical": "Kurumiru",
+    "changed": true
+  },
+  {
+    "id": 541,
+    "english": "Swadloon",
+    "current": "Swadloon",
+    "historical": "Kurumayu",
+    "changed": true
+  },
+  {
+    "id": 542,
+    "english": "Leavanny",
+    "current": "Leavanny",
+    "historical": "Hahakomori",
+    "changed": true
+  },
+  {
+    "id": 543,
+    "english": "Venipede",
+    "current": "Venipede",
+    "historical": "Fushide",
+    "changed": true
+  },
+  {
+    "id": 544,
+    "english": "Whirlipede",
+    "current": "Whirlipede",
+    "historical": "Hoiiga",
+    "changed": true
+  },
+  {
+    "id": 545,
+    "english": "Scolipede",
+    "current": "Scolipede",
+    "historical": "Pendra",
+    "changed": true
+  },
+  {
+    "id": 546,
+    "english": "Cottonee",
+    "current": "Cottonee",
+    "historical": "Monmen",
+    "changed": true
+  },
+  {
+    "id": 547,
+    "english": "Whimsicott",
+    "current": "Whimsicott",
+    "historical": "Elfuun",
+    "changed": true
+  },
+  {
+    "id": 548,
+    "english": "Petilil",
+    "current": "Petilil",
+    "historical": "Churine",
+    "changed": true
+  },
+  {
+    "id": 549,
+    "english": "Lilligant",
+    "current": "Lilligant",
+    "historical": "Dredear",
+    "changed": true
+  },
+  {
+    "id": 550,
+    "english": "Basculin",
+    "current": "Basculin",
+    "historical": "Basurao",
+    "changed": true
+  },
+  {
+    "id": 551,
+    "english": "Sandile",
+    "current": "Sandile",
+    "historical": "Meguroko",
+    "changed": true
+  },
+  {
+    "id": 552,
+    "english": "Krokorok",
+    "current": "Krokorok",
+    "historical": "Waruviru",
+    "changed": true
+  },
+  {
+    "id": 553,
+    "english": "Krookodile",
+    "current": "Krookodile",
+    "historical": "Waruvial",
+    "changed": true
+  },
+  {
+    "id": 554,
+    "english": "Darumaka",
+    "current": "Darumaka",
+    "historical": "Darumakka",
+    "changed": true
+  },
+  {
+    "id": 555,
+    "english": "Darmanitan",
+    "current": "Darmanitan",
+    "historical": "Hihidaruma",
+    "changed": true
+  },
+  {
+    "id": 556,
+    "english": "Maractus",
+    "current": "Maractus",
+    "historical": "Maracacchi",
+    "changed": true
+  },
+  {
+    "id": 557,
+    "english": "Dwebble",
+    "current": "Dwebble",
+    "historical": "Ishizumai",
+    "changed": true
+  },
+  {
+    "id": 558,
+    "english": "Crustle",
+    "current": "Crustle",
+    "historical": "Iwapalace",
+    "changed": true
+  },
+  {
+    "id": 559,
+    "english": "Scraggy",
+    "current": "Scraggy",
+    "historical": "Zuruggu",
+    "changed": true
+  },
+  {
+    "id": 560,
+    "english": "Scrafty",
+    "current": "Scrafty",
+    "historical": "Zuruzukin",
+    "changed": true
+  },
+  {
+    "id": 561,
+    "english": "Sigilyph",
+    "current": "Sigilyph",
+    "historical": "Symboler",
+    "changed": true
+  },
+  {
+    "id": 562,
+    "english": "Yamask",
+    "current": "Yamask",
+    "historical": "Desumasu",
+    "changed": true
+  },
+  {
+    "id": 563,
+    "english": "Cofagrigus",
+    "current": "Cofagrigus",
+    "historical": "Desukaan",
+    "changed": true
+  },
+  {
+    "id": 564,
+    "english": "Tirtouga",
+    "current": "Tirtouga",
+    "historical": "Protoga",
+    "changed": true
+  },
+  {
+    "id": 565,
+    "english": "Carracosta",
+    "current": "Carracosta",
+    "historical": "Abagoura",
+    "changed": true
+  },
+  {
+    "id": 566,
+    "english": "Archen",
+    "current": "Archen",
+    "historical": "Arken",
+    "changed": true
+  },
+  {
+    "id": 567,
+    "english": "Archeops",
+    "current": "Archeops",
+    "historical": "Arkeos",
+    "changed": true
+  },
+  {
+    "id": 568,
+    "english": "Trubbish",
+    "current": "Trubbish",
+    "historical": "Yabukuron",
+    "changed": true
+  },
+  {
+    "id": 569,
+    "english": "Garbodor",
+    "current": "Garbodor",
+    "historical": "Dasutodasu",
+    "changed": true
+  },
+  {
+    "id": 570,
+    "english": "Zorua",
+    "current": "Zorua",
+    "historical": "Zoroa",
+    "changed": true
+  },
+  {
+    "id": 571,
+    "english": "Zoroark",
+    "current": "Zoroark",
+    "historical": "Zoroark",
+    "changed": false
+  },
+  {
+    "id": 572,
+    "english": "Minccino",
+    "current": "Minccino",
+    "historical": "Chillarmy",
+    "changed": true
+  },
+  {
+    "id": 573,
+    "english": "Cinccino",
+    "current": "Cinccino",
+    "historical": "Chillaccino",
+    "changed": true
+  },
+  {
+    "id": 574,
+    "english": "Gothita",
+    "current": "Gothita",
+    "historical": "Gochimu",
+    "changed": true
+  },
+  {
+    "id": 575,
+    "english": "Gothorita",
+    "current": "Gothorita",
+    "historical": "Gochimiru",
+    "changed": true
+  },
+  {
+    "id": 576,
+    "english": "Gothitelle",
+    "current": "Gothitelle",
+    "historical": "Gochiruzeru",
+    "changed": true
+  },
+  {
+    "id": 577,
+    "english": "Solosis",
+    "current": "Solosis",
+    "historical": "Yuniran",
+    "changed": true
+  },
+  {
+    "id": 578,
+    "english": "Duosion",
+    "current": "Duosion",
+    "historical": "Daburan",
+    "changed": true
+  },
+  {
+    "id": 579,
+    "english": "Reuniclus",
+    "current": "Reuniclus",
+    "historical": "Lanculus",
+    "changed": true
+  },
+  {
+    "id": 580,
+    "english": "Ducklett",
+    "current": "Ducklett",
+    "historical": "Koaruhii",
+    "changed": true
+  },
+  {
+    "id": 581,
+    "english": "Swanna",
+    "current": "Swanna",
+    "historical": "Swanna",
+    "changed": false
+  },
+  {
+    "id": 582,
+    "english": "Vanillite",
+    "current": "Vanillite",
+    "historical": "Banipucchi",
+    "changed": true
+  },
+  {
+    "id": 583,
+    "english": "Vanillish",
+    "current": "Vanillish",
+    "historical": "Baniricchi",
+    "changed": true
+  },
+  {
+    "id": 584,
+    "english": "Vanilluxe",
+    "current": "Vanilluxe",
+    "historical": "Baibanila",
+    "changed": true
+  },
+  {
+    "id": 585,
+    "english": "Deerling",
+    "current": "Deerling",
+    "historical": "Shikijika",
+    "changed": true
+  },
+  {
+    "id": 586,
+    "english": "Sawsbuck",
+    "current": "Sawsbuck",
+    "historical": "Mebukijika",
+    "changed": true
+  },
+  {
+    "id": 587,
+    "english": "Emolga",
+    "current": "Emolga",
+    "historical": "Emonga",
+    "changed": true
+  },
+  {
+    "id": 588,
+    "english": "Karrablast",
+    "current": "Karrablast",
+    "historical": "Kaburumo",
+    "changed": true
+  },
+  {
+    "id": 589,
+    "english": "Escavalier",
+    "current": "Escavalier",
+    "historical": "Chevargo",
+    "changed": true
+  },
+  {
+    "id": 590,
+    "english": "Foongus",
+    "current": "Foongus",
+    "historical": "Tamagetake",
+    "changed": true
+  },
+  {
+    "id": 591,
+    "english": "Amoonguss",
+    "current": "Amoonguss",
+    "historical": "Morobareru",
+    "changed": true
+  },
+  {
+    "id": 592,
+    "english": "Frillish",
+    "current": "Frillish",
+    "historical": "Pururiru",
+    "changed": true
+  },
+  {
+    "id": 593,
+    "english": "Jellicent",
+    "current": "Jellicent",
+    "historical": "Burungeru",
+    "changed": true
+  },
+  {
+    "id": 594,
+    "english": "Alomomola",
+    "current": "Alomomola",
+    "historical": "Mamanbou",
+    "changed": true
+  },
+  {
+    "id": 595,
+    "english": "Joltik",
+    "current": "Joltik",
+    "historical": "Bachuru",
+    "changed": true
+  },
+  {
+    "id": 596,
+    "english": "Galvantula",
+    "current": "Galvantula",
+    "historical": "Dentula",
+    "changed": true
+  },
+  {
+    "id": 597,
+    "english": "Ferroseed",
+    "current": "Ferroseed",
+    "historical": "Tesseed",
+    "changed": true
+  },
+  {
+    "id": 598,
+    "english": "Ferrothorn",
+    "current": "Ferrothorn",
+    "historical": "Nutrey",
+    "changed": true
+  },
+  {
+    "id": 599,
+    "english": "Klink",
+    "current": "Klink",
+    "historical": "Giaru",
+    "changed": true
+  },
+  {
+    "id": 600,
+    "english": "Klang",
+    "current": "Klang",
+    "historical": "Gigiaru",
+    "changed": true
+  },
+  {
+    "id": 601,
+    "english": "Klinklang",
+    "current": "Klinklang",
+    "historical": "Gigigiaru",
+    "changed": true
+  },
+  {
+    "id": 602,
+    "english": "Tynamo",
+    "current": "Tynamo",
+    "historical": "Shibishirasu",
+    "changed": true
+  },
+  {
+    "id": 603,
+    "english": "Eelektrik",
+    "current": "Eelektrik",
+    "historical": "Shibibeel",
+    "changed": true
+  },
+  {
+    "id": 604,
+    "english": "Eelektross",
+    "current": "Eelektross",
+    "historical": "Shibirudon",
+    "changed": true
+  },
+  {
+    "id": 605,
+    "english": "Elgyem",
+    "current": "Elgyem",
+    "historical": "Rigure",
+    "changed": true
+  },
+  {
+    "id": 606,
+    "english": "Beheeyem",
+    "current": "Beheeyem",
+    "historical": "Ohbemu",
+    "changed": true
+  },
+  {
+    "id": 607,
+    "english": "Litwick",
+    "current": "Litwick",
+    "historical": "Hitomoshi",
+    "changed": true
+  },
+  {
+    "id": 608,
+    "english": "Lampent",
+    "current": "Lampent",
+    "historical": "Lampura",
+    "changed": true
+  },
+  {
+    "id": 609,
+    "english": "Chandelure",
+    "current": "Chandelure",
+    "historical": "Shandera",
+    "changed": true
+  },
+  {
+    "id": 610,
+    "english": "Axew",
+    "current": "Axew",
+    "historical": "Kibago",
+    "changed": true
+  },
+  {
+    "id": 611,
+    "english": "Fraxure",
+    "current": "Fraxure",
+    "historical": "Onondo",
+    "changed": true
+  },
+  {
+    "id": 612,
+    "english": "Haxorus",
+    "current": "Haxorus",
+    "historical": "Ononokusu",
+    "changed": true
+  },
+  {
+    "id": 613,
+    "english": "Cubchoo",
+    "current": "Cubchoo",
+    "historical": "Kumashun",
+    "changed": true
+  },
+  {
+    "id": 614,
+    "english": "Beartic",
+    "current": "Beartic",
+    "historical": "Tsunbear",
+    "changed": true
+  },
+  {
+    "id": 615,
+    "english": "Cryogonal",
+    "current": "Cryogonal",
+    "historical": "Freegeo",
+    "changed": true
+  },
+  {
+    "id": 616,
+    "english": "Shelmet",
+    "current": "Shelmet",
+    "historical": "Chobomaki",
+    "changed": true
+  },
+  {
+    "id": 617,
+    "english": "Accelgor",
+    "current": "Accelgor",
+    "historical": "Agilder",
+    "changed": true
+  },
+  {
+    "id": 618,
+    "english": "Stunfisk",
+    "current": "Stunfisk",
+    "historical": "Maggyo",
+    "changed": true
+  },
+  {
+    "id": 619,
+    "english": "Mienfoo",
+    "current": "Mienfoo",
+    "historical": "Kojyofu",
+    "changed": true
+  },
+  {
+    "id": 620,
+    "english": "Mienshao",
+    "current": "Mienshao",
+    "historical": "Kojondo",
+    "changed": true
+  },
+  {
+    "id": 621,
+    "english": "Druddigon",
+    "current": "Druddigon",
+    "historical": "Kurimugan",
+    "changed": true
+  },
+  {
+    "id": 622,
+    "english": "Golett",
+    "current": "Golett",
+    "historical": "Gobbit",
+    "changed": true
+  },
+  {
+    "id": 623,
+    "english": "Golurk",
+    "current": "Golurk",
+    "historical": "Goloog",
+    "changed": true
+  },
+  {
+    "id": 624,
+    "english": "Pawniard",
+    "current": "Pawniard",
+    "historical": "Komatana",
+    "changed": true
+  },
+  {
+    "id": 625,
+    "english": "Bisharp",
+    "current": "Bisharp",
+    "historical": "Kirikizan",
+    "changed": true
+  },
+  {
+    "id": 626,
+    "english": "Bouffalant",
+    "current": "Bouffalant",
+    "historical": "Baffuron",
+    "changed": true
+  },
+  {
+    "id": 627,
+    "english": "Rufflet",
+    "current": "Rufflet",
+    "historical": "Washibon",
+    "changed": true
+  },
+  {
+    "id": 628,
+    "english": "Braviary",
+    "current": "Braviary",
+    "historical": "Warrgle",
+    "changed": true
+  },
+  {
+    "id": 629,
+    "english": "Vullaby",
+    "current": "Vullaby",
+    "historical": "Valchai",
+    "changed": true
+  },
+  {
+    "id": 630,
+    "english": "Mandibuzz",
+    "current": "Mandibuzz",
+    "historical": "Varuzina",
+    "changed": true
+  },
+  {
+    "id": 631,
+    "english": "Heatmor",
+    "current": "Heatmor",
+    "historical": "Kuitaran",
+    "changed": true
+  },
+  {
+    "id": 632,
+    "english": "Durant",
+    "current": "Durant",
+    "historical": "Aiant",
+    "changed": true
+  },
+  {
+    "id": 633,
+    "english": "Deino",
+    "current": "Deino",
+    "historical": "Monozu",
+    "changed": true
+  },
+  {
+    "id": 634,
+    "english": "Zweilous",
+    "current": "Zweilous",
+    "historical": "Dihead",
+    "changed": true
+  },
+  {
+    "id": 635,
+    "english": "Hydreigon",
+    "current": "Hydreigon",
+    "historical": "Sazandora",
+    "changed": true
+  },
+  {
+    "id": 636,
+    "english": "Larvesta",
+    "current": "Larvesta",
+    "historical": "Meraruba",
+    "changed": true
+  },
+  {
+    "id": 637,
+    "english": "Volcarona",
+    "current": "Volcarona",
+    "historical": "Ulgamoth",
+    "changed": true
+  },
+  {
+    "id": 638,
+    "english": "Cobalion",
+    "current": "Cobalion",
+    "historical": "Cobalon",
+    "changed": true
+  },
+  {
+    "id": 639,
+    "english": "Terrakion",
+    "current": "Terrakion",
+    "historical": "Terrakion",
+    "changed": false
+  },
+  {
+    "id": 640,
+    "english": "Virizion",
+    "current": "Virizion",
+    "historical": "Virizion",
+    "changed": false
+  },
+  {
+    "id": 641,
+    "english": "Tornadus",
+    "current": "Tornadus",
+    "historical": "Tornelos",
+    "changed": true
+  },
+  {
+    "id": 642,
+    "english": "Thundurus",
+    "current": "Thundurus",
+    "historical": "Voltolos",
+    "changed": true
+  },
+  {
+    "id": 643,
+    "english": "Reshiram",
+    "current": "Reshiram",
+    "historical": "Reshiram",
+    "changed": false
+  },
+  {
+    "id": 644,
+    "english": "Zekrom",
+    "current": "Zekrom",
+    "historical": "Zekrom",
+    "changed": false
+  },
+  {
+    "id": 645,
+    "english": "Landorus",
+    "current": "Landorus",
+    "historical": "Landlos",
+    "changed": true
+  },
+  {
+    "id": 646,
+    "english": "Kyurem",
+    "current": "Kyurem",
+    "historical": "Kyurem",
+    "changed": false
+  },
+  {
+    "id": 647,
+    "english": "Keldeo",
+    "current": "Keldeo",
+    "historical": "Keldeo",
+    "changed": false
+  },
+  {
+    "id": 648,
+    "english": "Meloetta",
+    "current": "Meloetta",
+    "historical": "Meloetta",
+    "changed": false
+  },
+  {
+    "id": 649,
+    "english": "Genesect",
+    "current": "Genesect",
+    "historical": "Genesect",
+    "changed": false
+  },
+  {
+    "id": 650,
+    "english": "Chespin",
+    "current": "Chespin",
+    "historical": "Harimaron",
+    "changed": true
+  },
+  {
+    "id": 651,
+    "english": "Quilladin",
+    "current": "Quilladin",
+    "historical": "Haribogu",
+    "changed": true
+  },
+  {
+    "id": 652,
+    "english": "Chesnaught",
+    "current": "Chesnaught",
+    "historical": "Brigaron",
+    "changed": true
+  },
+  {
+    "id": 653,
+    "english": "Fennekin",
+    "current": "Fennekin",
+    "historical": "Fokko",
+    "changed": true
+  },
+  {
+    "id": 654,
+    "english": "Braixen",
+    "current": "Braixen",
+    "historical": "Teruna",
+    "changed": true
+  },
+  {
+    "id": 655,
+    "english": "Delphox",
+    "current": "Delphox",
+    "historical": "Mahoxy",
+    "changed": true
+  },
+  {
+    "id": 656,
+    "english": "Froakie",
+    "current": "Froakie",
+    "historical": "Keromatsu",
+    "changed": true
+  },
+  {
+    "id": 657,
+    "english": "Frogadier",
+    "current": "Frogadier",
+    "historical": "Gekogashira",
+    "changed": true
+  },
+  {
+    "id": 658,
+    "english": "Greninja",
+    "current": "Greninja",
+    "historical": "Gekkoga",
+    "changed": true
+  },
+  {
+    "id": 659,
+    "english": "Bunnelby",
+    "current": "Bunnelby",
+    "historical": "Horubi",
+    "changed": true
+  },
+  {
+    "id": 660,
+    "english": "Diggersby",
+    "current": "Diggersby",
+    "historical": "Horudo",
+    "changed": true
+  },
+  {
+    "id": 661,
+    "english": "Fletchling",
+    "current": "Fletchling",
+    "historical": "Yayakoma",
+    "changed": true
+  },
+  {
+    "id": 662,
+    "english": "Fletchinder",
+    "current": "Fletchinder",
+    "historical": "Hinoyakoma",
+    "changed": true
+  },
+  {
+    "id": 663,
+    "english": "Talonflame",
+    "current": "Talonflame",
+    "historical": "Phaiaro",
+    "changed": true
+  },
+  {
+    "id": 664,
+    "english": "Scatterbug",
+    "current": "Scatterbug",
+    "historical": "Kofukimushi",
+    "changed": true
+  },
+  {
+    "id": 665,
+    "english": "Spewpa",
+    "current": "Spewpa",
+    "historical": "Kofurai",
+    "changed": true
+  },
+  {
+    "id": 666,
+    "english": "Vivillon",
+    "current": "Vivillon",
+    "historical": "Viviyon",
+    "changed": true
+  },
+  {
+    "id": 667,
+    "english": "Litleo",
+    "current": "Litleo",
+    "historical": "Shishiko",
+    "changed": true
+  },
+  {
+    "id": 668,
+    "english": "Pyroar",
+    "current": "Pyroar",
+    "historical": "Kaenjishi",
+    "changed": true
+  },
+  {
+    "id": 669,
+    "english": "Flabébé",
+    "current": "Flabébé",
+    "historical": "Furabebe",
+    "changed": true
+  },
+  {
+    "id": 670,
+    "english": "Floette",
+    "current": "Floette",
+    "historical": "Furaette",
+    "changed": true
+  },
+  {
+    "id": 671,
+    "english": "Florges",
+    "current": "Florges",
+    "historical": "Furajesu",
+    "changed": true
+  },
+  {
+    "id": 672,
+    "english": "Skiddo",
+    "current": "Skiddo",
+    "historical": "Mekuru",
+    "changed": true
+  },
+  {
+    "id": 673,
+    "english": "Gogoat",
+    "current": "Gogoat",
+    "historical": "Gogoto",
+    "changed": true
+  },
+  {
+    "id": 674,
+    "english": "Pancham",
+    "current": "Pancham",
+    "historical": "Yanchamu",
+    "changed": true
+  },
+  {
+    "id": 675,
+    "english": "Pangoro",
+    "current": "Pangoro",
+    "historical": "Goronda",
+    "changed": true
+  },
+  {
+    "id": 676,
+    "english": "Furfrou",
+    "current": "Furfrou",
+    "historical": "Torimian",
+    "changed": true
+  },
+  {
+    "id": 677,
+    "english": "Espurr",
+    "current": "Espurr",
+    "historical": "Nyasupa",
+    "changed": true
+  },
+  {
+    "id": 678,
+    "english": "Meowstic",
+    "current": "Meowstic",
+    "historical": "Nyaonikusu",
+    "changed": true
+  },
+  {
+    "id": 679,
+    "english": "Honedge",
+    "current": "Honedge",
+    "historical": "Hitotsuki",
+    "changed": true
+  },
+  {
+    "id": 680,
+    "english": "Doublade",
+    "current": "Doublade",
+    "historical": "Nidangiru",
+    "changed": true
+  },
+  {
+    "id": 681,
+    "english": "Aegislash",
+    "current": "Aegislash",
+    "historical": "Girugarudo",
+    "changed": true
+  },
+  {
+    "id": 682,
+    "english": "Spritzee",
+    "current": "Spritzee",
+    "historical": "Shushupu",
+    "changed": true
+  },
+  {
+    "id": 683,
+    "english": "Aromatisse",
+    "current": "Aromatisse",
+    "historical": "Furefuwan",
+    "changed": true
+  },
+  {
+    "id": 684,
+    "english": "Swirlix",
+    "current": "Swirlix",
+    "historical": "Peroppafu",
+    "changed": true
+  },
+  {
+    "id": 685,
+    "english": "Slurpuff",
+    "current": "Slurpuff",
+    "historical": "Perorimu",
+    "changed": true
+  },
+  {
+    "id": 686,
+    "english": "Inkay",
+    "current": "Inkay",
+    "historical": "Maika",
+    "changed": true
+  },
+  {
+    "id": 687,
+    "english": "Malamar",
+    "current": "Malamar",
+    "historical": "Karamanero",
+    "changed": true
+  },
+  {
+    "id": 688,
+    "english": "Binacle",
+    "current": "Binacle",
+    "historical": "Kametete",
+    "changed": true
+  },
+  {
+    "id": 689,
+    "english": "Barbaracle",
+    "current": "Barbaracle",
+    "historical": "Gamenodesu",
+    "changed": true
+  },
+  {
+    "id": 690,
+    "english": "Skrelp",
+    "current": "Skrelp",
+    "historical": "Kuzumo",
+    "changed": true
+  },
+  {
+    "id": 691,
+    "english": "Dragalge",
+    "current": "Dragalge",
+    "historical": "Doramidoro",
+    "changed": true
+  },
+  {
+    "id": 692,
+    "english": "Clauncher",
+    "current": "Clauncher",
+    "historical": "Udeppou",
+    "changed": true
+  },
+  {
+    "id": 693,
+    "english": "Clawitzer",
+    "current": "Clawitzer",
+    "historical": "Burosuta",
+    "changed": true
+  },
+  {
+    "id": 694,
+    "english": "Helioptile",
+    "current": "Helioptile",
+    "historical": "Erikiteru",
+    "changed": true
+  },
+  {
+    "id": 695,
+    "english": "Heliolisk",
+    "current": "Heliolisk",
+    "historical": "Erezado",
+    "changed": true
+  },
+  {
+    "id": 696,
+    "english": "Tyrunt",
+    "current": "Tyrunt",
+    "historical": "Chigorasu",
+    "changed": true
+  },
+  {
+    "id": 697,
+    "english": "Tyrantrum",
+    "current": "Tyrantrum",
+    "historical": "Gachigorasu",
+    "changed": true
+  },
+  {
+    "id": 698,
+    "english": "Amaura",
+    "current": "Amaura",
+    "historical": "Amarusu",
+    "changed": true
+  },
+  {
+    "id": 699,
+    "english": "Aurorus",
+    "current": "Aurorus",
+    "historical": "Amaruruga",
+    "changed": true
+  },
+  {
+    "id": 700,
+    "english": "Sylveon",
+    "current": "Sylveon",
+    "historical": "Ninfia",
+    "changed": true
+  },
+  {
+    "id": 701,
+    "english": "Hawlucha",
+    "current": "Hawlucha",
+    "historical": "Ruchaburu",
+    "changed": true
+  },
+  {
+    "id": 702,
+    "english": "Dedenne",
+    "current": "Dedenne",
+    "historical": "Dedenne",
+    "changed": false
+  },
+  {
+    "id": 703,
+    "english": "Carbink",
+    "current": "Carbink",
+    "historical": "Mereshi",
+    "changed": true
+  },
+  {
+    "id": 704,
+    "english": "Goomy",
+    "current": "Goomy",
+    "historical": "Numera",
+    "changed": true
+  },
+  {
+    "id": 705,
+    "english": "Sliggoo",
+    "current": "Sliggoo",
+    "historical": "Numeiru",
+    "changed": true
+  },
+  {
+    "id": 706,
+    "english": "Goodra",
+    "current": "Goodra",
+    "historical": "Numerugon",
+    "changed": true
+  },
+  {
+    "id": 707,
+    "english": "Klefki",
+    "current": "Klefki",
+    "historical": "Kurepphi",
+    "changed": true
+  },
+  {
+    "id": 708,
+    "english": "Phantump",
+    "current": "Phantump",
+    "historical": "Bokure",
+    "changed": true
+  },
+  {
+    "id": 709,
+    "english": "Trevenant",
+    "current": "Trevenant",
+    "historical": "Orotto",
+    "changed": true
+  },
+  {
+    "id": 710,
+    "english": "Pumpkaboo",
+    "current": "Pumpkaboo",
+    "historical": "Baketcha",
+    "changed": true
+  },
+  {
+    "id": 711,
+    "english": "Gourgeist",
+    "current": "Gourgeist",
+    "historical": "Pampujin",
+    "changed": true
+  },
+  {
+    "id": 712,
+    "english": "Bergmite",
+    "current": "Bergmite",
+    "historical": "Kachikoru",
+    "changed": true
+  },
+  {
+    "id": 713,
+    "english": "Avalugg",
+    "current": "Avalugg",
+    "historical": "Kurebesu",
+    "changed": true
+  },
+  {
+    "id": 714,
+    "english": "Noibat",
+    "current": "Noibat",
+    "historical": "Onbatto",
+    "changed": true
+  },
+  {
+    "id": 715,
+    "english": "Noivern",
+    "current": "Noivern",
+    "historical": "Onban",
+    "changed": true
+  },
+  {
+    "id": 716,
+    "english": "Xerneas",
+    "current": "Xerneas",
+    "historical": "Zeruneasu",
+    "changed": true
+  },
+  {
+    "id": 717,
+    "english": "Yveltal",
+    "current": "Yveltal",
+    "historical": "Iberutaru",
+    "changed": true
+  },
+  {
+    "id": 718,
+    "english": "Zygarde",
+    "current": "Zygarde",
+    "historical": "Zygarde",
+    "changed": false
+  },
+  {
+    "id": 719,
+    "english": "Diancie",
+    "current": "Diancie",
+    "historical": "Diancie",
+    "changed": false
+  },
+  {
+    "id": 720,
+    "english": "Hoopa",
+    "current": "Hoopa",
+    "historical": "Hoopa",
+    "changed": false
+  },
+  {
+    "id": 721,
+    "english": "Volcanion",
+    "current": "Volcanion",
+    "historical": "Volkenion",
+    "changed": true
+  },
+  {
+    "id": 722,
+    "english": "Rowlet",
+    "current": "Rowlet",
+    "historical": "Mokuro",
+    "changed": true
+  },
+  {
+    "id": 723,
+    "english": "Dartrix",
+    "current": "Dartrix",
+    "historical": "Fukusuro",
+    "changed": true
+  },
+  {
+    "id": 724,
+    "english": "Decidueye",
+    "current": "Decidueye",
+    "historical": "Junaipa",
+    "changed": true
+  },
+  {
+    "id": 725,
+    "english": "Litten",
+    "current": "Litten",
+    "historical": "Nyabi",
+    "changed": true
+  },
+  {
+    "id": 726,
+    "english": "Torracat",
+    "current": "Torracat",
+    "historical": "Nyahito",
+    "changed": true
+  },
+  {
+    "id": 727,
+    "english": "Incineroar",
+    "current": "Incineroar",
+    "historical": "Gaogaen",
+    "changed": true
+  },
+  {
+    "id": 728,
+    "english": "Popplio",
+    "current": "Popplio",
+    "historical": "Ashimari",
+    "changed": true
+  },
+  {
+    "id": 729,
+    "english": "Brionne",
+    "current": "Brionne",
+    "historical": "Oshamari",
+    "changed": true
+  },
+  {
+    "id": 730,
+    "english": "Primarina",
+    "current": "Primarina",
+    "historical": "Ashirenu",
+    "changed": true
+  },
+  {
+    "id": 731,
+    "english": "Pikipek",
+    "current": "Pikipek",
+    "historical": "Tsutsukera",
+    "changed": true
+  },
+  {
+    "id": 732,
+    "english": "Trumbeak",
+    "current": "Trumbeak",
+    "historical": "Kerarappa",
+    "changed": true
+  },
+  {
+    "id": 733,
+    "english": "Toucannon",
+    "current": "Toucannon",
+    "historical": "Dodekabashi",
+    "changed": true
+  },
+  {
+    "id": 734,
+    "english": "Yungoos",
+    "current": "Yungoos",
+    "historical": "Yangusu",
+    "changed": true
+  },
+  {
+    "id": 735,
+    "english": "Gumshoos",
+    "current": "Gumshoos",
+    "historical": "Dekagusu",
+    "changed": true
+  },
+  {
+    "id": 736,
+    "english": "Grubbin",
+    "current": "Grubbin",
+    "historical": "Agojimushi",
+    "changed": true
+  },
+  {
+    "id": 737,
+    "english": "Charjabug",
+    "current": "Charjabug",
+    "historical": "Denjimushi",
+    "changed": true
+  },
+  {
+    "id": 738,
+    "english": "Vikavolt",
+    "current": "Vikavolt",
+    "historical": "Kuwaganon",
+    "changed": true
+  },
+  {
+    "id": 739,
+    "english": "Crabrawler",
+    "current": "Crabrawler",
+    "historical": "Makenkani",
+    "changed": true
+  },
+  {
+    "id": 740,
+    "english": "Crabominable",
+    "current": "Crabominable",
+    "historical": "Kekenkani",
+    "changed": true
+  },
+  {
+    "id": 741,
+    "english": "Oricorio",
+    "current": "Oricorio",
+    "historical": "Odoridori",
+    "changed": true
+  },
+  {
+    "id": 742,
+    "english": "Cutiefly",
+    "current": "Cutiefly",
+    "historical": "Aburi",
+    "changed": true
+  },
+  {
+    "id": 743,
+    "english": "Ribombee",
+    "current": "Ribombee",
+    "historical": "Aburibon",
+    "changed": true
+  },
+  {
+    "id": 744,
+    "english": "Rockruff",
+    "current": "Rockruff",
+    "historical": "Iwanko",
+    "changed": true
+  },
+  {
+    "id": 745,
+    "english": "Lycanroc",
+    "current": "Lycanroc",
+    "historical": "Rugarugan",
+    "changed": true
+  },
+  {
+    "id": 746,
+    "english": "Wishiwashi",
+    "current": "Wishiwashi",
+    "historical": "Yowashi",
+    "changed": true
+  },
+  {
+    "id": 747,
+    "english": "Mareanie",
+    "current": "Mareanie",
+    "historical": "Hidoide",
+    "changed": true
+  },
+  {
+    "id": 748,
+    "english": "Toxapex",
+    "current": "Toxapex",
+    "historical": "Dohidoide",
+    "changed": true
+  },
+  {
+    "id": 749,
+    "english": "Mudbray",
+    "current": "Mudbray",
+    "historical": "Dorobanko",
+    "changed": true
+  },
+  {
+    "id": 750,
+    "english": "Mudsdale",
+    "current": "Mudsdale",
+    "historical": "Banbadoro",
+    "changed": true
+  },
+  {
+    "id": 751,
+    "english": "Dewpider",
+    "current": "Dewpider",
+    "historical": "Shizukumo",
+    "changed": true
+  },
+  {
+    "id": 752,
+    "english": "Araquanid",
+    "current": "Araquanid",
+    "historical": "Onishizukumo",
+    "changed": true
+  },
+  {
+    "id": 753,
+    "english": "Fomantis",
+    "current": "Fomantis",
+    "historical": "Karikiri",
+    "changed": true
+  },
+  {
+    "id": 754,
+    "english": "Lurantis",
+    "current": "Lurantis",
+    "historical": "Rarantesu",
+    "changed": true
+  },
+  {
+    "id": 755,
+    "english": "Morelull",
+    "current": "Morelull",
+    "historical": "Nemashu",
+    "changed": true
+  },
+  {
+    "id": 756,
+    "english": "Shiinotic",
+    "current": "Shiinotic",
+    "historical": "Mashedo",
+    "changed": true
+  },
+  {
+    "id": 757,
+    "english": "Salandit",
+    "current": "Salandit",
+    "historical": "Yatoumori",
+    "changed": true
+  },
+  {
+    "id": 758,
+    "english": "Salazzle",
+    "current": "Salazzle",
+    "historical": "Ennyuto",
+    "changed": true
+  },
+  {
+    "id": 759,
+    "english": "Stufful",
+    "current": "Stufful",
+    "historical": "Nuikoguma",
+    "changed": true
+  },
+  {
+    "id": 760,
+    "english": "Bewear",
+    "current": "Bewear",
+    "historical": "Kiteruguma",
+    "changed": true
+  },
+  {
+    "id": 761,
+    "english": "Bounsweet",
+    "current": "Bounsweet",
+    "historical": "Amakaji",
+    "changed": true
+  },
+  {
+    "id": 762,
+    "english": "Steenee",
+    "current": "Steenee",
+    "historical": "Amamaiko",
+    "changed": true
+  },
+  {
+    "id": 763,
+    "english": "Tsareena",
+    "current": "Tsareena",
+    "historical": "Amajo",
+    "changed": true
+  },
+  {
+    "id": 764,
+    "english": "Comfey",
+    "current": "Comfey",
+    "historical": "Kyuwawa",
+    "changed": true
+  },
+  {
+    "id": 765,
+    "english": "Oranguru",
+    "current": "Oranguru",
+    "historical": "Yareyutan",
+    "changed": true
+  },
+  {
+    "id": 766,
+    "english": "Passimian",
+    "current": "Passimian",
+    "historical": "Nagetsukesaru",
+    "changed": true
+  },
+  {
+    "id": 767,
+    "english": "Wimpod",
+    "current": "Wimpod",
+    "historical": "Kosokumushi",
+    "changed": true
+  },
+  {
+    "id": 768,
+    "english": "Golisopod",
+    "current": "Golisopod",
+    "historical": "Gusokumusha",
+    "changed": true
+  },
+  {
+    "id": 769,
+    "english": "Sandygast",
+    "current": "Sandygast",
+    "historical": "Sunaba",
+    "changed": true
+  },
+  {
+    "id": 770,
+    "english": "Palossand",
+    "current": "Palossand",
+    "historical": "Shirodesuna",
+    "changed": true
+  },
+  {
+    "id": 771,
+    "english": "Pyukumuku",
+    "current": "Pyukumuku",
+    "historical": "Namakobushi",
+    "changed": true
+  },
+  {
+    "id": 772,
+    "english": "Type: Null",
+    "current": "Type: Null",
+    "historical": "Type: Null",
+    "changed": false
+  },
+  {
+    "id": 773,
+    "english": "Silvally",
+    "current": "Silvally",
+    "historical": "Shiruvadi",
+    "changed": true
+  },
+  {
+    "id": 774,
+    "english": "Minior",
+    "current": "Minior",
+    "historical": "Meteno",
+    "changed": true
+  },
+  {
+    "id": 775,
+    "english": "Komala",
+    "current": "Komala",
+    "historical": "Nekkoala",
+    "changed": true
+  },
+  {
+    "id": 776,
+    "english": "Turtonator",
+    "current": "Turtonator",
+    "historical": "Bakugamesu",
+    "changed": true
+  },
+  {
+    "id": 777,
+    "english": "Togedemaru",
+    "current": "Togedemaru",
+    "historical": "Togedemaru",
+    "changed": false
+  },
+  {
+    "id": 778,
+    "english": "Mimikyu",
+    "current": "Mimikyu",
+    "historical": "Mimikkyu",
+    "changed": true
+  },
+  {
+    "id": 779,
+    "english": "Bruxish",
+    "current": "Bruxish",
+    "historical": "Hagigishiri",
+    "changed": true
+  },
+  {
+    "id": 780,
+    "english": "Drampa",
+    "current": "Drampa",
+    "historical": "Jijiron",
+    "changed": true
+  },
+  {
+    "id": 781,
+    "english": "Dhelmise",
+    "current": "Dhelmise",
+    "historical": "Dadarin",
+    "changed": true
+  },
+  {
+    "id": 782,
+    "english": "Jangmo-o",
+    "current": "Jangmo-o",
+    "historical": "Jarako",
+    "changed": true
+  },
+  {
+    "id": 783,
+    "english": "Hakamo-o",
+    "current": "Hakamo-o",
+    "historical": "Jarango",
+    "changed": true
+  },
+  {
+    "id": 784,
+    "english": "Kommo-o",
+    "current": "Kommo-o",
+    "historical": "Jararanga",
+    "changed": true
+  },
+  {
+    "id": 785,
+    "english": "Tapu Koko",
+    "current": "Tapu Koko",
+    "historical": "Kapu Kokeko",
+    "changed": true
+  },
+  {
+    "id": 786,
+    "english": "Tapu Lele",
+    "current": "Tapu Lele",
+    "historical": "Kapu Tetefu",
+    "changed": true
+  },
+  {
+    "id": 787,
+    "english": "Tapu Bulu",
+    "current": "Tapu Bulu",
+    "historical": "Kapu Bululu",
+    "changed": true
+  },
+  {
+    "id": 788,
+    "english": "Tapu Fini",
+    "current": "Tapu Fini",
+    "historical": "Kapu Lehile",
+    "changed": true
+  },
+  {
+    "id": 789,
+    "english": "Cosmog",
+    "current": "Cosmog",
+    "historical": "Kosumoggu",
+    "changed": true
+  },
+  {
+    "id": 790,
+    "english": "Cosmoem",
+    "current": "Cosmoem",
+    "historical": "Kosumoumu",
+    "changed": true
+  },
+  {
+    "id": 791,
+    "english": "Solgaleo",
+    "current": "Solgaleo",
+    "historical": "Sorugareo",
+    "changed": true
+  },
+  {
+    "id": 792,
+    "english": "Lunala",
+    "current": "Lunala",
+    "historical": "Lunala",
+    "changed": false
+  },
+  {
+    "id": 793,
+    "english": "Nihilego",
+    "current": "Nihilego",
+    "historical": "Utsuroido",
+    "changed": true
+  },
+  {
+    "id": 794,
+    "english": "Buzzwole",
+    "current": "Buzzwole",
+    "historical": "Masshibun",
+    "changed": true
+  },
+  {
+    "id": 795,
+    "english": "Pheromosa",
+    "current": "Pheromosa",
+    "historical": "Feroche",
+    "changed": true
+  },
+  {
+    "id": 796,
+    "english": "Xurkitree",
+    "current": "Xurkitree",
+    "historical": "Denjumoku",
+    "changed": true
+  },
+  {
+    "id": 797,
+    "english": "Celesteela",
+    "current": "Celesteela",
+    "historical": "Tekkaguya",
+    "changed": true
+  },
+  {
+    "id": 798,
+    "english": "Kartana",
+    "current": "Kartana",
+    "historical": "Kamitsurugi",
+    "changed": true
+  },
+  {
+    "id": 799,
+    "english": "Guzzlord",
+    "current": "Guzzlord",
+    "historical": "Akujikingu",
+    "changed": true
+  },
+  {
+    "id": 800,
+    "english": "Necrozma",
+    "current": "Necrozma",
+    "historical": "Nekurozuma",
+    "changed": true
+  },
+  {
+    "id": 801,
+    "english": "Magearna",
+    "current": "Magearna",
+    "historical": "Magiana",
+    "changed": true
+  },
+  {
+    "id": 802,
+    "english": "Marshadow",
+    "current": "Marshadow",
+    "historical": "Marshadow",
+    "changed": false
+  },
+  {
+    "id": 803,
+    "english": "Poipole",
+    "current": "Poipole",
+    "historical": "Bevenom",
+    "changed": true
+  },
+  {
+    "id": 804,
+    "english": "Naganadel",
+    "current": "Naganadel",
+    "historical": "Agoyon",
+    "changed": true
+  },
+  {
+    "id": 805,
+    "english": "Stakataka",
+    "current": "Stakataka",
+    "historical": "Tundetunde",
+    "changed": true
+  },
+  {
+    "id": 806,
+    "english": "Blacephalon",
+    "current": "Blacephalon",
+    "historical": "Zugadoon",
+    "changed": true
+  },
+  {
+    "id": 807,
+    "english": "Zeraora",
+    "current": "Zeraora",
+    "historical": "Zeraora",
+    "changed": false
+  },
+  {
+    "id": 808,
+    "english": "Meltan",
+    "current": "Meltan",
+    "historical": "Meltan",
+    "changed": false
+  },
+  {
+    "id": 809,
+    "english": "Melmetal",
+    "current": "Melmetal",
+    "historical": "Melmetal",
+    "changed": false
+  },
+  {
+    "id": 810,
+    "english": "Grookey",
+    "current": "Grookey",
+    "historical": "Sarunori",
+    "changed": true
+  },
+  {
+    "id": 811,
+    "english": "Thwackey",
+    "current": "Thwackey",
+    "historical": "Bachinki",
+    "changed": true
+  },
+  {
+    "id": 812,
+    "english": "Rillaboom",
+    "current": "Rillaboom",
+    "historical": "Gorilander",
+    "changed": true
+  },
+  {
+    "id": 813,
+    "english": "Scorbunny",
+    "current": "Scorbunny",
+    "historical": "Hibani",
+    "changed": true
+  },
+  {
+    "id": 814,
+    "english": "Raboot",
+    "current": "Raboot",
+    "historical": "Rabifoot",
+    "changed": true
+  },
+  {
+    "id": 815,
+    "english": "Cinderace",
+    "current": "Cinderace",
+    "historical": "Aceburn",
+    "changed": true
+  },
+  {
+    "id": 816,
+    "english": "Sobble",
+    "current": "Sobble",
+    "historical": "Messon",
+    "changed": true
+  },
+  {
+    "id": 817,
+    "english": "Drizzile",
+    "current": "Drizzile",
+    "historical": "Jimeleon",
+    "changed": true
+  },
+  {
+    "id": 818,
+    "english": "Inteleon",
+    "current": "Inteleon",
+    "historical": "Inteleon",
+    "changed": false
+  },
+  {
+    "id": 819,
+    "english": "Skwovet",
+    "current": "Skwovet",
+    "historical": "Hoshigarisu",
+    "changed": true
+  },
+  {
+    "id": 820,
+    "english": "Greedent",
+    "current": "Greedent",
+    "historical": "Yokubarisu",
+    "changed": true
+  },
+  {
+    "id": 821,
+    "english": "Rookidee",
+    "current": "Rookidee",
+    "historical": "Kokogara",
+    "changed": true
+  },
+  {
+    "id": 822,
+    "english": "Corvisquire",
+    "current": "Corvisquire",
+    "historical": "Aogarasu",
+    "changed": true
+  },
+  {
+    "id": 823,
+    "english": "Corviknight",
+    "current": "Corviknight",
+    "historical": "Amagaa",
+    "changed": true
+  },
+  {
+    "id": 824,
+    "english": "Blipbug",
+    "current": "Blipbug",
+    "historical": "Sacchimushi",
+    "changed": true
+  },
+  {
+    "id": 825,
+    "english": "Dottler",
+    "current": "Dottler",
+    "historical": "Redomushi",
+    "changed": true
+  },
+  {
+    "id": 826,
+    "english": "Orbeetle",
+    "current": "Orbeetle",
+    "historical": "Iorubu",
+    "changed": true
+  },
+  {
+    "id": 827,
+    "english": "Nickit",
+    "current": "Nickit",
+    "historical": "Kusune",
+    "changed": true
+  },
+  {
+    "id": 828,
+    "english": "Thievul",
+    "current": "Thievul",
+    "historical": "Fokusurai",
+    "changed": true
+  },
+  {
+    "id": 829,
+    "english": "Gossifleur",
+    "current": "Gossifleur",
+    "historical": "Himenka",
+    "changed": true
+  },
+  {
+    "id": 830,
+    "english": "Eldegoss",
+    "current": "Eldegoss",
+    "historical": "Watashiraga",
+    "changed": true
+  },
+  {
+    "id": 831,
+    "english": "Wooloo",
+    "current": "Wooloo",
+    "historical": "Uru",
+    "changed": true
+  },
+  {
+    "id": 832,
+    "english": "Dubwool",
+    "current": "Dubwool",
+    "historical": "Baiuru",
+    "changed": true
+  },
+  {
+    "id": 833,
+    "english": "Chewtle",
+    "current": "Chewtle",
+    "historical": "Kamukame",
+    "changed": true
+  },
+  {
+    "id": 834,
+    "english": "Drednaw",
+    "current": "Drednaw",
+    "historical": "Kajirigame",
+    "changed": true
+  },
+  {
+    "id": 835,
+    "english": "Yamper",
+    "current": "Yamper",
+    "historical": "Wanpachi",
+    "changed": true
+  },
+  {
+    "id": 836,
+    "english": "Boltund",
+    "current": "Boltund",
+    "historical": "Parusuwan",
+    "changed": true
+  },
+  {
+    "id": 837,
+    "english": "Rolycoly",
+    "current": "Rolycoly",
+    "historical": "Tandon",
+    "changed": true
+  },
+  {
+    "id": 838,
+    "english": "Carkol",
+    "current": "Carkol",
+    "historical": "Toroggon",
+    "changed": true
+  },
+  {
+    "id": 839,
+    "english": "Coalossal",
+    "current": "Coalossal",
+    "historical": "Sekitanzan",
+    "changed": true
+  },
+  {
+    "id": 840,
+    "english": "Applin",
+    "current": "Applin",
+    "historical": "Kajicchu",
+    "changed": true
+  },
+  {
+    "id": 841,
+    "english": "Flapple",
+    "current": "Flapple",
+    "historical": "Appuryu",
+    "changed": true
+  },
+  {
+    "id": 842,
+    "english": "Appletun",
+    "current": "Appletun",
+    "historical": "Taruppuru",
+    "changed": true
+  },
+  {
+    "id": 843,
+    "english": "Silicobra",
+    "current": "Silicobra",
+    "historical": "Sunahebi",
+    "changed": true
+  },
+  {
+    "id": 844,
+    "english": "Sandaconda",
+    "current": "Sandaconda",
+    "historical": "Sadaija",
+    "changed": true
+  },
+  {
+    "id": 845,
+    "english": "Cramorant",
+    "current": "Cramorant",
+    "historical": "Woo",
+    "changed": true
+  },
+  {
+    "id": 846,
+    "english": "Arrokuda",
+    "current": "Arrokuda",
+    "historical": "Sashikamasu",
+    "changed": true
+  },
+  {
+    "id": 847,
+    "english": "Barraskewda",
+    "current": "Barraskewda",
+    "historical": "Kamasujo",
+    "changed": true
+  },
+  {
+    "id": 848,
+    "english": "Toxel",
+    "current": "Toxel",
+    "historical": "Erezun",
+    "changed": true
+  },
+  {
+    "id": 849,
+    "english": "Toxtricity",
+    "current": "Toxtricity",
+    "historical": "Sutorinda",
+    "changed": true
+  },
+  {
+    "id": 850,
+    "english": "Sizzlipede",
+    "current": "Sizzlipede",
+    "historical": "Yakude",
+    "changed": true
+  },
+  {
+    "id": 851,
+    "english": "Centiskorch",
+    "current": "Centiskorch",
+    "historical": "Maruyakude",
+    "changed": true
+  },
+  {
+    "id": 852,
+    "english": "Clobbopus",
+    "current": "Clobbopus",
+    "historical": "Tatakko",
+    "changed": true
+  },
+  {
+    "id": 853,
+    "english": "Grapploct",
+    "current": "Grapploct",
+    "historical": "Otosupasu",
+    "changed": true
+  },
+  {
+    "id": 854,
+    "english": "Sinistea",
+    "current": "Sinistea",
+    "historical": "Yabacha",
+    "changed": true
+  },
+  {
+    "id": 855,
+    "english": "Polteageist",
+    "current": "Polteageist",
+    "historical": "Pottodesu",
+    "changed": true
+  },
+  {
+    "id": 856,
+    "english": "Hatenna",
+    "current": "Hatenna",
+    "historical": "Miburimu",
+    "changed": true
+  },
+  {
+    "id": 857,
+    "english": "Hattrem",
+    "current": "Hattrem",
+    "historical": "Teburimu",
+    "changed": true
+  },
+  {
+    "id": 858,
+    "english": "Hatterene",
+    "current": "Hatterene",
+    "historical": "Burimuon",
+    "changed": true
+  },
+  {
+    "id": 859,
+    "english": "Impidimp",
+    "current": "Impidimp",
+    "historical": "Beroba",
+    "changed": true
+  },
+  {
+    "id": 860,
+    "english": "Morgrem",
+    "current": "Morgrem",
+    "historical": "Gimo",
+    "changed": true
+  },
+  {
+    "id": 861,
+    "english": "Grimmsnarl",
+    "current": "Grimmsnarl",
+    "historical": "Oronge",
+    "changed": true
+  },
+  {
+    "id": 862,
+    "english": "Obstagoon",
+    "current": "Obstagoon",
+    "historical": "Tachifusaguma",
+    "changed": true
+  },
+  {
+    "id": 863,
+    "english": "Perrserker",
+    "current": "Perrserker",
+    "historical": "Nyaikingu",
+    "changed": true
+  },
+  {
+    "id": 864,
+    "english": "Cursola",
+    "current": "Cursola",
+    "historical": "Sanigon",
+    "changed": true
+  },
+  {
+    "id": 865,
+    "english": "Sirfetch'd",
+    "current": "Sirfetch'd",
+    "historical": "Negiganaito",
+    "changed": true
+  },
+  {
+    "id": 866,
+    "english": "Mr. Rime",
+    "current": "Mr. Rime",
+    "historical": "Barikooru",
+    "changed": true
+  },
+  {
+    "id": 867,
+    "english": "Runerigus",
+    "current": "Runerigus",
+    "historical": "Desuban",
+    "changed": true
+  },
+  {
+    "id": 868,
+    "english": "Milcery",
+    "current": "Milcery",
+    "historical": "Mahomiru",
+    "changed": true
+  },
+  {
+    "id": 869,
+    "english": "Alcremie",
+    "current": "Alcremie",
+    "historical": "Mahoippu",
+    "changed": true
+  },
+  {
+    "id": 870,
+    "english": "Falinks",
+    "current": "Falinks",
+    "historical": "Tairetsu",
+    "changed": true
+  },
+  {
+    "id": 871,
+    "english": "Pincurchin",
+    "current": "Pincurchin",
+    "historical": "Bachinuni",
+    "changed": true
+  },
+  {
+    "id": 872,
+    "english": "Snom",
+    "current": "Snom",
+    "historical": "Yukihami",
+    "changed": true
+  },
+  {
+    "id": 873,
+    "english": "Frosmoth",
+    "current": "Frosmoth",
+    "historical": "Mosuno",
+    "changed": true
+  },
+  {
+    "id": 874,
+    "english": "Stonjourner",
+    "current": "Stonjourner",
+    "historical": "Ishihenjin",
+    "changed": true
+  },
+  {
+    "id": 875,
+    "english": "Eiscue",
+    "current": "Eiscue",
+    "historical": "Koorippo",
+    "changed": true
+  },
+  {
+    "id": 876,
+    "english": "Indeedee",
+    "current": "Indeedee",
+    "historical": "Iessan",
+    "changed": true
+  },
+  {
+    "id": 877,
+    "english": "Morpeko",
+    "current": "Morpeko",
+    "historical": "Morupeko",
+    "changed": true
+  },
+  {
+    "id": 878,
+    "english": "Cufant",
+    "current": "Cufant",
+    "historical": "Zodo",
+    "changed": true
+  },
+  {
+    "id": 879,
+    "english": "Copperajah",
+    "current": "Copperajah",
+    "historical": "Daiodo",
+    "changed": true
+  },
+  {
+    "id": 880,
+    "english": "Dracozolt",
+    "current": "Dracozolt",
+    "historical": "Pacchiragon",
+    "changed": true
+  },
+  {
+    "id": 881,
+    "english": "Arctozolt",
+    "current": "Arctozolt",
+    "historical": "Pacchirudon",
+    "changed": true
+  },
+  {
+    "id": 882,
+    "english": "Dracovish",
+    "current": "Dracovish",
+    "historical": "Uonoragon",
+    "changed": true
+  },
+  {
+    "id": 883,
+    "english": "Arctovish",
+    "current": "Arctovish",
+    "historical": "Uochirudon",
+    "changed": true
+  },
+  {
+    "id": 884,
+    "english": "Duraludon",
+    "current": "Duraludon",
+    "historical": "Jurarudon",
+    "changed": true
+  },
+  {
+    "id": 885,
+    "english": "Dreepy",
+    "current": "Dreepy",
+    "historical": "Dorameshiya",
+    "changed": true
+  },
+  {
+    "id": 886,
+    "english": "Drakloak",
+    "current": "Drakloak",
+    "historical": "Doronchi",
+    "changed": true
+  },
+  {
+    "id": 887,
+    "english": "Dragapult",
+    "current": "Dragapult",
+    "historical": "Doraparuto",
+    "changed": true
+  },
+  {
+    "id": 888,
+    "english": "Zacian",
+    "current": "Zacian",
+    "historical": "Zashian",
+    "changed": true
+  },
+  {
+    "id": 889,
+    "english": "Zamazenta",
+    "current": "Zamazenta",
+    "historical": "Zamazenta",
+    "changed": false
+  },
+  {
+    "id": 890,
+    "english": "Eternatus",
+    "current": "Eternatus",
+    "historical": "Mugendaina",
+    "changed": true
+  },
+  {
+    "id": 891,
+    "english": "Kubfu",
+    "current": "Kubfu",
+    "historical": "Dakuma",
+    "changed": true
+  },
+  {
+    "id": 892,
+    "english": "Urshifu",
+    "current": "Urshifu",
+    "historical": "Ulaosu",
+    "changed": true
+  },
+  {
+    "id": 893,
+    "english": "Zarude",
+    "current": "Zarude",
+    "historical": "Zarudo",
+    "changed": true
+  },
+  {
+    "id": 894,
+    "english": "Regieleki",
+    "current": "Regieleki",
+    "historical": "Regieleki",
+    "changed": false
+  },
+  {
+    "id": 895,
+    "english": "Regidrago",
+    "current": "Regidrago",
+    "historical": "Regidrago",
+    "changed": false
+  },
+  {
+    "id": 896,
+    "english": "Glastrier",
+    "current": "Glastrier",
+    "historical": "Blizzapos",
+    "changed": true
+  },
+  {
+    "id": 897,
+    "english": "Spectrier",
+    "current": "Spectrier",
+    "historical": "Wraithpos",
+    "changed": true
+  },
+  {
+    "id": 898,
+    "english": "Calyrex",
+    "current": "Calyrex",
+    "historical": "Budrex",
+    "changed": true
+  },
+  {
+    "id": 899,
+    "english": "Wyrdeer",
+    "current": "Wyrdeer",
+    "historical": "Ayashishi",
+    "changed": true
+  },
+  {
+    "id": 900,
+    "english": "Kleavor",
+    "current": "Kleavor",
+    "historical": "Basagiri",
+    "changed": true
+  },
+  {
+    "id": 901,
+    "english": "Ursaluna",
+    "current": "Ursaluna",
+    "historical": "Gachiguma",
+    "changed": true
+  },
+  {
+    "id": 902,
+    "english": "Basculegion",
+    "current": "Basculegion",
+    "historical": "Idaitou",
+    "changed": true
+  },
+  {
+    "id": 903,
+    "english": "Sneasler",
+    "current": "Sneasler",
+    "historical": "Oonyura",
+    "changed": true
+  },
+  {
+    "id": 904,
+    "english": "Overqwil",
+    "current": "Overqwil",
+    "historical": "Hariman",
+    "changed": true
+  },
+  {
+    "id": 905,
+    "english": "Enamorus",
+    "current": "Enamorus",
+    "historical": "Rabutorosu",
+    "changed": true
+  },
+  {
+    "id": 906,
+    "english": "Sprigatito",
+    "current": "Sprigatito",
+    "historical": "Nyaoha",
+    "changed": true
+  },
+  {
+    "id": 907,
+    "english": "Floragato",
+    "current": "Floragato",
+    "historical": "Nyarote",
+    "changed": true
+  },
+  {
+    "id": 908,
+    "english": "Meowscarada",
+    "current": "Meowscarada",
+    "historical": "Masukanya",
+    "changed": true
+  },
+  {
+    "id": 909,
+    "english": "Fuecoco",
+    "current": "Fuecoco",
+    "historical": "Hogeta",
+    "changed": true
+  },
+  {
+    "id": 910,
+    "english": "Crocalor",
+    "current": "Crocalor",
+    "historical": "Achigeta",
+    "changed": true
+  },
+  {
+    "id": 911,
+    "english": "Skeledirge",
+    "current": "Skeledirge",
+    "historical": "Raudobon",
+    "changed": true
+  },
+  {
+    "id": 912,
+    "english": "Quaxly",
+    "current": "Quaxly",
+    "historical": "Kewassu",
+    "changed": true
+  },
+  {
+    "id": 913,
+    "english": "Quaxwell",
+    "current": "Quaxwell",
+    "historical": "Werukamo",
+    "changed": true
+  },
+  {
+    "id": 914,
+    "english": "Quaquaval",
+    "current": "Quaquaval",
+    "historical": "Wenibaru",
+    "changed": true
+  },
+  {
+    "id": 915,
+    "english": "Lechonk",
+    "current": "Lechonk",
+    "historical": "Guruton",
+    "changed": true
+  },
+  {
+    "id": 916,
+    "english": "Oinkologne",
+    "current": "Oinkologne",
+    "historical": "Perfuton",
+    "changed": true
+  },
+  {
+    "id": 917,
+    "english": "Tarountula",
+    "current": "Tarountula",
+    "historical": "Tamanchula",
+    "changed": true
+  },
+  {
+    "id": 918,
+    "english": "Spidops",
+    "current": "Spidops",
+    "historical": "Wanaida",
+    "changed": true
+  },
+  {
+    "id": 919,
+    "english": "Nymble",
+    "current": "Nymble",
+    "historical": "Mamebatta",
+    "changed": true
+  },
+  {
+    "id": 920,
+    "english": "Lokix",
+    "current": "Lokix",
+    "historical": "Exleg",
+    "changed": true
+  },
+  {
+    "id": 921,
+    "english": "Pawmi",
+    "current": "Pawmi",
+    "historical": "Pamo",
+    "changed": true
+  },
+  {
+    "id": 922,
+    "english": "Pawmo",
+    "current": "Pawmo",
+    "historical": "Pamotto",
+    "changed": true
+  },
+  {
+    "id": 923,
+    "english": "Pawmot",
+    "current": "Pawmot",
+    "historical": "Paamotto",
+    "changed": true
+  },
+  {
+    "id": 924,
+    "english": "Tandemaus",
+    "current": "Tandemaus",
+    "historical": "Wakkanezumi",
+    "changed": true
+  },
+  {
+    "id": 925,
+    "english": "Maushold",
+    "current": "Maushold",
+    "historical": "Ikkanezumi",
+    "changed": true
+  },
+  {
+    "id": 926,
+    "english": "Fidough",
+    "current": "Fidough",
+    "historical": "Papimocchi",
+    "changed": true
+  },
+  {
+    "id": 927,
+    "english": "Dachsbun",
+    "current": "Dachsbun",
+    "historical": "Bauttseru",
+    "changed": true
+  },
+  {
+    "id": 928,
+    "english": "Smoliv",
+    "current": "Smoliv",
+    "historical": "Minibu",
+    "changed": true
+  },
+  {
+    "id": 929,
+    "english": "Dolliv",
+    "current": "Dolliv",
+    "historical": "Orinyo",
+    "changed": true
+  },
+  {
+    "id": 930,
+    "english": "Arboliva",
+    "current": "Arboliva",
+    "historical": "Oriva",
+    "changed": true
+  },
+  {
+    "id": 931,
+    "english": "Squawkabilly",
+    "current": "Squawkabilly",
+    "historical": "Ikirinko",
+    "changed": true
+  },
+  {
+    "id": 932,
+    "english": "Nacli",
+    "current": "Nacli",
+    "historical": "Kojio",
+    "changed": true
+  },
+  {
+    "id": 933,
+    "english": "Naclstack",
+    "current": "Naclstack",
+    "historical": "Jiodumu",
+    "changed": true
+  },
+  {
+    "id": 934,
+    "english": "Garganacl",
+    "current": "Garganacl",
+    "historical": "Kyojion",
+    "changed": true
+  },
+  {
+    "id": 935,
+    "english": "Charcadet",
+    "current": "Charcadet",
+    "historical": "Karubou",
+    "changed": true
+  },
+  {
+    "id": 936,
+    "english": "Armarouge",
+    "current": "Armarouge",
+    "historical": "Gurenaruma",
+    "changed": true
+  },
+  {
+    "id": 937,
+    "english": "Ceruledge",
+    "current": "Ceruledge",
+    "historical": "Soubureizu",
+    "changed": true
+  },
+  {
+    "id": 938,
+    "english": "Tadbulb",
+    "current": "Tadbulb",
+    "historical": "Zupika",
+    "changed": true
+  },
+  {
+    "id": 939,
+    "english": "Bellibolt",
+    "current": "Bellibolt",
+    "historical": "Harabari",
+    "changed": true
+  },
+  {
+    "id": 940,
+    "english": "Wattrel",
+    "current": "Wattrel",
+    "historical": "Kaiden",
+    "changed": true
+  },
+  {
+    "id": 941,
+    "english": "Kilowattrel",
+    "current": "Kilowattrel",
+    "historical": "Taikaiden",
+    "changed": true
+  },
+  {
+    "id": 942,
+    "english": "Maschiff",
+    "current": "Maschiff",
+    "historical": "Orachifu",
+    "changed": true
+  },
+  {
+    "id": 943,
+    "english": "Mabosstiff",
+    "current": "Mabosstiff",
+    "historical": "Mafitifu",
+    "changed": true
+  },
+  {
+    "id": 944,
+    "english": "Shroodle",
+    "current": "Shroodle",
+    "historical": "Shirushuru",
+    "changed": true
+  },
+  {
+    "id": 945,
+    "english": "Grafaiai",
+    "current": "Grafaiai",
+    "historical": "Taginguru",
+    "changed": true
+  },
+  {
+    "id": 946,
+    "english": "Bramblin",
+    "current": "Bramblin",
+    "historical": "Anokusa",
+    "changed": true
+  },
+  {
+    "id": 947,
+    "english": "Brambleghast",
+    "current": "Brambleghast",
+    "historical": "Anohoragusa",
+    "changed": true
+  },
+  {
+    "id": 948,
+    "english": "Toedscool",
+    "current": "Toedscool",
+    "historical": "Nonokurage",
+    "changed": true
+  },
+  {
+    "id": 949,
+    "english": "Toedscruel",
+    "current": "Toedscruel",
+    "historical": "Rikukurage",
+    "changed": true
+  },
+  {
+    "id": 950,
+    "english": "Klawf",
+    "current": "Klawf",
+    "historical": "Gakegani",
+    "changed": true
+  },
+  {
+    "id": 951,
+    "english": "Capsakid",
+    "current": "Capsakid",
+    "historical": "Kapusaiji",
+    "changed": true
+  },
+  {
+    "id": 952,
+    "english": "Scovillain",
+    "current": "Scovillain",
+    "historical": "Sukoviran",
+    "changed": true
+  },
+  {
+    "id": 953,
+    "english": "Rellor",
+    "current": "Rellor",
+    "historical": "Shigarogo",
+    "changed": true
+  },
+  {
+    "id": 954,
+    "english": "Rabsca",
+    "current": "Rabsca",
+    "historical": "Berakasu",
+    "changed": true
+  },
+  {
+    "id": 955,
+    "english": "Flittle",
+    "current": "Flittle",
+    "historical": "Hirahina",
+    "changed": true
+  },
+  {
+    "id": 956,
+    "english": "Espathra",
+    "current": "Espathra",
+    "historical": "Kuesupatora",
+    "changed": true
+  },
+  {
+    "id": 957,
+    "english": "Tinkatink",
+    "current": "Tinkatink",
+    "historical": "Kanuchan",
+    "changed": true
+  },
+  {
+    "id": 958,
+    "english": "Tinkatuff",
+    "current": "Tinkatuff",
+    "historical": "Nakanuchan",
+    "changed": true
+  },
+  {
+    "id": 959,
+    "english": "Tinkaton",
+    "current": "Tinkaton",
+    "historical": "Dekanuchan",
+    "changed": true
+  },
+  {
+    "id": 960,
+    "english": "Wiglett",
+    "current": "Wiglett",
+    "historical": "Umidigda",
+    "changed": true
+  },
+  {
+    "id": 961,
+    "english": "Wugtrio",
+    "current": "Wugtrio",
+    "historical": "Umitrio",
+    "changed": true
+  },
+  {
+    "id": 962,
+    "english": "Bombirdier",
+    "current": "Bombirdier",
+    "historical": "Otoshidori",
+    "changed": true
+  },
+  {
+    "id": 963,
+    "english": "Finizen",
+    "current": "Finizen",
+    "historical": "Namiruka",
+    "changed": true
+  },
+  {
+    "id": 964,
+    "english": "Palafin",
+    "current": "Palafin",
+    "historical": "Irukaman",
+    "changed": true
+  },
+  {
+    "id": 965,
+    "english": "Varoom",
+    "current": "Varoom",
+    "historical": "Buroron",
+    "changed": true
+  },
+  {
+    "id": 966,
+    "english": "Revavroom",
+    "current": "Revavroom",
+    "historical": "Burororom",
+    "changed": true
+  },
+  {
+    "id": 967,
+    "english": "Cyclizar",
+    "current": "Cyclizar",
+    "historical": "Mototokage",
+    "changed": true
+  },
+  {
+    "id": 968,
+    "english": "Orthworm",
+    "current": "Orthworm",
+    "historical": "Mimizuzu",
+    "changed": true
+  },
+  {
+    "id": 969,
+    "english": "Glimmet",
+    "current": "Glimmet",
+    "historical": "Kirame",
+    "changed": true
+  },
+  {
+    "id": 970,
+    "english": "Glimmora",
+    "current": "Glimmora",
+    "historical": "Kirafuroru",
+    "changed": true
+  },
+  {
+    "id": 971,
+    "english": "Greavard",
+    "current": "Greavard",
+    "historical": "Bochi",
+    "changed": true
+  },
+  {
+    "id": 972,
+    "english": "Houndstone",
+    "current": "Houndstone",
+    "historical": "Hakadog",
+    "changed": true
+  },
+  {
+    "id": 973,
+    "english": "Flamigo",
+    "current": "Flamigo",
+    "historical": "Kalamingo",
+    "changed": true
+  },
+  {
+    "id": 974,
+    "english": "Cetoddle",
+    "current": "Cetoddle",
+    "historical": "Arukujira",
+    "changed": true
+  },
+  {
+    "id": 975,
+    "english": "Cetitan",
+    "current": "Cetitan",
+    "historical": "Harukujira",
+    "changed": true
+  },
+  {
+    "id": 976,
+    "english": "Veluza",
+    "current": "Veluza",
+    "historical": "Migarusa",
+    "changed": true
+  },
+  {
+    "id": 977,
+    "english": "Dondozo",
+    "current": "Dondozo",
+    "historical": "Heirassha",
+    "changed": true
+  },
+  {
+    "id": 978,
+    "english": "Tatsugiri",
+    "current": "Tatsugiri",
+    "historical": "Sharitatsu",
+    "changed": true
+  },
+  {
+    "id": 979,
+    "english": "Annihilape",
+    "current": "Annihilape",
+    "historical": "Konoyozaru",
+    "changed": true
+  },
+  {
+    "id": 980,
+    "english": "Clodsire",
+    "current": "Clodsire",
+    "historical": "Dooh",
+    "changed": true
+  },
+  {
+    "id": 981,
+    "english": "Farigiraf",
+    "current": "Farigiraf",
+    "historical": "Rikikirin",
+    "changed": true
+  },
+  {
+    "id": 982,
+    "english": "Dudunsparce",
+    "current": "Dudunsparce",
+    "historical": "Nokokocchi",
+    "changed": true
+  },
+  {
+    "id": 983,
+    "english": "Kingambit",
+    "current": "Kingambit",
+    "historical": "Dodogezan",
+    "changed": true
+  },
+  {
+    "id": 984,
+    "english": "Great Tusk",
+    "current": "Great Tusk",
+    "historical": "Idainakiba",
+    "changed": true
+  },
+  {
+    "id": 985,
+    "english": "Scream Tail",
+    "current": "Scream Tail",
+    "historical": "Sakebushippo",
+    "changed": true
+  },
+  {
+    "id": 986,
+    "english": "Brute Bonnet",
+    "current": "Brute Bonnet",
+    "historical": "Araburutake",
+    "changed": true
+  },
+  {
+    "id": 987,
+    "english": "Flutter Mane",
+    "current": "Flutter Mane",
+    "historical": "Habatakukami",
+    "changed": true
+  },
+  {
+    "id": 988,
+    "english": "Slither Wing",
+    "current": "Slither Wing",
+    "historical": "Chiohauhane",
+    "changed": true
+  },
+  {
+    "id": 989,
+    "english": "Sandy Shocks",
+    "current": "Sandy Shocks",
+    "historical": "Sunanokegawa",
+    "changed": true
+  },
+  {
+    "id": 990,
+    "english": "Iron Treads",
+    "current": "Iron Treads",
+    "historical": "Tetsunowadachi",
+    "changed": true
+  },
+  {
+    "id": 991,
+    "english": "Iron Bundle",
+    "current": "Iron Bundle",
+    "historical": "Tetsunotsutsumi",
+    "changed": true
+  },
+  {
+    "id": 992,
+    "english": "Iron Hands",
+    "current": "Iron Hands",
+    "historical": "Tetsunokaina",
+    "changed": true
+  },
+  {
+    "id": 993,
+    "english": "Iron Jugulis",
+    "current": "Iron Jugulis",
+    "historical": "Tetsunokoube",
+    "changed": true
+  },
+  {
+    "id": 994,
+    "english": "Iron Moth",
+    "current": "Iron Moth",
+    "historical": "Tetsunodokuga",
+    "changed": true
+  },
+  {
+    "id": 995,
+    "english": "Iron Thorns",
+    "current": "Iron Thorns",
+    "historical": "Tetsunoibara",
+    "changed": true
+  },
+  {
+    "id": 996,
+    "english": "Frigibax",
+    "current": "Frigibax",
+    "historical": "Sebie",
+    "changed": true
+  },
+  {
+    "id": 997,
+    "english": "Arctibax",
+    "current": "Arctibax",
+    "historical": "Segoru",
+    "changed": true
+  },
+  {
+    "id": 998,
+    "english": "Baxcalibur",
+    "current": "Baxcalibur",
+    "historical": "Segureibu",
+    "changed": true
+  },
+  {
+    "id": 999,
+    "english": "Gimmighoul",
+    "current": "Gimmighoul",
+    "historical": "Korekuree",
+    "changed": true
+  },
+  {
+    "id": 1000,
+    "english": "Gholdengo",
+    "current": "Gholdengo",
+    "historical": "Safugo",
+    "changed": true
+  },
+  {
+    "id": 1001,
+    "english": "Wo-Chien",
+    "current": "Wo-Chien",
+    "historical": "Chionjen",
+    "changed": true
+  },
+  {
+    "id": 1002,
+    "english": "Chien-Pao",
+    "current": "Chien-Pao",
+    "historical": "Paojian",
+    "changed": true
+  },
+  {
+    "id": 1003,
+    "english": "Ting-Lu",
+    "current": "Ting-Lu",
+    "historical": "Dinru",
+    "changed": true
+  },
+  {
+    "id": 1004,
+    "english": "Chi-Yu",
+    "current": "Chi-Yu",
+    "historical": "Iyui",
+    "changed": true
+  },
+  {
+    "id": 1005,
+    "english": "Roaring Moon",
+    "current": "Roaring Moon",
+    "historical": "Todorokutsuki",
+    "changed": true
+  },
+  {
+    "id": 1006,
+    "english": "Iron Valiant",
+    "current": "Iron Valiant",
+    "historical": "Tetsunobujin",
+    "changed": true
+  },
+  {
+    "id": 1007,
+    "english": "Koraidon",
+    "current": "Koraidon",
+    "historical": "Koraidon",
+    "changed": false
+  },
+  {
+    "id": 1008,
+    "english": "Miraidon",
+    "current": "Miraidon",
+    "historical": "Miraidon",
+    "changed": false
+  },
+  {
+    "id": 1009,
+    "english": "Walking Wake",
+    "current": "Walking Wake",
+    "historical": "Uneruminamo",
+    "changed": true
+  },
+  {
+    "id": 1010,
+    "english": "Iron Leaves",
+    "current": "Iron Leaves",
+    "historical": "Tetsunoisaha",
+    "changed": true
+  },
+  {
+    "id": 1011,
+    "english": "Dipplin",
+    "current": "Dipplin",
+    "historical": "Kamicchu",
+    "changed": true
+  },
+  {
+    "id": 1012,
+    "english": "Poltchageist",
+    "current": "Poltchageist",
+    "historical": "Chadesu",
+    "changed": true
+  },
+  {
+    "id": 1013,
+    "english": "Sinistcha",
+    "current": "Sinistcha",
+    "historical": "Yabasocha",
+    "changed": true
+  },
+  {
+    "id": 1014,
+    "english": "Okidogi",
+    "current": "Okidogi",
+    "historical": "Iineinu",
+    "changed": true
+  },
+  {
+    "id": 1015,
+    "english": "Munkidori",
+    "current": "Munkidori",
+    "historical": "Mashimashira",
+    "changed": true
+  },
+  {
+    "id": 1016,
+    "english": "Fezandipiti",
+    "current": "Fezandipiti",
+    "historical": "Kichikigisu",
+    "changed": true
+  },
+  {
+    "id": 1017,
+    "english": "Ogerpon",
+    "current": "Ogerpon",
+    "historical": "Ogapon",
+    "changed": true
+  },
+  {
+    "id": 1018,
+    "english": "Archaludon",
+    "current": "Archaludon",
+    "historical": "Burijurasu",
+    "changed": true
+  },
+  {
+    "id": 1019,
+    "english": "Hydrapple",
+    "current": "Hydrapple",
+    "historical": "Kamitsuorochi",
+    "changed": true
+  },
+  {
+    "id": 1020,
+    "english": "Gouging Fire",
+    "current": "Gouging Fire",
+    "historical": "Ugatsuhomura",
+    "changed": true
+  },
+  {
+    "id": 1021,
+    "english": "Raging Bolt",
+    "current": "Raging Bolt",
+    "historical": "Takeruraiko",
+    "changed": true
+  },
+  {
+    "id": 1022,
+    "english": "Iron Boulder",
+    "current": "Iron Boulder",
+    "historical": "Tetsunoiwao",
+    "changed": true
+  },
+  {
+    "id": 1023,
+    "english": "Iron Crown",
+    "current": "Iron Crown",
+    "historical": "Tetsunokashira",
+    "changed": true
+  },
+  {
+    "id": 1024,
+    "english": "Terapagos",
+    "current": "Terapagos",
+    "historical": "Terapagos",
+    "changed": false
+  },
+  {
+    "id": 1025,
+    "english": "Pecharunt",
+    "current": "Pecharunt",
+    "historical": "Momowarou",
+    "changed": true
+  }
+]
