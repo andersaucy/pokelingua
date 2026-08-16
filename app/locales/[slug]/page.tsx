@@ -2,18 +2,23 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EnglishUsPokedex } from "../../components/EnglishUsPokedex";
 import { FrenchPokedex } from "../../components/FrenchPokedex";
+import { GermanPokedex } from "../../components/GermanPokedex";
 import { ItalianPokedex } from "../../components/ItalianPokedex";
+import { JapanesePokedex } from "../../components/JapanesePokedex";
+import { KoreanPokedex } from "../../components/KoreanPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
 import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
 const chapters = {
   unofficial: { code: "ALT", place: "Unofficial editions", local: "Fan translations · bootlegs · ROM hacks", language: "Multiple languages & markets", period: "1990s—today", live: true, deck: "The unofficial routes that carried Pokémon across language barriers before—or beyond—authorized localization." },
   "united-states": { code: "US", place: "United States", local: "United States", language: "English · en-US", period: "1998—today", live: true, deck: "The first international reinvention: how Japanese names, dialogue, branding, and animation became the English Pokémon vocabulary used around the world." },
+  japan: { code: "JP", place: "Japan", local: "日本", language: "Japanese · 日本語", period: "1996—today", live: true, deck: "The source chapter: how Japanese names, games, animation, and company history created the vocabulary every later locale would interpret." },
   "south-korea": {
     code: "KR", place: "South Korea", local: "대한민국", language: "Korean · 한국어", period: "1998—today", live: true,
     deck: "How cultural policy, Korean-language media, and a dedicated regional company shaped a distinct Pokémon locale.",
   },
   france: { code: "FR", place: "France", local: "France", language: "French · français", period: "1998—today", live: true, deck: "How a Nintendo France team turned translation into wordplay—and built one of Pokémon’s most distinctive naming traditions." },
+  germany: { code: "DE", place: "Germany", local: "Deutschland", language: "German · Deutsch", period: "1999—today", live: true, deck: "How German compounds and wordplay turned Pokémon concepts into a distinct creature vocabulary from the franchise’s first European wave." },
   italy: { code: "IT", place: "Italy", local: "Italia", language: "Italian · italiano", period: "1999—today", live: true, deck: "How Italy built a fully localized Pokémon world around mostly unchanged species names—and when it chose to translate them." },
   "hong-kong": { code: "HK", place: "Hong Kong", local: "香港", language: "Cantonese · Traditional Chinese", period: "1998—today", live: true, deck: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone." },
   taiwan: { code: "TW", place: "Taiwan", local: "台灣", language: "Mandarin · Traditional Chinese", period: "1998—today", live: true, deck: "From established anime vocabulary to a coordinated Chinese-language game localization." },
@@ -229,6 +234,62 @@ function VietnamChapter() {
   </>;
 }
 
+function JapanChapter() {
+  return <>
+    <section className="arrival-brief japan-arrival">
+      <div className="arrival-heading"><span>Origin point</span><h2>Before globalization,<br /><em>there was a local world.</em></h2><p>Japan is not treated as the “neutral” edition. It is the first specific locale: a Japanese-language game shaped by local wordplay, scripts, media habits, companies, and the Game Boy market of 1996.</p></div>
+      <div className="arrival-markers"><article><time>27 FEB 1996</time><span>Franchise origin / first core games</span><h3>Red and Green launch in Japan</h3><p>Poketto Monsutā Aka and Midori established the creatures, regions, battle vocabulary, and first 151 Japanese names from which every later localization began.</p></article><article><time>01 APR 1997</time><span>Animation expands the language</span><h3>The television series begins</h3><p>The anime gave the vocabulary voices, repeated catchphrases, and a weekly national audience—then became one of the franchise’s main vehicles for crossing borders.</p></article></div>
+      <a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo’s Red and Green origin record ↗</a>
+    </section>
+    <section className="chapter-opening japan-opening"><div className="chapter-rail"><span>Source language</span><b>01</b></div><article><p className="dropcap">Japanese Pokémon names compress biology, behavior, sound symbolism, jokes, and visual clues into short forms that work naturally in kana. フシギダネ can suggest both a “mysterious seed” and the phrase “isn’t it strange?”—a double reading that later languages must recreate, replace, explain, or leave behind.</p><p>Pokélingua therefore separates the written kana, a Hepburn reading, and the official trademarked Latin form. Those fields help comparison, but none turns the Japanese original into an English name.</p><aside><b>The origin is still a locale</b><p>Japan sits first in the chronology, not above it. The exhibition treats source-language decisions with the same territory, medium, date, and evidence labels used everywhere else.</p></aside></article></section>
+    <section className="chapter-timeline japan-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
+      <article><time>27 FEB<br />1996</time><div><span>Core games</span><h2>The first Pokémon vocabulary enters play</h2><p>Red and Green launch for Game Boy in Japan. Trading between versions turns a local naming system into a shared social vocabulary.</p><a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo launch history ↗</a></div></article>
+      <article><time>15 OCT<br />1996</time><div><span>Revised edition</span><h2>Blue revises the original record</h2><p>Pokémon Blue followed with revised graphics and Pokédex descriptions, an early reminder that even the source edition was not frozen after launch.</p><a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo edition comparison ↗</a></div></article>
+      <article><time>01 APR<br />1997</time><div><span>Animation</span><h2>Names become weekly spoken culture</h2><p>The television series expands Pokémon beyond game text, anchoring pronunciations, character voices, music, and stories before the international rollout.</p><a href="https://www.tv-tokyo.co.jp/anime/pokemon/" target="_blank" rel="noreferrer">Official TV Tokyo archive ↗</a></div></article>
+      <article><time>23 APR<br />1998</time><div><span>Company structure</span><h2>Pokémon Center Co., Ltd. is established</h2><p>The company later renamed The Pokémon Company created an organizational base for managing the rapidly expanding franchise and its global future.</p><a href="https://corporate.pokemon.co.jp/en/aboutus/history" target="_blank" rel="noreferrer">Official corporate history ↗</a></div></article>
+    </div></section>
+    <JapanesePokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.co.jp/ex/zukan/" target="_blank" rel="noreferrer">01 · Official Japanese Pokédex</a><a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">02 · Nintendo Red / Green history</a><a href="https://corporate.pokemon.co.jp/en/aboutus/history" target="_blank" rel="noreferrer">03 · The Pokémon Company history</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_in_Japanese" target="_blank" rel="noreferrer">04 · Japanese name index</a></section>
+  </>;
+}
+
+function KoreanChapter() {
+  return <>
+    <section className="arrival-brief korea-arrival">
+      <div className="arrival-heading"><span>Policy, broadcast & first games</span><h2>A world that could not<br /><em>simply be imported.</em></h2><p>Pokémon’s Korean arrival overlapped with South Korea’s staged opening to Japanese popular culture. Broadcast, language, hardware, and corporate structure each arrived on their own timetable.</p></div>
+      <div className="arrival-markers"><article><time>20 OCT 1998</time><span>National policy context</span><h3>The first stage of cultural opening</h3><p>South Korea announced a gradual opening to Japanese popular culture by category. This did not itself release Pokémon, but it defines the market conditions surrounding the franchise’s arrival.</p></article><article><time>14 JUL 1999</time><span>Earliest documented mass-market arrival</span><h3>The Korean anime begins on SBS</h3><p>The first Korean-language episode brought localized character and species vocabulary to television nearly three years before an officially translated Korean core game.</p></article></div>
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">South Korea release history ↗</a>
+    </section>
+    <section className="chapter-opening korea-opening"><div className="chapter-rail"><span>Naming method</span><b>01</b></div><article><p className="dropcap">Korean Pokémon names do not follow one source language. Some are original Korean coinages, some adapt the Japanese name, some follow English, and others retain an international form. 이상해씨 combines “strange” with “seed,” while 님피아 follows Japanese Nymphia and 테일로 follows English Taillow.</p><p>Hangul is the official written record. Romanization is a reading aid, not a second name: Revised Romanization, McCune–Reischauer, and event-specific spellings can render the same Hangul differently.</p><aside><b>Historical-name rule</b><p>The library flags only documented changes in the Korean name itself. It does not manufacture “variants” from different Latin-alphabet romanization systems.</p></aside></article></section>
+    <section className="chapter-timeline korea-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
+      <article><time>14 JUL<br />1999</time><div><span>Animation</span><h2>Pokémon speaks Korean on SBS</h2><p>The television debut establishes an early public vocabulary before Korean-language core games.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Broadcast record ↗</a></div></article>
+      <article><time>24 APR<br />2002</time><div><span>Core games</span><h2>Gold and Silver arrive in Korean</h2><p>The Korean editions became the first officially localized core games. Hangul support kept them Game Boy Color–only; Generation III then passed without a Korean localization.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Game history ↗</a></div></article>
+      <article><time>AUG<br />2006</time><div><span>Company structure</span><h2>Pokémon Korea is established</h2><p>A dedicated regional company marked a new phase of direct organization for games, cards, events, and the wider Korean market.</p><a href="https://corporate.pokemon.co.jp/en/aboutus/history/" target="_blank" rel="noreferrer">Official corporate history ↗</a></div></article>
+      <article><time>12 OCT<br />2013</time><div><span>Worldwide release</span><h2>Korean joins the simultaneous launch</h2><p>Pokémon X and Y launched worldwide with Korean selectable from release day, replacing the earlier lag with a shared global schedule.</p><a href="https://www.pokemon.com/us/pokemon-news/a-pokemon-first" target="_blank" rel="noreferrer">Contemporary announcement ↗</a></div></article>
+    </div></section>
+    <KoreanPokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://pokemonkorea.com/pokedex" target="_blank" rel="noreferrer">01 · Official Korean Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">02 · South Korea history</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Korean_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · Korean name index</a><a href="https://theme.archives.go.kr/next/chronology/archiveDetail.do?evntId=0049291994&flag=2" target="_blank" rel="noreferrer">04 · National Archives policy record</a></section>
+  </>;
+}
+
+function GermanChapter() {
+  return <>
+    <section className="arrival-brief germany-arrival">
+      <div className="arrival-heading"><span>Television & first games</span><h2>Germany met Pokémon<br /><em>twice in five weeks.</em></h2><p>The German animated series arrived first, followed closely by the localized Red and Blue Game Boy editions. Together they established a translated world whose compact species names became everyday vocabulary.</p></div>
+      <div className="arrival-markers"><article><time>01 SEP 1999</time><span>Earliest documented public arrival</span><h3>“Pika – Pikachu” airs on RTL II</h3><p>The first German episode introduced Ash, Pikachu, and the localized terminology through television performance before the games reached stores.</p></article><article><time>05 OCT 1999</time><span>First German core-game release</span><h3>Rote and Blaue Edition launch</h3><p>Nintendo’s German release record dates the Game Boy editions to 5 October. Players could now explore the full adventure, dialogue, moves, places, and creature names in German.</p></article></div>
+      <a href="https://www.nintendo.com/de-de/Spiele/Game-Boy/Pokemon-Blaue-Edition-266054.html" target="_blank" rel="noreferrer">Official Nintendo release record ↗</a>
+    </section>
+    <section className="chapter-opening germany-opening"><div className="chapter-rail"><span>Localization method</span><b>01</b></div><article><p className="dropcap">German names often behave like miniature definitions. Bisasam layers <i>bizarr</i>, <i>Saurier</i>, and <i>Samen</i>; Glumanda joins <i>Glut</i> with <i>Salamander</i>. A player can hear the creature’s body, type, or temperament inside a compact proper name.</p><p>The system is selective rather than absolute. Many species receive distinctive German wordplay, while names that already travel well internationally can remain unchanged.</p><aside><b>What the dropdown adds</b><p>Open any archive row to see the indexed origin behind the German name. “Shared spelling” is recorded as a localization decision, not treated as absent data.</p></aside></article></section>
+    <section className="chapter-timeline germany-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
+      <article><time>01 SEP<br />1999</time><div><span>Animation</span><h2>The German voice of Pokémon begins</h2><p>RTL II airs episode one, starting a broadcast vocabulary that would grow alongside the games and trading cards.</p><a href="https://www.nintendo.com/de-de/News/2009/RTL-II-Sprechercasting-auf-den-Pokemon-Days-257233.html" target="_blank" rel="noreferrer">Nintendo anniversary record ↗</a></div></article>
+      <article><time>05 OCT<br />1999</time><div><span>Core games</span><h2>German names enter the Pokédex</h2><p>Rote and Blaue Edition make the localized naming system searchable, playable, and repeatable across an entire generation.</p><a href="https://www.nintendo.com/de-de/Spiele/Game-Boy/Pokemon-Blaue-Edition-266054.html" target="_blank" rel="noreferrer">Official release page ↗</a></div></article>
+      <article><time>12 OCT<br />2013</time><div><span>Worldwide release</span><h2>German moves onto one global clock</h2><p>X and Y became the first core-series worldwide simultaneous launch, with German available from day one rather than following a separate European window.</p><a href="https://www.pokemon.com/us/pokemon-news/a-pokemon-first" target="_blank" rel="noreferrer">Contemporary announcement ↗</a></div></article>
+    </div></section>
+    <GermanPokedex />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.com/de/pokedex" target="_blank" rel="noreferrer">01 · Official German Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Germany" target="_blank" rel="noreferrer">02 · Germany history</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_German_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · German name index</a></section>
+  </>;
+}
+
 function UnofficialChapter() {
   return <>
     <section className="unofficial-hub-intro">
@@ -279,7 +340,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "japan" ? <JapanChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "germany" ? <GermanChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "south-korea" ? <KoreanChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>

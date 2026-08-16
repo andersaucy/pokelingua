@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
+import { GlobalPokemonSearch } from "./components/GlobalPokemonSearch";
 
 type Locale = {
   id: string;
@@ -17,7 +18,9 @@ type Locale = {
 };
 
 const locales: Locale[] = [
+  { id: "jp", slug: "japan", flag: "JP", place: "Japan", local: "日本", languages: "Japanese", status: "Chapter live", note: "The source naming system: kana, wordplay, romanization, and the 1996 world from which every later locale begins.", years: "1996—today", coreGame: "27 Feb 1996 · Red / Green" },
   { id: "us", slug: "united-states", flag: "US", place: "United States", local: "United States", languages: "English (US)", status: "Chapter live", note: "The first international reinvention—and the English vocabulary that became a base for later markets.", years: "1998—today", coreGame: "28 Sep 1998 · Red / Blue" },
+  { id: "de", slug: "germany", flag: "DE", place: "Germany", local: "Deutschland", languages: "German", status: "Chapter live", note: "A dense vocabulary of compounds, wordplay, and creature clues built for German-speaking players.", years: "1999—today", coreGame: "05 Oct 1999 · Rot / Blau" },
   { id: "it", slug: "italy", flag: "IT", place: "Italy", local: "Italia", languages: "Italian", status: "Chapter live", note: "English species spellings, Italian pronunciation, and a small set of revealing translated exceptions.", years: "1999—today", coreGame: "05 Oct 1999 · Rosso / Blu" },
   { id: "fr", slug: "france", flag: "FR", place: "France", local: "France", languages: "French", status: "Chapter live", note: "One of the most inventive naming systems, built around wordplay rather than simple transliteration.", years: "1999—today", coreGame: "08 Oct 1999 · Rouge / Bleu" },
   { id: "kr", slug: "south-korea", flag: "KR", place: "South Korea", local: "대한민국", languages: "Korean", status: "Chapter live", note: "A localization story shaped by cultural policy, broadcasting, and a dedicated regional company.", years: "1998—today", coreGame: "24 Apr 2002 · Gold / Silver" },
@@ -68,6 +71,7 @@ export default function Home() {
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu">Menu</button>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="#locales">Locales</a>
+          <a href="#pokemon-search">Pokémon search</a>
           <a href="#timeline">Timeline</a>
           <a href="#locale-notes">Locale notes</a>
           <a href="#korea">Stories</a>
@@ -128,6 +132,8 @@ export default function Home() {
         {visibleLocales.length === 0 && <div className="empty">That locale is not in this first research set—yet.</div>}
       </section>
 
+      <GlobalPokemonSearch />
+
       <section className="story-section" id="korea">
         <div className="story-aside">
           <div className="section-kicker light">Featured locale / 001</div>
@@ -157,7 +163,7 @@ export default function Home() {
       </section>
 
       <section className="notes-section" id="locale-notes">
-        <div className="section-kicker">02 / When one language is not one locale</div>
+        <div className="section-kicker">03 / When one language is not one locale</div>
         <div className="notes-head">
           <h2>The footnotes are<br /><em>part of the story.</em></h2>
           <p>Scripts, spoken languages, markets, and official labels do not always line up. Pokélingua marks the distinction at the moment it matters.</p>
@@ -210,7 +216,7 @@ export default function Home() {
       </section>
 
       <section className="timeline-section" id="timeline">
-        <div className="section-kicker">03 / Selected milestones</div>
+        <div className="section-kicker">04 / Selected milestones</div>
         <div className="timeline-head"><h2>Not one timeline.<br /><em>Thousands of arrivals.</em></h2><p>Start with the company-wide landmarks, then filter by the kind of decision that changed Pokémon’s global shape.</p></div>
         <div className="filters" role="group" aria-label="Filter timeline">
           {types.map((type) => <button key={type} onClick={() => setActiveType(type)} className={activeType === type ? "active" : ""}>{type}</button>)}
@@ -226,7 +232,7 @@ export default function Home() {
       </section>
 
       <section className="method-section" id="method">
-        <div className="section-kicker light">04 / Built as a public record</div>
+        <div className="section-kicker light">05 / Built as a public record</div>
         <div className="method-grid">
           <h2>Every name has<br />a history.<br /><em>Every date needs<br />a source.</em></h2>
           <div className="principles">
