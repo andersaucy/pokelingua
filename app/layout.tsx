@@ -4,7 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Pokélingua — A living atlas of Pokémon localization",
   description: "Trace how Pokémon names, stories, and media crossed borders—and what changed along the way.",
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [
+      { url: "/favicon-64-v3.png", type: "image/png", sizes: "64x64" },
+    ],
+    shortcut: "/favicon-64-v3.png",
+    apple: "/apple-touch-icon-v3.png",
+  },
   openGraph: {
     title: "Pokélingua — One world. Many Pokémon.",
     description: "A living atlas of Pokémon localization.",
