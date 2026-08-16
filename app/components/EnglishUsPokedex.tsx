@@ -56,7 +56,7 @@ export function EnglishUsPokedex() {
           {isOpen && <div className="dex-detail">
             <div><span>English localization</span><b>{entry.english}</b><p>United States · en-US</p><small>{entry.retained ? "The English edition retained a form aligned with the Japanese name rather than creating a visibly separate English spelling." : "The English edition uses a distinct localized name, generally designed to communicate the creature’s concept, traits, sound, or wordplay to an English-speaking audience."}</small></div>
             <div><span>Japanese source record</span><b lang="ja">{entry.kana}</b><p>{entry.hepburn} · trademarked form: {entry.trademark}</p><small>Japanese is the original species-name record. Hepburn and trademarked romanizations are reference aids; neither should be mistaken for an English localization by itself.</small></div>
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.english} · English`, field: "english" }, { label: `${entry.hepburn} · Japanese`, field: "japanese" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.english} · English`, field: "english", locale: "united-states" }, { label: `${entry.hepburn} · Japanese`, field: "japanese", locale: "japan" }]} />
           </div>}
         </div>;
       })}

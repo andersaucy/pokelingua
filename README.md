@@ -6,7 +6,7 @@ Pokélingua is a living digital exhibition about how Pokémon crossed borders. I
 
 ## Explore the exhibition
 
-The homepage presents locale chapters in chronological order by their first localized core-series game. Each finished chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable name library covering all 1,025 Pokémon through Pecharunt.
+The homepage presents locale chapters in chronological order by their first localized core-series game. A clickable visual timeline offers a second route through those arrivals and continues to a Future evidence desk for announced localizations. Each finished chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable name library covering all 1,025 Pokémon through Pecharunt.
 
 The current ten-locale edition includes:
 
@@ -33,6 +33,7 @@ Inside each locale, the complete Pokédex can be searched by local name, English
 - documented historical spellings or names where evidence is available
 - script and romanization distinctions
 - an indexed name etymology with a link to its source note
+- the earliest defensible year for that locale’s current name, or `N/A` where the archive cannot yet support a species-level date
 
 Name origins are derived from Bulbapedia’s species articles and presented as research annotations, not as original linguistic claims by this project.
 
@@ -47,6 +48,8 @@ The admission rule is deliberately narrow: an unofficial edition belongs when it
 Pokélingua separates language from locale. “Traditional Chinese,” for example, identifies a writing system; it does not collapse Hong Kong Cantonese and Taiwan Mandarin into one historical experience. The same principle applies to European and Latin American Spanish, and to Brazilian and European Portuguese.
 
 Dates identify what happened in a particular medium: a game release, television broadcast, corporate milestone, terminology change, official upload, or preserved public reaction. Primary and official sources are preferred; secondary indexes are used transparently where they consolidate records that would otherwise remain scattered.
+
+The first-name year is deliberately conservative. Generation launch years are used when a localized core game or coordinated naming standard supplies the first defensible date; `N/A` signals missing species-level evidence, not that the name was absent. The exhibition also places documented game box art and anime imagery beside the events they illustrate, preserving an exhibit-label relationship between object and claim.
 
 ## Run locally
 

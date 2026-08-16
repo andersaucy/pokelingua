@@ -56,7 +56,7 @@ export function ItalianPokedex() {
           {isOpen && <div className="dex-detail">
             <div><span>Italian official record</span><b>{entry.italian}</b><p>Italian · it-IT</p><small>{entry.localized ? "This species has a distinct Italian name used by the official Italian Pokédex and games." : "The Italian edition preserves the official English spelling. In speech, the name is conventionally adapted toward an Italian approximation of the English pronunciation."}</small></div>
             <div><span>Localization relationship</span><b>{entry.english}</b><p>English comparison</p><small>{entry.localized ? (entry.id === 772 ? "Type: Null became Tipo Zero in Generation VII—the first species whose official Italian name differed from English." : "This is a Paradox Pokémon. Italian translates the descriptive, title-like English name rather than retaining it unchanged.") : "Identical spelling does not mean the rest of the product is untranslated: dialogue, moves, items, places, categories, and descriptions are localized into Italian."}</small></div>
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.italian} · Italian`, field: "italian" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.italian} · Italian`, field: "italian", locale: "italy" }]} />
           </div>}
         </div>;
       })}

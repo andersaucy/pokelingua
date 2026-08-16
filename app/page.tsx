@@ -33,6 +33,37 @@ const locales: Locale[] = [
   { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Parallel archive", languages: "Fan translations · bootlegs · ROM hacks", status: "Chapter live", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology" },
 ];
 
+const localeTimeline = [
+  { year: 1996, label: "Japan", slug: "japan" },
+  { year: 1998, label: "United States", slug: "united-states" },
+  { year: 1998, label: "Hong Kong", slug: "hong-kong" },
+  { year: 1998, label: "Taiwan", slug: "taiwan" },
+  { year: 1998, label: "Mainland China", slug: "mainland-china" },
+  { year: 1999, label: "Germany", slug: "germany" },
+  { year: 1999, label: "France", slug: "france" },
+  { year: 1999, label: "Italy", slug: "italy" },
+  { year: 1999, label: "South Korea", slug: "south-korea" },
+  { year: 1999, label: "Brazil", slug: "brazil" },
+  { year: 2002, label: "Vietnam", slug: "vietnam" },
+  { year: 2003, label: "India", slug: "india" },
+  { year: 2027, label: "Future", slug: "future" },
+];
+
+const localeMedia: Record<string, { src: string; alt: string; kind: string }> = {
+  jp: { src: "/exhibits/red-green.jpg", alt: "Japanese Pokémon Red and Green Game Boy boxes", kind: "Core game · 1996" },
+  us: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1998" },
+  de: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
+  it: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
+  fr: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
+  kr: { src: "/exhibits/gold-silver-korea.jpg", alt: "Korean Pokémon Gold and Silver Game Boy Color boxes", kind: "Korean core game · 2002" },
+  hk: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
+  tw: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
+  cn: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
+  br: { src: "/exhibits/winds-waves.jpg", alt: "Brazilian Portuguese announcement for Pokémon Winds and Waves", kind: "Core game · 2027" },
+  vn: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series poster", kind: "Anime archive" },
+  in: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series poster", kind: "Anime archive" },
+};
+
 const milestones = [
   { year: "1996", title: "The starting point", text: "Pocket Monsters Red and Green launch in Japan. The names, world, and wordplay begin in Japanese.", type: "Games" },
   { year: "1998", title: "A new English identity", text: "Pokémon Red and Blue and the animated series arrive in the United States—with a localized cast of names.", type: "Names" },
@@ -111,6 +142,13 @@ export default function Home() {
             <p className="locale-order-note"><b>Archive order:</b> first localized core-series release. Locales without one follow announced editions, then earliest official market arrival.</p>
           </div>
         </div>
+        <div className="locale-timeline" aria-label="Pokémon locale arrival timeline">
+          <div className="locale-timeline-head"><span>1995</span><b>Locale arrivals</b><span>2027+</span></div>
+          <div className="locale-timeline-track">
+            {localeTimeline.map((item, index) => <a href={`/locales/${item.slug}`} className={`locale-timeline-node ${item.slug === "future" ? "future" : ""}`} style={{ "--position": `${((item.year - 1995) / 33) * 100}%`, "--lane-offset": `${[-50, 0, 50][index % 3]}px` } as React.CSSProperties} key={`${item.slug}-${item.year}`} aria-label={`${item.year}: ${item.label}`}><i /><span><b>{item.label}</b><small>{item.year}</small></span></a>)}
+          </div>
+          <p>Nodes mark the earliest documented official market arrival used by this exhibition; the Future node separates confirmed plans from evidence still under review.</p>
+        </div>
         <label className="search-box">
           <span>⌕</span>
           <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Find a place, language, or script…" aria-label="Search locales" />
@@ -120,6 +158,7 @@ export default function Home() {
           {visibleLocales.map((locale, index) => (
             <a className={`locale-card ${locale.id === "kr" ? "featured" : ""}`} href={`/locales/${locale.slug}`} key={locale.id} style={{ "--delay": `${index * 45}ms` } as React.CSSProperties}>
               <div className="locale-top"><span className="flag">{locale.flag}</span><span className={`status ${locale.status === "Chapter live" ? "live" : ""}`}>{locale.status}</span></div>
+              {localeMedia[locale.id] && <figure className="locale-card-media"><img src={localeMedia[locale.id].src} alt={localeMedia[locale.id].alt} loading="lazy" /><figcaption>{localeMedia[locale.id].kind}</figcaption></figure>}
               <div className="locale-local">{locale.local}</div>
               <h3>{locale.place}</h3>
               <div className="locale-language">{locale.languages}</div>
@@ -197,13 +236,16 @@ export default function Home() {
             <div className="timestamp"><span>27</span><b>FEB<br />2025</b><small>official confirmation<br />Latin American Spanish</small></div>
             <div className="case-copy">
               <h3>A language option finally becomes a regional one.</h3>
-              <p>For years, the core games’ “Spanish” meant the localization made for Spain. Latin American Spanish became its own selectable game language with Pokémon Legends: Z-A, released 16 October 2025.</p>
+              <p>For years, the core games’ “Spanish” meant the localization made for Spain. Spanish-language Red and Blue launched there in 1999, establishing Iberian vocabulary for moves, items, characters, and dialogue. Those editions were later distributed or made selectable more widely, but their register still addressed players in Spain.</p>
+              <p>Latin American audiences had a different tradition: a regionally dubbed animated series from 1999, usually based on the English television adaptation, with its own voices and terminology. Players could therefore grow up hearing one Spanish Pokémon vocabulary on television while encountering English—or later Spain’s Spanish—inside the games. Differences such as <i>Placaje</i> versus <i>Tacleada</i>, region-specific idiom, and words carrying different meanings across the Atlantic made “Spanish already exists” an incomplete answer.</p>
+              <p>Pokémon GO added Latin American Spanish in 2024; the Latin American TCG followed in March 2025; and Latin American Spanish became its own selectable core-game language with Pokémon Legends: Z-A on 16 October 2025. The distinction records two established audience histories, not a claim that either variety represents every speaker in its region.</p>
               <div className="locale-split">
                 <div><i>ES-EU</i><b>Spanish for Spain</b><span>Longstanding core-game localization</span></div>
                 <div><i>ES-LA</i><b>Latin American Spanish</b><span>Core games from Legends: Z-A</span></div>
                 <div><i>PT-BR</i><b>Brazilian Portuguese</b><span>Announced for Winds & Waves in 2027</span></div>
                 <div><i>PT-PT</i><b>European Portuguese</b><span>No core-game edition announced</span></div>
               </div>
+              <figure className="case-artifact"><img src="/exhibits/legends-za.jpg" alt="Pokémon Legends Z-A box art" loading="lazy" /><figcaption>Core-game artifact · first Latin American Spanish edition · 2025</figcaption></figure>
               <aside className="footnote"><sup>2</sup><p><b>Spanish and Portuguese labels are product-specific.</b> An anime dub, website, trading card release, mobile game, and core game may each support a different set of locales at different dates. Pokélingua records the medium beside every language claim.</p></aside>
             </div>
           </div>
@@ -212,6 +254,7 @@ export default function Home() {
             <div><span className="social-label">A moment preserved / YouTube · 16 Mar 2024</span><blockquote>“Pokémon games in Latin American Spanish after 25 years.”</blockquote><p>Campaign coverage by verified creator N Deluxe reached 21,000+ views and 1,800 likes—capturing the community milestone before the 2025 game-language rollout.</p></div>
             <a href="https://www.youtube.com/watch?v=8VU79bLuq3E" target="_blank" rel="noreferrer">Watch the archived moment ↗</a>
           </div>
+          <div className="social-moment professional-moment"><div className="social-icon">in</div><div><span className="social-label">A decision preserved / LinkedIn · 27 Feb 2025</span><blockquote>“The main games and spin-offs…will have subtitles in Latin Spanish from launch.”</blockquote><p>Tomás Cortijo, The Pokémon Company International’s regional director for Latin America, described a localization team including people from across the region and publicly marked the transition from campaign to product policy.</p></div><a href="https://www.linkedin.com/posts/tomascortijo_pok%C3%A9mon-presents-2272025-activity-7301045323886415872-GPT1" target="_blank" rel="noreferrer">View the announcement post ↗</a></div>
         </article>
       </section>
 

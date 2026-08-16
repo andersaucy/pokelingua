@@ -8,6 +8,8 @@ import germanPokemon from "../data/germanPokemon.json";
 import italianPokemon from "../data/italianPokemon.json";
 import koreanPokemon from "../data/koreanPokemon.json";
 import vietnamesePokemon from "../data/vietnamesePokemon.json";
+import { dateMethodNote, nameYear } from "../data/nameDates";
+import { nameOriginFor, type OriginField } from "./NameEtymology";
 
 const frenchById = new Map(frenchPokemon.map((entry) => [entry.id, entry]));
 const germanById = new Map(germanPokemon.map((entry) => [entry.id, entry]));
@@ -35,6 +37,13 @@ function searchText(record: (typeof records)[number]) {
     record.vietnamese.current, record.vietnamese.historical].join(" ").toLocaleLowerCase();
 }
 
+function GlobalNameCard({ href, label, name, reading, id, field, locale, fallbackField }: { href: string; label: string; name: string; reading?: string; id: number; field: OriginField; locale: Parameters<typeof nameYear>[1]; fallbackField?: OriginField }) {
+  return <div className="global-name-card">
+    <a href={href}><span>{label}</span><b>{name}</b>{reading && <small>{reading}</small>}</a>
+    <details><summary>Origin · {nameYear(id, locale)}</summary><p>{nameOriginFor(id, field, fallbackField)}</p></details>
+  </div>;
+}
+
 export function GlobalPokemonSearch() {
   const [query, setQuery] = useState("");
   const normalized = query.trim().toLocaleLowerCase();
@@ -51,19 +60,19 @@ export function GlobalPokemonSearch() {
       {matches.map((record) => <article className="global-result" key={record.english.id}>
         <header><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${record.english.id}.png`} alt="" /><div><span>#{String(record.english.id).padStart(4, "0")}</span><h3>{record.english.english}</h3><p lang="ja">{record.english.kana} · {record.english.hepburn}</p></div></header>
         <div className="global-name-grid">
-          <a href="/locales/japan#name-library"><span>Japan · 日本語</span><b lang="ja">{record.english.kana}</b><small>{record.english.hepburn}</small></a>
-          <a href="/locales/united-states#name-library"><span>United States · English</span><b>{record.english.english}</b></a>
-          <a href="/locales/germany#name-library"><span>Germany · Deutsch</span><b lang="de">{record.german.german}</b></a>
-          <a href="/locales/italy#name-library"><span>Italy · Italiano</span><b lang="it">{record.italian.italian}</b></a>
-          <a href="/locales/france#name-library"><span>France · Français</span><b lang="fr">{record.french.french}</b></a>
-          <a href="/locales/south-korea#name-library"><span>South Korea · 한국어</span><b lang="ko">{record.korean.hangul}</b><small>{record.korean.revised}</small></a>
-          <a href="/locales/hong-kong#name-library"><span>Hong Kong · Cantonese</span><b lang="zh-Hant">{record.chinese.traditional}</b><small>{record.chinese.cantonese}</small></a>
-          <a href="/locales/taiwan#name-library"><span>Taiwan · Mandarin</span><b lang="zh-Hant">{record.chinese.traditional}</b><small>{record.chinese.pinyin}</small></a>
-          <a href="/locales/mainland-china#name-library"><span>Mainland China · Mandarin</span><b lang="zh-Hans">{record.chinese.simplified}</b><small>{record.chinese.pinyin}</small></a>
-          <a href="/locales/vietnam#name-library"><span>Vietnam · current / earlier</span><b>{record.vietnamese.current}</b><small>{record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras"}</small></a>
+          <GlobalNameCard href="/locales/japan#name-library" label="Japan · 日本語" name={record.english.kana} reading={record.english.hepburn} id={record.english.id} field="japanese" locale="japan" />
+          <GlobalNameCard href="/locales/united-states#name-library" label="United States · English" name={record.english.english} id={record.english.id} field="english" locale="united-states" />
+          <GlobalNameCard href="/locales/germany#name-library" label="Germany · Deutsch" name={record.german.german} id={record.english.id} field="german" locale="germany" />
+          <GlobalNameCard href="/locales/italy#name-library" label="Italy · Italiano" name={record.italian.italian} id={record.english.id} field="italian" locale="italy" />
+          <GlobalNameCard href="/locales/france#name-library" label="France · Français" name={record.french.french} id={record.english.id} field="french" locale="france" />
+          <GlobalNameCard href="/locales/south-korea#name-library" label="South Korea · 한국어" name={record.korean.hangul} reading={record.korean.revised} id={record.english.id} field="korean" locale="south-korea" />
+          <GlobalNameCard href="/locales/hong-kong#name-library" label="Hong Kong · Cantonese" name={record.chinese.traditional} reading={record.chinese.cantonese} id={record.english.id} field="chineseCantonese" locale="hong-kong" />
+          <GlobalNameCard href="/locales/taiwan#name-library" label="Taiwan · Mandarin" name={record.chinese.traditional} reading={record.chinese.pinyin} id={record.english.id} field="chineseMandarin" locale="taiwan" />
+          <GlobalNameCard href="/locales/mainland-china#name-library" label="Mainland China · Mandarin" name={record.chinese.simplified} reading={record.chinese.pinyin} id={record.english.id} field="chineseMandarin" locale="mainland-china" />
+          <GlobalNameCard href="/locales/vietnam#name-library" label="Vietnam · current / earlier" name={record.vietnamese.current} reading={record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras"} id={record.english.id} field="english" locale="vietnam" />
         </div>
       </article>)}
     </div>}
-    <p className="global-search-note">Results reflect the completed ten-locale edition. Locale links open the full archive, where historical spellings and name origins remain attached to each record.</p>
+    <p className="global-search-note">Results reflect the completed ten-locale edition. Locale links open the full archive, where historical spellings and name origins remain attached to each record. {dateMethodNote}</p>
   </section>;
 }

@@ -56,7 +56,7 @@ export function VietnamesePokedex() {
           {isOpen && <div className="dex-detail">
             <div><span>Current official record</span><b>{entry.current}</b><p>Vietnam · policy announced 25 May 2026</p><small>Pokémon announced that future content and services in Vietnam would consistently use the English species names.</small></div>
             <div><span>Preserved earlier record</span><b>{entry.historical}</b><p>Vietnamese anime, merchandise, and official web usage · before 2026</p><small>{entry.changed ? "The earlier spelling generally follows a romanization of the Japanese species name. It remains searchable here as part of Vietnam’s localization history." : "This spelling already matched the English name, so the policy announcement did not visibly alter it."}</small></div>
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.current} · current English-name policy`, field: "english" }, { label: `${entry.historical} · earlier Vietnam record`, field: "vietnamese", fallbackField: "japanese" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.current} · current English-name policy`, field: "english", locale: "vietnam" }, { label: `${entry.historical} · earlier Vietnam record`, field: "vietnamese", fallbackField: "japanese", year: "N/A" }]} />
           </div>}
         </div>;
       })}

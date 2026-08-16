@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pokelingua.vercel.app"),
   title: "Pokélingua — A living atlas of Pokémon localization",
   description: "Trace how Pokémon names, stories, and media crossed borders—and what changed along the way.",
   icons: {

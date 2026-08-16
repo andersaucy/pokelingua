@@ -96,7 +96,7 @@ export function LocalePokedex({ locale }: { locale: Locale }) {
             <div><span>Current official record</span><b>{entry.current}</b><p>{entry.reading}</p><small>Current spelling and reading are recorded separately for this locale.</small></div>
             {entry.historical.map((item) => <div key={`${item.name}-${item.regions}`}><span>Documented former record · {item.regions}</span><b>{item.name}</b><p>{item.reading}</p><small>Date and medium vary. Retained as a former regional name in the cited Chinese-name index; a precise dated source is still required for the timeline layer.</small></div>)}
             {!entry.historical.length && <div className="dex-empty-history"><span>Research note</span><p>No distinct former name is indexed for this Pokémon and locale. This does not claim that none ever appeared in regional media.</p></div>}
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: locale === "hong-kong" ? `${entry.current} · Cantonese record` : `${entry.current} · Mandarin record`, field: locale === "hong-kong" ? "chineseCantonese" : "chineseMandarin" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: locale === "hong-kong" ? `${entry.current} · Cantonese record` : `${entry.current} · Mandarin record`, field: locale === "hong-kong" ? "chineseCantonese" : "chineseMandarin", locale }]} />
           </div>}
         </div>;
       })}

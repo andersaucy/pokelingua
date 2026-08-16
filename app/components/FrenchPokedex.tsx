@@ -56,7 +56,7 @@ export function FrenchPokedex() {
           {isOpen && <div className="dex-detail">
             <div><span>Current official record</span><b>{entry.french}</b><p>French · fr-FR</p><small>Current spelling as used by the official French Pokédex.</small></div>
             {entry.legacy ? <div><span>Historical display record</span><b>{entry.legacy}</b><p>Generations I–IV · game text</p><small>The translation itself did not necessarily change. Earlier games omitted diacritics and used uppercase display text; later software restored the standard French spelling.</small></div> : <div className="dex-empty-history"><span>Research note</span><p>No accent-based display difference is indexed for this name. Other changes may still exist in cards, animation, guides, or regional French-language media.</p></div>}
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.french} · French`, field: "french" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.french} · French`, field: "french", locale: "france" }]} />
           </div>}
         </div>;
       })}

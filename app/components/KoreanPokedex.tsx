@@ -56,7 +56,7 @@ export function KoreanPokedex() {
           {isOpen && <div className="dex-detail">
             <div><span>Current official Korean record</span><b lang="ko">{entry.hangul}</b><p>{entry.revised} · ko-KR</p><small>McCune–Reischauer: {entry.mccune}. TPCi’s 2012 international-event romanization: {entry.officialRomanization || "not listed"}. Pokémon Korea’s Revised Romanization is the primary reading shown in this archive.</small></div>
             {entry.historical ? <div><span>Preserved earlier record</span><b lang="ko">{entry.historical.name}</b><p>{entry.historical.romanization}</p><small>{entry.historical.context}. This is a documented official-use variant, not a fan translation or a general alternate spelling.</small></div> : <div className="dex-empty-history"><span>Research note</span><p>No separate Korean game name is indexed for this species. Different romanization systems can still render the same Hangul name differently without indicating a rename.</p></div>}
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.hangul} · Korean`, field: "korean" }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.hangul} · Korean`, field: "korean", locale: "south-korea" }]} />
           </div>}
         </div>;
       })}
