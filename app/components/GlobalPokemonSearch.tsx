@@ -36,9 +36,9 @@ const records = englishUsPokemon.map((english) => ({
   chinese: chineseById.get(english.id)!,
   vietnamese: vietnameseById.get(english.id)!,
   spanish: spanishById.get(english.id)!,
-  russian: russianById.get(english.id)!,
-  thai: thaiById.get(english.id)!,
-  hindi: hindiById.get(english.id)!,
+  russian: russianById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Cyrillic record indexed" },
+  thai: thaiById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Thai-script record indexed" },
+  hindi: hindiById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Devanāgarī record indexed" },
 }));
 
 function searchText(record: (typeof records)[number]) {
