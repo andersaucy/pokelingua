@@ -7,6 +7,7 @@ import { ItalianPokedex } from "../../components/ItalianPokedex";
 import { JapanesePokedex } from "../../components/JapanesePokedex";
 import { KoreanPokedex } from "../../components/KoreanPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
+import { MediaLocalePokedex } from "../../components/MediaLocalePokedex";
 import { SpanishPokedex } from "../../components/SpanishPokedex";
 import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
@@ -90,12 +91,12 @@ function RomanizationGuide({ locale }: { locale: RomanizationLocale }) {
   return <section className={`romanization-guide romanization-${locale}`} id="romanization-guide">
     <div><span>Reading the script / further study</span><h2>{copy.system}</h2><b>{copy.script}</b></div>
     <article><p>{copy.text}</p><aside><b>Romanization is not renaming</b><p>It makes a non-Latin script searchable and pronounceable for more visitors. The script form remains the name of record, and multiple romanization systems can describe the same unchanged name.</p></aside><a href={copy.source} target="_blank" rel="noreferrer">{copy.sourceLabel} ↗</a></article>
-    {locale === "taiwan" && <div className="wade-giles-fact"><span>Pokémon language fact / Generation IX</span><h3>Four English names preserve a Wade–Giles look.</h3><p>Wo-Chien, Chien-Pao, Ting-Lu, and Chi-Yu are formatted through Wade–Giles-style romanization. Their official Taiwan names are different Chinese character compounds, and the table still shows those names with Hanyu Pinyin readings.</p><div>{[
-      ["Wo-Chien", "wō + jiǎn", "snail + bamboo slips"],
-      ["Chien-Pao", "jiàn + bào", "sword + leopard"],
-      ["Ting-Lu", "dǐng + lù", "cauldron + deer"],
-      ["Chi-Yu", "jìyú + yù", "crucian carp + jade"],
-    ].map(([name, reading, clue]) => <section key={name}><b>{name}</b><small>{reading}</small><p>{clue}</p></section>)}</div><a href="https://bulbapedia.bulbagarden.net/wiki/Chien-Pao_(Pok%C3%A9mon)#Name_origin" target="_blank" rel="noreferrer">Follow the Treasures of Ruin name-origin trail ↗</a></div>}
+    {locale === "taiwan" && <div className="wade-giles-fact"><span>Pokémon language fact / Generation IX</span><h3>Four English names preserve a Wade–Giles look.</h3><p>Wo-Chien, Chien-Pao, Ting-Lu, and Chi-Yu are formatted through Wade–Giles-style romanization. Their official Taiwan names are different Chinese character compounds, shown here with Hanyu Pinyin readings and the Chinese roots behind each English name.</p><div>{[
+      { id: 1001, name: "Wo-Chien", chinese: "古簡蝸", pinyin: "Gǔjiǎnwō", roots: "蝸 wō + 簡 jiǎn", clue: "snail + bamboo slips" },
+      { id: 1002, name: "Chien-Pao", chinese: "古劍豹", pinyin: "Gǔjiànbào", roots: "劍 jiàn + 豹 bào", clue: "sword + leopard" },
+      { id: 1003, name: "Ting-Lu", chinese: "古鼎鹿", pinyin: "Gǔdǐnglù", roots: "鼎 dǐng + 鹿 lù", clue: "cauldron + deer" },
+      { id: 1004, name: "Chi-Yu", chinese: "古玉魚", pinyin: "Gǔyùyú", roots: "鯽魚 jìyú + 玉 yù", clue: "crucian carp + jade" },
+    ].map((item) => <section key={item.name}><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${item.id}.png`} alt={`${item.name} sprite`} loading="lazy" /><b>{item.name}</b><strong lang="zh-Hant">{item.chinese}</strong><small>{item.pinyin} · official Taiwan name</small><p><span lang="zh-Hant">{item.roots}</span><em>{item.clue}</em></p></section>)}</div><a href="https://bulbapedia.bulbagarden.net/wiki/Chien-Pao_(Pok%C3%A9mon)#Name_origin" target="_blank" rel="noreferrer">Follow the Treasures of Ruin name-origin trail ↗</a></div>}
   </section>;
 }
 
@@ -113,7 +114,7 @@ const chineseCopy = {
   },
   taiwan: {
     eyebrow: "A Taiwan chapter, not a generic Traditional Chinese page.",
-    opening: "Taiwan developed its own long-running Pokémon vocabulary through Mandarin-language animation, publishing, merchandise, and the older franchise label 神奇寶貝. Those memories remain part of the locale even when individual creature names match today’s unified Traditional Chinese forms.",
+    opening: "Taiwan developed its own long-running Pokémon vocabulary through Mandarin-language animation, publishing, merchandise, and the older franchise label 神奇寶貝 (Shénqí Bǎobèi). Those memories remain part of the locale even when individual creature names match today’s unified Traditional Chinese forms.",
     note: "The library keeps Taiwan separate because identical characters do not imply identical distributors, broadcast histories, release dates, or audience experiences.",
     date: "26 FEB 2016", event: "Traditional Chinese enters the core games", eventText: "The Sun and Moon announcement established selectable Traditional Chinese in the core series. Taiwan’s current official Pokédex now provides a primary reference for present-day names.",
     official: "https://tw.portal-pokemon.com/play/pokedex",
@@ -148,7 +149,7 @@ function ChineseChapter({ locale }: { locale: keyof typeof chineseCopy }) {
     </section>
     <section className="chapter-opening chinese-opening">
       <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
-      <article><p className="dropcap">{copy.opening}</p><p>{copy.note}</p><aside><b>Why this is its own locale</b><p>{copy.eyebrow} Pokélingua attaches every term to territory, spoken language, script, medium, and date instead of treating “Chinese” as one undifferentiated field.</p></aside></article>
+      <article><p className="dropcap">{copy.opening}</p><p>{copy.note}</p>{locale === "taiwan" && <figure className="perspective-artifact"><img src="/exhibits/taiwan-shenqibaobei-title.png" alt="Taiwanese Pokémon Best Wishes title card displaying the older 神奇寶貝 franchise label" loading="lazy" /><figcaption><b lang="zh-Hant">神奇寶貝</b><span>Shénqí Bǎobèi · Taiwan anime-era title card</span><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Best_Wishes_Theme_Song" target="_blank" rel="noreferrer">Artifact record ↗</a></figcaption></figure>}<aside><b>Why this is its own locale</b><p>{copy.eyebrow} Pokélingua attaches every term to territory, spoken language, script, medium, and date instead of treating “Chinese” as one undifferentiated field.</p></aside></article>
     </section>
     <RomanizationGuide locale={locale} />
     {locale === "hong-kong" && <section className="locale-distinction hk-distinction">
@@ -499,10 +500,10 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
         <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
       </div>
     </section>
-    <section className="naming-practice" id="name-library">
+    {locale === "russia" || locale === "thailand" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
       <div><span>Name library status</span><h2>{copy.libraryTitle}</h2><b>{copy.sampleLabel} · {copy.sampleName}</b></div>
       <article><span>What the archive can support</span><p>{copy.libraryStatus}</p><p className="coverage-note">Example now on record: {copy.sampleMeta}</p><a className="library-status-link" href={copy.libraryHref} target={copy.libraryHref.startsWith("http") ? "_blank" : undefined} rel={copy.libraryHref.startsWith("http") ? "noreferrer" : undefined}>{copy.libraryLink} ↗</a></article>
-    </section>
+    </section>}
     <section className="chapter-question">
       <div className="chapter-rail"><span>Archive rule</span><b>03</b></div>
       <article><h2>A dub is a locale.<br /><em>Not a game-language claim.</em></h2><p>Pokélingua records the version audiences actually encountered: language, territory, broadcaster or platform, naming practice, and date. That preserves these histories without suggesting a core-series translation that does not exist.</p><div className="record-example"><span>Evidence model</span><code>medium: official animation / service<br />core_game_language: no<br />species_name_system: documented policy<br />unknown dates: shown as unresolved</code></div></article>

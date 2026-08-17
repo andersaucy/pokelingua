@@ -297,6 +297,31 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .wade-giles-fact > div b { font-size: 24px; }
 .wade-giles-fact > div small { margin: 9px 0; }
 .wade-giles-fact > div p { margin: 0; font: 16px/1.5 Georgia,serif; }
+.wade-giles-fact > div section { position: relative; overflow: hidden; }
+.wade-giles-fact > div section > img { float: right; width: 92px; height: 92px; margin: -10px -8px 8px 10px; image-rendering: pixelated; }
+.wade-giles-fact > div strong { display: block; margin-top: 10px; font-size: 30px; line-height: 1.15; }
+.wade-giles-fact > div p span, .wade-giles-fact > div p em { display: block; }
+.wade-giles-fact > div p span { font: 700 17px/1.5 "Courier New",monospace; }
+.wade-giles-fact > div p em { margin-top: 3px; color: #5d655f; }
+.perspective-artifact { width: min(360px,48%); margin: 34px 0 8px auto; padding: 9px; transform: rotate(1.8deg); background: white; box-shadow: 9px 10px 0 rgba(24,33,28,.16); }
+.perspective-artifact img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.perspective-artifact figcaption { display: grid; gap: 3px; padding: 10px 5px 4px; color: var(--ink); }
+.perspective-artifact figcaption b { font-size: 20px; }
+.perspective-artifact figcaption span { font: 700 15px/1.4 "Courier New",monospace; text-transform: uppercase; }
+.perspective-artifact figcaption a { width: fit-content; border-bottom: 1px solid; font: 700 15px/1.4 "Courier New",monospace; text-transform: uppercase; }
+
+/* Expanded Pokédex records are reading surfaces, not fine print. */
+.dex-detail > div { padding: 34px; }
+.dex-detail span { font-size: 17px !important; line-height: 1.5 !important; letter-spacing: .045em; }
+.dex-detail p { font-size: 17px; line-height: 1.65; }
+.dex-detail small { font-size: 16px !important; line-height: 1.65 !important; color: rgba(255,255,255,.86); }
+.dex-etymology > span { font-size: 18px !important; }
+.dex-etymology .dex-origin-grid b { font-size: 18px; line-height: 1.5; }
+.dex-origin-grid time { font-size: 16px; line-height: 1.5; }
+.dex-etymology .dex-origin-grid p { font-size: 18px; line-height: 1.65; }
+.dex-date-method { font-size: 16px; line-height: 1.6; }
+.dex-etymology > a { font-size: 16px !important; line-height: 1.5 !important; }
+.media-dex .dex-controls { grid-template-columns: 1fr auto; }
 
 /* Comfortable reading floor across the exhibition. */
 input, select, button { font-size: 16px !important; }
@@ -321,4 +346,6 @@ input, select, button { font-size: 16px !important; }
   .locale-timeline-track { margin-top: 20px; padding-inline: 55px; min-width: 820px; }
   .locale-timeline-track:before { left: 55px; right: 55px; }
   .wade-giles-fact > div { grid-template-columns: 1fr; }
+  .perspective-artifact { width: 100%; margin-left: 0; }
+  .media-dex .dex-controls { grid-template-columns: 1fr; }
 }
