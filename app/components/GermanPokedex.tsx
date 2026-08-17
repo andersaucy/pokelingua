@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function GermanPokedex() {
   const [query, setQuery] = useState("");
   const [localizedOnly, setLocalizedOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(1);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const matches = useMemo(() => {
     const q = query.trim().toLocaleLowerCase("de-DE");

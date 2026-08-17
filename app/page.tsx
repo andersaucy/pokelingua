@@ -42,6 +42,8 @@ const locales: Locale[] = [
   { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Archivo paralelo", languages: "Fan translations · bootlegs · ROM hacks", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology", coreYear: null, animeYear: null },
 ];
 
+const curatedLocaleOrder = new Map(locales.map((locale, index) => [locale.id, index]));
+
 const coreLanguageTimeline = [
   { year: 1996, entries: [{ label: "Japanese", place: "Japan", href: "/locales/japan", detail: "Pocket Monsters Red / Green" }] },
   { year: 1998, entries: [{ label: "English", place: "United States", href: "/locales/united-states", detail: "Pokémon Red / Blue" }] },
@@ -142,7 +144,7 @@ export default function Home() {
       [locale.place, locale.local, locale.languages, locale.note, locale.coreGame].join(" ").toLowerCase().includes(q),
     );
     const field = localeSort === "games" ? "coreYear" : "animeYear";
-    return [...filtered].sort((a, b) => (a[field] ?? Number.POSITIVE_INFINITY) - (b[field] ?? Number.POSITIVE_INFINITY) || a.place.localeCompare(b.place));
+    return [...filtered].sort((a, b) => (a[field] ?? Number.POSITIVE_INFINITY) - (b[field] ?? Number.POSITIVE_INFINITY) || (curatedLocaleOrder.get(a.id)! - curatedLocaleOrder.get(b.id)!));
   }, [localeSort, query]);
 
   const visibleMilestones = activeType === "All" ? milestones : milestones.filter((item) => item.type === activeType);

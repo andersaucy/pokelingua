@@ -182,8 +182,8 @@ footer p { margin-right: auto; font: 14px Georgia, serif; } footer > a:last-chil
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
 
 /* Readability floor: preserve headline scale while lifting labels, notes, and metadata. */
-small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sources span, .chapter-sources a, .source-row span, .source-row a, .social-label, .event-type, .timeline-note, .locale-order-note, .global-search-note, .dex-citation span, .dex-citation a, .dex-controls > span, .dex-controls button, .dex-header > span, .dex-sprite b, .dex-detail span, .dex-detail small, .locale-placeholder > div, .locale-placeholder a, .research-board span { font-size: 13px !important; line-height: 1.5; }
-.nav-links a, .nav-cta, .back-link, .chapter-number, .status, .flag, .locale-game-release span, .locale-bottom, .case-meta span, .timestamp small, .filters button { font-size: 13px !important; }
+small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sources span, .chapter-sources a, .source-row span, .source-row a, .social-label, .event-type, .timeline-note, .locale-order-note, .global-search-note, .dex-citation span, .dex-citation a, .dex-controls > span, .dex-controls button, .dex-header > span, .dex-sprite b, .dex-detail span, .dex-detail small, .locale-placeholder > div, .locale-placeholder a, .research-board span { font-size: 15px !important; line-height: 1.5; }
+.nav-links a, .nav-cta, .back-link, .chapter-number, .status, .flag, .locale-game-release span, .locale-bottom, .case-meta span, .timestamp small, .filters button { font-size: 15px !important; }
 
 .locale-timeline { margin: 58px 0 46px; padding: 26px 26px 22px; border: 1px solid var(--ink); background: #17231c; color: white; overflow: hidden; }.locale-timeline-head { display: flex; justify-content: space-between; align-items: center; font: 700 13px "Courier New",monospace; text-transform: uppercase; }.locale-timeline-head b { color: var(--acid); letter-spacing: .08em; }.locale-timeline-track { position: relative; height: 190px; margin: 26px 8px 10px; }.locale-timeline-track:before { content: ""; position: absolute; left: 0; right: 0; top: 92px; height: 2px; background: rgba(255,255,255,.45); }.locale-timeline-node { --lane: 0; position: absolute; left: var(--position); top: calc(92px + (var(--lane) - 1) * 50px); width: 18px; height: 18px; transform: translate(-50%,-50%); z-index: 1; }.locale-timeline-node > i { display: block; width: 18px; height: 18px; border: 3px solid #17231c; border-radius: 50%; background: var(--acid); box-shadow: 0 0 0 1px white; transition: transform .18s ease; }.locale-timeline-node > span { position: absolute; left: 50%; bottom: 25px; min-width: 118px; padding: 9px 10px; transform: translateX(-50%); border: 1px solid white; background: var(--paper); color: var(--ink); opacity: 0; pointer-events: none; text-align: center; transition: opacity .18s ease,transform .18s ease; }.locale-timeline-node > span b, .locale-timeline-node > span small { display: block; }.locale-timeline-node > span b { font: 700 14px Arial,sans-serif; }.locale-timeline-node:hover > i, .locale-timeline-node:focus-visible > i { transform: scale(1.45); }.locale-timeline-node:hover > span, .locale-timeline-node:focus-visible > span { opacity: 1; transform: translate(-50%,-4px); }.locale-timeline-node.future > i { background: var(--orange); box-shadow: 0 0 0 2px white; }.locale-timeline > p { max-width: 780px; margin: 0; color: rgba(255,255,255,.76); font: 14px/1.55 Georgia,serif; }
 
@@ -203,14 +203,14 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 
 /* Final readability and timeline-position overrides. */
 .locale-timeline-node { --lane-offset: 0px; top: calc(92px + var(--lane-offset)); }
-.global-result > header span { font-size: 13px !important; }
-.dex-date-method { margin: 12px 0 0; color: #9ca79f; font: 13px/1.5 "Courier New",monospace; }
+.global-result > header span { font-size: 15px !important; }
+.dex-date-method { margin: 12px 0 0; color: #c1cac3; font: 15px/1.5 "Courier New",monospace; }
 .hero-actions span, .hero-period, .locale-language, .locale-game-release b,
 .global-search-head > div > span, .search-suggestion-row > span,
 .story-index, .story-label, .fact-strip span, .chapter-link,
 .case-meta, .case-meta b, .name-compare span, .name-compare small,
 .social-moment > a, .locale-split i, .locale-split span,
-.principles span, .manifesto, footer > a:last-child { font-size: 13px !important; line-height: 1.5; }
+.principles span, .manifesto, footer > a:last-child { font-size: 15px !important; line-height: 1.5; }
 .locale-details span, .locale-details b, .chapter-events span,
 .chapter-events a, .chapter-events div > b, .record-example span,
 .unofficial-context > div span, .unofficial-context article > a,
@@ -222,7 +222,7 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-controls > span, .dex-header > span, .dex-sprite b,
 .dex-current small, .dex-history-summary small, .dex-history-summary i,
 .dex-detail span, .dex-detail small, .dex-etymology > a,
-.dex-citation span, .dex-citation a, .dex-load-more button { font-size: 13px !important; line-height: 1.5; }
+.dex-citation span, .dex-citation a, .dex-load-more button { font-size: 15px !important; line-height: 1.5; }
 
 /* Two evidence tracks: clustered debut nodes sit directly on one shared line. */
 .locale-timeline { overflow: visible; }
@@ -261,6 +261,12 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .naming-practice h2 { margin: 35px 0 0; font-size: clamp(42px,5.5vw,82px); line-height: .95; letter-spacing: -.055em; overflow-wrap: anywhere; }
 .naming-practice article > p { max-width: 700px; font: 19px/1.65 Georgia,serif; }
 .naming-practice .coverage-note { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--ink); font: 15px/1.6 "Courier New",monospace; }
+.naming-practice > div > b { max-width: 620px; margin-top: 35px; font: 700 16px/1.55 "Courier New",monospace; }
+.library-status-link { display: inline-block; margin-top: 26px; padding-bottom: 5px; border-bottom: 2px solid var(--ink); font-size: 17px; font-weight: 800; }
+.research-library-status { margin: 0 6vw 90px; padding: 58px 6vw; border: 1px solid var(--ink); background: #eee6d8; }
+.research-library-status > span { color: var(--orange); font: 700 15px/1.5 "Courier New",monospace; text-transform: uppercase; }
+.research-library-status h2 { margin: 18px 0; font-size: clamp(42px,5vw,72px); line-height: .95; letter-spacing: -.05em; }
+.research-library-status p { max-width: 850px; font: 18px/1.65 Georgia,serif; }
 .locale-card-media.media-th img { object-position: center 30%; }
 .locale-card-media.media-hi img, .locale-card-media.media-ta img, .locale-card-media.media-te img { object-position: center; }
 .spain-arrival, .latam-arrival { position: relative; padding-top: 112px; }
@@ -271,16 +277,48 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .spanish-dex .dex-record.open .dex-row { background: #f1d75d; }
 .spanish-dex .dex-detail { background: #741f25; }
 
+/* Romanization is displayed as a reading layer, not as an alternate name. */
+.romanization-guide { display: grid; grid-template-columns: .82fr 1.18fr; border-bottom: 1px solid var(--ink); background: #dfe9df; }
+.romanization-guide > div:first-child, .romanization-guide > article { padding: 68px 6vw; }
+.romanization-guide > div:first-child { border-right: 1px solid var(--ink); }
+.romanization-guide > div:first-child > span, .wade-giles-fact > span { color: #a43d28; font: 700 15px/1.5 "Courier New",monospace; text-transform: uppercase; }
+.romanization-guide h2 { margin: 24px 0 12px; font: 700 clamp(42px,5.2vw,76px)/.95 Arial,sans-serif; letter-spacing: -.055em; }
+.romanization-guide > div:first-child > b { font: 700 16px/1.5 "Courier New",monospace; }
+.romanization-guide > article > p { max-width: 760px; margin-top: 0; font: 19px/1.68 Georgia,serif; }
+.romanization-guide > article aside { max-width: 720px; margin: 30px 0; padding: 24px; border-left: 4px solid var(--orange); background: rgba(255,255,255,.55); }
+.romanization-guide > article aside p { margin-bottom: 0; font: 16px/1.65 "Courier New",monospace; }
+.romanization-guide a { display: inline-block; border-bottom: 1px solid; font-weight: 800; font-size: 16px; }
+.wade-giles-fact { grid-column: 1 / -1; padding: 62px 6vw 72px; border-top: 1px solid var(--ink); background: #efe4c9; }
+.wade-giles-fact h3 { max-width: 920px; margin: 18px 0; font-size: clamp(36px,4.5vw,66px); line-height: .98; letter-spacing: -.045em; }
+.wade-giles-fact > p { max-width: 900px; font: 19px/1.65 Georgia,serif; }
+.wade-giles-fact > div { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); margin: 36px 0 28px; border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+.wade-giles-fact > div section { min-height: 170px; padding: 22px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.wade-giles-fact > div b, .wade-giles-fact > div small { display: block; }
+.wade-giles-fact > div b { font-size: 24px; }
+.wade-giles-fact > div small { margin: 9px 0; }
+.wade-giles-fact > div p { margin: 0; font: 16px/1.5 Georgia,serif; }
+
+/* Comfortable reading floor across the exhibition. */
+input, select, button { font-size: 16px !important; }
+.locale-card p, .locale-timeline > p, .social-moment p, .footnote p,
+.principles p, footer p, .chapter-opening aside p, .unofficial-context aside p,
+.dex-citation p, .research-board p, .global-result > header p,
+.global-name-card details p, .naming-practice .coverage-note { font-size: 16px !important; line-height: 1.65; }
+
 @media (max-width: 900px) {
   .locale-timeline { overflow-x: auto; overflow-y: visible; }
   .locale-timeline-toolbar { position: sticky; left: 0; width: calc(100vw - 12vw - 54px); min-width: 620px; }
   .locale-timeline-track { min-width: 880px; }
   .naming-practice { grid-template-columns: 1fr; }
   .naming-practice > div { min-height: 230px; border-right: 0; border-bottom: 1px solid var(--ink); }
+  .romanization-guide { grid-template-columns: 1fr; }
+  .romanization-guide > div:first-child { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .wade-giles-fact > div { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 600px) {
   .locale-timeline-toolbar { grid-template-columns: 1fr; min-width: 520px; }
   .timeline-mode-control { min-width: 0; }
   .locale-timeline-track { margin-top: 20px; padding-inline: 55px; min-width: 820px; }
   .locale-timeline-track:before { left: 55px; right: 55px; }
+  .wade-giles-fact > div { grid-template-columns: 1fr; }
 }

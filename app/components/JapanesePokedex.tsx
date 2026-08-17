@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function JapanesePokedex() {
   const [query, setQuery] = useState("");
   const [retainedOnly, setRetainedOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(1);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const matches = useMemo(() => {
     const q = query.trim().toLocaleLowerCase("ja-JP");

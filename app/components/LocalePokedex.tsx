@@ -18,9 +18,9 @@ type Entry = {
 const PAGE_SIZE = 50;
 
 const localeLabels: Record<Locale, { current: string; reading: string; regionCodes: string[] }> = {
-  "hong-kong": { current: "Current unified name", reading: "Cantonese reading", regionCodes: ["HK"] },
-  taiwan: { current: "Current Taiwan name", reading: "Mandarin reading", regionCodes: ["TW", "TW/CN", "HK/TW"] },
-  "mainland-china": { current: "Current mainland name", reading: "Mandarin reading", regionCodes: ["CN", "TW/CN", "HK/CN"] },
+  "hong-kong": { current: "Current unified name", reading: "Yale-style Cantonese reading", regionCodes: ["HK"] },
+  taiwan: { current: "Current Taiwan name", reading: "Hanyu Pinyin reading", regionCodes: ["TW", "TW/CN", "HK/TW"] },
+  "mainland-china": { current: "Current mainland name", reading: "Hanyu Pinyin reading", regionCodes: ["CN", "TW/CN", "HK/CN"] },
 };
 
 function historyForLocale(entry: SourceEntry, locale: Locale) {
@@ -41,7 +41,7 @@ function entriesFor(locale: Locale): Entry[] {
 export function LocalePokedex({ locale }: { locale: Locale }) {
   const [query, setQuery] = useState("");
   const [historyOnly, setHistoryOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(25);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const labels = localeLabels[locale];
   const entries = useMemo(() => entriesFor(locale), [locale]);
@@ -84,6 +84,7 @@ export function LocalePokedex({ locale }: { locale: Locale }) {
       <div className="dex-row dex-header" role="row"><span>Sprite / No.</span><span>English</span><span>{labels.current}</span><span>Historical record</span><span /></div>
       {visible.map((entry) => {
         const isOpen = expanded === entry.id;
+        const hasWadeGilesEnglishName = locale === "taiwan" && entry.id >= 1001 && entry.id <= 1004;
         return <div className={`dex-record ${isOpen ? "open" : ""}`} key={entry.id}>
           <button className="dex-row" role="row" onClick={() => setExpanded(isOpen ? null : entry.id)} aria-expanded={isOpen}>
             <span className="dex-sprite"><img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${entry.id}.png`} alt="" loading="lazy" /><b>#{String(entry.id).padStart(4, "0")}</b></span>
@@ -96,7 +97,10 @@ export function LocalePokedex({ locale }: { locale: Locale }) {
             <div><span>Current official record</span><b>{entry.current}</b><p>{entry.reading}</p><small>Current spelling and reading are recorded separately for this locale.</small></div>
             {entry.historical.map((item) => <div key={`${item.name}-${item.regions}`}><span>Documented former record · {item.regions}</span><b>{item.name}</b><p>{item.reading}</p><small>Date and medium vary. Retained as a former regional name in the cited Chinese-name index; a precise dated source is still required for the timeline layer.</small></div>)}
             {!entry.historical.length && <div className="dex-empty-history"><span>Research note</span><p>No distinct former name is indexed for this Pokémon and locale. This does not claim that none ever appeared in regional media.</p></div>}
-            <NameEtymology id={entry.id} name={entry.english} items={[{ label: locale === "hong-kong" ? `${entry.current} · Cantonese record` : `${entry.current} · Mandarin record`, field: locale === "hong-kong" ? "chineseCantonese" : "chineseMandarin", locale }]} />
+            <NameEtymology id={entry.id} name={entry.english} items={[
+              { label: locale === "hong-kong" ? `${entry.current} · Cantonese record` : `${entry.current} · Mandarin record`, field: locale === "hong-kong" ? "chineseCantonese" : "chineseMandarin", locale },
+              ...(hasWadeGilesEnglishName ? [{ label: `${entry.english} · Wade–Giles clue`, field: "english" as const, locale: "united-states" as const }] : []),
+            ]} />
           </div>}
         </div>;
       })}

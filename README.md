@@ -43,6 +43,8 @@ Inside each locale, the complete Pokédex can be searched by local name, English
 - an indexed name etymology with a link to its source note
 - the earliest defensible year for that locale’s current name, or `N/A` where the archive cannot yet support a species-level date
 
+No name row opens automatically; the visitor chooses which record to inspect. Chapters written in non-Latin scripts also include a “Reading the script” guide that separates the official script form from its romanization system. The current guides cover Hepburn-style Japanese readings, Yale-style Cantonese and Jyutping, Hanyu Pinyin and Taiwan’s Wade–Giles context, Revised Romanization and McCune–Reischauer Korean, plus further-study references for Thai, Russian, Hindi, Tamil, and Telugu.
+
 Name origins are derived from Bulbapedia’s species articles and presented as research annotations, not as original linguistic claims by this project.
 
 ## The Unofficial archive

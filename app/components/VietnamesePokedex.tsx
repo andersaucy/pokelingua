@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function VietnamesePokedex() {
   const [query, setQuery] = useState("");
   const [changedOnly, setChangedOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(4);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
 
   const matches = useMemo(() => {

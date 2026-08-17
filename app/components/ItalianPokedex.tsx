@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function ItalianPokedex() {
   const [query, setQuery] = useState("");
   const [localizedOnly, setLocalizedOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(984);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
 
   const matches = useMemo(() => {

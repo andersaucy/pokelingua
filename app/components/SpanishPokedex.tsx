@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function SpanishPokedex({ locale }: { locale: "spain" | "latin-america" }) {
   const [query, setQuery] = useState("");
   const [localizedOnly, setLocalizedOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(locale === "spain" ? 772 : 122);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const isLatam = locale === "latin-america";
 

@@ -9,7 +9,7 @@ const PAGE_SIZE = 50;
 export function FrenchPokedex() {
   const [query, setQuery] = useState("");
   const [historyOnly, setHistoryOnly] = useState(false);
-  const [expanded, setExpanded] = useState<number | null>(4);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
 
   const matches = useMemo(() => {

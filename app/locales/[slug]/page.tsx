@@ -62,11 +62,41 @@ function Researching({ chapter }: { chapter: (typeof chapters)[Exclude<Slug, "so
       <div><span>Research track 02</span><b>Naming system</b><p>Record original terms, revisions, pronunciations, and source-language relationships.</p></div>
       <div><span>Research track 03</span><b>Primary moments</b><p>Archive official announcements and representative contemporary social reactions.</p></div>
     </section>
+    <section className="research-library-status" id="name-library"><span>Name library status</span><h2>Not published yet.</h2><p>This chapter does not currently claim a complete locale-specific Pokémon name list. A searchable table will appear only after the naming policy and full record set can be verified; until then, the absence is labeled instead of being filled with assumed translations.</p></section>
   </>;
 }
 
 function ExhibitMedia({ src, alt, label, tilt = "right" }: { src: string; alt: string; label: string; tilt?: "left" | "right" }) {
   return <figure className={`exhibit-media ${tilt}`}><img src={src} alt={alt} loading="lazy" /><figcaption>{label}</figcaption></figure>;
+}
+
+const romanizationCopy = {
+  japan: { script: "Kana → Latin letters", system: "Hepburn-style reading", text: "The name library uses Hepburn readings so visitors can sound out kana and compare Japanese names with their official trademarked Latin forms. Romanization is a reading layer: フシギダネ remains the Japanese name even when it is displayed as Fushigidane.", source: "https://www.loc.gov/catdir/cpso/romanization/romguide/Japanese-Romanization-Table-revised.pdf", sourceLabel: "Library of Congress Japanese romanization table" },
+  "hong-kong": { script: "Traditional Chinese → Cantonese reading", system: "Yale-style table · Jyutping further study", text: "Pokélingua’s current name data uses the familiar Yale-style Cantonese spellings with diacritics and h marking lower tones. Jyutping is a different, highly systematic scheme created by the Linguistic Society of Hong Kong in 1993; it writes tones with numbers and is especially useful for dictionaries, teaching, and keyboard input.", source: "https://lshk.org/jyutping-scheme/", sourceLabel: "Linguistic Society of Hong Kong · Jyutping scheme" },
+  taiwan: { script: "Traditional Chinese → Mandarin reading", system: "Hanyu Pinyin table · Wade–Giles context", text: "The table uses tone-marked Hanyu Pinyin for a consistent Mandarin reading. Taiwan’s real romanization landscape is wider: Wade–Giles remains visible in personal names, place names, and historical documents, alongside Hanyu Pinyin and other systems. These are alternate ways of representing sounds—not alternate Chinese spellings of the Pokémon.", source: "https://www.boca.gov.tw/cp-2-8194-ee028-1.html", sourceLabel: "Taiwan Bureau of Consular Affairs · four romanization systems" },
+  "mainland-china": { script: "Simplified Chinese → Mandarin reading", system: "Hanyu Pinyin", text: "Tone-marked Hanyu Pinyin supplies the reading layer for the Simplified Chinese names. Tone marks matter: they record Mandarin pronunciation more precisely than an unmarked Latin spelling, while the Chinese characters remain the official name field.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Chinese romanization reference" },
+  "south-korea": { script: "Hangul → Latin letters", system: "Revised Romanization + McCune–Reischauer", text: "The table puts Revised Romanization first and preserves McCune–Reischauer for comparison. The systems make different choices—eo versus ŏ is a familiar example—so two Latin forms can point to the same unchanged Hangul name. Event branding may introduce a third official-looking spelling.", source: "https://www.korean.go.kr/front_eng/roman/roman_01.do", sourceLabel: "National Institute of Korean Language · Revised Romanization" },
+  thailand: { script: "Thai script → Latin letters", system: "Thai romanization reference", text: "Thai Pokémon usage is written in Thai script and often follows the sound of the Japanese species name. A Latin rendering such as Ashirene is an analytical reading aid, not a second official Pokémon name; different general-purpose Thai romanization tables may render details differently.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Thai romanization table" },
+  russia: { script: "Cyrillic → Latin letters", system: "Russian transliteration", text: "Transliteration maps Cyrillic letters into Latin characters for searching and cataloging. It should not be confused with translating a name or with an exact pronunciation guide: the Russian dub can write an English-derived Pokémon name in Cyrillic while retaining the same species identity.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Russian romanization table" },
+  "hindi-india": { script: "Devanagari → Latin letters", system: "Hindi romanization", text: "Romanization can make a Hindi-script title or dialogue searchable for readers who do not know Devanagari. Pokélingua keeps that aid separate from the current India-wide policy of using English-based species names; transliterating हिन्दी does not create a new species-name canon.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Hindi romanization table" },
+  "tamil-india": { script: "Tamil script → Latin letters", system: "Tamil romanization", text: "Tamil romanization represents the script in Latin letters for comparison and discovery. It is not a substitute for Tamil spelling or performance, and it does not imply that the shared English-based Pokémon species names were independently translated.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Tamil romanization table" },
+  "telugu-india": { script: "Telugu script → Latin letters", system: "Telugu romanization", text: "Telugu romanization is a bridge for reading and search, not a replacement for the Telugu script. The locale’s dub remains Telugu even when the current official species-name policy retains English-based forms.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Telugu romanization table" },
+} as const;
+
+type RomanizationLocale = keyof typeof romanizationCopy;
+
+function RomanizationGuide({ locale }: { locale: RomanizationLocale }) {
+  const copy = romanizationCopy[locale];
+  return <section className={`romanization-guide romanization-${locale}`} id="romanization-guide">
+    <div><span>Reading the script / further study</span><h2>{copy.system}</h2><b>{copy.script}</b></div>
+    <article><p>{copy.text}</p><aside><b>Romanization is not renaming</b><p>It makes a non-Latin script searchable and pronounceable for more visitors. The script form remains the name of record, and multiple romanization systems can describe the same unchanged name.</p></aside><a href={copy.source} target="_blank" rel="noreferrer">{copy.sourceLabel} ↗</a></article>
+    {locale === "taiwan" && <div className="wade-giles-fact"><span>Pokémon language fact / Generation IX</span><h3>Four English names preserve a Wade–Giles look.</h3><p>Wo-Chien, Chien-Pao, Ting-Lu, and Chi-Yu are formatted through Wade–Giles-style romanization. Their official Taiwan names are different Chinese character compounds, and the table still shows those names with Hanyu Pinyin readings.</p><div>{[
+      ["Wo-Chien", "wō + jiǎn", "snail + bamboo slips"],
+      ["Chien-Pao", "jiàn + bào", "sword + leopard"],
+      ["Ting-Lu", "dǐng + lù", "cauldron + deer"],
+      ["Chi-Yu", "jìyú + yù", "crucian carp + jade"],
+    ].map(([name, reading, clue]) => <section key={name}><b>{name}</b><small>{reading}</small><p>{clue}</p></section>)}</div><a href="https://bulbapedia.bulbagarden.net/wiki/Chien-Pao_(Pok%C3%A9mon)#Name_origin" target="_blank" rel="noreferrer">Follow the Treasures of Ruin name-origin trail ↗</a></div>}
+  </section>;
 }
 
 const chineseCopy = {
@@ -120,6 +150,7 @@ function ChineseChapter({ locale }: { locale: keyof typeof chineseCopy }) {
       <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
       <article><p className="dropcap">{copy.opening}</p><p>{copy.note}</p><aside><b>Why this is its own locale</b><p>{copy.eyebrow} Pokélingua attaches every term to territory, spoken language, script, medium, and date instead of treating “Chinese” as one undifferentiated field.</p></aside></article>
     </section>
+    <RomanizationGuide locale={locale} />
     {locale === "hong-kong" && <section className="locale-distinction hk-distinction">
       <div><span>Why Hong Kong remains separate</span><h2>Shared characters did not create<br /><em>a shared spoken name.</em></h2></div>
       <article><p>Hong Kong audiences had heard Pikachu as 比卡超—<i>bei-kaa-chiu</i>—through Cantonese animation and media since the late 1990s. The 2016 Chinese-language game policy standardized the written form as 皮卡丘 across Simplified and Traditional Chinese. That form approximates “Pikachu” in Mandarin, but reads very differently in Cantonese.</p><p>The dispute was therefore not a preference between two spellings of one pronunciation. It concerned whether a unified written standard should displace an established Cantonese cultural vocabulary. Fans petitioned Nintendo Hong Kong, posted objections to its Facebook page, and demonstrated outside the Japanese consulate.</p><div className="distinction-compare"><div><span>Established Hong Kong</span><b>比卡超</b><small>bei-kaa-chiu · Cantonese</small></div><div><span>Unified 2016 characters</span><b>皮卡丘</b><small>pí-kǎ-qiū · Mandarin<br />pei-kaa-jau · Cantonese</small></div></div><a href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/23471/20%E4%BA%BA%E9%81%8A%E8%A1%8C%E6%8D%8D%E8%A1%9B-%E6%AF%94%E5%8D%A1%E8%B6%85-%E5%90%8D%E5%AD%97-%E6%8B%92%E7%B5%95-%E7%9A%AE%E5%8D%A1%E4%B8%98-%E5%86%80%E6%97%A5%E9%A0%98%E4%BA%8B%E6%AD%A3%E8%A6%96" target="_blank" rel="noreferrer">Contemporary Hong Kong protest report ↗</a></article>
@@ -296,6 +327,7 @@ function JapanChapter() {
       <a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo’s Red and Green origin record ↗</a>
     </section>
     <section className="chapter-opening japan-opening"><div className="chapter-rail"><span>Source language</span><b>01</b></div><article><p className="dropcap">Japanese Pokémon names compress biology, behavior, sound symbolism, jokes, and visual clues into short forms that work naturally in kana. フシギダネ can suggest both a “mysterious seed” and the phrase “isn’t it strange?”—a double reading that later languages must recreate, replace, explain, or leave behind.</p><p>Pokélingua therefore separates the written kana, a Hepburn reading, and the official trademarked Latin form. Those fields help comparison, but none turns the Japanese original into an English name.</p><aside><b>The origin is still a locale</b><p>Japan sits first in the chronology, not above it. The exhibition treats source-language decisions with the same territory, medium, date, and evidence labels used everywhere else.</p></aside></article></section>
+    <RomanizationGuide locale="japan" />
     <section className="chapter-timeline japan-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
       <article><time>27 FEB<br />1996</time><div><span>Core games</span><h2>The first Pokémon vocabulary enters play</h2><p>Red and Green launch for Game Boy in Japan. Trading between versions turns a local naming system into a shared social vocabulary.</p><a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo launch history ↗</a></div><ExhibitMedia src="/exhibits/red-green.jpg" alt="Japanese Pokémon Red and Green boxes" label="Core game artifact · 1996" /></article>
       <article><time>15 OCT<br />1996</time><div><span>Revised edition</span><h2>Blue revises the original record</h2><p>Pokémon Blue followed with revised graphics and Pokédex descriptions, an early reminder that even the source edition was not frozen after launch.</p><a href="https://www.nintendo.com/jp/topics/c/article/ac09b3a5-d9d0-11e5-a9b1-063b7ac45a6d.html" target="_blank" rel="noreferrer">Nintendo edition comparison ↗</a></div></article>
@@ -315,6 +347,7 @@ function KoreanChapter() {
       <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">South Korea release history ↗</a>
     </section>
     <section className="chapter-opening korea-opening"><div className="chapter-rail"><span>Naming method</span><b>01</b></div><article><p className="dropcap">Korean Pokémon names do not follow one source language. Some are original Korean coinages, some adapt the Japanese name, some follow English, and others retain an international form. 이상해씨 combines “strange” with “seed,” while 님피아 follows Japanese Nymphia and 테일로 follows English Taillow.</p><p>Hangul is the official written record. Romanization is a reading aid, not a second name: Revised Romanization, McCune–Reischauer, and event-specific spellings can render the same Hangul differently.</p><aside><b>Historical-name rule</b><p>The library flags only documented changes in the Korean name itself. It does not manufacture “variants” from different Latin-alphabet romanization systems.</p></aside></article></section>
+    <RomanizationGuide locale="south-korea" />
     <section className="chapter-timeline korea-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
       <article><time>14 JUL<br />1999</time><div><span>Animation</span><h2>Pokémon speaks Korean on SBS</h2><p>The television debut establishes an early public vocabulary before Korean-language core games.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Broadcast record ↗</a></div><ExhibitMedia src="/exhibits/anime-original.jpg" alt="Original Pokémon animated series poster" label="Anime exhibit · Korean broadcast" /></article>
       <article><time>24 APR<br />2002</time><div><span>Core games</span><h2>Gold and Silver arrive in Korean</h2><p>The Korean editions became the first officially localized core games. Hangul support kept them Game Boy Color–only; Generation III then passed without a Korean localization.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Game history ↗</a></div><ExhibitMedia src="/exhibits/gold-silver-korea.jpg" alt="Korean Pokémon Gold and Silver boxes" label="Korean core-game artifact · 2002" tilt="left" /></article>
@@ -356,6 +389,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Thailand",
     officialSource: "https://th.portal-pokemon.com/play/pokedex/0730",
     digitalSource: "https://www.youtube.com/watch?v=KHgJk2AB4sM",
+    libraryTitle: "Thai index verification in progress",
+    libraryStatus: "An official Thai Pokédex exists, so this locale can eventually support a broader name index. Pokélingua has not yet verified and ingested all 1,025 Thai-script records; until that evidence pass is complete, the page shows only sourced examples instead of presenting an incomplete scrape as a finished library.",
+    libraryHref: "https://th.portal-pokemon.com/play/pokedex",
+    libraryLink: "Browse the official Thai Pokédex",
   },
   russia: {
     opening: "Russia’s Pokémon history began with a television dub made from the English-language adaptation. That production route shaped more than dialogue: familiar English character and species names were retained so the animation could remain legible beside imported cards and international branding.",
@@ -368,6 +405,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Rossia",
     officialSource: "https://www.netflix.com/title/81665799",
     digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Rossia#Pok%C3%A9mon_anime",
+    libraryTitle: "No separate Russian species list claimed",
+    libraryStatus: "Russian media generally retains the international English species names and represents them in Cyrillic when needed. Those spellings can vary with medium and grammar, so Pokélingua does not claim a separate fixed 1,025-name Russian canon. Use the shared English index for the underlying official species list.",
+    libraryHref: "/locales/united-states#name-library",
+    libraryLink: "Browse the shared English species index",
   },
   turkey: {
     opening: "Türkiye’s first Pokémon boom arrived through television. Its history is unusually discontinuous: an early nationwide debut was followed by a public controversy and broadcast interruption, then a return that unfolded through new channels, localized mobile games, and official digital animation.",
@@ -380,6 +421,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/T%C3%BCrkiye",
     officialSource: "https://www.youtube.com/@PokemonTR",
     digitalSource: "https://bulbapedia.bulbagarden.net/wiki/T%C3%BCrkiye#Pok%C3%A9mon_anime",
+    libraryTitle: "No separate Turkish species list claimed",
+    libraryStatus: "Official Turkish animation and services usually retain the international English Pokémon names. Because there is no independently localized Turkish core-game Pokédex, a second 1,025-row table would only duplicate English and imply a naming system that the evidence does not support.",
+    libraryHref: "/locales/united-states#name-library",
+    libraryLink: "Browse the shared English species index",
   },
   "hindi-india": {
     opening: "Hindi carried Pokémon into India’s mass television market and later became the first Indian-language branch with a dedicated official YouTube archive. Its naming history is especially revealing: a short experiment with localized Hindi species names was later replaced by one India-wide English-derived standard.",
@@ -392,6 +437,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
     officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
     digitalSource: "https://in.portal-pokemon.com/topics/211029090019_hindi-dubbed_version_of_pokemon_journeys_is_now_available_on_youtube/",
+    libraryTitle: "Current list follows English-based names",
+    libraryStatus: "The official 2025 India policy unified Hindi, Tamil, Telugu, and Bengali around English-based Pokémon names. A separate Hindi table would therefore duplicate the English species column; the Hindi-specific history lives in the surrounding script, dub, and documented 2023–2025 policy change.",
+    libraryHref: "/locales/united-states#name-library",
+    libraryLink: "Browse the shared current species index",
   },
   "tamil-india": {
     opening: "Tamil Pokémon developed as a regional television practice before it gained a durable official digital home. The language shares India-wide distribution milestones with Hindi and Telugu, but its performances, audience, script, and archive are distinct enough to follow on their own page.",
@@ -404,6 +453,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
     officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
     digitalSource: "https://in.portal-pokemon.com/topics/pokemon_horizons_is_now_available_on_youtube_also_pokemon_south_asia_official_english_channel_has_be/",
+    libraryTitle: "Current list follows English-based names",
+    libraryStatus: "The official 2025 India policy states that Tamil shares an English-based species-name standard with Hindi, Telugu, and Bengali. Rather than duplicate 1,025 English rows and label them as translations, this chapter links to the shared index and preserves Tamil-specific media and script context here.",
+    libraryHref: "/locales/united-states#name-library",
+    libraryLink: "Browse the shared current species index",
   },
   "telugu-india": {
     opening: "Telugu Pokémon developed as a regional television practice before it gained a durable official digital home. Its chronology overlaps Tamil and Hindi, but a language-specific chapter preserves its own performances, script, audience, and publication record.",
@@ -416,6 +469,10 @@ const mediaLocaleCopy = {
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
     officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
     digitalSource: "https://in.portal-pokemon.com/topics/pokemon_horizons_is_now_available_on_youtube_also_pokemon_south_asia_official_english_channel_has_be/",
+    libraryTitle: "Current list follows English-based names",
+    libraryStatus: "The official 2025 India policy states that Telugu shares an English-based species-name standard with Hindi, Tamil, and Bengali. The shared index supplies the complete names; this page records the Telugu script, dub, chronology, and regional presentation around them.",
+    libraryHref: "/locales/united-states#name-library",
+    libraryLink: "Browse the shared current species index",
   },
 } as const;
 
@@ -434,6 +491,7 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
       <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
       <article><p className="dropcap">{copy.opening}</p><aside><b>Why this chapter exists</b><p>{copy.distinction}</p></aside></article>
     </section>
+    {locale in romanizationCopy && <RomanizationGuide locale={locale as RomanizationLocale} />}
     <section className="chapter-timeline">
       <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
       <div className="chapter-events">
@@ -441,9 +499,9 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
         <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
       </div>
     </section>
-    <section className="naming-practice">
-      <div><span>{copy.sampleLabel}</span><h2>{copy.sampleName}</h2></div>
-      <article><span>What the archive can support</span><p>{copy.sampleMeta}</p><p className="coverage-note">No unsupported 1,025-name table is generated for this locale. Additional entries will be added only when an official or reliably documented form can be tied to its medium and date.</p></article>
+    <section className="naming-practice" id="name-library">
+      <div><span>Name library status</span><h2>{copy.libraryTitle}</h2><b>{copy.sampleLabel} · {copy.sampleName}</b></div>
+      <article><span>What the archive can support</span><p>{copy.libraryStatus}</p><p className="coverage-note">Example now on record: {copy.sampleMeta}</p><a className="library-status-link" href={copy.libraryHref} target={copy.libraryHref.startsWith("http") ? "_blank" : undefined} rel={copy.libraryHref.startsWith("http") ? "noreferrer" : undefined}>{copy.libraryLink} ↗</a></article>
     </section>
     <section className="chapter-question">
       <div className="chapter-rail"><span>Archive rule</span><b>03</b></div>
