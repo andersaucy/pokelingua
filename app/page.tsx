@@ -39,10 +39,31 @@ const locales: Locale[] = [
   { id: "ta", slug: "tamil-india", flag: "TA", place: "Tamil in India", local: "தமிழ்", languages: "Tamil", note: "A regional dub tradition later given its own official Pokémon channel and weekly digital archive.", years: "2004—today", coreGame: "No Tamil core-game edition", coreYear: null, animeYear: 2004 },
   { id: "te", slug: "telugu-india", flag: "TE", place: "Telugu in India", local: "తెలుగు", languages: "Telugu", note: "A regional television history that now continues through an official language-specific digital channel.", years: "2004—today", coreGame: "No Telugu core-game edition", coreYear: null, animeYear: 2004 },
   { id: "in", slug: "india", flag: "IN", place: "India overview", local: "भारत", languages: "Hindi · Tamil · Telugu · Bengali +", note: "The wider multilingual market overview connecting the individual language chapters and shared distribution history.", years: "2003—today", coreGame: "No regional-language core-game edition", coreYear: null, animeYear: 2003 },
-  { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Archivo paralelo", languages: "Fan translations · bootlegs · ROM hacks", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology", coreYear: null, animeYear: null },
+  { id: "alt", slug: "unofficial", flag: "ALT", place: "Context collection", local: "Unofficial editions", languages: "Fan translations · bootlegs · ROM hacks", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology", coreYear: null, animeYear: null },
 ];
 
 const curatedLocaleOrder = new Map(locales.map((locale, index) => [locale.id, index]));
+
+function compareLocales(a: Locale, b: Locale, basis: "games" | "anime") {
+  if (a.id === "alt") return b.id === "alt" ? 0 : 1;
+  if (b.id === "alt") return -1;
+
+  if (basis === "anime") {
+    return (a.animeYear ?? Number.POSITIVE_INFINITY) - (b.animeYear ?? Number.POSITIVE_INFINITY)
+      || (curatedLocaleOrder.get(a.id)! - curatedLocaleOrder.get(b.id)!);
+  }
+
+  const aHasCoreGame = a.coreYear !== null;
+  const bHasCoreGame = b.coreYear !== null;
+  if (aHasCoreGame !== bHasCoreGame) return aHasCoreGame ? -1 : 1;
+  if (aHasCoreGame && bHasCoreGame) {
+    return a.coreYear! - b.coreYear!
+      || (curatedLocaleOrder.get(a.id)! - curatedLocaleOrder.get(b.id)!);
+  }
+
+  return (a.animeYear ?? Number.POSITIVE_INFINITY) - (b.animeYear ?? Number.POSITIVE_INFINITY)
+    || (curatedLocaleOrder.get(a.id)! - curatedLocaleOrder.get(b.id)!);
+}
 
 const coreLanguageTimeline = [
   { year: 1996, entries: [{ label: "Japanese", place: "Japan", href: "/locales/japan", detail: "Pocket Monsters Red / Green" }] },
@@ -143,8 +164,7 @@ export default function Home() {
     const filtered = !q ? locales : locales.filter((locale) =>
       [locale.place, locale.local, locale.languages, locale.note, locale.coreGame].join(" ").toLowerCase().includes(q),
     );
-    const field = localeSort === "games" ? "coreYear" : "animeYear";
-    return [...filtered].sort((a, b) => (a[field] ?? Number.POSITIVE_INFINITY) - (b[field] ?? Number.POSITIVE_INFINITY) || (curatedLocaleOrder.get(a.id)! - curatedLocaleOrder.get(b.id)!));
+    return [...filtered].sort((a, b) => compareLocales(a, b, localeSort));
   }, [localeSort, query]);
 
   const visibleMilestones = activeType === "All" ? milestones : milestones.filter((item) => item.type === activeType);
@@ -197,7 +217,7 @@ export default function Home() {
           <div>
             <p>A locale is more than a translation. It is a particular meeting of language, territory, broadcaster, distributor, policy, and time.</p>
             <p>Each chapter follows those decisions—and preserves the versions that came before.</p>
-            <p className="locale-order-note"><b>Choose the chronology:</b> sort the grid by first localized core-series game or first official anime dub. A locale without the selected milestone moves to the end rather than receiving an invented date.</p>
+            <p className="locale-order-note"><b>Choose the chronology:</b> sort the grid by first localized core-series game or first official anime dub. In the game view, locales without a core-game language follow in anime-dub order. The unofficial context collection always closes the grid.</p>
           </div>
         </div>
         <div className={`locale-timeline mode-${timelineMode}`} aria-label={`${timelineMode === "games" ? "Core game language" : "Official anime localization"} timeline`}>
