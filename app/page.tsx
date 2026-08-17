@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { GlobalPokemonSearch } from "./components/GlobalPokemonSearch";
 
 type Locale = {
@@ -17,6 +17,16 @@ type Locale = {
   coreYear: number | null;
   animeYear: number | null;
 };
+
+const heroBallVariants = [
+  { className: "classic", symbol: "A" },
+  { className: "great-ball", symbol: "字" },
+  { className: "ultra-ball", symbol: "あ" },
+  { className: "premier-ball", symbol: "Д" },
+  { className: "dusk-ball", symbol: "अ" },
+  { className: "heal-ball", symbol: "ก" },
+  { className: "luxury-ball", symbol: "한" },
+];
 
 const locales: Locale[] = [
   { id: "jp", slug: "japan", flag: "JP", place: "Japan", local: "日本", languages: "Japanese", note: "The source naming system: kana, wordplay, romanization, and the 1996 world from which every later locale begins.", years: "1996—today", coreGame: "27 Feb 1996 · Red / Green", coreYear: 1996, animeYear: 1997 },
@@ -169,6 +179,12 @@ function timelineMediaFor(href: string) {
 }
 
 export default function Home() {
+  const [heroBallIndex, setHeroBallIndex] = useState(0);
+  useEffect(() => {
+    const cycle = window.setInterval(() => setHeroBallIndex((index) => (index + 1) % heroBallVariants.length), 14000);
+    return () => window.clearInterval(cycle);
+  }, []);
+  const heroBall = heroBallVariants[heroBallIndex];
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
@@ -209,15 +225,22 @@ export default function Home() {
 
       <section className="hero-poster" id="top" aria-labelledby="hero-title">
         <h1 className="visually-hidden" id="hero-title">Pokélingua — One world. Many Pokémon.</h1>
-        <Image
-          className="hero-poster-image"
-          src="/og.png"
-          alt="A globe surrounded by Japanese, Spanish, French, Korean, Chinese, German, Thai, Italian, Portuguese, Arabic, and Russian labels."
-          width={1731}
-          height={909}
-          priority
-          sizes="100vw"
-        />
+        <div className="hero-poster-art">
+          <Image
+            className="hero-poster-image"
+            src="/og.png"
+            alt="A globe surrounded by Japanese, Spanish, French, Korean, Chinese, German, Thai, Italian, Portuguese, Arabic, and Russian labels."
+            width={1731}
+            height={909}
+            priority
+            sizes="100vw"
+          />
+          <div className="hero-morph" aria-hidden="true">
+            <div className="hero-morph-orbits"><i /><i /><i /></div>
+            <div className="hero-morph-labels"><span>日本語</span><span>Français</span><span>한국어</span><span>中文</span><span>Deutsch</span><span>Italiano</span><span>Português</span><span>Español</span></div>
+            <div className="hero-morph-object"><div className={`hero-pokeball ${heroBall.className}`}><i /><em>{heroBall.symbol}</em><b /></div><div className="hero-globe" /></div>
+          </div>
+        </div>
         <div className="hero-poster-bar hero-introduction-link"><a href="/introduction">Enter the introduction to see how Pokémon became a case study in cultural globalization across names, languages, games, animation, and time. <span>→</span></a></div>
       </section>
 
