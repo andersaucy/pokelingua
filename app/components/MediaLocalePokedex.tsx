@@ -4,9 +4,10 @@ import { useMemo, useState } from "react";
 import englishPokemon from "../data/englishUsPokemon.json";
 import { tamilScriptNames, teluguScriptNames } from "../data/indianScriptNames";
 import mediaPokemon from "../data/mediaPokemon.json";
+import { arabicScriptNames, hebrewScriptNames } from "../data/regionalScriptNames";
 import { NameEtymology, type OriginField } from "./NameEtymology";
 
-type Locale = "brazil" | "russia" | "thailand" | "indonesia" | "hindi-india" | "tamil-india" | "telugu-india";
+type Locale = "brazil" | "russia" | "thailand" | "indonesia" | "portugal" | "arab-world" | "philippines" | "malaysia" | "israel" | "hindi-india" | "tamil-india" | "telugu-india";
 type IndexedRecord = { id: number; english: string; current: string; reading: string; former?: string; formerReading?: string; formerRomanization?: string };
 type Entry = IndexedRecord & { medium: string; recordYear: string; attestedScript?: boolean; confirmedScript?: boolean; recordSource?: string };
 
@@ -67,6 +68,61 @@ const copy: Record<Locale, {
     source: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia",
     sourceLabel: "Indonesia media and naming history",
   },
+  portugal: {
+    localeName: "European Portuguese",
+    currentLabel: "Portugal media record",
+    readingLabel: "International name retained",
+    originField: "english",
+    medium: "European Portuguese animation · packaging / manuals",
+    recordYear: "N/A",
+    intro: "Search the international species-name set used in Portugal. Games historically arrived with English software—even when packaging and manuals were adapted—while the Portuguese dub localized dialogue, titles, songs, moves, and surrounding terminology.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Portugal",
+    sourceLabel: "Portugal localization history",
+  },
+  "arab-world": {
+    localeName: "Arabic",
+    currentLabel: "Arabic anime record",
+    readingLabel: "Latin reading of Arabic script",
+    originField: "english",
+    medium: "Arabic-language animation",
+    recordYear: "N/A",
+    intro: "Search the Arabic-script species forms directly attested in the dub archive. Most names retain an English-derived identity; only documented spellings are shown, while the remainder stay N/A rather than being automatically transliterated.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Arabic_Pok%C3%A9mon_names",
+    sourceLabel: "Arabic anime-name record",
+  },
+  philippines: {
+    localeName: "Filipino / Philippine English",
+    currentLabel: "Philippines media record",
+    readingLabel: "International name retained",
+    originField: "english",
+    medium: "Philippine English · Filipino animation",
+    recordYear: "N/A",
+    intro: "Search the international species names used across the Philippines’ parallel English- and Filipino-language broadcast traditions. Pokémon generally keep their English names and characteristic cries even as dialogue and performance move into Filipino.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_the_Philippines",
+    sourceLabel: "Philippines media history",
+  },
+  malaysia: {
+    localeName: "Malaysia",
+    currentLabel: "Malaysia media record",
+    readingLabel: "International name retained",
+    originField: "english",
+    medium: "English · Malay animation / subtitles",
+    recordYear: "N/A",
+    intro: "Search the international species layer shared across Malaysia’s English and Malay presentations. The surrounding adaptation changed source tracks over time: Diamond and Pearl was made from Japanese, while the later Black and White Malay dub followed the English version.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Malaysia",
+    sourceLabel: "Malaysia media history",
+  },
+  israel: {
+    localeName: "Hebrew",
+    currentLabel: "Hebrew anime record",
+    readingLabel: "Latin reading of Hebrew script",
+    originField: "english",
+    medium: "Hebrew-language animation",
+    recordYear: "N/A",
+    intro: "Search the Hebrew-script spellings directly attested in animation. The Hebrew dub retains the English species identities, but writing them right-to-left creates a real orthographic record. Unsupported species remain N/A.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Hebrew_Pok%C3%A9mon_names",
+    sourceLabel: "Hebrew anime-name record",
+  },
   "hindi-india": {
     localeName: "Hindi",
     currentLabel: "Current Hindi record",
@@ -112,6 +168,14 @@ function entriesFor(locale: Locale): Entry[] {
     return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: localized[entry.id] ?? entry.english, reading: localized[entry.id] ? "Localized Brazilian Portuguese species name" : "English spelling retained in Brazilian Portuguese", medium: metadata.medium, recordYear: entry.id === 772 ? "2016" : localized[entry.id] ? "2022" : "N/A" }));
   }
   if (locale === "indonesia") return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: entry.english, reading: "International species name retained in Indonesian media", medium: metadata.medium, recordYear: metadata.recordYear }));
+  if (locale === "portugal" || locale === "philippines" || locale === "malaysia") return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: entry.english, reading: "International species name retained in locale media", medium: metadata.medium, recordYear: metadata.recordYear }));
+  if (locale === "arab-world" || locale === "israel") {
+    const scriptNames = locale === "arab-world" ? arabicScriptNames : hebrewScriptNames;
+    return englishPokemon.map((entry) => {
+      const attested = scriptNames[entry.id];
+      return { id: entry.id, english: entry.english, current: attested?.name ?? "N/A", reading: attested?.reading ?? "No directly attested script spelling indexed", medium: attested?.medium ?? metadata.medium, recordYear: metadata.recordYear, attestedScript: Boolean(attested), confirmedScript: Boolean(attested), recordSource: attested?.source };
+    });
+  }
   const scriptNames = locale === "tamil-india" ? tamilScriptNames : teluguScriptNames;
   return englishPokemon.map((entry) => {
     const attested = scriptNames[entry.id];
@@ -137,15 +201,17 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
   const confirmedScriptCount = entries.filter((entry) => entry.confirmedScript).length;
   const changedRecordCount = entries.filter((entry) => entry.former && entry.former.normalize("NFKC") !== entry.current.normalize("NFKC")).length;
   const brazilLocalizedCount = locale === "brazil" ? entries.filter((entry) => entry.current !== entry.english).length : 0;
+  const hasScriptFilter = !["brazil", "indonesia", "portugal", "philippines", "malaysia"].includes(locale);
+  const isPartialScriptLocale = locale === "tamil-india" || locale === "telugu-india" || locale === "arab-world" || locale === "israel";
 
   return <section className="dex-library media-dex" id="name-library">
     <div className="dex-intro"><div><span>{metadata.localeName} name library / official-media record</span><h2>The dub belongs<br /><em>in the table.</em></h2></div><p>{metadata.intro}</p></div>
     <div className="dex-status" aria-label="Library coverage">
       <div><b>{entries.length.toLocaleString()}</b><span>Locale records indexed</span></div>
-      <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : locale === "tamil-india" || locale === "telugu-india" ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : locale === "indonesia" ? "2001" : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : locale === "tamil-india" || locale === "telugu-india" ? "Official script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : locale === "indonesia" ? "Earliest documented dub naming layer" : "Dub / official-media naming included"}</span></div>
+      <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : isPartialScriptLocale ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : locale === "indonesia" ? "2001" : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : isPartialScriptLocale ? "Script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : locale === "indonesia" ? "Earliest documented dub naming layer" : "Dub / official-media naming included"}</span></div>
       <p>The medium is part of every record. “Transcription” means the name crossed scripts; it does not claim that a new etymology or independently translated species name was created.</p>
     </div>
-    <div className={`dex-controls ${locale === "hindi-india" ? "has-history-filter" : ""}`}><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && locale !== "indonesia" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}{locale === "hindi-india" && <button className={changedOnly ? "active" : ""} type="button" aria-pressed={changedOnly} onClick={() => { setChangedOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Changed from former · {changedRecordCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
+    <div className={`dex-controls ${locale === "hindi-india" ? "has-history-filter" : ""}`}><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{hasScriptFilter && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}{locale === "hindi-india" && <button className={changedOnly ? "active" : ""} type="button" aria-pressed={changedOnly} onClick={() => { setChangedOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Changed from former · {changedRecordCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
     <div className="dex-table" role="table" aria-label={`${metadata.localeName} Pokémon name library`}>
       <div className="dex-row dex-header" role="row"><span>Sprite / No.</span><span>English</span><span>{metadata.currentLabel}</span><span>Medium / former record</span><span /></div>
       {visible.map((entry) => {

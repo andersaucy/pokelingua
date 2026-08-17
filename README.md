@@ -39,6 +39,11 @@ The current edition includes full core-game and official-media name libraries al
 - Mainland China — Simplified Chinese, official entry, and pre-2016 unofficial translation context
 - Vietnam — Japanese-rooted earlier names and the English-name standard announced in 2026
 - Indonesia — a 2001 dub, international species names, an official app catalog, and a localized TCG and event ecosystem
+- Portugal — European Portuguese broadcast, packaging, songs, titles, and a retained international species-name set
+- Arab world — a pan-regional Arabic dub archive, partial script-name index, and multi-studio adaptation history
+- Philippines — parallel Philippine English and Filipino broadcast traditions with retained species names
+- Malaysia — multilingual circulation and a Malay dub whose source route changed from Japanese to English
+- Israel — right-to-left Hebrew name transcription, a television hiatus, and a 2016 return
 - Thailand — a 2001 television debut, Japanese-rooted Thai transcriptions, and an official regional Pokédex
 - Russia — an English-derived dub, Cyrillic presentation, and retained international species names
 - Türkiye — the 2000 television arrival, its interruption and return, and English-derived naming practice
@@ -50,7 +55,7 @@ The broader India overview remains visible as a research-stage chapter so the sh
 
 ## Search names across the world
 
-The homepage has a dedicated multilingual Pokémon search. A visitor can enter a name in English, Japanese, French, German, Italian, Spanish, Korean, Chinese, or an indexed Vietnam-market form and see the matching species aligned across every completed locale, including documented retained-name policies such as Indonesia’s.
+The homepage has a dedicated multilingual Pokémon search. A visitor can enter a name in English, Japanese, French, German, Italian, Spanish, Korean, Chinese, Arabic, Hebrew, or another indexed script and see the matching species aligned across all 25 published locale records, including documented retained-name policies.
 
 Inside each locale, the complete Pokédex can be searched by local name, English name, readings or romanizations where relevant, and National Pokédex number. Expanding a row reveals:
 

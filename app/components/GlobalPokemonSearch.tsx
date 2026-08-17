@@ -10,6 +10,7 @@ import koreanPokemon from "../data/koreanPokemon.json";
 import mediaPokemon from "../data/mediaPokemon.json";
 import vietnamesePokemon from "../data/vietnamesePokemon.json";
 import { tamilScriptNames, teluguScriptNames } from "../data/indianScriptNames";
+import { arabicScriptNames, hebrewScriptNames } from "../data/regionalScriptNames";
 import { spanishPokemon } from "../data/spanishPokemon";
 import { nameYear, type NameLocale } from "../data/nameDates";
 import { nameOriginFor, type OriginField } from "./NameEtymology";
@@ -51,6 +52,8 @@ function searchText(record: (typeof records)[number]) {
     record.russian?.current ?? "", record.russian?.reading ?? "", record.thai?.current ?? "", record.thai?.reading ?? "",
     record.hindi?.current ?? "", record.hindi?.reading ?? "", record.hindi?.former ?? "", record.hindi?.formerReading ?? "",
     tamilScriptNames[record.english.id]?.name ?? "", teluguScriptNames[record.english.id]?.name ?? "",
+    arabicScriptNames[record.english.id]?.name ?? "", arabicScriptNames[record.english.id]?.reading ?? "",
+    hebrewScriptNames[record.english.id]?.name ?? "", hebrewScriptNames[record.english.id]?.reading ?? "",
     brazilLocalized[record.english.id] ?? record.english.english].join(" ").toLocaleLowerCase();
 }
 
@@ -81,7 +84,7 @@ export function GlobalPokemonSearch() {
     <div className="section-kicker">02 / Search across languages</div>
     <div className="global-search-head"><div><span>One species · every indexed locale</span><h2>What is this Pokémon<br /><em>called around the world?</em></h2></div><p>Search a name from any indexed game, dub, script, or historical locale record. Compare the core games’ official nine-language set—or open the full exhibition-wide view.</p></div>
     <label className="pokemon-search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Charmander, Glumanda, Salamèche, 파이리, 小火龍, or Hitokage…" aria-label="Search Pokémon names across all languages" /><kbd>{normalized.length >= 2 ? `${matches.length}${matches.length === 12 ? "+" : ""} matches` : "1,025 species"}</kbd></label>
-    <label className="global-search-mode"><input type="checkbox" checked={coreOnly} onChange={(event) => setCoreOnly(event.target.checked)} /><span><b>Core-game nine only</b><small>Uncheck to compare all 20 locale records currently indexed across the exhibition.</small></span></label>
+    <label className="global-search-mode"><input type="checkbox" checked={coreOnly} onChange={(event) => setCoreOnly(event.target.checked)} /><span><b>Core-game nine only</b><small>Uncheck to compare all 25 locale records currently indexed across the exhibition.</small></span></label>
     {!normalized && <div className="search-suggestion-row"><span>Try a multilingual trail</span>{["Pikachu", "Bisasam", "Salamèche", "파이리", "比卡超", "Hitokage"].map((name) => <button onClick={() => setQuery(name)} key={name}>{name}</button>)}</div>}
     {normalized.length === 1 && <p className="global-search-prompt">Type one more character to begin searching the full multilingual index.</p>}
     {normalized.length >= 2 && !matches.length && <p className="global-search-prompt">No indexed species name matches “{query}”. Try another spelling, reading, script, or Pokédex number.</p>}
@@ -90,6 +93,8 @@ export function GlobalPokemonSearch() {
         const tamil = tamilScriptNames[record.english.id];
         const telugu = teluguScriptNames[record.english.id];
         const brazil = brazilLocalized[record.english.id] ?? record.english.english;
+        const arabic = arabicScriptNames[record.english.id];
+        const hebrew = hebrewScriptNames[record.english.id];
         const cards: CardSpec[] = [
           { core: true, label: "Japan · 日本語", name: record.english.kana, reading: record.english.hepburn, field: "japanese", locale: "japan" },
           { core: true, label: "United States · English", name: record.english.english, field: "english", locale: "united-states" },
@@ -104,6 +109,11 @@ export function GlobalPokemonSearch() {
           { core: false, label: "Hong Kong · Cantonese", name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.cantonese, field: "chineseCantonese", locale: "hong-kong" },
           { core: false, label: "Vietnam · current / earlier", name: record.vietnamese?.current ?? "N/A", reading: record.vietnamese ? (record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras") : undefined, field: "english", locale: "vietnam" },
           { core: false, label: "Brazil · Português brasileiro", name: brazil, reading: brazil === record.english.english ? "English spelling retained" : "Distinct Brazilian Portuguese record", field: "english", year: brazil === record.english.english ? "N/A" : record.english.id === 772 ? "2016" : "2022" },
+          { core: false, label: "Philippines · Filipino / English", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
+          { core: false, label: "Portugal · Português europeu", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
+          { core: false, label: "Arab world · العربية", name: arabic?.name ?? "N/A", reading: arabic?.reading, field: "english", year: "N/A" },
+          { core: false, label: "Israel · עברית", name: hebrew?.name ?? "N/A", reading: hebrew?.reading, field: "english", year: "N/A" },
+          { core: false, label: "Malaysia · Bahasa Melayu / English", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
           { core: false, label: "Indonesia · Bahasa Indonesia", name: record.english.english, reading: "International name retained in Indonesian media", field: "english", year: "N/A" },
           { core: false, label: "Russia · Русский", name: record.russian?.current ?? "N/A", reading: record.russian?.reading, field: "english", year: "N/A" },
           { core: false, label: "Thailand · ไทย", name: record.thai?.current ?? "N/A", reading: record.thai?.reading, field: "japanese", year: "N/A" },

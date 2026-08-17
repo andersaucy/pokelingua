@@ -33,6 +33,11 @@ const chapters = {
   "telugu-india": { code: "TE", place: "Telugu in India", local: "తెలుగు", language: "Telugu · తెలుగు", period: "2004—today", live: true, deck: "A regional dub history, its own official digital channel, and a naming practice tied to the English species vocabulary." },
   thailand: { code: "TH", place: "Thailand", local: "ประเทศไทย", language: "Thai · ภาษาไทย", period: "2001—today", live: true, deck: "Japanese-rooted species names in Thai script, from television broadcasting to an official regional Pokédex and channel." },
   indonesia: { code: "ID", place: "Indonesia", local: "Indonesia", language: "Indonesian · Bahasa Indonesia", period: "2001—today", live: true, deck: "An anime-first, mobile-scale Pokémon market where Indonesian-language media, apps, cards, and events form a locale without a selectable core-game language." },
+  portugal: { code: "PT", place: "Portugal", local: "Portugal", language: "European Portuguese · português europeu", period: "1999—today", live: true, deck: "English-language games, European Portuguese packaging, and a dub tradition that gradually brought more of Pokémon’s presentation onscreen." },
+  "arab-world": { code: "AR", place: "Arab world", local: "العالم العربي", language: "Arabic · العربية", period: "2000—today", live: true, deck: "A cross-border Arabic dub history shaped by multiple studios, English-source adaptation, script transcription, interruption, and revival." },
+  philippines: { code: "PH", place: "Philippines", local: "Pilipinas", language: "Filipino · Philippine English", period: "1999—today", live: true, deck: "Parallel English and Filipino broadcast traditions built around retained international species names and locally performed dialogue." },
+  malaysia: { code: "MY", place: "Malaysia", local: "Malaysia", language: "Malay · Bahasa Melayu · English", period: "2000—today", live: true, deck: "A multilingual market whose Malay dub moved between Japanese and English source editions at different points in its history." },
+  israel: { code: "IL", place: "Israel", local: "ישראל", language: "Hebrew · עברית", period: "2000—today", live: true, deck: "English species identities written right-to-left, a long television hiatus, and a Pokémon GO-era return to Hebrew screens." },
   russia: { code: "RU", place: "Russia", local: "Россия", language: "Russian · русский", period: "2000—today", live: true, deck: "A Russian-language animation history built from the English adaptation, with retained species names and localized presentation." },
   turkey: { code: "TR", place: "Türkiye", local: "Türkiye", language: "Turkish · Türkçe", period: "2000—today", live: true, deck: "A Turkish television debut, a controversial interruption, and a later official return through games and digital animation." },
   brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese · português brasileiro", period: "1998—2027+", live: true, deck: "From localized Red and Blue packaging and a landmark television dub to Brazilian Portuguese becoming a confirmed core-game language." },
@@ -61,6 +66,11 @@ const localeArtifactWalls: Record<Slug, string[]> = {
   "telugu-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
   thailand: ["/exhibits/thai-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/sun-moon.jpg"],
   indonesia: ["/exhibits/indonesia-pokemon-go.png", "/exhibits/indonesia-tcg-pocket.png", "/exhibits/indonesia-pokemon-unite.png"],
+  portugal: ["/exhibits/anime-original.jpg", "/exhibits/red-blue.jpg", "/exhibits/portugal-horizons-logo.png"],
+  "arab-world": ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/arabic-pokemon-logo.png"],
+  philippines: ["/exhibits/philippines-portal.png", "/exhibits/anime-original.jpg", "/exhibits/red-blue.jpg"],
+  malaysia: ["/exhibits/malaysia-portal.png", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  israel: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/hebrew-pokemon-logo.png"],
   russia: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
   turkey: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
   brazil: ["/exhibits/brazil-horizons.jpg", "/exhibits/red-blue.jpg", "/exhibits/winds-waves.jpg"],
@@ -109,6 +119,8 @@ const romanizationCopy = {
   "hindi-india": { script: "Devanagari → Latin letters", system: "Hindi romanization", text: "Romanization can make a Hindi-script title or dialogue searchable for readers who do not know Devanagari. Pokélingua keeps that aid separate from the current India-wide policy of using English-based species names; transliterating हिन्दी does not create a new species-name canon.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Hindi romanization table" },
   "tamil-india": { script: "Tamil script → Latin letters", system: "Tamil romanization", text: "Tamil romanization represents the script in Latin letters for comparison and discovery. It is not a substitute for Tamil spelling or performance, and it does not imply that the shared English-based Pokémon species names were independently translated.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Tamil romanization table" },
   "telugu-india": { script: "Telugu script → Latin letters", system: "Telugu romanization", text: "Telugu romanization is a bridge for reading and search, not a replacement for the Telugu script. The locale’s dub remains Telugu even when the current official species-name policy retains English-based forms.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Telugu romanization table" },
+  "arab-world": { script: "Arabic script → Latin letters", system: "Arabic romanization", text: "Arabic is written right-to-left, while the reading field renders documented dub spellings in Latin letters for comparison. Because many species names were carried from English, romanization records how an imported proper name was accommodated by Arabic writing; it is not a newly translated etymology.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Arabic romanization table" },
+  israel: { script: "Hebrew script → Latin letters", system: "Hebrew romanization", text: "Hebrew writes retained English species identities from right to left. The Latin reading is an archival bridge between scripts, not an alternate official name, and it helps expose choices such as which vowels and consonants a dub spelling makes explicit.", source: "https://www.loc.gov/catdir/cpso/roman", sourceLabel: "Library of Congress Hebrew romanization table" },
 } as const;
 
 type RomanizationLocale = keyof typeof romanizationCopy;
@@ -465,6 +477,61 @@ const mediaLocaleCopy = {
     libraryHref: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia",
     libraryLink: "Open the Indonesia history index",
   },
+  portugal: {
+    opening: "Pokémon arrived in Portugal through English-language games and a European Portuguese television voice. The software did not become Portuguese, but packaging, manuals, dialogue, songs, titles, and terminology created a substantial localization layer around it.",
+    distinction: "European and Brazilian Portuguese are different production traditions. Portugal’s dub, pronunciation, distributors, and translated titles deserve a chapter separate from Brazil’s history and future core-game language.",
+    arrivalDate: "02 OCT 1999", arrivalTitle: "The anime premieres on SIC", arrivalText: "Portugal’s first documented broadcast introduced a European Portuguese performance while retaining the international species-name set.",
+    laterDate: "c. 2010", laterTitle: "Biggs begins a new broadcast phase", laterText: "Biggs acquired the series around autumn 2010. Later TPCi-era presentation expanded the visible Portuguese layer, including localized onscreen season branding.",
+    nameDate: "1999—TODAY", nameTitle: "International names, Portuguese surroundings", nameText: "Species names generally remain international. The localization work is most visible in dialogue, attacks, songs, episode titles, packaging, and manuals—not a separately translated full Pokédex.",
+    sampleLabel: "Species-name strategy", sampleName: "Pikachu", sampleMeta: "International spelling retained · European Portuguese dialogue",
+    media: "/exhibits/portugal-horizons-logo.png", mediaAlt: "European Portuguese Pokémon Horizontes title logo", mediaLabel: "Pokémon Horizontes · Portugal title artifact",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pokemon_in_Portugal", officialSource: "https://www.pokemon.com/pt", digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Pokemon_in_Portugal#Pok%C3%A9mon_animation",
+    libraryTitle: "International-name record", libraryStatus: "The searchable table records all 1,025 species as retained international names and labels unsupported species-level first-use years N/A.", libraryHref: "https://bulbapedia.bulbagarden.net/wiki/Pokemon_in_Portugal", libraryLink: "Open the Portugal history index",
+  },
+  "arab-world": {
+    opening: "Arabic Pokémon crossed borders through shared satellite television. Early Syrian and Lebanese productions often worked from the English adaptation, then reshaped dialogue and terminology for Arabic-speaking families; a later streaming revival moved closer to contemporary English source material.",
+    distinction: "Arabic spans many territories, broadcasters, and dubbing centers. This chapter is regional rather than pretending that one country authored or received every Arabic episode identically.",
+    arrivalDate: "2000", arrivalTitle: "Pokémon begins on MBC", arrivalText: "The first Arabic television run brought a Syrian-produced dub to a pan-Arab audience. The surviving record supports the year, not one region-wide premiere day.",
+    laterDate: "2019—2021", laterTitle: "Streaming revives the Arabic archive", laterText: "Mewtwo Strikes Back—Evolution returned official Arabic Pokémon in 2019; Pokémon Journeys followed in 2021 after a long interruption.",
+    nameDate: "2000—TODAY", nameTitle: "English identities enter Arabic script", nameText: "Most species retain English-derived identities in Arabic writing. Early adaptation could be freer: Team Rocket became the White Robe Gang, Pallet Town became Shoreback, and Clefable was once called Ariala.",
+    sampleLabel: "Anime-attested script form", sampleName: "بيكاتشو", sampleMeta: "Pikachu · Bīkātshū · Arabic-language animation",
+    media: "/exhibits/arabic-pokemon-logo.png", mediaAlt: "Official Arabic Pokémon title logo", mediaLabel: "Arabic title treatment · streaming era",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_the_Arab_world", officialSource: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Arabic_Pok%C3%A9mon_names", digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_the_Arab_world#Pok%C3%A9mon_animation",
+    libraryTitle: "Partial Arabic anime-name archive", libraryStatus: "Only directly attested Arabic-script forms are shown. The confirmed-script filter isolates those records; every unsupported species remains N/A.", libraryHref: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Arabic_Pok%C3%A9mon_names", libraryLink: "Open the Arabic anime-name record",
+  },
+  philippines: {
+    opening: "The Philippines encountered Pokémon first in English, then through Filipino dubbing. Those traditions overlap: local performance and dialogue sit around species names and signature cries that generally remain international.",
+    distinction: "A Filipino-language dub is not the same artifact as the Philippine English broadcast. Recording both explains why audiences can share one species vocabulary while remembering different voices and channels.",
+    arrivalDate: "01 OCT 1999", arrivalTitle: "The English anime begins on GMA", arrivalText: "GMA’s broadcast established Pokémon on Philippine television through the English adaptation.",
+    laterDate: "2008", laterTitle: "A Filipino dub enters the schedule", laterText: "GMA and Alta Productions added Filipino dialogue. The exact premiere day remains unresolved in the accessible record.",
+    nameDate: "1999—TODAY", nameTitle: "Names and cries remain international", nameText: "Pokémon generally keep English species names and characteristic vocalizations; talking Pokémon such as Meowth are a notable performance exception.",
+    sampleLabel: "Species-name strategy", sampleName: "Charmander", sampleMeta: "English spelling retained · Filipino dialogue",
+    media: "/exhibits/philippines-portal.png", mediaAlt: "Official Pokémon Philippines portal title image", mediaLabel: "Official Philippines portal artifact",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_the_Philippines", officialSource: "https://ph.portal-pokemon.com/about/", digitalSource: "https://ph.portal-pokemon.com/apps/",
+    libraryTitle: "Philippine media-name record", libraryStatus: "The complete table treats the retained spelling as evidence of policy, while unsupported species-level first-use dates remain N/A.", libraryHref: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_the_Philippines", libraryLink: "Open the Philippines history index",
+  },
+  malaysia: {
+    opening: "Malaysia’s Pokémon history moves among Malay, English, and Chinese media. Its most revealing detail is upstream: one Malay series was adapted directly from Japanese, while a later one followed the English version.",
+    distinction: "The same target language can produce different scripts, timing, jokes, and terminology depending on which source edition a studio receives. Malaysia makes that invisible production decision unusually legible.",
+    arrivalDate: "25 NOV 2000", arrivalTitle: "Episode one reaches Malaysian television", arrivalText: "The earliest documented broadcast began a multilingual history that included both English and Malay presentation.",
+    laterDate: "02 FEB 2011", laterTitle: "Diamond and Pearl arrives from Japanese", laterText: "The Malay Diamond and Pearl dub was produced directly from the Japanese version—an important source-route distinction.",
+    nameDate: "27 FEB 2017", nameTitle: "Black & White follows the English source", nameText: "The later Malay Black & White dub was based on the English adaptation. Species names remained international, but the route around them changed.",
+    sampleLabel: "Species-name strategy", sampleName: "Pikachu", sampleMeta: "International name · Malay performance · source edition varies",
+    media: "/exhibits/malaysia-portal.png", mediaAlt: "Official Pokémon Malaysia portal title image", mediaLabel: "Official Malaysia portal artifact",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Malaysia", officialSource: "https://my.portal-pokemon.com/about/", digitalSource: "https://my.portal-pokemon.com/apps/",
+    libraryTitle: "Malaysia media-name record", libraryStatus: "The complete table records retained international names; the chapter preserves the changing Japanese-versus-English source route around them.", libraryHref: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Malaysia", libraryLink: "Open the Malaysia history index",
+  },
+  israel: {
+    opening: "Hebrew Pokémon keeps the English species identities but writes them right-to-left. That transcription fixes sounds into a different alphabet while Hebrew dialogue supplies grammar, performance, titles, and cultural context.",
+    distinction: "Israel’s archive is defined by Hebrew orthography and its own television discontinuities. A long hiatus and later return make the dates as significant as the dialogue.",
+    arrivalDate: "EARLY 2000", arrivalTitle: "The Hebrew anime reaches television", arrivalText: "The Israeli Children Channel began the first Hebrew run. Available sources identify the period but not a precise premiere day.",
+    laterDate: "03 JUL—04 SEP 2016", laterTitle: "Pokémon GO helps reopen the screen", laterText: "Original-series reruns returned in July; a new Hebrew XY dub followed on 4 September after years without newly dubbed episodes.",
+    nameDate: "2000—TODAY", nameTitle: "English sound, Hebrew direction", nameText: "Species identities generally remain English-derived while Hebrew script represents them right-to-left. The archive shows only spellings directly attested in animation.",
+    sampleLabel: "Anime-attested script form", sampleName: "פיקאצ'ו", sampleMeta: "Pikachu · Hebrew-language animation",
+    media: "/exhibits/hebrew-pokemon-logo.png", mediaAlt: "Official Hebrew Pokémon title logo", mediaLabel: "Hebrew title treatment · streaming era",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pokemon_in_Israel", officialSource: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Hebrew_Pok%C3%A9mon_names", digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Pokemon_in_Israel#Pok%C3%A9mon_animation",
+    libraryTitle: "Partial Hebrew anime-name archive", libraryStatus: "Only directly attested Hebrew-script forms are shown. Visitors can filter to confirmed records; unsupported species remain N/A.", libraryHref: "https://bulbapedia.bulbagarden.net/wiki/User:Raltseye/List_of_Hebrew_Pok%C3%A9mon_names", libraryLink: "Open the Hebrew anime-name record",
+  },
   russia: {
     opening: "Russia’s Pokémon history began with a television dub made from the English-language adaptation. That production route shaped more than dialogue: familiar English character and species names were retained so the animation could remain legible beside imported cards and international branding.",
     distinction: "Russian is an official dub and interface language in parts of the franchise, but not a selectable core-game language. Cyrillic presentation therefore belongs in the archive without being mistaken for an independently renamed full Pokédex.",
@@ -580,7 +647,7 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
         <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
       </div>
     </section>
-    {locale === "brazil" || locale === "russia" || locale === "thailand" || locale === "indonesia" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
+    {locale === "brazil" || locale === "russia" || locale === "thailand" || locale === "indonesia" || locale === "portugal" || locale === "arab-world" || locale === "philippines" || locale === "malaysia" || locale === "israel" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
       <div><span>Name library status</span><h2>{copy.libraryTitle}</h2><b>{copy.sampleLabel} · {copy.sampleName}</b></div>
       <article><span>What the archive can support</span><p>{copy.libraryStatus}</p><p className="coverage-note">Example now on record: {copy.sampleMeta}</p><a className="library-status-link" href={copy.libraryHref} target={copy.libraryHref.startsWith("http") ? "_blank" : undefined} rel={copy.libraryHref.startsWith("http") ? "noreferrer" : undefined}>{copy.libraryLink} ↗</a></article>
     </section>}
