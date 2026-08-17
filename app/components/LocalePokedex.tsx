@@ -38,12 +38,18 @@ function entriesFor(locale: Locale): Entry[] {
   }));
 }
 
+function hasDistinctFormerName(entry: Entry) {
+  const current = entry.current.normalize("NFKC");
+  return entry.historical.some((record) => record.name.normalize("NFKC") !== current);
+}
+
 export function LocalePokedex({ locale }: { locale: Locale }) {
   const [query, setQuery] = useState("");
   const [historyOnly, setHistoryOnly] = useState(false);
   const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const labels = localeLabels[locale];
+  const comparesFormerNames = locale === "hong-kong" || locale === "taiwan";
   const entries = useMemo(() => entriesFor(locale), [locale]);
   const matches = useMemo(() => {
     const q = query.trim().toLocaleLowerCase();
@@ -55,14 +61,14 @@ export function LocalePokedex({ locale }: { locale: Locale }) {
         entry.reading,
         ...entry.historical.flatMap((item) => [item.name, item.reading, item.regions]),
       ].join(" ").toLocaleLowerCase();
-      return (!q || searchable.includes(q)) && (!historyOnly || entry.historical.length > 0);
+      return (!q || searchable.includes(q)) && (!historyOnly || (comparesFormerNames ? hasDistinctFormerName(entry) : entry.historical.length > 0));
     });
-  }, [entries, historyOnly, query]);
+  }, [comparesFormerNames, entries, historyOnly, query]);
 
   useEffect(() => setLimit(PAGE_SIZE), [historyOnly, query]);
 
   const visible = matches.slice(0, limit);
-  const historicalCount = entries.filter((entry) => entry.historical.length > 0).length;
+  const historicalCount = entries.filter((entry) => comparesFormerNames ? hasDistinctFormerName(entry) : entry.historical.length > 0).length;
   const hasMore = visible.length < matches.length;
 
   return <section className="dex-library" id="name-library">
@@ -72,12 +78,12 @@ export function LocalePokedex({ locale }: { locale: Locale }) {
     </div>
     <div className="dex-status" aria-label="Library coverage">
       <div><b>{entries.length.toLocaleString()}</b><span>Current names indexed</span></div>
-      <div><b>{historicalCount}</b><span>Pokémon with former names documented for this locale</span></div>
+      <div><b>{historicalCount}</b><span>{comparesFormerNames ? "Current names that differ from a documented former name" : "Pokémon with former names documented for this locale"}</span></div>
       <p>Current-name coverage is complete through National Pokédex No. 1025. Historical coverage is evidence-led and will grow as dated, medium-specific sources are verified.</p>
     </div>
     <div className="dex-controls">
       <label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Charmander, Pikachu, 比卡超, or 025…" aria-label="Search locale Pokédex" /></label>
-      <button className={historyOnly ? "active" : ""} onClick={() => setHistoryOnly(!historyOnly)} aria-pressed={historyOnly}>Historical names only</button>
+      <button className={historyOnly ? "active" : ""} onClick={() => setHistoryOnly(!historyOnly)} aria-pressed={historyOnly}>{comparesFormerNames ? `Changed from former · ${historicalCount}` : "Historical names only"}</button>
       <span>Showing {visible.length} of {matches.length}</span>
     </div>
     <div className="dex-table" role="table" aria-label="Locale Pokémon name library">

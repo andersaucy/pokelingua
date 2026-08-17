@@ -14,6 +14,12 @@ Pokémon’s worldwide success was not a matter of exporting one unchanged objec
 
 Pokélingua brings those scattered histories into one exhibit. It treats localized games, animation, cards, websites, retail, corporate decisions, fan memory, and unofficial circulation as related evidence of how a Japanese cultural world became locally familiar across generations.
 
+## Locale-specific by design
+
+Pokélingua is organized around **locales rather than languages alone**. A locale is the meeting point of language, script, territory, audience, broadcaster, distributor, release history, and official naming policy. Two places can share a written language while encountering different names, voices, products, dates, and controversies; one country can also contain several localization traditions that deserve separate chapters.
+
+That is why Hong Kong, Taiwan, and mainland China are not compressed into one “Chinese” page, and why Spain and Latin America remain distinct Spanish-language histories. India has a parent overview followed by dedicated Hindi, Tamil, and Telugu chapters. This structure lets each page explain how Pokémon became locally recognizable without treating a language label as the whole cultural story.
+
 ## Explore the exhibition
 
 The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. A clickable visual timeline offers the same two historical lenses and continues to a Future evidence desk for announced localizations. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.

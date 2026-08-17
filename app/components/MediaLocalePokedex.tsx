@@ -111,17 +111,19 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
   const metadata = copy[locale];
   const [query, setQuery] = useState("");
   const [scriptOnly, setScriptOnly] = useState(false);
+  const [changedOnly, setChangedOnly] = useState(false);
   const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const entries = useMemo(() => entriesFor(locale), [locale]);
   const matches = useMemo(() => {
     const q = query.trim().toLocaleLowerCase();
-    return entries.filter((entry) => (!scriptOnly || entry.confirmedScript) && (!q || [entry.id, entry.english, entry.current, entry.reading, entry.former, entry.formerReading, entry.formerRomanization].join(" ").toLocaleLowerCase().includes(q)));
-  }, [entries, query, scriptOnly]);
+    return entries.filter((entry) => (!scriptOnly || entry.confirmedScript) && (!changedOnly || (entry.former && entry.former.normalize("NFKC") !== entry.current.normalize("NFKC"))) && (!q || [entry.id, entry.english, entry.current, entry.reading, entry.former, entry.formerReading, entry.formerRomanization].join(" ").toLocaleLowerCase().includes(q)));
+  }, [changedOnly, entries, query, scriptOnly]);
 
   const visible = matches.slice(0, limit);
   const attestedScriptCount = entries.filter((entry) => entry.attestedScript).length;
   const confirmedScriptCount = entries.filter((entry) => entry.confirmedScript).length;
+  const changedRecordCount = entries.filter((entry) => entry.former && entry.former.normalize("NFKC") !== entry.current.normalize("NFKC")).length;
   const brazilLocalizedCount = locale === "brazil" ? entries.filter((entry) => entry.current !== entry.english).length : 0;
 
   return <section className="dex-library media-dex" id="name-library">
@@ -131,7 +133,7 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
       <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : locale === "tamil-india" || locale === "telugu-india" ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : locale === "tamil-india" || locale === "telugu-india" ? "Official script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : "Dub / official-media naming included"}</span></div>
       <p>The medium is part of every record. “Transcription” means the name crossed scripts; it does not claim that a new etymology or independently translated species name was created.</p>
     </div>
-    <div className="dex-controls"><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
+    <div className={`dex-controls ${locale === "hindi-india" ? "has-history-filter" : ""}`}><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}{locale === "hindi-india" && <button className={changedOnly ? "active" : ""} type="button" aria-pressed={changedOnly} onClick={() => { setChangedOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Changed from former · {changedRecordCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
     <div className="dex-table" role="table" aria-label={`${metadata.localeName} Pokémon name library`}>
       <div className="dex-row dex-header" role="row"><span>Sprite / No.</span><span>English</span><span>{metadata.currentLabel}</span><span>Medium / former record</span><span /></div>
       {visible.map((entry) => {

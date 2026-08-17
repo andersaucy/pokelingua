@@ -417,6 +417,7 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-date-method { font-size: 16px; line-height: 1.6; }
 .dex-etymology > a { font-size: 16px !important; line-height: 1.5 !important; }
 .media-dex .dex-controls { grid-template-columns: minmax(260px, 1fr) auto auto; }
+.media-dex .dex-controls.has-history-filter { grid-template-columns: minmax(260px, 1fr) auto auto auto; }
 .dex-record-source { display: inline-block; margin-top: 20px; border-bottom: 1px solid var(--acid); color: var(--acid); font: 700 16px/1.5 "Courier New",monospace; text-transform: uppercase; }
 
 /* Comfortable reading floor across the exhibition. */
@@ -452,4 +453,5 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
   .wade-giles-fact > div { grid-template-columns: 1fr; }
   .perspective-artifact { width: 100%; margin-left: 0; }
   .media-dex .dex-controls { grid-template-columns: 1fr; }
+  .media-dex .dex-controls.has-history-filter { grid-template-columns: 1fr; }
 }
