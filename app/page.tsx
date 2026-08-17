@@ -28,8 +28,14 @@ const locales: Locale[] = [
   { id: "tw", slug: "taiwan", flag: "TW", place: "Taiwan", local: "台灣", languages: "Mandarin · Traditional Chinese", status: "Chapter live", note: "Decades of Taiwan-specific anime and publishing history meet a coordinated Chinese-language game localization.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon" },
   { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", status: "Chapter live", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today", coreGame: "18 Nov 2016 · Sun / Moon" },
   { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", status: "Researching", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today", coreGame: "Announced for 2027 · Winds / Waves" },
+  { id: "tr", slug: "turkey", flag: "TR", place: "Türkiye", local: "Türkiye", languages: "Turkish", status: "Chapter live", note: "A 2000 television debut, a controversial interruption, and a later official digital return in Turkish.", years: "2000—today", coreGame: "No Turkish core-game edition" },
+  { id: "ru", slug: "russia", flag: "RU", place: "Russia", local: "Россия", languages: "Russian", status: "Chapter live", note: "A dub built from the English adaptation, with retained species names and increasingly localized presentation.", years: "2000—today", coreGame: "No Russian core-game edition" },
+  { id: "th", slug: "thailand", flag: "TH", place: "Thailand", local: "ประเทศไทย", languages: "Thai", status: "Chapter live", note: "Japanese-rooted names in Thai script, from television broadcasting to an official regional Pokédex and channel.", years: "2001—today", coreGame: "No Thai core-game edition" },
   { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Chapter live", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today", coreGame: "No Vietnamese core-game edition" },
-  { id: "in", slug: "india", flag: "IN", place: "India", local: "भारत", languages: "Hindi · Tamil · Telugu +", status: "Researching", note: "A multilingual broadcast and digital story now unfolding across official regional channels.", years: "2003—today", coreGame: "No regional-language core-game edition" },
+  { id: "hi", slug: "hindi-india", flag: "HI", place: "Hindi in India", local: "हिन्दी", languages: "Hindi", status: "Chapter live", note: "From the 2003 television debut to official YouTube distribution and a documented species-name policy reversal.", years: "2003—today", coreGame: "No Hindi core-game edition" },
+  { id: "ta", slug: "tamil-india", flag: "TA", place: "Tamil in India", local: "தமிழ்", languages: "Tamil", status: "Chapter live", note: "A regional dub tradition later given its own official Pokémon channel and weekly digital archive.", years: "2004—today", coreGame: "No Tamil core-game edition" },
+  { id: "te", slug: "telugu-india", flag: "TE", place: "Telugu in India", local: "తెలుగు", languages: "Telugu", status: "Chapter live", note: "A regional television history that now continues through an official language-specific digital channel.", years: "2004—today", coreGame: "No Telugu core-game edition" },
+  { id: "in", slug: "india", flag: "IN", place: "India overview", local: "भारत", languages: "Hindi · Tamil · Telugu · Bengali +", status: "Researching", note: "The wider multilingual market overview connecting the individual language chapters and shared distribution history.", years: "2003—today", coreGame: "No regional-language core-game edition" },
   { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Parallel archive", languages: "Fan translations · bootlegs · ROM hacks", status: "Chapter live", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology" },
 ];
 
@@ -68,9 +74,18 @@ const animeLocalizationTimeline = [
     { label: "French dub", place: "France", href: "/locales/france", detail: "First broadcast · 5 Sep" },
     { label: "European Spanish", place: "Spain", href: "/#spanish-localization", detail: "First broadcast · 20 Dec" },
   ] },
-  { year: 2000, entries: [{ label: "Italian dub", place: "Italy", href: "/locales/italy", detail: "First broadcast · 10 Jan" }] },
+  { year: 2000, entries: [
+    { label: "Italian dub", place: "Italy", href: "/locales/italy", detail: "First broadcast · 10 Jan" },
+    { label: "Turkish dub", place: "Türkiye", href: "/locales/turkey", detail: "First broadcast · 31 Jan" },
+    { label: "Russian dub", place: "Russia", href: "/locales/russia", detail: "First broadcast · 18 Dec" },
+  ] },
+  { year: 2001, entries: [{ label: "Thai dub", place: "Thailand", href: "/locales/thailand", detail: "First broadcast · 24 Mar" }] },
   { year: 2002, entries: [{ label: "Vietnamese voice-over", place: "Vietnam", href: "/locales/vietnam", detail: "First documented broadcast" }] },
-  { year: 2003, entries: [{ label: "Hindi dub", place: "India", href: "/locales/india", detail: "First broadcast · 12 May" }] },
+  { year: 2003, entries: [{ label: "Hindi dub", place: "India", href: "/locales/hindi-india", detail: "First broadcast · 12 May" }] },
+  { year: 2004, entries: [
+    { label: "Tamil dub", place: "India", href: "/locales/tamil-india", detail: "First documented regional dub" },
+    { label: "Telugu dub", place: "India", href: "/locales/telugu-india", detail: "First documented regional dub" },
+  ] },
 ];
 
 const localeMedia: Record<string, { src: string; alt: string; kind: string }> = {
@@ -84,7 +99,13 @@ const localeMedia: Record<string, { src: string; alt: string; kind: string }> = 
   tw: { src: "/exhibits/taiwan-scarlet-traditional.jpg", alt: "Taiwan Pokémon Scarlet box with a Traditional Chinese title and Taiwan rating", kind: "Taiwan · Traditional Chinese" },
   cn: { src: "/exhibits/mainland-scarlet-simplified-official.jpg", alt: "Official Simplified Chinese Pokémon Scarlet and Violet release artwork", kind: "Mainland · Simplified Chinese" },
   br: { src: "/exhibits/brazil-horizons.jpg", alt: "Brazilian Portuguese Pokémon Horizontes anime poster", kind: "Brazilian Portuguese anime" },
+  tr: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Turkish television debut", kind: "Turkish anime history · 2000" },
+  ru: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Russian television debut", kind: "Russian anime history · 2000" },
+  th: { src: "/exhibits/thai-horizons.jpg", alt: "Official Pokémon Horizons Thai episode artwork", kind: "Thai official anime archive" },
   vn: { src: "/exhibits/vietnam-horizons.jpg", alt: "Vietnamese Pokémon Chân Trời Mới anime poster", kind: "Vietnamese anime" },
+  hi: { src: "/exhibits/india-horizons.jpg", alt: "Pokémon Horizons India poster representing the official Hindi edition", kind: "Hindi anime archive" },
+  ta: { src: "/exhibits/india-horizons.jpg", alt: "Pokémon Horizons India poster representing the official Tamil edition", kind: "Tamil anime archive" },
+  te: { src: "/exhibits/india-horizons.jpg", alt: "Pokémon Horizons India poster representing the official Telugu edition", kind: "Telugu anime archive" },
   in: { src: "/exhibits/india-horizons.jpg", alt: "Hungama Pokémon Horizons poster for India", kind: "Indian anime broadcast" },
 };
 

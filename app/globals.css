@@ -245,10 +245,29 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .locale-card-media.media-br img, .locale-card-media.media-vn img { object-position: center 28%; }
 .locale-card-media.media-in img { object-position: center; }
 
+/* Anime-first locale chapters: preserve a separate visual and evidentiary track. */
+.media-arrival { position: relative; padding-top: 112px; }
+.media-arrival:before { content: ""; position: absolute; inset: 0 0 auto; height: 8px; background: linear-gradient(90deg,#7ec8e3 0 38%,var(--acid) 38% 72%,var(--orange) 72%); }
+.media-arrival .arrival-markers article:last-child { background: rgba(126,200,227,.13); }
+.media-locale-opening .dropcap:first-letter { color: #176f86; }
+.media-locale-opening aside { border-left-color: #176f86; }
+.media-name-event { background: #e7f1e7; }
+.naming-practice { display: grid; grid-template-columns: .85fr 1.15fr; border-bottom: 1px solid var(--ink); background: #eee6d8; }
+.naming-practice > div, .naming-practice > article { min-height: 330px; padding: 65px 6vw; }
+.naming-practice > div { border-right: 1px solid var(--ink); display: flex; flex-direction: column; justify-content: space-between; }
+.naming-practice span { font: 700 13px/1.5 "Courier New",monospace; text-transform: uppercase; color: var(--orange); }
+.naming-practice h2 { margin: 35px 0 0; font-size: clamp(42px,5.5vw,82px); line-height: .95; letter-spacing: -.055em; overflow-wrap: anywhere; }
+.naming-practice article > p { max-width: 700px; font: 19px/1.65 Georgia,serif; }
+.naming-practice .coverage-note { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--ink); font: 15px/1.6 "Courier New",monospace; }
+.locale-card-media.media-th img { object-position: center 30%; }
+.locale-card-media.media-hi img, .locale-card-media.media-ta img, .locale-card-media.media-te img { object-position: center; }
+
 @media (max-width: 900px) {
   .locale-timeline { overflow-x: auto; overflow-y: visible; }
   .locale-timeline-toolbar { position: sticky; left: 0; width: calc(100vw - 12vw - 54px); min-width: 620px; }
   .locale-timeline-track { min-width: 880px; }
+  .naming-practice { grid-template-columns: 1fr; }
+  .naming-practice > div { min-height: 230px; border-right: 0; border-bottom: 1px solid var(--ink); }
 }
 @media (max-width: 600px) {
   .locale-timeline-toolbar { grid-template-columns: 1fr; min-width: 520px; }

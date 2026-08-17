@@ -24,6 +24,12 @@ const chapters = {
   taiwan: { code: "TW", place: "Taiwan", local: "台灣", language: "Mandarin · Traditional Chinese", period: "1998—today", live: true, deck: "From established anime vocabulary to a coordinated Chinese-language game localization." },
   "mainland-china": { code: "CN", place: "Mainland China", local: "中国大陆", language: "Mandarin · Simplified Chinese", period: "2000s—today", live: true, deck: "The mainland record of simplified-script terminology, official distribution, games, cards, and media." },
   india: { code: "IN", place: "India", local: "भारत", language: "Hindi · Tamil · Telugu +", period: "2003—today", live: false, deck: "Pokémon across a multilingual broadcast market and a growing official digital archive." },
+  "hindi-india": { code: "HI", place: "Hindi in India", local: "हिन्दी", language: "Hindi · हिन्दी", period: "2003—today", live: true, deck: "From television’s Hindi debut to official digital channels and a documented change in Pokémon name policy." },
+  "tamil-india": { code: "TA", place: "Tamil in India", local: "தமிழ்", language: "Tamil · தமிழ்", period: "2004—today", live: true, deck: "A regional dub history, its own official digital channel, and a naming practice tied to the English species vocabulary." },
+  "telugu-india": { code: "TE", place: "Telugu in India", local: "తెలుగు", language: "Telugu · తెలుగు", period: "2004—today", live: true, deck: "A regional dub history, its own official digital channel, and a naming practice tied to the English species vocabulary." },
+  thailand: { code: "TH", place: "Thailand", local: "ประเทศไทย", language: "Thai · ภาษาไทย", period: "2001—today", live: true, deck: "Japanese-rooted species names in Thai script, from television broadcasting to an official regional Pokédex and channel." },
+  russia: { code: "RU", place: "Russia", local: "Россия", language: "Russian · русский", period: "2000—today", live: true, deck: "A Russian-language animation history built from the English adaptation, with retained species names and localized presentation." },
+  turkey: { code: "TR", place: "Türkiye", local: "Türkiye", language: "Turkish · Türkçe", period: "2000—today", live: true, deck: "A Turkish television debut, a controversial interruption, and a later official return through games and digital animation." },
   brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese", period: "1999—today", live: false, deck: "A major dub culture, a passionate fan base, and the late arrival of Portuguese in core games." },
   vietnam: { code: "VN", place: "Vietnam", local: "Việt Nam", language: "Vietnamese · Tiếng Việt", period: "2002—today", live: true, deck: "From Japanese-rooted species names in Vietnamese media to the English-name standard announced in May 2026." },
   future: { code: "FWD", place: "Future localizations", local: "Evidence watch", language: "Confirmed additions & unresolved possibilities", period: "2027—forward", live: true, deck: "A sourced watchlist separating announced language support from plausible—but unconfirmed—future localization paths." },
@@ -299,6 +305,115 @@ function GermanChapter() {
   </>;
 }
 
+const mediaLocaleCopy = {
+  thailand: {
+    opening: "Thailand’s Pokémon vocabulary grew first through television and licensed media, not through a Thai-language core game. The result is a real localization history with its own script, broadcasters, digital services, and official reference pages—even though the species names generally follow Japanese pronunciation.",
+    distinction: "Thai is an established official media and service language. It is not currently a selectable language in the main-series games, so this chapter records transcription and usage instead of inventing a separate translated Pokédex.",
+    arrivalDate: "24 MAR 2001", arrivalTitle: "The anime begins on ModernNine TV", arrivalText: "The first documented Thai television broadcast introduced Pokémon to a national audience. That arrival predates today’s official Thai portal and digital channels by more than two decades.",
+    laterDate: "30 AUG 2024", laterTitle: "Horizons enters the official Thai archive", laterText: "Pokémon Thailand Official published the first Thai episode of Pokémon Horizons on YouTube, creating a public, timestamped record of the current dub.",
+    nameDate: "2001—TODAY", nameTitle: "Japanese sound, Thai script", nameText: "Official Thai usage generally transcribes the Japanese species name into Thai. The official Pokédex, for example, records Primarina as อชิเรน (Ashirene), following Japanese rather than the English name.",
+    sampleLabel: "Verified name record", sampleName: "อชิเรน", sampleMeta: "Primarina · from Japanese アシレーヌ · official Thai Pokédex",
+    media: "/exhibits/thai-horizons.jpg", mediaAlt: "Official Thai Pokémon Horizons episode artwork", mediaLabel: "Official Thai upload · 2024",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Thailand",
+    officialSource: "https://th.portal-pokemon.com/play/pokedex/0730",
+    digitalSource: "https://www.youtube.com/watch?v=KHgJk2AB4sM",
+  },
+  russia: {
+    opening: "Russia’s Pokémon history began with a television dub made from the English-language adaptation. That production route shaped more than dialogue: familiar English character and species names were retained so the animation could remain legible beside imported cards and international branding.",
+    distinction: "Russian is an official dub and interface language in parts of the franchise, but not a selectable core-game language. Cyrillic presentation therefore belongs in the archive without being mistaken for an independently renamed full Pokédex.",
+    arrivalDate: "18 DEC 2000", arrivalTitle: "Pokémon premieres on ORT", arrivalText: "Channel One, then known as ORT, began the first documented Russian television run. The dub was based on the English adaptation rather than produced directly from Japanese.",
+    laterDate: "2014", laterTitle: "On-screen presentation becomes Russian", laterText: "The 2×2 broadcast era expanded localization beyond dialogue: season branding, title cards, eyecatches, and displayed Pokémon names appeared in Russian.",
+    nameDate: "2000—TODAY", nameTitle: "Names retained across scripts", nameText: "The dub generally keeps the English species vocabulary, represented in Cyrillic where the medium calls for it. This is transliteration and grammatical adaptation—not evidence of a separate Russian species-name canon.",
+    sampleLabel: "Documented naming practice", sampleName: "Покемон", sampleMeta: "Pokémon · plural Покемоны · English-derived Russian usage",
+    media: "/exhibits/anime-original.jpg", mediaAlt: "Original Pokémon animated series artwork representing Russia's first broadcast era", mediaLabel: "Anime-first locale · 2000",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Rossia",
+    officialSource: "https://www.netflix.com/title/81665799",
+    digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Rossia#Pok%C3%A9mon_anime",
+  },
+  turkey: {
+    opening: "Türkiye’s first Pokémon boom arrived through television. Its history is unusually discontinuous: an early nationwide debut was followed by a public controversy and broadcast interruption, then a return that unfolded through new channels, localized mobile games, and official digital animation.",
+    distinction: "Turkish localization is strongest in animation and selected services such as Pokémon GO. Most species names remain the English forms, and Turkish has not been offered as a selectable main-series game language.",
+    arrivalDate: "31 JAN 2000", arrivalTitle: "The anime premieres on ATV", arrivalText: "ATV began the first documented Turkish broadcast. Pokémon quickly became a highly visible part of children’s television culture.",
+    laterDate: "13 DEC 2000", laterTitle: "Broadcasting is interrupted", laterText: "After widely reported child-safety incidents, the government suspended the series. Pokémon returned to Turkish television on 9 December 2002, making interruption and re-entry central to this locale’s history.",
+    nameDate: "2000—TODAY", nameTitle: "An English-derived species vocabulary", nameText: "Most Pokémon names in Turkish releases remain the English names. Localized interfaces and dialogue still create a Turkish edition, but they do not amount to a fully renamed creature catalog.",
+    sampleLabel: "Coverage status", sampleName: "Pikachu", sampleMeta: "English species form retained · no Turkish core-game name set",
+    media: "/exhibits/anime-original.jpg", mediaAlt: "Original Pokémon animated series artwork representing Türkiye's first broadcast era", mediaLabel: "Turkish television arrival · 2000",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/T%C3%BCrkiye",
+    officialSource: "https://www.youtube.com/@PokemonTR",
+    digitalSource: "https://bulbapedia.bulbagarden.net/wiki/T%C3%BCrkiye#Pok%C3%A9mon_anime",
+  },
+  "hindi-india": {
+    opening: "Hindi carried Pokémon into India’s mass television market and later became the first Indian-language branch with a dedicated official YouTube archive. Its naming history is especially revealing: a short experiment with localized Hindi species names was later replaced by one India-wide English-derived standard.",
+    distinction: "Hindi has its own broadcast dates, voice productions, channel, and naming-policy history. Keeping it separate from a catch-all India page makes those decisions visible while the broader India overview can still connect shared distribution.",
+    arrivalDate: "12 MAY 2003", arrivalTitle: "Pokémon begins in Hindi on Cartoon Network", arrivalText: "The first Indian television run launched in Hindi on Cartoon Network India, establishing the franchise’s earliest large-scale language relationship in the market.",
+    laterDate: "29 OCT 2021", laterTitle: "An official Hindi YouTube archive begins", laterText: "The Pokémon Company launched the Hindi-dubbed Pokémon Journeys on its official regional YouTube channel, turning a broadcast history into a dated public digital collection.",
+    nameDate: "SEP 2023 → 25 SEP 2025", nameTitle: "Localized names, then one national standard", nameText: "Hindi services introduced localized Hindi Pokémon names in September 2023. On 25 September 2025, the official India portal announced that Hindi would align with Tamil, Telugu, and Bengali using names based on English.",
+    sampleLabel: "Current official policy", sampleName: "English-based names", sampleMeta: "Unified across Hindi, Tamil, Telugu, and Bengali · 25 Sep 2025",
+    media: "/exhibits/india-horizons.jpg", mediaAlt: "Pokémon Horizons India artwork representing the official Hindi edition", mediaLabel: "Official India-language anime",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
+    officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
+    digitalSource: "https://in.portal-pokemon.com/topics/211029090019_hindi-dubbed_version_of_pokemon_journeys_is_now_available_on_youtube/",
+  },
+  "tamil-india": {
+    opening: "Tamil Pokémon developed as a regional television practice before it gained a durable official digital home. The language shares India-wide distribution milestones with Hindi and Telugu, but its performances, audience, script, and archive are distinct enough to follow on their own page.",
+    distinction: "The exact first Tamil episode date remains unresolved in the available record. Pokélingua uses the earliest documented period rather than manufacturing a day, then becomes precise when official channel dates provide primary timestamps.",
+    arrivalDate: "c. 2004", arrivalTitle: "Regional Tamil dubbing expands", arrivalText: "Tamil versions are documented during the early Indian television run, becoming regular by the Johto-era seasons. The present evidence supports the period, not an exact premiere date.",
+    laterDate: "14 JAN 2022", laterTitle: "The official Tamil channel begins Journeys", laterText: "Pokémon Journeys launched on a dedicated official Tamil YouTube channel. Pokémon Horizons later joined the channel’s weekly archive in July 2024.",
+    nameDate: "25 SEP 2025", nameTitle: "The shared English-based standard is confirmed", nameText: "The official India portal states that Tamil, Telugu, Bengali, and Hindi now follow a common Pokémon naming standard based on the English names. No separate translated Tamil full Pokédex is claimed here.",
+    sampleLabel: "Current official policy", sampleName: "English-based names", sampleMeta: "Tamil dialogue and script · shared species-name standard",
+    media: "/exhibits/india-horizons.jpg", mediaAlt: "Pokémon Horizons India artwork representing the official Tamil edition", mediaLabel: "Tamil official anime channel",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
+    officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
+    digitalSource: "https://in.portal-pokemon.com/topics/pokemon_horizons_is_now_available_on_youtube_also_pokemon_south_asia_official_english_channel_has_be/",
+  },
+  "telugu-india": {
+    opening: "Telugu Pokémon developed as a regional television practice before it gained a durable official digital home. Its chronology overlaps Tamil and Hindi, but a language-specific chapter preserves its own performances, script, audience, and publication record.",
+    distinction: "The exact first Telugu episode date remains unresolved in the available record. Pokélingua labels the earliest documented period honestly and uses exact dates only where official channel announcements support them.",
+    arrivalDate: "c. 2004", arrivalTitle: "Regional Telugu dubbing expands", arrivalText: "Telugu versions are documented during the early Indian television run, becoming regular by the Johto-era seasons. The present evidence supports the period, not an exact premiere date.",
+    laterDate: "14 JAN 2022", laterTitle: "The official Telugu channel begins Journeys", laterText: "Pokémon Journeys launched on a dedicated official Telugu YouTube channel. Pokémon Horizons later joined the channel’s weekly archive in July 2024.",
+    nameDate: "25 SEP 2025", nameTitle: "The shared English-based standard is confirmed", nameText: "The official India portal states that Telugu, Tamil, Bengali, and Hindi now follow a common Pokémon naming standard based on the English names. No separate translated Telugu full Pokédex is claimed here.",
+    sampleLabel: "Current official policy", sampleName: "English-based names", sampleMeta: "Telugu dialogue and script · shared species-name standard",
+    media: "/exhibits/india-horizons.jpg", mediaAlt: "Pokémon Horizons India artwork representing the official Telugu edition", mediaLabel: "Telugu official anime channel",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Sri_Lanka#India",
+    officialSource: "https://in.portal-pokemon.com/topics/pokemon_names_unified_across_india/",
+    digitalSource: "https://in.portal-pokemon.com/topics/pokemon_horizons_is_now_available_on_youtube_also_pokemon_south_asia_official_english_channel_has_be/",
+  },
+} as const;
+
+function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }) {
+  const copy = mediaLocaleCopy[locale];
+  return <>
+    <section className={`arrival-brief media-arrival media-arrival-${locale}`}>
+      <div className="arrival-heading"><span>Anime-first locale</span><h2>Arrival came through<br /><em>the screen.</em></h2><p>This chapter separates an official dub or regional service from selectable core-game language support. Both matter; they are not the same milestone.</p></div>
+      <div className="arrival-markers">
+        <article><time>{copy.arrivalDate}</time><span>Earliest documented arrival</span><h3>{copy.arrivalTitle}</h3><p>{copy.arrivalText}</p></article>
+        <article><time>{copy.laterDate}</time><span>Later turning point</span><h3>{copy.laterTitle}</h3><p>{copy.laterText}</p></article>
+      </div>
+      <a href={copy.historySource} target="_blank" rel="noreferrer">Locale history evidence trail ↗</a>
+    </section>
+    <section className="chapter-opening media-locale-opening">
+      <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
+      <article><p className="dropcap">{copy.opening}</p><aside><b>Why this chapter exists</b><p>{copy.distinction}</p></aside></article>
+    </section>
+    <section className="chapter-timeline">
+      <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
+      <div className="chapter-events">
+        <article><time>{copy.laterDate}</time><div><span>Official distribution</span><h2>{copy.laterTitle}</h2><p>{copy.laterText}</p><a href={copy.digitalSource} target="_blank" rel="noreferrer">Open the dated record ↗</a></div><ExhibitMedia src={copy.media} alt={copy.mediaAlt} label={copy.mediaLabel} tilt="left" /></article>
+        <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
+      </div>
+    </section>
+    <section className="naming-practice">
+      <div><span>{copy.sampleLabel}</span><h2>{copy.sampleName}</h2></div>
+      <article><span>What the archive can support</span><p>{copy.sampleMeta}</p><p className="coverage-note">No unsupported 1,025-name table is generated for this locale. Additional entries will be added only when an official or reliably documented form can be tied to its medium and date.</p></article>
+    </section>
+    <section className="chapter-question">
+      <div className="chapter-rail"><span>Archive rule</span><b>03</b></div>
+      <article><h2>A dub is a locale.<br /><em>Not a game-language claim.</em></h2><p>Pokélingua records the version audiences actually encountered: language, territory, broadcaster or platform, naming practice, and date. That preserves these histories without suggesting a core-series translation that does not exist.</p><div className="record-example"><span>Evidence model</span><code>medium: official animation / service<br />core_game_language: no<br />species_name_system: documented policy<br />unknown dates: shown as unresolved</code></div></article>
+    </section>
+    <section className="chapter-sources"><span>Sources in this edition</span><a href={copy.historySource} target="_blank" rel="noreferrer">01 · Locale history</a><a href={copy.officialSource} target="_blank" rel="noreferrer">02 · Naming / service record</a><a href={copy.digitalSource} target="_blank" rel="noreferrer">03 · Official / dated media record</a></section>
+  </>;
+}
+
 function FutureChapter() {
   return <>
     <section className="arrival-brief future-arrival">
@@ -350,6 +465,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
   const chapter = chapters[slug as Slug];
   if (!chapter) notFound();
   const isChinese = slug === "hong-kong" || slug === "taiwan" || slug === "mainland-china";
+  const isMediaLocale = slug in mediaLocaleCopy;
 
   return <main className="locale-page">
     <nav className="nav locale-nav">
@@ -362,7 +478,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "future" ? <FutureChapter /> : slug === "japan" ? <JapanChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "germany" ? <GermanChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "south-korea" ? <KoreanChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : isMediaLocale ? <MediaLocaleChapter locale={slug as keyof typeof mediaLocaleCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "future" ? <FutureChapter /> : slug === "japan" ? <JapanChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "germany" ? <GermanChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "south-korea" ? <KoreanChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>

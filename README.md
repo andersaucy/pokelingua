@@ -8,7 +8,7 @@ Pokélingua is a living digital exhibition about how Pokémon crossed borders. I
 
 The homepage presents locale chapters in chronological order by their first localized core-series game. A clickable visual timeline offers a second route through those arrivals and continues to a Future evidence desk for announced localizations. Each finished chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable name library covering all 1,025 Pokémon through Pecharunt.
 
-The current ten-locale edition includes:
+The current edition includes ten full name-library chapters plus six anime-first localization chapters:
 
 - Japan — the Japanese source vocabulary and 1996 origin point
 - United States — the English reinvention that became an international reference
@@ -20,8 +20,14 @@ The current ten-locale edition includes:
 - Taiwan — Mandarin, Traditional Chinese, and a separate Taiwan media history
 - Mainland China — Simplified Chinese, official entry, and pre-2016 unofficial translation context
 - Vietnam — Japanese-rooted earlier names and the English-name standard announced in 2026
+- Thailand — a 2001 television debut, Japanese-rooted Thai transcriptions, and an official regional Pokédex
+- Russia — an English-derived dub, Cyrillic presentation, and retained international species names
+- Türkiye — the 2000 television arrival, its interruption and return, and English-derived naming practice
+- Hindi in India — the 2003 broadcast debut, official digital archive, and the 2023–2025 name-policy change
+- Tamil in India — regional dubbing, a dedicated official channel, and the shared English-based name standard
+- Telugu in India — regional dubbing, a dedicated official channel, and the shared English-based name standard
 
-India and Brazil remain visible as research-stage chapters so the shape of the growing atlas is public.
+The broader India overview and Brazil remain visible as research-stage chapters so the shape of the growing atlas is public. Anime-first chapters intentionally do not fabricate 1,025 translated names: where a locale retains Japanese or English species forms, the exhibition documents that naming practice and adds individual records only when a reliable source supports them.
 
 ## Search names across the world
 
