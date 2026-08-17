@@ -1,4 +1,4 @@
-export type NameLocale = "japan" | "united-states" | "germany" | "italy" | "france" | "south-korea" | "hong-kong" | "taiwan" | "mainland-china" | "vietnam";
+export type NameLocale = "japan" | "united-states" | "germany" | "italy" | "spain" | "latin-america" | "france" | "south-korea" | "hong-kong" | "taiwan" | "mainland-china" | "vietnam";
 
 const generations = [151, 251, 386, 493, 649, 721, 809, 905, 1025];
 const years: Record<NameLocale, Array<number | null>> = {
@@ -6,6 +6,8 @@ const years: Record<NameLocale, Array<number | null>> = {
   "united-states": [1998, 2000, 2003, 2007, 2011, 2013, 2016, 2019, 2022],
   germany: [1999, 2001, 2003, 2007, 2011, 2013, 2016, 2019, 2022],
   italy: [1999, 2001, 2003, 2007, 2011, 2013, 2016, 2019, 2022],
+  spain: [1999, 2001, 2003, 2007, 2011, 2013, 2016, 2019, 2022],
+  "latin-america": [2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025, 2025],
   france: [1999, 2001, 2003, 2007, 2011, 2013, 2016, 2019, 2022],
   "south-korea": [null, 2002, null, 2008, 2011, 2013, 2016, 2019, 2022],
   "hong-kong": [2016, 2016, 2016, 2016, 2016, 2016, 2016, 2019, 2022],

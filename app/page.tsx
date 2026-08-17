@@ -11,32 +11,35 @@ type Locale = {
   place: string;
   local: string;
   languages: string;
-  status: "Chapter live" | "Researching";
   note: string;
   years: string;
   coreGame: string;
+  coreYear: number | null;
+  animeYear: number | null;
 };
 
 const locales: Locale[] = [
-  { id: "jp", slug: "japan", flag: "JP", place: "Japan", local: "日本", languages: "Japanese", status: "Chapter live", note: "The source naming system: kana, wordplay, romanization, and the 1996 world from which every later locale begins.", years: "1996—today", coreGame: "27 Feb 1996 · Red / Green" },
-  { id: "us", slug: "united-states", flag: "US", place: "United States", local: "United States", languages: "English (US)", status: "Chapter live", note: "The first international reinvention—and the English vocabulary that became a base for later markets.", years: "1998—today", coreGame: "28 Sep 1998 · Red / Blue" },
-  { id: "de", slug: "germany", flag: "DE", place: "Germany", local: "Deutschland", languages: "German", status: "Chapter live", note: "A dense vocabulary of compounds, wordplay, and creature clues built for German-speaking players.", years: "1999—today", coreGame: "05 Oct 1999 · Rot / Blau" },
-  { id: "it", slug: "italy", flag: "IT", place: "Italy", local: "Italia", languages: "Italian", status: "Chapter live", note: "English species spellings, Italian pronunciation, and a small set of revealing translated exceptions.", years: "1999—today", coreGame: "05 Oct 1999 · Rosso / Blu" },
-  { id: "fr", slug: "france", flag: "FR", place: "France", local: "France", languages: "French", status: "Chapter live", note: "One of the most inventive naming systems, built around wordplay rather than simple transliteration.", years: "1999—today", coreGame: "08 Oct 1999 · Rouge / Bleu" },
-  { id: "kr", slug: "south-korea", flag: "KR", place: "South Korea", local: "대한민국", languages: "Korean", status: "Chapter live", note: "A localization story shaped by cultural policy, broadcasting, and a dedicated regional company.", years: "1998—today", coreGame: "24 Apr 2002 · Gold / Silver" },
-  { id: "hk", slug: "hong-kong", flag: "HK", place: "Hong Kong", local: "香港", languages: "Cantonese · Traditional Chinese", status: "Chapter live", note: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon" },
-  { id: "tw", slug: "taiwan", flag: "TW", place: "Taiwan", local: "台灣", languages: "Mandarin · Traditional Chinese", status: "Chapter live", note: "Decades of Taiwan-specific anime and publishing history meet a coordinated Chinese-language game localization.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon" },
-  { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", status: "Chapter live", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today", coreGame: "18 Nov 2016 · Sun / Moon" },
-  { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", status: "Researching", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today", coreGame: "Announced for 2027 · Winds / Waves" },
-  { id: "tr", slug: "turkey", flag: "TR", place: "Türkiye", local: "Türkiye", languages: "Turkish", status: "Chapter live", note: "A 2000 television debut, a controversial interruption, and a later official digital return in Turkish.", years: "2000—today", coreGame: "No Turkish core-game edition" },
-  { id: "ru", slug: "russia", flag: "RU", place: "Russia", local: "Россия", languages: "Russian", status: "Chapter live", note: "A dub built from the English adaptation, with retained species names and increasingly localized presentation.", years: "2000—today", coreGame: "No Russian core-game edition" },
-  { id: "th", slug: "thailand", flag: "TH", place: "Thailand", local: "ประเทศไทย", languages: "Thai", status: "Chapter live", note: "Japanese-rooted names in Thai script, from television broadcasting to an official regional Pokédex and channel.", years: "2001—today", coreGame: "No Thai core-game edition" },
-  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", status: "Chapter live", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today", coreGame: "No Vietnamese core-game edition" },
-  { id: "hi", slug: "hindi-india", flag: "HI", place: "Hindi in India", local: "हिन्दी", languages: "Hindi", status: "Chapter live", note: "From the 2003 television debut to official YouTube distribution and a documented species-name policy reversal.", years: "2003—today", coreGame: "No Hindi core-game edition" },
-  { id: "ta", slug: "tamil-india", flag: "TA", place: "Tamil in India", local: "தமிழ்", languages: "Tamil", status: "Chapter live", note: "A regional dub tradition later given its own official Pokémon channel and weekly digital archive.", years: "2004—today", coreGame: "No Tamil core-game edition" },
-  { id: "te", slug: "telugu-india", flag: "TE", place: "Telugu in India", local: "తెలుగు", languages: "Telugu", status: "Chapter live", note: "A regional television history that now continues through an official language-specific digital channel.", years: "2004—today", coreGame: "No Telugu core-game edition" },
-  { id: "in", slug: "india", flag: "IN", place: "India overview", local: "भारत", languages: "Hindi · Tamil · Telugu · Bengali +", status: "Researching", note: "The wider multilingual market overview connecting the individual language chapters and shared distribution history.", years: "2003—today", coreGame: "No regional-language core-game edition" },
-  { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Parallel archive", languages: "Fan translations · bootlegs · ROM hacks", status: "Chapter live", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology" },
+  { id: "jp", slug: "japan", flag: "JP", place: "Japan", local: "日本", languages: "Japanese", note: "The source naming system: kana, wordplay, romanization, and the 1996 world from which every later locale begins.", years: "1996—today", coreGame: "27 Feb 1996 · Red / Green", coreYear: 1996, animeYear: 1997 },
+  { id: "us", slug: "united-states", flag: "US", place: "United States", local: "United States", languages: "English (US)", note: "The first international reinvention—and the English vocabulary that became a base for later markets.", years: "1998—today", coreGame: "28 Sep 1998 · Red / Blue", coreYear: 1998, animeYear: 1998 },
+  { id: "de", slug: "germany", flag: "DE", place: "Germany", local: "Deutschland", languages: "German", note: "A dense vocabulary of compounds, wordplay, and creature clues built for German-speaking players.", years: "1999—today", coreGame: "05 Oct 1999 · Rot / Blau", coreYear: 1999, animeYear: 1999 },
+  { id: "it", slug: "italy", flag: "IT", place: "Italy", local: "Italia", languages: "Italian", note: "English species spellings, Italian pronunciation, and a small set of revealing translated exceptions.", years: "1999—today", coreGame: "05 Oct 1999 · Rosso / Blu", coreYear: 1999, animeYear: 2000 },
+  { id: "es", slug: "spain", flag: "ES", place: "Spain", local: "España", languages: "Spanish (Spain)", note: "The European Spanish game tradition: localized dialogue and terminology alongside mostly shared species names.", years: "1999—today", coreGame: "05 Oct 1999 · Rojo / Azul", coreYear: 1999, animeYear: 1999 },
+  { id: "fr", slug: "france", flag: "FR", place: "France", local: "France", languages: "French", note: "One of the most inventive naming systems, built around wordplay rather than simple transliteration.", years: "1999—today", coreGame: "08 Oct 1999 · Rouge / Bleu", coreYear: 1999, animeYear: 1999 },
+  { id: "kr", slug: "south-korea", flag: "KR", place: "South Korea", local: "대한민국", languages: "Korean", note: "A localization story shaped by cultural policy, broadcasting, and a dedicated regional company.", years: "1998—today", coreGame: "24 Apr 2002 · Gold / Silver", coreYear: 2002, animeYear: 1999 },
+  { id: "hk", slug: "hong-kong", flag: "HK", place: "Hong Kong", local: "香港", languages: "Cantonese · Traditional Chinese", note: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon", coreYear: 2016, animeYear: 1998 },
+  { id: "tw", slug: "taiwan", flag: "TW", place: "Taiwan", local: "台灣", languages: "Mandarin · Traditional Chinese", note: "Decades of Taiwan-specific anime and publishing history meet a coordinated Chinese-language game localization.", years: "1998—today", coreGame: "18 Nov 2016 · Sun / Moon", coreYear: 2016, animeYear: 1998 },
+  { id: "cn", slug: "mainland-china", flag: "CN", place: "Mainland China", local: "中国大陆", languages: "Mandarin · Simplified Chinese", note: "The mainland record of official entry, simplified-script terminology, games, cards, and media.", years: "2000s—today", coreGame: "18 Nov 2016 · Sun / Moon", coreYear: 2016, animeYear: 1998 },
+  { id: "la", slug: "latin-america", flag: "LAT", place: "Latin America", local: "América Latina", languages: "Spanish (Latin America)", note: "A regional dub vocabulary since 1999—and its first selectable core-game Spanish edition in Legends: Z-A.", years: "1999—today", coreGame: "16 Oct 2025 · Legends: Z-A", coreYear: 2025, animeYear: 1999 },
+  { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today", coreGame: "Announced for 2027 · Winds / Waves", coreYear: 2027, animeYear: 1999 },
+  { id: "tr", slug: "turkey", flag: "TR", place: "Türkiye", local: "Türkiye", languages: "Turkish", note: "A 2000 television debut, a controversial interruption, and a later official digital return in Turkish.", years: "2000—today", coreGame: "No Turkish core-game edition", coreYear: null, animeYear: 2000 },
+  { id: "ru", slug: "russia", flag: "RU", place: "Russia", local: "Россия", languages: "Russian", note: "A dub built from the English adaptation, with retained species names and increasingly localized presentation.", years: "2000—today", coreGame: "No Russian core-game edition", coreYear: null, animeYear: 2000 },
+  { id: "th", slug: "thailand", flag: "TH", place: "Thailand", local: "ประเทศไทย", languages: "Thai", note: "Japanese-rooted names in Thai script, from television broadcasting to an official regional Pokédex and channel.", years: "2001—today", coreGame: "No Thai core-game edition", coreYear: null, animeYear: 2001 },
+  { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today", coreGame: "No Vietnamese core-game edition", coreYear: null, animeYear: 2002 },
+  { id: "hi", slug: "hindi-india", flag: "HI", place: "Hindi in India", local: "हिन्दी", languages: "Hindi", note: "From the 2003 television debut to official YouTube distribution and a documented species-name policy reversal.", years: "2003—today", coreGame: "No Hindi core-game edition", coreYear: null, animeYear: 2003 },
+  { id: "ta", slug: "tamil-india", flag: "TA", place: "Tamil in India", local: "தமிழ்", languages: "Tamil", note: "A regional dub tradition later given its own official Pokémon channel and weekly digital archive.", years: "2004—today", coreGame: "No Tamil core-game edition", coreYear: null, animeYear: 2004 },
+  { id: "te", slug: "telugu-india", flag: "TE", place: "Telugu in India", local: "తెలుగు", languages: "Telugu", note: "A regional television history that now continues through an official language-specific digital channel.", years: "2004—today", coreGame: "No Telugu core-game edition", coreYear: null, animeYear: 2004 },
+  { id: "in", slug: "india", flag: "IN", place: "India overview", local: "भारत", languages: "Hindi · Tamil · Telugu · Bengali +", note: "The wider multilingual market overview connecting the individual language chapters and shared distribution history.", years: "2003—today", coreGame: "No regional-language core-game edition", coreYear: null, animeYear: 2003 },
+  { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Archivo paralelo", languages: "Fan translations · bootlegs · ROM hacks", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology", coreYear: null, animeYear: null },
 ];
 
 const coreLanguageTimeline = [
@@ -46,7 +49,7 @@ const coreLanguageTimeline = [
     { label: "German", place: "Germany", href: "/locales/germany", detail: "Pokémon Red / Blue" },
     { label: "Italian", place: "Italy", href: "/locales/italy", detail: "Pokémon Red / Blue" },
     { label: "French", place: "France", href: "/locales/france", detail: "Pokémon Red / Blue" },
-    { label: "European Spanish", place: "Spain", href: "/#spanish-localization", detail: "Pokémon Red / Blue" },
+    { label: "European Spanish", place: "Spain", href: "/locales/spain", detail: "Pokémon Red / Blue" },
   ] },
   { year: 2002, entries: [{ label: "Korean", place: "South Korea", href: "/locales/south-korea", detail: "Pokémon Gold / Silver" }] },
   { year: 2016, entries: [
@@ -54,7 +57,7 @@ const coreLanguageTimeline = [
     { label: "Traditional Chinese", place: "Taiwan", href: "/locales/taiwan", detail: "Pokémon Sun / Moon" },
     { label: "Simplified Chinese", place: "Mainland China", href: "/locales/mainland-china", detail: "Pokémon Sun / Moon" },
   ] },
-  { year: 2025, entries: [{ label: "Latin American Spanish", place: "Latin America", href: "/#spanish-localization", detail: "Pokémon Legends: Z-A" }] },
+  { year: 2025, entries: [{ label: "Latin American Spanish", place: "Latin America", href: "/locales/latin-america", detail: "Pokémon Legends: Z-A" }] },
   { year: 2027, entries: [{ label: "Brazilian Portuguese", place: "Brazil · announced", href: "/locales/future", detail: "Pokémon Winds / Waves", future: true }] },
 ];
 
@@ -67,12 +70,12 @@ const animeLocalizationTimeline = [
     { label: "Mandarin dub", place: "Mainland China", href: "/locales/mainland-china", detail: "First broadcast · 24 Dec" },
   ] },
   { year: 1999, entries: [
-    { label: "Latin American Spanish", place: "Latin America", href: "/#spanish-localization", detail: "First regional broadcast · 26 Apr" },
+    { label: "Latin American Spanish", place: "Latin America", href: "/locales/latin-america", detail: "First regional broadcast · 26 Apr" },
     { label: "Brazilian Portuguese", place: "Brazil", href: "/locales/brazil", detail: "First broadcast · 10 May" },
     { label: "Korean dub", place: "South Korea", href: "/locales/south-korea", detail: "First broadcast · 14 Jul" },
     { label: "German dub", place: "Germany", href: "/locales/germany", detail: "First broadcast · 1 Sep" },
     { label: "French dub", place: "France", href: "/locales/france", detail: "First broadcast · 5 Sep" },
-    { label: "European Spanish", place: "Spain", href: "/#spanish-localization", detail: "First broadcast · 20 Dec" },
+    { label: "European Spanish", place: "Spain", href: "/locales/spain", detail: "First broadcast · 20 Dec" },
   ] },
   { year: 2000, entries: [
     { label: "Italian dub", place: "Italy", href: "/locales/italy", detail: "First broadcast · 10 Jan" },
@@ -88,6 +91,8 @@ const animeLocalizationTimeline = [
   ] },
 ];
 
+const animeMarkerBySlug = Object.fromEntries(animeLocalizationTimeline.flatMap((group) => group.entries.map((entry) => [entry.href.replace("/locales/", ""), `${group.year} · ${entry.detail}`])));
+
 const localeMedia: Record<string, { src: string; alt: string; kind: string }> = {
   jp: { src: "/exhibits/red-green.jpg", alt: "Japanese Pokémon Red and Green Game Boy boxes", kind: "Core game · 1996" },
   us: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1998" },
@@ -95,9 +100,11 @@ const localeMedia: Record<string, { src: string; alt: string; kind: string }> = 
   it: { src: "/exhibits/italian-blue.webp", alt: "Italian Pokémon Versione Blu Game Boy box", kind: "Italian core game · 1999" },
   fr: { src: "/exhibits/french-blue.jpg", alt: "French Pokémon Version Bleue Game Boy box", kind: "French core game · 1999" },
   kr: { src: "/exhibits/gold-silver-korea.jpg", alt: "Korean Pokémon Gold and Silver Game Boy Color boxes", kind: "Korean core game · 2002" },
-  hk: { src: "/exhibits/hong-kong-sword-traditional.jpg", alt: "Hong Kong Pokémon Sword box with a Traditional Chinese title", kind: "Hong Kong · Traditional Chinese" },
-  tw: { src: "/exhibits/taiwan-scarlet-traditional.jpg", alt: "Taiwan Pokémon Scarlet box with a Traditional Chinese title and Taiwan rating", kind: "Taiwan · Traditional Chinese" },
-  cn: { src: "/exhibits/mainland-scarlet-simplified-official.jpg", alt: "Official Simplified Chinese Pokémon Scarlet and Violet release artwork", kind: "Mainland · Simplified Chinese" },
+  es: { src: "/exhibits/spanish-red.jpg", alt: "Spanish Pokémon Edición Roja Game Boy box", kind: "Spanish core game · 1999" },
+  hk: { src: "/exhibits/chinese-sun-moon-traditional.jpg", alt: "Pokémon Sun and Moon regional boxes with Traditional Chinese titles", kind: "First Chinese-language core games · 2016" },
+  tw: { src: "/exhibits/chinese-sun-moon-traditional.jpg", alt: "Taiwan Pokémon Sun and Moon boxes with Traditional Chinese titles", kind: "Traditional Chinese core games · 2016" },
+  cn: { src: "/exhibits/chinese-sun-moon-simplified.jpg", alt: "Official Pokémon Sun and Moon launch artwork with Simplified Chinese titles", kind: "Simplified Chinese launch art · 2016" },
+  la: { src: "/exhibits/legends-za-latam.jpg", alt: "Latin American retail cover for Pokémon Legends Z-A", kind: "First Latin American Spanish core game · 2025" },
   br: { src: "/exhibits/brazil-horizons.jpg", alt: "Brazilian Portuguese Pokémon Horizontes anime poster", kind: "Brazilian Portuguese anime" },
   tr: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Turkish television debut", kind: "Turkish anime history · 2000" },
   ru: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Russian television debut", kind: "Russian anime history · 2000" },
@@ -127,14 +134,16 @@ export default function Home() {
   const [activeType, setActiveType] = useState("All");
   const [menuOpen, setMenuOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
+  const [localeSort, setLocaleSort] = useState<"games" | "anime">("games");
 
   const visibleLocales = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return locales;
-    return locales.filter((locale) =>
+    const filtered = !q ? locales : locales.filter((locale) =>
       [locale.place, locale.local, locale.languages, locale.note, locale.coreGame].join(" ").toLowerCase().includes(q),
     );
-  }, [query]);
+    const field = localeSort === "games" ? "coreYear" : "animeYear";
+    return [...filtered].sort((a, b) => (a[field] ?? Number.POSITIVE_INFINITY) - (b[field] ?? Number.POSITIVE_INFINITY) || a.place.localeCompare(b.place));
+  }, [localeSort, query]);
 
   const visibleMilestones = activeType === "All" ? milestones : milestones.filter((item) => item.type === activeType);
   const activeTimeline = timelineMode === "games" ? coreLanguageTimeline : animeLocalizationTimeline;
@@ -186,7 +195,7 @@ export default function Home() {
           <div>
             <p>A locale is more than a translation. It is a particular meeting of language, territory, broadcaster, distributor, policy, and time.</p>
             <p>Each chapter follows those decisions—and preserves the versions that came before.</p>
-            <p className="locale-order-note"><b>Archive order:</b> first localized core-series release. Locales without one follow announced editions, then earliest official market arrival.</p>
+            <p className="locale-order-note"><b>Choose the chronology:</b> sort the grid by first localized core-series game or first official anime dub. A locale without the selected milestone moves to the end rather than receiving an invented date.</p>
           </div>
         </div>
         <div className={`locale-timeline mode-${timelineMode}`} aria-label={`${timelineMode === "games" ? "Core game language" : "Official anime localization"} timeline`}>
@@ -199,20 +208,23 @@ export default function Home() {
           </div>
           <p>{timelineMode === "games" ? "Each node marks the first time that language became selectable in a new main-series Pokémon game. Locales debuting in the same year share one clustered point; announced future support remains visually distinct." : "Each node marks the earliest documented official localized television broadcast in this exhibition. This view preserves dub histories and established regional names that began outside the games."}</p>
         </div>
-        <label className="search-box">
-          <span>⌕</span>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Find a place, language, or script…" aria-label="Search locales" />
-          <kbd>{visibleLocales.length} locales</kbd>
-        </label>
+        <div className="locale-grid-tools">
+          <label className="search-box">
+            <span>⌕</span>
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Find a place, language, or script…" aria-label="Search locales" />
+            <kbd>{visibleLocales.length} locales</kbd>
+          </label>
+          <label className="locale-sort-control"><span>Sort locale grid by</span><select value={localeSort} onChange={(event) => setLocaleSort(event.target.value as "games" | "anime")}><option value="games">First core-game language</option><option value="anime">First official anime dub</option></select><small>Locales without this marker appear last.</small></label>
+        </div>
         <div className="locale-grid">
           {visibleLocales.map((locale, index) => (
-            <a className={`locale-card ${locale.id === "kr" ? "featured" : ""}`} href={`/locales/${locale.slug}`} key={locale.id} style={{ "--delay": `${index * 45}ms` } as React.CSSProperties}>
-              <div className="locale-top"><span className="flag">{locale.flag}</span><span className={`status ${locale.status === "Chapter live" ? "live" : ""}`}>{locale.status}</span></div>
+            <a className="locale-card" href={`/locales/${locale.slug}`} key={locale.id} style={{ "--delay": `${index * 45}ms` } as React.CSSProperties}>
+              <div className="locale-top"><span className="flag">{locale.flag}</span></div>
               {localeMedia[locale.id] && <figure className={`locale-card-media media-${locale.id}`}><img src={localeMedia[locale.id].src} alt={localeMedia[locale.id].alt} loading="lazy" /><figcaption>{localeMedia[locale.id].kind}</figcaption></figure>}
-              <div className="locale-local">{locale.local}</div>
-              <h3>{locale.place}</h3>
+              <div className="locale-place">{locale.place}</div>
+              <h3 className="locale-local">{locale.local}</h3>
               <div className="locale-language">{locale.languages}</div>
-              <div className="locale-game-release"><span>Core-series marker</span><b>{locale.coreGame}</b></div>
+              <div className="locale-game-release"><span>{localeSort === "games" ? "Core-series marker" : "Anime marker"}</span><b>{localeSort === "games" ? locale.coreGame : animeMarkerBySlug[locale.slug] ?? "No official anime marker indexed"}</b></div>
               <p>{locale.note}</p>
               <div className="locale-bottom"><span>{locale.years}</span><span>Read chapter ↗</span></div>
             </a>

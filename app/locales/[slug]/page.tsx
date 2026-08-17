@@ -7,6 +7,7 @@ import { ItalianPokedex } from "../../components/ItalianPokedex";
 import { JapanesePokedex } from "../../components/JapanesePokedex";
 import { KoreanPokedex } from "../../components/KoreanPokedex";
 import { LocalePokedex } from "../../components/LocalePokedex";
+import { SpanishPokedex } from "../../components/SpanishPokedex";
 import { VietnamesePokedex } from "../../components/VietnamesePokedex";
 
 const chapters = {
@@ -20,6 +21,8 @@ const chapters = {
   france: { code: "FR", place: "France", local: "France", language: "French · français", period: "1998—today", live: true, deck: "How a Nintendo France team turned translation into wordplay—and built one of Pokémon’s most distinctive naming traditions." },
   germany: { code: "DE", place: "Germany", local: "Deutschland", language: "German · Deutsch", period: "1999—today", live: true, deck: "How German compounds and wordplay turned Pokémon concepts into a distinct creature vocabulary from the franchise’s first European wave." },
   italy: { code: "IT", place: "Italy", local: "Italia", language: "Italian · italiano", period: "1999—today", live: true, deck: "How Italy built a fully localized Pokémon world around mostly unchanged species names—and when it chose to translate them." },
+  spain: { code: "ES", place: "Spain", local: "España", language: "Spanish · español (España)", period: "1999—today", live: true, deck: "The European Spanish game tradition: a fully localized world built around mostly shared international species names." },
+  "latin-america": { code: "LAT", place: "Latin America", local: "América Latina", language: "Spanish · español (Latinoamérica)", period: "1999—today", live: true, deck: "A distinct regional dub tradition—and the 2025 arrival of Latin American Spanish as a selectable core-game language." },
   "hong-kong": { code: "HK", place: "Hong Kong", local: "香港", language: "Cantonese · Traditional Chinese", period: "1998—today", live: true, deck: "A Cantonese naming tradition, a 2016 unification, and a history that cannot be reduced to script alone." },
   taiwan: { code: "TW", place: "Taiwan", local: "台灣", language: "Mandarin · Traditional Chinese", period: "1998—today", live: true, deck: "From established anime vocabulary to a coordinated Chinese-language game localization." },
   "mainland-china": { code: "CN", place: "Mainland China", local: "中国大陆", language: "Mandarin · Simplified Chinese", period: "2000s—today", live: true, deck: "The mainland record of simplified-script terminology, official distribution, games, cards, and media." },
@@ -76,6 +79,7 @@ const chineseCopy = {
     arrivalDate: "16 NOV 1998", arrivalTitle: "Pokémon reaches Hong Kong television", arrivalText: "The first episode of the animated series aired on TVB. This is the earliest documented mass-market arrival in this edition—not a claim that every Pokémon product became officially available that day.",
     recognitionDate: "2016", recognitionTitle: "A unified naming policy reaches the locale", recognitionText: "Chinese-language core games and unified character names made The Pokémon Company’s regional language strategy explicit, while the response revealed the strength of Hong Kong’s existing Cantonese vocabulary.",
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Hong_Kong",
+    media: "/exhibits/chinese-sun-moon-traditional.jpg", mediaAlt: "Pokémon Sun and Moon regional boxes with Traditional Chinese titles", mediaLabel: "Traditional Chinese regional boxes · 2016",
   },
   taiwan: {
     eyebrow: "A Taiwan chapter, not a generic Traditional Chinese page.",
@@ -86,16 +90,18 @@ const chineseCopy = {
     arrivalDate: "28 NOV 1998", arrivalTitle: "The animated series begins in Taiwan", arrivalText: "Episode one aired on CTV in Mandarin. This broadcast is the earliest documented broad public arrival in this edition and the beginning of a distinct Taiwan media history.",
     recognitionDate: "DEC 2022", recognitionTitle: "Pokémon Taiwan Co., Ltd. is established", recognitionText: "The creation of a dedicated Taiwan company marks a later form of formal regional investment. Pokémon Center Taipei followed in December 2023.",
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Taiwan",
+    media: "/exhibits/chinese-sun-moon-traditional.jpg", mediaAlt: "Taiwan Pokémon Sun and Moon boxes with Traditional Chinese titles", mediaLabel: "Taiwan launch boxes · 2016",
   },
   "mainland-china": {
     eyebrow: "Simplified Chinese is the script. Mainland China is the locale.",
     opening: "Mainland China’s chapter follows more than character conversion. It records when official games, cards, merchandise, websites, and terminology entered a market with its own distribution and media environment.",
-    note: "Most current creature names correspond directly with the unified Traditional Chinese list in simplified characters, but mainland-specific revisions and product timelines still require their own record.",
+    note: "Most current creature names correspond directly with the unified Traditional Chinese list in simplified characters, but mainland-specific revisions and product timelines still require their own record. Sun and Moon did not receive a separate mainland retail package: the official Simplified Chinese site directed players to Japanese- or Traditional-Chinese-region software, where Simplified Chinese could be selected in-game.",
     date: "26 FEB 2016", event: "Simplified Chinese enters the core games", eventText: "Pokémon Sun and Moon announced Simplified Chinese as a selectable language. The official mainland Pokédex is now the primary reference for current simplified-script names.",
     official: "https://dex.pokemon.cn/play/pokedex",
     arrivalDate: "24 DEC 1998", arrivalTitle: "The animated series reaches mainland television", arrivalText: "The first episode aired on Shanghai’s OTV in Mandarin. Public recognition therefore predates official Chinese core games and later direct corporate investment by many years.",
     recognitionDate: "JUL 2020", recognitionTitle: "Pokémon Shanghai is established", recognitionText: "The Pokémon Company created a mainland subsidiary, signaling a new phase of direct local operation. Simplified Chinese TCG products followed in 2022, while game releases remained shaped by separate approval and distribution rules.",
     historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_mainland_China",
+    media: "/exhibits/chinese-sun-moon-simplified.jpg", mediaAlt: "Official Pokémon Sun and Moon launch artwork with Simplified Chinese titles", mediaLabel: "Official Simplified Chinese launch art · 2016",
   },
 } as const;
 
@@ -124,7 +130,7 @@ function ChineseChapter({ locale }: { locale: keyof typeof chineseCopy }) {
     </section>}
     <section className="chapter-timeline">
       <div className="chapter-rail"><span>Time marker</span><b>02</b></div>
-      <div className="chapter-events"><article><time>{copy.date.split(" ").map((part) => <span key={part}>{part}<br /></span>)}</time><div><span>Game language / naming policy</span><h2>{copy.event}</h2><p>{copy.eventText}</p><a href={copy.official} target="_blank" rel="noreferrer">Current official regional Pokédex ↗</a></div><ExhibitMedia src="/exhibits/sun-moon.jpg" alt="Pokémon Sun and Moon double-pack box art" label="Core game artifact · 2016" /></article></div>
+      <div className="chapter-events"><article><time>{copy.date.split(" ").map((part) => <span key={part}>{part}<br /></span>)}</time><div><span>Game language / naming policy</span><h2>{copy.event}</h2><p>{copy.eventText}</p><a href={copy.official} target="_blank" rel="noreferrer">Current official regional Pokédex ↗</a></div><ExhibitMedia src={copy.media} alt={copy.mediaAlt} label={copy.mediaLabel} /></article></div>
     </section>
     <LocalePokedex locale={locale} />
     <section className="chapter-sources"><span>Sources in this edition</span><a href={copy.official} target="_blank" rel="noreferrer">01 · Official regional Pokédex</a><a href={copy.historySource} target="_blank" rel="noreferrer">02 · Locale history</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Chinese_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · Chinese name-history index</a></section>
@@ -184,6 +190,39 @@ function UnitedStatesChapter() {
     </section>
     <EnglishUsPokedex />
     <section className="chapter-sources"><span>Sources in this edition</span><a href="https://www.pokemon.com/us/pokedex" target="_blank" rel="noreferrer">01 · Official U.S. Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions" target="_blank" rel="noreferrer">02 · Red and Blue release record</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_in_Japanese" target="_blank" rel="noreferrer">03 · Japanese name index</a><a href="https://time.com/6796536/history-origins-pokemon/" target="_blank" rel="noreferrer">04 · U.S. localization oral history</a><a href="https://www.youtube.com/watch?v=YZ0xJ1x5kMA" target="_blank" rel="noreferrer">05 · Nob Ogasawara interview</a></section>
+  </>;
+}
+
+function SpanishChapter({ locale }: { locale: "spain" | "latin-america" }) {
+  const isLatam = locale === "latin-america";
+  return <>
+    <section className={`arrival-brief ${isLatam ? "latam-arrival" : "spain-arrival"}`}>
+      <div className="arrival-heading"><span>Arrival & regional frame</span><h2>{isLatam ? <>The dub came first.<br /><em>The game language followed.</em></> : <>Spain built the first<br /><em>Spanish game world.</em></>}</h2><p>{isLatam ? "Pokémon had a Latin American Spanish voice, audience, and vocabulary from 1999, but its core games continued to offer the Spain-oriented Spanish edition for more than twenty-five years. Legends: Z-A made Latin American Spanish separately selectable in 2025." : "Pokémon Red and Blue gave Spain a Spanish-language core-game edition in 1999. That localization became the franchise’s long-running game-Spanish reference, distinct from the Latin American dub tradition developing at the same time."}</p></div>
+      <div className="arrival-markers">
+        <article><time>{isLatam ? "26 APR 1999" : "05 OCT 1999"}</time><span>{isLatam ? "Official anime arrival" : "First Spanish-language core games"}</span><h3>{isLatam ? "The regional dub begins" : "Rojo and Azul launch in Spain"}</h3><p>{isLatam ? "The animated series entered the region through a Latin American Spanish adaptation with its own cast, register, titles, and broadcast history." : "The Spanish editions localized dialogue, moves, items, places, and story text while retaining most English species spellings."}</p></article>
+        <article><time>{isLatam ? "16 OCT 2025" : "20 DEC 1999"}</time><span>{isLatam ? "First selectable core-game locale" : "Official anime arrival"}</span><h3>{isLatam ? "Legends: Z-A adds Latin American Spanish" : "The Spain dub reaches television"}</h3><p>{isLatam ? "Nintendo’s Mexico listing names Español (América Latina) separately among the supported languages, making the regional distinction visible inside the game itself." : "Spain received a separate Spanish dub rather than importing the Latin American adaptation, reinforcing two parallel media-localization traditions."}</p></article>
+      </div>
+      <a href={isLatam ? "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Latin_America" : "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Spain"} target="_blank" rel="noreferrer">Locale history and release record ↗</a>
+    </section>
+    <section className="chapter-opening spanish-opening">
+      <div className="chapter-rail"><span>Why two localizations</span><b>01</b></div>
+      <article><p className="dropcap">“Spanish” describes a shared language, not one interchangeable audience edition. Spain and Latin America differ in everyday vocabulary, pronouns, idiom, voice casting, broadcast infrastructure, ratings, marketing, and expectations about natural dialogue.</p><p>{isLatam ? "For decades, Latin American viewers heard a regionally adapted anime while game players selected the Spain-oriented Spanish text. The addition of a separate Latin American option acknowledges that those traditions are related but not equivalent." : "The Spain game translation became established before a Latin American core-game option existed. Its longevity explains why European Spanish appears earlier on the core-game timeline even though Latin America’s anime history began months earlier."}</p><aside><b>Names are only one layer</b><p>Most species spellings match across the two Spanish editions. The locale distinction is clearest in dialogue, terminology, register, dubbing, distribution, and time—not in forcing every Pokémon to have two different names.</p></aside></article>
+    </section>
+    <section className="chapter-timeline spanish-timeline">
+      <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
+      <div className="chapter-events">
+        {isLatam ? <>
+          <article><time>26 APR<br />1999</time><div><span>Animation / regional localization</span><h2>A Latin American voice precedes a game option</h2><p>The regional anime adaptation established a recognizable Latin American Pokémon vocabulary and performance tradition long before the core series acknowledged the locale in its language menu.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Latin_America" target="_blank" rel="noreferrer">Broadcast history ↗</a></div></article>
+          <article><time>16 OCT<br />2025</time><div><span>Core games / selectable language</span><h2>Latin American Spanish enters the game</h2><p>Leyendas Pokémon: Z-A lists Español and Español (América Latina) as separate supported languages. The official es-mx site also uses regional forms such as Ciudad Luminalia, making the localization visible beyond the menu label.</p><a href="https://www.nintendo.com/es-mx/store/products/pokemon-legends-z-a-switch/" target="_blank" rel="noreferrer">Nintendo Mexico language listing ↗</a></div><ExhibitMedia src="/exhibits/legends-za-latam.jpg" alt="Latin American retail cover for Pokémon Legends Z-A" label="Latin American retail edition · 2025" /></article>
+        </> : <>
+          <article><time>05 OCT<br />1999</time><div><span>Core games / Spain</span><h2>Spanish becomes playable</h2><p>Pokémon Edición Roja and Edición Azul began the core series’ European Spanish lineage. This is the milestone used to position Spain on the homepage’s game timeline.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Spain" target="_blank" rel="noreferrer">Spain release record ↗</a></div><ExhibitMedia src="/exhibits/spanish-red.jpg" alt="Spanish Pokémon Edición Roja Game Boy box" label="Spanish core-game box · 1999" tilt="left" /></article>
+          <article><time>20 DEC<br />1999</time><div><span>Animation / Spain dub</span><h2>A separate television adaptation follows</h2><p>Spain’s television edition developed independently from the Latin American dub. The two audiences could therefore share species spellings while hearing different scripts, performances, and regional language choices.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Spain" target="_blank" rel="noreferrer">Spain broadcast record ↗</a></div></article>
+        </>}
+      </div>
+    </section>
+    {isLatam && <section className="locale-distinction spanish-distinction"><div><span>A contemporary marker</span><h2>The distinction became<br /><em>visible—and shareable.</em></h2></div><article><p>The 2025 localization announcement mattered because fans had spent years asking why a franchise with a major Latin American audience supplied a Spain-oriented game script but a regionally adapted anime. The official language listing is the decisive product evidence; a localization contributor’s contemporary post preserves how the moment was presented by someone involved.</p><a href="https://www.linkedin.com/posts/tomascortijo_pok%C3%A9mon-presents-2272025-activity-7301045323886415872-GPT1" target="_blank" rel="noreferrer">Representative localization announcement post ↗</a></article></section>}
+    <SpanishPokedex locale={locale} />
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Spanish_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">01 · Spanish name index</a><a href={isLatam ? "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Latin_America" : "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Spain"} target="_blank" rel="noreferrer">02 · Locale history</a><a href={isLatam ? "https://www.nintendo.com/es-mx/store/products/pokemon-legends-z-a-switch/" : "https://legends.pokemon.com/es-es/news/release-date"} target="_blank" rel="noreferrer">03 · Official regional game record</a></section>
   </>;
 }
 
@@ -476,9 +515,9 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
     <header className="locale-hero">
       <div className="locale-code">{chapter.code}</div>
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
-      <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Editorial state</span><b>{chapter.live ? "Chapter live · v0.1" : "Researching"}</b></div></div>
+      <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Archive edition</span><b>{chapter.live ? "Published · v0.1" : "Research in progress"}</b></div></div>
     </header>
-    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : isMediaLocale ? <MediaLocaleChapter locale={slug as keyof typeof mediaLocaleCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "future" ? <FutureChapter /> : slug === "japan" ? <JapanChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "germany" ? <GermanChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "south-korea" ? <KoreanChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
+    {isChinese ? <ChineseChapter locale={slug as keyof typeof chineseCopy} /> : isMediaLocale ? <MediaLocaleChapter locale={slug as keyof typeof mediaLocaleCopy} /> : slug === "unofficial" ? <UnofficialChapter /> : slug === "future" ? <FutureChapter /> : slug === "japan" ? <JapanChapter /> : slug === "united-states" ? <UnitedStatesChapter /> : slug === "france" ? <FrenchChapter /> : slug === "germany" ? <GermanChapter /> : slug === "italy" ? <ItalianChapter /> : slug === "spain" || slug === "latin-america" ? <SpanishChapter locale={slug} /> : slug === "south-korea" ? <KoreanChapter /> : slug === "vietnam" ? <VietnamChapter /> : !chapter.live ? <Researching chapter={chapter as (typeof chapters)[Exclude<Slug, "south-korea">]} /> : <>
       <section className="chapter-opening">
         <div className="chapter-rail"><span>Opening context</span><b>01</b></div>
         <article><p className="dropcap">Pokémon did not enter every market on equal terms. In South Korea, its arrival overlapped with a national re-evaluation of how Japanese popular culture could circulate after decades of restriction.</p><p>That policy history does not explain every localization choice. It does establish the conditions around them: what could be imported, through which channels, and when a Japanese franchise could openly present itself as Japanese.</p><aside><b>Editorial note</b><p>This chapter distinguishes the gradual opening of Japanese popular culture from individual Pokémon releases. A policy date is context—not automatically a Pokémon release date.</p></aside></article>

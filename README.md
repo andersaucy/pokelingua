@@ -6,14 +6,16 @@ Pokélingua is a living digital exhibition about how Pokémon crossed borders. I
 
 ## Explore the exhibition
 
-The homepage presents locale chapters in chronological order by their first localized core-series game. A clickable visual timeline offers a second route through those arrivals and continues to a Future evidence desk for announced localizations. Each finished chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable name library covering all 1,025 Pokémon through Pecharunt.
+The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. A clickable visual timeline offers the same two historical lenses and continues to a Future evidence desk for announced localizations. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
 
-The current edition includes ten full name-library chapters plus six anime-first localization chapters:
+The current edition includes twelve full name-library chapters plus six anime-first localization chapters:
 
 - Japan — the Japanese source vocabulary and 1996 origin point
 - United States — the English reinvention that became an international reference
 - Germany — German compounds, wordplay, and creature clues
 - Italy — retained English spellings and a small set of translated exceptions
+- Spain — the European Spanish core-game lineage established by Red and Blue in 1999
+- Latin America — a regional dub tradition and the first selectable Latin American Spanish core-game edition in Legends: Z-A
 - France — a distinctive French naming system built around adaptation and wordplay
 - South Korea — Hangul names, import-policy context, and documented earlier game variants
 - Hong Kong — Cantonese readings, established regional names, and Chinese-name unification
@@ -31,7 +33,7 @@ The broader India overview and Brazil remain visible as research-stage chapters 
 
 ## Search names across the world
 
-The homepage has a dedicated multilingual Pokémon search. A visitor can enter a name in English, Japanese, French, German, Italian, Korean, Chinese, or an indexed Vietnam-market form and see the matching species aligned across every completed locale.
+The homepage has a dedicated multilingual Pokémon search. A visitor can enter a name in English, Japanese, French, German, Italian, Spanish, Korean, Chinese, or an indexed Vietnam-market form and see the matching species aligned across every completed locale.
 
 Inside each locale, the complete Pokédex can be searched by local name, English name, readings or romanizations where relevant, and National Pokédex number. Expanding a row reveals:
 
