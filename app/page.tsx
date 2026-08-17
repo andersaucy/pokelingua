@@ -168,22 +168,8 @@ function timelineMediaFor(href: string) {
   return locale ? localeMedia[locale.id] : undefined;
 }
 
-const milestones = [
-  { year: "1996", title: "The starting point", text: "Pocket Monsters Red and Green launch in Japan. The names, world, and wordplay begin in Japanese.", type: "Games" },
-  { year: "1998", title: "A new English identity", text: "Pokémon Red and Blue and the animated series arrive in the United States—with a localized cast of names.", type: "Names" },
-  { year: "2001", title: "A company for the wider world", text: "Pokémon USA, Inc. is established, later becoming part of The Pokémon Company International.", type: "Company" },
-  { year: "2003", title: "A European foothold", text: "A London representative office is established as the brand's regional structure expands.", type: "Company" },
-  { year: "2006", title: "Pokémon Korea", text: "Pokémon Korea, Inc. is established, creating a dedicated organization for the Korean market.", type: "Locale" },
-  { year: "2013", title: "One worldwide release", text: "Pokémon X and Y become the core series' first simultaneous global launch.", type: "Games" },
-  { year: "2016", title: "Nine languages in one game", text: "Pokémon Sun and Moon add Simplified and Traditional Chinese to the selectable game languages.", type: "Languages" },
-  { year: "2020s", title: "The archive goes online", text: "Official regional channels bring dubbed episodes—and their publication dates—into a searchable public record.", type: "Anime" },
-];
-
-const types = ["All", "Names", "Games", "Anime", "Company", "Locale", "Languages"];
-
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [activeType, setActiveType] = useState("All");
   const [menuOpen, setMenuOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
   const [localeSort, setLocaleSort] = useState<"games" | "anime">("games");
@@ -200,7 +186,6 @@ export default function Home() {
     return [...filtered].sort((a, b) => compareLocales(a, b, localeSort));
   }, [localeSort, query]);
 
-  const visibleMilestones = activeType === "All" ? milestones : milestones.filter((item) => item.type === activeType);
   const activeTimeline = timelineMode === "games" ? coreLanguageTimeline : animeLocalizationTimeline;
 
   return (
@@ -215,7 +200,7 @@ export default function Home() {
           <a href="/introduction">Introduction</a>
           <a href="#locales">Locales</a>
           <a href="#pokemon-search">Pokémon search</a>
-          <a href="#timeline">Timeline</a>
+          <a href="/timeline">Timeline</a>
           <a href="#featured-locale">Locale of the day</a>
           <a href="#method">About the archive</a>
         </div>
@@ -367,24 +352,10 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="timeline-section" id="timeline">
-        <div className="section-kicker">04 / Selected milestones</div>
-        <div className="timeline-head"><h2>Not one timeline.<br /><em>Thousands of arrivals.</em></h2><p>Start with the company-wide landmarks, then filter by the kind of decision that changed Pokémon’s global shape.</p></div>
-        <div className="filters" role="group" aria-label="Filter timeline">
-          {types.map((type) => <button key={type} onClick={() => setActiveType(type)} className={activeType === type ? "active" : ""}>{type}</button>)}
-        </div>
-        <div className="timeline-list">
-          {visibleMilestones.map((item) => (
-            <article className="timeline-item" key={`${item.year}-${item.title}`}>
-              <time>{item.year}</time><span className="timeline-dot" /><div><span className="event-type">{item.type}</span><h3>{item.title}</h3><p>{item.text}</p></div>
-            </article>
-          ))}
-        </div>
-        <p className="timeline-note">This first edition uses milestone dates from The Pokémon Company’s corporate history. Locale chapters will add broadcasts, releases, terminology changes, and official uploads—with day-level dates where the record allows.</p>
-      </section>
+      <a className="timeline-portal" href="/timeline"><span>Chronology chapter</span><strong>Follow the decisions that made Pokémon global.</strong><p>Games, companies, anime dubs, and locale-specific naming policies now have a dedicated sourced timeline.</p><b>Open the timeline →</b></a>
 
       <section className="method-section" id="method">
-        <div className="section-kicker light">05 / Built as a public record</div>
+        <div className="section-kicker light">04 / Built as a public record</div>
         <div className="method-grid">
           <h2>Every name has<br />a history.<br /><em>Every date needs<br />a source.</em></h2>
           <div className="principles">
