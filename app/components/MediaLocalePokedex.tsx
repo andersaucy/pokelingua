@@ -8,7 +8,7 @@ import { NameEtymology, type OriginField } from "./NameEtymology";
 
 type Locale = "brazil" | "russia" | "thailand" | "hindi-india" | "tamil-india" | "telugu-india";
 type IndexedRecord = { id: number; english: string; current: string; reading: string; former?: string; formerReading?: string; formerRomanization?: string };
-type Entry = IndexedRecord & { medium: string; recordYear: string; attestedScript?: boolean; recordSource?: string };
+type Entry = IndexedRecord & { medium: string; recordYear: string; attestedScript?: boolean; confirmedScript?: boolean; recordSource?: string };
 
 const PAGE_SIZE = 50;
 
@@ -93,9 +93,9 @@ const copy: Record<Locale, {
 
 function entriesFor(locale: Locale): Entry[] {
   const metadata = copy[locale];
-  if (locale === "russia") return (mediaPokemon.russian as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear }));
-  if (locale === "thailand") return (mediaPokemon.thai as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear }));
-  if (locale === "hindi-india") return (mediaPokemon.hindi as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear }));
+  if (locale === "russia") return (mediaPokemon.russian as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear, confirmedScript: true }));
+  if (locale === "thailand") return (mediaPokemon.thai as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear, confirmedScript: true }));
+  if (locale === "hindi-india") return (mediaPokemon.hindi as IndexedRecord[]).map((entry) => ({ ...entry, medium: metadata.medium, recordYear: metadata.recordYear, confirmedScript: true }));
   if (locale === "brazil") {
     const localized: Record<number, string> = { 772: "Tipo Nulo", 984: "Presa Grande", 985: "Cauda Brado", 986: "Capuz Bruto", 987: "Juba Sopro", 988: "Asa Rasteira", 989: "Choque Areia", 990: "Trilho Férreo", 991: "Pacote Férreo", 992: "Mãos Férreas", 993: "Jugulares Férreas", 994: "Mariposa Férrea", 995: "Espinhos Férreos", 1005: "Lua Estrondo", 1006: "Valentia Férrea", 1009: "Onda Ando", 1010: "Folhas Férreas", 1020: "Fogo Corrosão", 1021: "Raio Fúria", 1022: "Rocha Férrea", 1023: "Chifres Férreos" };
     return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: localized[entry.id] ?? entry.english, reading: localized[entry.id] ? "Localized Brazilian Portuguese species name" : "English spelling retained in Brazilian Portuguese", medium: metadata.medium, recordYear: entry.id === 772 ? "2016" : localized[entry.id] ? "2022" : "N/A" }));
@@ -103,23 +103,25 @@ function entriesFor(locale: Locale): Entry[] {
   const scriptNames = locale === "tamil-india" ? tamilScriptNames : teluguScriptNames;
   return englishPokemon.map((entry) => {
     const attested = scriptNames[entry.id];
-    return { id: entry.id, english: entry.english, current: attested?.name ?? "N/A", reading: attested ? "English-derived name written in the locale script" : `${entry.english} is retained in speech; an official script form is not yet indexed`, medium: attested?.medium ?? metadata.medium, recordYear: metadata.recordYear, attestedScript: Boolean(attested), recordSource: attested?.source };
+    return { id: entry.id, english: entry.english, current: attested?.name ?? "N/A", reading: attested ? "English-derived name written in the locale script" : `${entry.english} is retained in speech; an official script form is not yet indexed`, medium: attested?.medium ?? metadata.medium, recordYear: metadata.recordYear, attestedScript: Boolean(attested), confirmedScript: Boolean(attested), recordSource: attested?.source };
   });
 }
 
 export function MediaLocalePokedex({ locale }: { locale: Locale }) {
   const metadata = copy[locale];
   const [query, setQuery] = useState("");
+  const [scriptOnly, setScriptOnly] = useState(false);
   const [expanded, setExpanded] = useState<number | null>(null);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const entries = useMemo(() => entriesFor(locale), [locale]);
   const matches = useMemo(() => {
     const q = query.trim().toLocaleLowerCase();
-    return entries.filter((entry) => !q || [entry.id, entry.english, entry.current, entry.reading, entry.former, entry.formerReading, entry.formerRomanization].join(" ").toLocaleLowerCase().includes(q));
-  }, [entries, query]);
+    return entries.filter((entry) => (!scriptOnly || entry.confirmedScript) && (!q || [entry.id, entry.english, entry.current, entry.reading, entry.former, entry.formerReading, entry.formerRomanization].join(" ").toLocaleLowerCase().includes(q)));
+  }, [entries, query, scriptOnly]);
 
   const visible = matches.slice(0, limit);
   const attestedScriptCount = entries.filter((entry) => entry.attestedScript).length;
+  const confirmedScriptCount = entries.filter((entry) => entry.confirmedScript).length;
   const brazilLocalizedCount = locale === "brazil" ? entries.filter((entry) => entry.current !== entry.english).length : 0;
 
   return <section className="dex-library media-dex" id="name-library">
@@ -129,7 +131,7 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
       <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : locale === "tamil-india" || locale === "telugu-india" ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : locale === "tamil-india" || locale === "telugu-india" ? "Official script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : "Dub / official-media naming included"}</span></div>
       <p>The medium is part of every record. “Transcription” means the name crossed scripts; it does not claim that a new etymology or independently translated species name was created.</p>
     </div>
-    <div className="dex-controls"><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label><span>Showing {visible.length} of {matches.length}</span></div>
+    <div className="dex-controls"><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
     <div className="dex-table" role="table" aria-label={`${metadata.localeName} Pokémon name library`}>
       <div className="dex-row dex-header" role="row"><span>Sprite / No.</span><span>English</span><span>{metadata.currentLabel}</span><span>Medium / former record</span><span /></div>
       {visible.map((entry) => {

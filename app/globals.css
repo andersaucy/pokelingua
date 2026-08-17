@@ -296,14 +296,14 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 
 /* Final readability and timeline-position overrides. */
 .locale-timeline-node { --lane-offset: 0px; top: calc(92px + var(--lane-offset)); }
-.global-result > header span { font-size: 15px !important; }
+.global-result > header span { font-size: 16px !important; }
 .dex-date-method { margin: 12px 0 0; color: #c1cac3; font: 15px/1.5 "Courier New",monospace; }
 .hero-actions span, .hero-period, .locale-language, .locale-game-release b,
 .global-search-head > div > span, .search-suggestion-row > span,
 .story-index, .story-label, .fact-strip span, .chapter-link,
 .case-meta, .case-meta b, .name-compare span, .name-compare small,
 .social-moment > a, .locale-split i, .locale-split span,
-.principles span, .manifesto, footer > a:last-child { font-size: 15px !important; line-height: 1.5; }
+.principles span, .manifesto, footer > a:last-child { font-size: 16px !important; line-height: 1.5; }
 .locale-details span, .locale-details b, .chapter-events span,
 .chapter-events a, .chapter-events div > b, .record-example span,
 .unofficial-context > div span, .unofficial-context article > a,
@@ -315,7 +315,7 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-controls > span, .dex-header > span, .dex-sprite b,
 .dex-current small, .dex-history-summary small, .dex-history-summary i,
 .dex-detail span, .dex-detail small, .dex-etymology > a,
-.dex-citation span, .dex-citation a, .dex-load-more button { font-size: 15px !important; line-height: 1.5; }
+.dex-citation span, .dex-citation a, .dex-load-more button { font-size: 16px !important; line-height: 1.5; }
 
 /* Two evidence tracks: clustered debut nodes sit directly on one shared line. */
 .locale-timeline { overflow: visible; }
@@ -416,7 +416,7 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-etymology .dex-origin-grid p { font-size: 18px; line-height: 1.65; }
 .dex-date-method { font-size: 16px; line-height: 1.6; }
 .dex-etymology > a { font-size: 16px !important; line-height: 1.5 !important; }
-.media-dex .dex-controls { grid-template-columns: 1fr auto; }
+.media-dex .dex-controls { grid-template-columns: minmax(260px, 1fr) auto auto; }
 .dex-record-source { display: inline-block; margin-top: 20px; border-bottom: 1px solid var(--acid); color: var(--acid); font: 700 16px/1.5 "Courier New",monospace; text-transform: uppercase; }
 
 /* Comfortable reading floor across the exhibition. */
