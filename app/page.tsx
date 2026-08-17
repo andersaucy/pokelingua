@@ -44,6 +44,7 @@ const locales: Locale[] = [
 
 const curatedLocaleOrder = new Map(locales.map((locale, index) => [locale.id, index]));
 const featuredLocales = locales.filter((locale) => locale.id !== "alt");
+const indiaLanguageIds = new Set(["hi", "ta", "te"]);
 
 function localDateKey() {
   const now = new Date();
@@ -65,6 +66,9 @@ function featuredLocaleFor(dateKey: string) {
 function compareLocales(a: Locale, b: Locale, basis: "games" | "anime") {
   if (a.id === "alt") return b.id === "alt" ? 0 : 1;
   if (b.id === "alt") return -1;
+
+  if (a.id === "in" && indiaLanguageIds.has(b.id)) return -1;
+  if (b.id === "in" && indiaLanguageIds.has(a.id)) return 1;
 
   if (basis === "anime") {
     return (a.animeYear ?? Number.POSITIVE_INFINITY) - (b.animeYear ?? Number.POSITIVE_INFINITY)
