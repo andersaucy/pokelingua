@@ -475,6 +475,11 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
 .global-name-card small { font-size: 16px; line-height: 1.35; }
 .global-name-card details { margin: 0 14px 10px; }
 .global-name-card summary { padding: 8px 0 3px; font-size: 16px; }
+.global-search-mode { width: fit-content; margin-top: 25px; padding: 14px 18px; display: flex; align-items: center; gap: 13px; border: 1px solid var(--ink); background: var(--paper); cursor: pointer; }
+.global-search-mode input { width: 21px; height: 21px; margin: 0; accent-color: var(--moss); }
+.global-search-mode > span { display: flex; flex-direction: column; gap: 2px; }
+.global-search-mode b { font-size: 17px; }
+.global-search-mode small { font-size: 16px; line-height: 1.4; color: #59625c; }
 
 /* Dedicated timeline chapter. */
 .timeline-chapter { background: var(--paper); }
