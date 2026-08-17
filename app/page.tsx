@@ -181,7 +181,7 @@ function timelineMediaFor(href: string) {
 export default function Home() {
   const [heroBallIndex, setHeroBallIndex] = useState(0);
   useEffect(() => {
-    const cycle = window.setInterval(() => setHeroBallIndex((index) => (index + 1) % heroBallVariants.length), 14000);
+    const cycle = window.setInterval(() => setHeroBallIndex((index) => (index + 1) % heroBallVariants.length), 12000);
     return () => window.clearInterval(cycle);
   }, []);
   const heroBall = heroBallVariants[heroBallIndex];
@@ -236,9 +236,7 @@ export default function Home() {
             sizes="100vw"
           />
           <div className="hero-morph" aria-hidden="true">
-            <div className="hero-morph-orbits"><i /><i /><i /></div>
-            <div className="hero-morph-labels"><span>日本語</span><span>Français</span><span>한국어</span><span>中文</span><span>Deutsch</span><span>Italiano</span><span>Português</span><span>Español</span></div>
-            <div className="hero-morph-object"><div className={`hero-pokeball ${heroBall.className}`}><i /><em>{heroBall.symbol}</em><b /></div><div className="hero-globe" /></div>
+            <div className="hero-morph-object"><div className={`hero-pokeball ${heroBall.className}`}><i /><em>{heroBall.symbol}</em><b /></div></div>
           </div>
         </div>
         <div className="hero-poster-bar hero-introduction-link"><a href="/introduction">Enter the introduction to see how Pokémon became a case study in cultural globalization across names, languages, games, animation, and time. <span>→</span></a></div>
