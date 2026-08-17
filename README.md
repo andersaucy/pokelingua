@@ -4,11 +4,21 @@
 
 Pokélingua is a living digital exhibition about how Pokémon crossed borders. It treats localization as cultural history—not merely translation—by connecting creature names to a particular locale, script, medium, release, company decision, and moment in time.
 
+[Visit the live exhibition](https://pokelingua.vercel.app) · [Read the introduction](https://pokelingua.vercel.app/introduction)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandersaucy%2Fpokelingua&project-name=pokelingua&repository-name=pokelingua)
+
+## Why this exhibition exists
+
+Pokémon’s worldwide success was not a matter of exporting one unchanged object. Japanese concepts were repeatedly interpreted through new names, scripts, voices, release strategies, broadcasters, products, and regional policies. A television dub could establish a vocabulary years before a translated game; an older name could remain culturally meaningful long after an official terminology change.
+
+Pokélingua brings those scattered histories into one exhibit. It treats localized games, animation, cards, websites, retail, corporate decisions, fan memory, and unofficial circulation as related evidence of how a Japanese cultural world became locally familiar across generations.
+
 ## Explore the exhibition
 
 The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. A clickable visual timeline offers the same two historical lenses and continues to a Future evidence desk for announced localizations. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
 
-The current edition includes twelve full name-library chapters plus six anime-first localization chapters:
+The current edition includes full core-game and official-media name libraries alongside anime-first localization chapters:
 
 - Japan — the Japanese source vocabulary and 1996 origin point
 - United States — the English reinvention that became an international reference
@@ -63,20 +73,32 @@ The first-name year is deliberately conservative. Generation launch years are us
 
 ## Run locally
 
+You need [Node.js 22.13 or newer](https://nodejs.org/) and npm.
+
 ```bash
+npm --version
+git clone https://github.com/andersaucy/pokelingua.git
+cd pokelingua
 npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:3000](http://localhost:3000). Changes to the source update the local page while the development server is running.
 
 ## Build and deploy
 
+Create a production build locally with:
+
 ```bash
 npm run build
+npm start
 ```
 
-The project uses Next.js and is deployed through Vercel. Pushing future updates to the connected GitHub repository can trigger a fresh deployment while the public exhibition remains online.
+The project uses Next.js and requires no environment variables for its current feature set.
+
+- For a new copy, use the **Deploy with Vercel** button near the top of this README.
+- For the existing public site, Vercel is connected to the GitHub repository. Pushing to `main` triggers a fresh production deployment while the published exhibition remains online.
+- The production site is [pokelingua.vercel.app](https://pokelingua.vercel.app).
 
 ## Project status
 

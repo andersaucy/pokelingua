@@ -201,11 +201,11 @@ export default function Home() {
         </a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu">Menu</button>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <a href="/introduction">Introduction</a>
           <a href="#locales">Locales</a>
           <a href="#pokemon-search">Pokémon search</a>
           <a href="#timeline">Timeline</a>
-          <a href="#locale-notes">Locale notes</a>
-          <a href="#featured-locale">Featured locale</a>
+          <a href="#featured-locale">Locale of the day</a>
           <a href="#method">About the archive</a>
         </div>
         <a className="nav-cta" href="#locales">Explore the atlas <span>↗</span></a>
@@ -222,14 +222,7 @@ export default function Home() {
           priority
           sizes="100vw"
         />
-        <div className="hero-poster-bar">
-          <p>Tracing how names, stories, and creatures crossed borders—and what changed along the way.</p>
-          <div className="hero-actions">
-            <a className="primary-button" href="#locales">Explore by locale <span>↓</span></a>
-            <a className="text-link" href="#timeline">Travel through time <span>→</span></a>
-          </div>
-          <span className="hero-period">Since 1996 · Across borders, screens & scripts</span>
-        </div>
+        <div className="hero-poster-bar hero-introduction-link"><a href="/introduction">Enter the introduction to see how Pokémon became a case study in cultural globalization across names, languages, games, animation, and time. <span>→</span></a></div>
       </section>
 
       <section className="intro-section" id="locales">
@@ -281,7 +274,7 @@ export default function Home() {
 
       <section className="story-section" id="featured-locale" aria-live="polite">
         <div className="story-aside">
-          <div className="section-kicker light">Featured locale / {featuredDate}</div>
+          <div className="section-kicker light">Locale of the day / {featuredDate}</div>
           <div className="hangul featured-script" aria-hidden="true">{featuredLocale.local}</div>
           <div className="story-index">{featuredLocale.flag}<br />{featuredLocale.coreYear ? `GAME ${featuredLocale.coreYear}` : "ANIME-FIRST"}<br />ROTATES DAILY</div>
         </div>
