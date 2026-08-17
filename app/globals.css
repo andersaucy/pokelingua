@@ -471,12 +471,18 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
 .global-name-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; background: rgba(24,33,28,.28); }
 .global-name-card, .global-name-card:nth-child(even), .global-name-card:nth-last-child(-n+2) { min-height: 0; border: 0; background: var(--paper); }
 .global-name-card--media, .global-name-card--media:nth-child(even), .global-name-card--media:nth-last-child(-n+2) { background: #edf1e4; box-shadow: inset 3px 0 0 rgba(77, 104, 70, .3); }
-.global-name-card--media > a:hover { background: #ddecaa; }
-.global-name-card > a { min-height: 82px; padding: 12px 14px 9px; }
+.global-name-card--media .global-name-summary:hover { background: #ddecaa; }
+.global-name-card details { margin: 0; border: 0; }
+.global-name-card .global-name-summary { position: relative; min-height: 108px; display: flex; flex-direction: column; justify-content: center; padding: 12px 42px 12px 14px; cursor: pointer; list-style: none; text-transform: none; }
+.global-name-card .global-name-summary::-webkit-details-marker { display: none; }
+.global-name-card .global-name-summary:hover { background: var(--acid); }
+.global-name-card .global-name-summary::after { content: "+"; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font: 700 23px/1 Arial,sans-serif; }
+.global-name-card details[open] .global-name-summary::after { content: "−"; }
 .global-name-card b { font-size: 19px; line-height: 1.2; }
 .global-name-card small { font-size: 16px; line-height: 1.35; }
-.global-name-card details { margin: 0 14px 10px; }
-.global-name-card summary { padding: 8px 0 3px; font-size: 16px; }
+.global-name-origin { margin: 0 14px 12px; padding-top: 10px; border-top: 1px solid rgba(24,33,28,.28); }
+.global-name-origin strong { font: 700 16px/1.4 "Courier New",monospace; text-transform: uppercase; }
+.global-name-origin p { margin: 7px 0 0; }
 .global-search-mode { width: fit-content; margin-top: 25px; padding: 14px 18px; display: flex; align-items: center; gap: 13px; border: 1px solid var(--ink); background: var(--paper); cursor: pointer; }
 .global-search-mode input { width: 21px; height: 21px; margin: 0; accent-color: var(--moss); }
 .global-search-mode > span { display: flex; flex-direction: column; gap: 2px; }
