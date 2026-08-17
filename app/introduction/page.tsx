@@ -6,9 +6,9 @@ export const metadata: Metadata = {
 };
 
 const exhibitLenses = [
-  { number: "01", title: "Names are design", text: "A Pokémon name can carry anatomy, sound, humor, mythology, and marketing at once. Translating it means deciding which ideas should survive—and what will feel memorable in another language." },
-  { number: "02", title: "Media arrive differently", text: "A television dub may establish a locale years before a translated game. Cards, cinemas, websites, mobile services, and retail can each introduce another vocabulary and another official date." },
-  { number: "03", title: "Audiences keep the archive", text: "Older names do not disappear when a company changes policy. They remain in childhood memory, recorded broadcasts, packaging, fan speech, and sometimes public controversy." },
+  { ball: "poke", title: "Names are design", text: "A Pokémon name can carry anatomy, sound, humor, mythology, and marketing at once. Translating it means deciding which ideas should survive—and what will feel memorable in another language." },
+  { ball: "great", title: "Media arrive differently", text: "A television dub may establish a locale years before a translated game. Cards, cinemas, websites, mobile services, and retail can each introduce another vocabulary and another official date." },
+  { ball: "master", title: "Audiences keep the archive", text: "Older names do not disappear when a company changes policy. They remain in childhood memory, recorded broadcasts, packaging, fan speech, and sometimes public controversy." },
 ];
 
 const readingRoutes = [
@@ -53,7 +53,7 @@ export default function IntroductionPage() {
 
     <section className="intro-lenses" id="lenses">
       <div className="intro-lenses-head"><span>Three exhibition lenses / 02</span><h2>Translation leaves<br /><em>evidence.</em></h2><p>Pokélingua treats every name, date, script, and release as a record of a decision—not as trivia detached from the people and media that carried it.</p></div>
-      <div className="intro-lens-grid">{exhibitLenses.map((lens) => <article key={lens.number}><span>{lens.number}</span><h3>{lens.title}</h3><p>{lens.text}</p></article>)}</div>
+      <div className="intro-lens-grid">{exhibitLenses.map((lens) => <article key={lens.title}><div className={`intro-lens-ball ${lens.ball}`} aria-hidden="true"><i /><span /></div><h3>{lens.title}</h3><p>{lens.text}</p></article>)}</div>
     </section>
 
     <section className="intro-record">
