@@ -41,6 +41,31 @@ const chapters = {
 
 type Slug = keyof typeof chapters;
 
+const localeArtifactWalls: Record<Slug, string[]> = {
+  unofficial: ["/exhibits/red-green.jpg", "/exhibits/sun-moon.jpg", "/exhibits/anime-original.jpg"],
+  "united-states": ["/exhibits/red-blue.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  japan: ["/exhibits/red-green.jpg", "/exhibits/anime-original.jpg", "/exhibits/sun-moon.jpg"],
+  "south-korea": ["/exhibits/gold-silver-korea.jpg", "/exhibits/platinum-korea.png", "/exhibits/white-logo-korea.png"],
+  france: ["/exhibits/french-blue.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  germany: ["/exhibits/german-red-blue.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  italy: ["/exhibits/italian-blue.webp", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  spain: ["/exhibits/spanish-red.jpg", "/exhibits/anime-original.jpg", "/exhibits/legends-za.jpg"],
+  "latin-america": ["/exhibits/legends-za-latam.jpg", "/exhibits/anime-original.jpg", "/exhibits/legends-za.jpg"],
+  "hong-kong": ["/exhibits/chinese-sun-moon-traditional.jpg", "/exhibits/hong-kong-sword-traditional.jpg", "/exhibits/anime-original.jpg"],
+  taiwan: ["/exhibits/chinese-sun-moon-traditional.jpg", "/exhibits/taiwan-scarlet-traditional.jpg", "/exhibits/taiwan-shenqibaobei-title.png"],
+  "mainland-china": ["/exhibits/chinese-sun-moon-simplified.jpg", "/exhibits/mainland-scarlet-simplified-official.jpg", "/exhibits/anime-original.jpg"],
+  india: ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  "hindi-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  "tamil-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  "telugu-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  thailand: ["/exhibits/thai-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/sun-moon.jpg"],
+  russia: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
+  turkey: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
+  brazil: ["/exhibits/brazil-horizons.jpg", "/exhibits/red-blue.jpg", "/exhibits/winds-waves.jpg"],
+  vietnam: ["/exhibits/vietnam-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
+  future: ["/exhibits/winds-waves.jpg", "/exhibits/legends-za-latam.jpg", "/exhibits/sun-moon.jpg"],
+};
+
 export function generateStaticParams() { return Object.keys(chapters).map((slug) => ({ slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -349,14 +374,25 @@ function KoreanChapter() {
     </section>
     <section className="chapter-opening korea-opening"><div className="chapter-rail"><span>Naming method</span><b>01</b></div><article><p className="dropcap">Korean Pokémon names do not follow one source language. Some are original Korean coinages, some adapt the Japanese name, some follow English, and others retain an international form. 이상해씨 combines “strange” with “seed,” while 님피아 follows Japanese Nymphia and 테일로 follows English Taillow.</p><p>Hangul is the official written record. Romanization is a reading aid, not a second name: Revised Romanization, McCune–Reischauer, and event-specific spellings can render the same Hangul differently.</p><aside><b>Historical-name rule</b><p>The library flags only documented changes in the Korean name itself. It does not manufacture “variants” from different Latin-alphabet romanization systems.</p></aside></article></section>
     <RomanizationGuide locale="south-korea" />
+    <section className="korea-technology">
+      <div className="korea-technology-head"><span>Hardware, script & compatibility</span><h2>Localization was also<br /><em>a technical system.</em></h2><p>Korean did not move through the early generations in a simple line. Hangul rendering, character support, and communication between regional cartridges shaped what could be released—and which players could connect.</p></div>
+      <div className="korea-technology-grid">
+        <article><time>2002 · GEN II</time><h3>Hangul needed the Color hardware</h3><p>Unlike the other language editions, Korean Gold and Silver were Game Boy Color–only. Their additional memory was needed to render Korean characters, so the original monochrome Game Boy could not run them.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Versions" target="_blank" rel="noreferrer">Gold & Silver hardware note ↗</a></article>
+        <article><time>GEN III · NO KOREAN SOFTWARE</time><h3>A localized generation disappears</h3><p>Crystal and every Generation III title went without Korean-language software. Ruby and Sapphire were instead imported in Japanese with Korean packaging and manuals: a localized retail object surrounding an untranslated game.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">South Korea release record ↗</a></article>
+        <article><time>14 FEB 2008 · GEN IV</time><h3>Korean returns inside a compatibility island</h3><p>Korean Diamond and Pearl restored localized core games, but other regional Generation IV editions lacked Korean characters. Direct Union Room and Wi-Fi Club trades were blocked; the GTS could bridge the versions only by altering some names and Original Trainer text.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Global_Trade_System" target="_blank" rel="noreferrer">Generation IV compatibility note ↗</a></article>
+        <article><time>21 APR 2011 · GEN V</time><h3>Black and White close the gap</h3><p>Korean Black and White could communicate normally with international editions. For Korean players, Generation V finally joined translated software and full cross-region compatibility in the same release.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions" target="_blank" rel="noreferrer">Black & White compatibility note ↗</a></article>
+      </div>
+    </section>
     <section className="chapter-timeline korea-timeline"><div className="chapter-rail"><span>Time markers</span><b>02</b></div><div className="chapter-events">
       <article><time>14 JUL<br />1999</time><div><span>Animation</span><h2>Pokémon speaks Korean on SBS</h2><p>The television debut establishes an early public vocabulary before Korean-language core games.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Broadcast record ↗</a></div><ExhibitMedia src="/exhibits/anime-original.jpg" alt="Original Pokémon animated series poster" label="Anime exhibit · Korean broadcast" /></article>
-      <article><time>24 APR<br />2002</time><div><span>Core games</span><h2>Gold and Silver arrive in Korean</h2><p>The Korean editions became the first officially localized core games. Hangul support kept them Game Boy Color–only; Generation III then passed without a Korean localization.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">Game history ↗</a></div><ExhibitMedia src="/exhibits/gold-silver-korea.jpg" alt="Korean Pokémon Gold and Silver boxes" label="Korean core-game artifact · 2002" tilt="left" /></article>
+      <article><time>24 APR<br />2002</time><div><span>Core games · hardware</span><h2>Gold and Silver arrive in Korean</h2><p>The first officially localized Korean core games required the Game Boy Color’s additional memory to render Hangul. That made these editions Color-only, unlike Gold and Silver elsewhere.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Versions" target="_blank" rel="noreferrer">Game and hardware history ↗</a></div><ExhibitMedia src="/exhibits/gold-silver-korea.jpg" alt="Korean Pokémon Gold and Silver boxes" label="Korean core-game artifact · 2002" tilt="left" /></article>
       <article><time>AUG<br />2006</time><div><span>Company structure</span><h2>Pokémon Korea is established</h2><p>A dedicated regional company marked a new phase of direct organization for games, cards, events, and the wider Korean market.</p><a href="https://corporate.pokemon.co.jp/en/aboutus/history/" target="_blank" rel="noreferrer">Official corporate history ↗</a></div></article>
+      <article><time>14 FEB<br />2008</time><div><span>Core games · compatibility</span><h2>Diamond and Pearl restore Korean game text</h2><p>Localization returned after the Generation III gap, but Korean and non-Korean Generation IV cartridges could not trade directly because the international editions did not contain Korean character data.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Global_Trade_System" target="_blank" rel="noreferrer">Compatibility record ↗</a></div><ExhibitMedia src="/exhibits/platinum-korea.png" alt="Korean Pokémon Platinum box art" label="Korean Generation IV artifact · Platinum" /></article>
+      <article><time>21 APR<br />2011</time><div><span>Core games · compatibility</span><h2>Black and White remove the regional barrier</h2><p>The Korean editions could communicate with games from every other region without the Generation IV text problem, completing the transition to a fully interoperable Korean release.</p><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions" target="_blank" rel="noreferrer">Generation V release record ↗</a></div><ExhibitMedia src="/exhibits/white-logo-korea.png" alt="Korean Pokémon White logo" label="Korean Generation V branding · White" tilt="left" /></article>
       <article><time>12 OCT<br />2013</time><div><span>Worldwide release</span><h2>Korean joins the simultaneous launch</h2><p>Pokémon X and Y launched worldwide with Korean selectable from release day, replacing the earlier lag with a shared global schedule.</p><a href="https://www.pokemon.com/us/pokemon-news/a-pokemon-first" target="_blank" rel="noreferrer">Contemporary announcement ↗</a></div><ExhibitMedia src="/exhibits/x-box.jpg" alt="Pokémon X Nintendo 3DS box art" label="Worldwide core-game artifact · 2013" /></article>
     </div></section>
     <KoreanPokedex />
-    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://pokemonkorea.com/pokedex" target="_blank" rel="noreferrer">01 · Official Korean Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">02 · South Korea history</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Korean_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">03 · Korean name index</a><a href="https://theme.archives.go.kr/next/chronology/archiveDetail.do?evntId=0049291994&flag=2" target="_blank" rel="noreferrer">04 · National Archives policy record</a></section>
+    <section className="chapter-sources"><span>Sources in this edition</span><a href="https://pokemonkorea.com/pokedex" target="_blank" rel="noreferrer">01 · Official Korean Pokédex</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_South_Korea" target="_blank" rel="noreferrer">02 · South Korea history</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Versions" target="_blank" rel="noreferrer">03 · Gold & Silver hardware</a><a href="https://bulbapedia.bulbagarden.net/wiki/Global_Trade_System" target="_blank" rel="noreferrer">04 · Generation IV compatibility</a><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions" target="_blank" rel="noreferrer">05 · Generation V compatibility</a><a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Korean_Pok%C3%A9mon_names" target="_blank" rel="noreferrer">06 · Korean name index</a><a href="https://theme.archives.go.kr/next/chronology/archiveDetail.do?evntId=0049291994&flag=2" target="_blank" rel="noreferrer">07 · National Archives policy record</a></section>
   </>;
 }
 
@@ -588,6 +624,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <span className="chapter-number">Locale chapter / {chapter.code}</span>
     </nav>
     <header className="locale-hero">
+      <div className="locale-artifact-wall" aria-hidden="true">{localeArtifactWalls[slug as Slug].map((src, index) => <img src={src} alt="" key={`${src}-${index}`} />)}</div>
       <div className="locale-code">{chapter.code}</div>
       <div className="locale-title"><span>{chapter.local}</span><h1>{chapter.place}</h1><p>{chapter.deck}</p></div>
       <div className="locale-details"><div><span>Language context</span><b>{chapter.language}</b></div><div><span>Period in focus</span><b>{chapter.period}</b></div><div><span>Archive edition</span><b>{chapter.live ? "Published · v0.1" : "Research in progress"}</b></div></div>

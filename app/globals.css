@@ -154,10 +154,17 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
 footer { padding: 42px 6vw; display: flex; align-items: center; gap: 35px; background: var(--acid); }
 footer p { margin-right: auto; font: 14px Georgia, serif; } footer > a:last-child { font: 700 10px "Courier New", monospace; text-transform: uppercase; border-bottom: 1px solid; }
 .locale-page { background: var(--paper); }.locale-nav { position: relative; }.back-link { margin-left: auto; font: 700 11px "Courier New", monospace; text-transform: uppercase; }.chapter-number { font: 700 10px "Courier New", monospace; text-transform: uppercase; color: #667068; }
-.locale-hero { min-height: 620px; display: grid; grid-template-columns: 23% 1fr 25%; border-bottom: 1px solid var(--ink); }
+.locale-hero { position: relative; isolation: isolate; overflow: hidden; min-height: 620px; display: grid; grid-template-columns: 23% 1fr 25%; border-bottom: 1px solid var(--ink); }
+.locale-code, .locale-title, .locale-details { position: relative; z-index: 2; }
 .locale-code { display: grid; place-items: end center; padding-bottom: 45px; border-right: 1px solid var(--ink); background: var(--acid); font: 900 clamp(100px,16vw,240px)/.75 Arial; letter-spacing: -.13em; writing-mode: vertical-rl; transform: rotate(180deg); }
-.locale-title { padding: 100px 5vw 60px; display: flex; flex-direction: column; justify-content: center; }.locale-title > span { font: 24px Georgia, serif; }.locale-title h1 { margin: 5px 0 32px; font: 800 clamp(70px,10vw,150px)/.78 Arial; letter-spacing: -.09em; }.locale-title p { max-width: 650px; font: 21px/1.5 Georgia, serif; }
-.locale-details { border-left: 1px solid var(--ink); display: flex; flex-direction: column; justify-content: end; }.locale-details div { padding: 24px; border-top: 1px solid var(--ink); display: flex; flex-direction: column; gap: 8px; }.locale-details span, .chapter-rail span { font: 700 9px "Courier New", monospace; text-transform: uppercase; letter-spacing: .12em; }.locale-details b { font: 700 12px/1.4 "Courier New", monospace; }
+.locale-title { padding: 100px 5vw 60px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(90deg, rgba(244,240,231,.98) 0%, rgba(244,240,231,.9) 45%, rgba(244,240,231,.48) 78%, rgba(244,240,231,.12) 100%); }.locale-title > span { font: 24px Georgia, serif; }.locale-title h1 { margin: 5px 0 32px; font: 800 clamp(70px,10vw,150px)/.78 Arial; letter-spacing: -.09em; }.locale-title p { max-width: 650px; font: 21px/1.5 Georgia, serif; }
+.locale-details { border-left: 1px solid var(--ink); display: flex; flex-direction: column; justify-content: end; background: rgba(244,240,231,.86); backdrop-filter: blur(3px); }.locale-details div { padding: 24px; border-top: 1px solid var(--ink); display: flex; flex-direction: column; gap: 8px; }.locale-details span, .chapter-rail span { font: 700 9px "Courier New", monospace; text-transform: uppercase; letter-spacing: .12em; }.locale-details b { font: 700 12px/1.4 "Courier New", monospace; }
+.locale-artifact-wall { position: absolute; z-index: 0; inset: 0 25% 0 23%; overflow: hidden; pointer-events: none; background: #dfe6df; }
+.locale-artifact-wall::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(244,240,231,.75), transparent 42%, rgba(244,240,231,.2)), linear-gradient(0deg, rgba(244,240,231,.62), transparent 34%); }
+.locale-artifact-wall img { position: absolute; display: block; width: clamp(185px,20vw,315px); height: 46%; object-fit: cover; padding: 7px; background: rgba(255,255,255,.92); box-shadow: 14px 17px 28px rgba(24,33,28,.2); opacity: .48; filter: saturate(.88) contrast(.96); }
+.locale-artifact-wall img:nth-child(1) { right: 2%; top: 4%; transform: rotate(4deg); }
+.locale-artifact-wall img:nth-child(2) { right: 31%; bottom: -3%; transform: rotate(-5deg); }
+.locale-artifact-wall img:nth-child(3) { left: 12%; top: 13%; transform: rotate(2deg); object-fit: contain; }
 .chapter-opening, .chapter-timeline, .chapter-question { display: grid; grid-template-columns: 18% 1fr; border-bottom: 1px solid var(--ink); }.chapter-rail { padding: 55px 3vw; border-right: 1px solid var(--ink); display: flex; flex-direction: column; justify-content: space-between; }.chapter-rail b { font-size: 70px; color: rgba(24,33,28,.12); }
 .chapter-opening > article, .chapter-question > article { padding: 90px 9vw; }.chapter-opening article > p { max-width: 850px; font: 20px/1.65 Georgia, serif; }.chapter-opening .dropcap { font-size: 30px; line-height: 1.5; }.dropcap:first-letter { float: left; font: 800 110px/.75 Arial; padding: 11px 12px 0 0; color: var(--moss); }.chapter-opening aside { max-width: 680px; margin-top: 45px; padding: 23px; background: #e7dfd2; border-left: 4px solid var(--orange); }.chapter-opening aside p { margin-bottom: 0; font: 13px/1.6 "Courier New", monospace; }
 .chapter-events article { display: grid; grid-template-columns: 24% 1fr; border-bottom: 1px solid var(--ink); }.chapter-events article:last-child { border: 0; }.chapter-events time { padding: 48px 3vw; border-right: 1px solid var(--ink); font: 800 clamp(30px,4vw,58px)/.9 Arial; letter-spacing: -.06em; }.chapter-events article > div { padding: 48px 5vw; }.chapter-events span { font: 700 9px "Courier New", monospace; text-transform: uppercase; color: var(--orange); }.chapter-events h2 { margin: 8px 0 15px; font-size: 34px; }.chapter-events p { max-width: 700px; font: 17px/1.55 Georgia, serif; }.chapter-events a, .chapter-events div > b { display: inline-block; margin-top: 18px; font: 700 10px "Courier New", monospace; text-transform: uppercase; border-bottom: 1px solid; }.research-event { background: #e8dfd0; }
@@ -492,6 +499,21 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
 .timeline-portal > p { margin: 0; font-size: 17px; line-height: 1.55; }
 .timeline-portal > b { white-space: nowrap; border-bottom: 2px solid var(--ink); padding-bottom: 5px; }
 
+/* Korea case study: script support and regional cartridge compatibility. */
+.korea-technology { padding: 95px 6vw 105px; border-bottom: 1px solid var(--ink); background: #dfe9e6; }
+.korea-technology-head { display: grid; grid-template-columns: 150px minmax(0,1.1fr) minmax(280px,.65fr); gap: 4vw; align-items: end; margin-bottom: 58px; }
+.korea-technology-head > span { align-self: start; color: var(--orange); font-size: 16px; font-weight: 800; line-height: 1.45; text-transform: uppercase; letter-spacing: .07em; }
+.korea-technology-head h2 { margin: 0; font-size: clamp(48px,6vw,88px); line-height: .91; letter-spacing: -.06em; }
+.korea-technology-head h2 em { font-family: Georgia, serif; font-weight: 400; }
+.korea-technology-head p { margin: 0; font-size: 18px; line-height: 1.65; }
+.korea-technology-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+.korea-technology-grid article { min-height: 390px; padding: 28px; display: flex; flex-direction: column; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: rgba(248,244,235,.62); }
+.korea-technology-grid article:nth-child(even) { background: rgba(255,255,255,.4); }
+.korea-technology-grid time { color: var(--orange); font-size: 16px; font-weight: 850; letter-spacing: .06em; }
+.korea-technology-grid h3 { margin: 38px 0 16px; font-size: 27px; line-height: 1.04; letter-spacing: -.025em; }
+.korea-technology-grid p { margin: 0; font-size: 17px; line-height: 1.62; }
+.korea-technology-grid a { width: fit-content; margin-top: auto; padding-top: 28px; border-bottom: 1px solid; font-size: 16px; font-weight: 800; }
+
 /* Compact multilingual search: four locale records per row, with research notes collapsed. */
 .global-result { grid-template-columns: 220px minmax(0,1fr); }
 .global-result > header { padding: 18px; }
@@ -573,6 +595,7 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
 .timeline-footer { border-top: 1px solid var(--ink); }
 
 @media (max-width: 1100px) {
+  .korea-technology-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .global-name-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
   .timeline-portal { grid-template-columns: 130px 1fr 1fr; }
   .timeline-portal > b { grid-column: 2 / -1; justify-self: start; }
@@ -580,6 +603,9 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
   .timeline-chapter-note { margin-left: 155px; }
 }
 @media (max-width: 900px) {
+  .locale-artifact-wall { inset: 0 0 190px 18%; }
+  .korea-technology-head { grid-template-columns: 130px 1fr; }
+  .korea-technology-head > p { grid-column: 2; }
   .global-result { grid-template-columns: 1fr; }
   .global-result > header { border-right: 0; }
   .timeline-portal { grid-template-columns: 1fr; gap: 18px; }
@@ -596,6 +622,11 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
   .timeline-chapter-note { margin-left: 135px; grid-template-columns: 1fr; }
 }
 @media (max-width: 700px) {
+  .korea-technology { padding: 72px 6vw; }
+  .korea-technology-head { grid-template-columns: 1fr; gap: 24px; }
+  .korea-technology-head > p { grid-column: 1; }
+  .korea-technology-grid { grid-template-columns: 1fr; }
+  .korea-technology-grid article { min-height: 0; }
   .global-name-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .timeline-lens-grid { grid-template-columns: 1fr; }
   .timeline-chapter-event { grid-template-columns: 1fr; }
@@ -606,6 +637,9 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
   .timeline-chapter-note { margin-left: 0; }
 }
 @media (max-width: 480px) {
+  .locale-artifact-wall { inset: 140px 0 auto 0; height: 390px; opacity: .74; }
+  .locale-artifact-wall img { width: 190px; height: 44%; }
+  .locale-title { background: linear-gradient(90deg, rgba(244,240,231,.96), rgba(244,240,231,.72)); }
   .global-name-grid { grid-template-columns: 1fr; }
   .timeline-chapter-intro h1 { font-size: 55px; }
   .timeline-chapter-intro > div { align-items: flex-start; flex-direction: column; }
