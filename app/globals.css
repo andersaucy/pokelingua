@@ -221,3 +221,38 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-current small, .dex-history-summary small, .dex-history-summary i,
 .dex-detail span, .dex-detail small, .dex-etymology > a,
 .dex-citation span, .dex-citation a, .dex-load-more button { font-size: 13px !important; line-height: 1.5; }
+
+/* Two evidence tracks: clustered debut nodes sit directly on one shared line. */
+.locale-timeline { overflow: visible; }
+.locale-timeline-toolbar { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 28px; align-items: end; }
+.locale-timeline-toolbar .locale-timeline-head { gap: 24px; }
+.locale-timeline-toolbar .locale-timeline-head b { text-align: center; }
+.timeline-mode-control { display: grid; gap: 7px; min-width: 245px; }
+.timeline-mode-control > span { color: rgba(255,255,255,.74); font: 700 13px/1.3 "Courier New",monospace; text-transform: uppercase; }
+.timeline-mode-control select { min-height: 46px; padding: 0 38px 0 13px; border: 1px solid rgba(255,255,255,.7); border-radius: 0; background: var(--paper); color: var(--ink); font: 700 14px/1.2 Arial,sans-serif; cursor: pointer; }
+.locale-timeline-track { position: relative; display: flex; justify-content: space-between; align-items: flex-start; height: 150px; margin: 30px 0 2px; padding: 0 70px; }
+.locale-timeline-track:before { left: 70px; right: 70px; top: 69px; height: 2px; }
+.locale-timeline-year { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; height: 100%; padding-top: 60px; }
+.timeline-node-cluster { display: flex; align-items: center; justify-content: center; height: 20px; }
+.locale-timeline-year .locale-timeline-node { position: relative; top: auto; left: auto; width: 18px; height: 18px; margin-left: -3px; transform: none; }
+.locale-timeline-year .locale-timeline-node:first-child { margin-left: 0; }
+.locale-timeline-year .locale-timeline-node > span { bottom: 29px; min-width: 190px; z-index: 5; }
+.locale-timeline-year .locale-timeline-node > span small { margin-top: 5px; font: 13px/1.45 Georgia,serif !important; text-transform: none; }
+.locale-timeline-year time { margin-top: 13px; color: white; font: 700 13px/1 "Courier New",monospace; }
+.locale-timeline.mode-anime .locale-timeline-node > i { background: #8cc9ff; }
+.locale-card-media.media-de img, .locale-card-media.media-it img, .locale-card-media.media-fr img,
+.locale-card-media.media-hk img, .locale-card-media.media-tw img, .locale-card-media.media-cn img { object-fit: contain; background: white; }
+.locale-card-media.media-br img, .locale-card-media.media-vn img { object-position: center 28%; }
+.locale-card-media.media-in img { object-position: center; }
+
+@media (max-width: 900px) {
+  .locale-timeline { overflow-x: auto; overflow-y: visible; }
+  .locale-timeline-toolbar { position: sticky; left: 0; width: calc(100vw - 12vw - 54px); min-width: 620px; }
+  .locale-timeline-track { min-width: 880px; }
+}
+@media (max-width: 600px) {
+  .locale-timeline-toolbar { grid-template-columns: 1fr; min-width: 520px; }
+  .timeline-mode-control { min-width: 0; }
+  .locale-timeline-track { margin-top: 20px; padding-inline: 55px; min-width: 820px; }
+  .locale-timeline-track:before { left: 55px; right: 55px; }
+}

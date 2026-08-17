@@ -33,35 +33,59 @@ const locales: Locale[] = [
   { id: "alt", slug: "unofficial", flag: "ALT", place: "Unofficial editions", local: "Parallel archive", languages: "Fan translations · bootlegs · ROM hacks", status: "Chapter live", note: "A carefully sourced index of unofficial routes that filled language gaps—and the locales where those stories belong.", years: "1990s—today", coreGame: "Context index · outside official chronology" },
 ];
 
-const localeTimeline = [
-  { year: 1996, label: "Japan", slug: "japan" },
-  { year: 1998, label: "United States", slug: "united-states" },
-  { year: 1998, label: "Hong Kong", slug: "hong-kong" },
-  { year: 1998, label: "Taiwan", slug: "taiwan" },
-  { year: 1998, label: "Mainland China", slug: "mainland-china" },
-  { year: 1999, label: "Germany", slug: "germany" },
-  { year: 1999, label: "France", slug: "france" },
-  { year: 1999, label: "Italy", slug: "italy" },
-  { year: 1999, label: "South Korea", slug: "south-korea" },
-  { year: 1999, label: "Brazil", slug: "brazil" },
-  { year: 2002, label: "Vietnam", slug: "vietnam" },
-  { year: 2003, label: "India", slug: "india" },
-  { year: 2027, label: "Future", slug: "future" },
+const coreLanguageTimeline = [
+  { year: 1996, entries: [{ label: "Japanese", place: "Japan", href: "/locales/japan", detail: "Pocket Monsters Red / Green" }] },
+  { year: 1998, entries: [{ label: "English", place: "United States", href: "/locales/united-states", detail: "Pokémon Red / Blue" }] },
+  { year: 1999, entries: [
+    { label: "German", place: "Germany", href: "/locales/germany", detail: "Pokémon Red / Blue" },
+    { label: "Italian", place: "Italy", href: "/locales/italy", detail: "Pokémon Red / Blue" },
+    { label: "French", place: "France", href: "/locales/france", detail: "Pokémon Red / Blue" },
+    { label: "European Spanish", place: "Spain", href: "/#spanish-localization", detail: "Pokémon Red / Blue" },
+  ] },
+  { year: 2002, entries: [{ label: "Korean", place: "South Korea", href: "/locales/south-korea", detail: "Pokémon Gold / Silver" }] },
+  { year: 2016, entries: [
+    { label: "Traditional Chinese", place: "Hong Kong", href: "/locales/hong-kong", detail: "Pokémon Sun / Moon" },
+    { label: "Traditional Chinese", place: "Taiwan", href: "/locales/taiwan", detail: "Pokémon Sun / Moon" },
+    { label: "Simplified Chinese", place: "Mainland China", href: "/locales/mainland-china", detail: "Pokémon Sun / Moon" },
+  ] },
+  { year: 2025, entries: [{ label: "Latin American Spanish", place: "Latin America", href: "/#spanish-localization", detail: "Pokémon Legends: Z-A" }] },
+  { year: 2027, entries: [{ label: "Brazilian Portuguese", place: "Brazil · announced", href: "/locales/future", detail: "Pokémon Winds / Waves", future: true }] },
+];
+
+const animeLocalizationTimeline = [
+  { year: 1997, entries: [{ label: "Japanese original", place: "Japan", href: "/locales/japan", detail: "Original TV broadcast · 1 Apr" }] },
+  { year: 1998, entries: [
+    { label: "English dub", place: "United States", href: "/locales/united-states", detail: "First broadcast · 7 Sep" },
+    { label: "Cantonese dub", place: "Hong Kong", href: "/locales/hong-kong", detail: "First broadcast · 16 Nov" },
+    { label: "Mandarin dub", place: "Taiwan", href: "/locales/taiwan", detail: "First broadcast · 28 Nov" },
+    { label: "Mandarin dub", place: "Mainland China", href: "/locales/mainland-china", detail: "First broadcast · 24 Dec" },
+  ] },
+  { year: 1999, entries: [
+    { label: "Latin American Spanish", place: "Latin America", href: "/#spanish-localization", detail: "First regional broadcast · 26 Apr" },
+    { label: "Brazilian Portuguese", place: "Brazil", href: "/locales/brazil", detail: "First broadcast · 10 May" },
+    { label: "Korean dub", place: "South Korea", href: "/locales/south-korea", detail: "First broadcast · 14 Jul" },
+    { label: "German dub", place: "Germany", href: "/locales/germany", detail: "First broadcast · 1 Sep" },
+    { label: "French dub", place: "France", href: "/locales/france", detail: "First broadcast · 5 Sep" },
+    { label: "European Spanish", place: "Spain", href: "/#spanish-localization", detail: "First broadcast · 20 Dec" },
+  ] },
+  { year: 2000, entries: [{ label: "Italian dub", place: "Italy", href: "/locales/italy", detail: "First broadcast · 10 Jan" }] },
+  { year: 2002, entries: [{ label: "Vietnamese voice-over", place: "Vietnam", href: "/locales/vietnam", detail: "First documented broadcast" }] },
+  { year: 2003, entries: [{ label: "Hindi dub", place: "India", href: "/locales/india", detail: "First broadcast · 12 May" }] },
 ];
 
 const localeMedia: Record<string, { src: string; alt: string; kind: string }> = {
   jp: { src: "/exhibits/red-green.jpg", alt: "Japanese Pokémon Red and Green Game Boy boxes", kind: "Core game · 1996" },
   us: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1998" },
-  de: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
-  it: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
-  fr: { src: "/exhibits/red-blue.jpg", alt: "Pokémon Red and Blue Game Boy boxes", kind: "Core game · 1999" },
+  de: { src: "/exhibits/german-red-blue.jpg", alt: "German Pokémon Rote and Blaue Edition Game Boy boxes", kind: "German core games · 1999" },
+  it: { src: "/exhibits/italian-blue.webp", alt: "Italian Pokémon Versione Blu Game Boy box", kind: "Italian core game · 1999" },
+  fr: { src: "/exhibits/french-blue.jpg", alt: "French Pokémon Version Bleue Game Boy box", kind: "French core game · 1999" },
   kr: { src: "/exhibits/gold-silver-korea.jpg", alt: "Korean Pokémon Gold and Silver Game Boy Color boxes", kind: "Korean core game · 2002" },
   hk: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
   tw: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
   cn: { src: "/exhibits/sun-moon.jpg", alt: "Pokémon Sun and Moon double pack", kind: "Chinese core game · 2016" },
-  br: { src: "/exhibits/winds-waves.jpg", alt: "Brazilian Portuguese announcement for Pokémon Winds and Waves", kind: "Core game · 2027" },
-  vn: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series poster", kind: "Anime archive" },
-  in: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series poster", kind: "Anime archive" },
+  br: { src: "/exhibits/brazil-horizons.jpg", alt: "Brazilian Portuguese Pokémon Horizontes anime poster", kind: "Brazilian Portuguese anime" },
+  vn: { src: "/exhibits/vietnam-horizons.jpg", alt: "Vietnamese Pokémon Chân Trời Mới anime poster", kind: "Vietnamese anime" },
+  in: { src: "/exhibits/india-horizons.jpg", alt: "Hungama Pokémon Horizons poster for India", kind: "Indian anime broadcast" },
 };
 
 const milestones = [
@@ -81,6 +105,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [activeType, setActiveType] = useState("All");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
 
   const visibleLocales = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -91,6 +116,7 @@ export default function Home() {
   }, [query]);
 
   const visibleMilestones = activeType === "All" ? milestones : milestones.filter((item) => item.type === activeType);
+  const activeTimeline = timelineMode === "games" ? coreLanguageTimeline : animeLocalizationTimeline;
 
   return (
     <main>
@@ -142,12 +168,15 @@ export default function Home() {
             <p className="locale-order-note"><b>Archive order:</b> first localized core-series release. Locales without one follow announced editions, then earliest official market arrival.</p>
           </div>
         </div>
-        <div className="locale-timeline" aria-label="Pokémon locale arrival timeline">
-          <div className="locale-timeline-head"><span>1995</span><b>Locale arrivals</b><span>2027+</span></div>
-          <div className="locale-timeline-track">
-            {localeTimeline.map((item, index) => <a href={`/locales/${item.slug}`} className={`locale-timeline-node ${item.slug === "future" ? "future" : ""}`} style={{ "--position": `${((item.year - 1995) / 33) * 100}%`, "--lane-offset": `${[-50, 0, 50][index % 3]}px` } as React.CSSProperties} key={`${item.slug}-${item.year}`} aria-label={`${item.year}: ${item.label}`}><i /><span><b>{item.label}</b><small>{item.year}</small></span></a>)}
+        <div className={`locale-timeline mode-${timelineMode}`} aria-label={`${timelineMode === "games" ? "Core game language" : "Official anime localization"} timeline`}>
+          <div className="locale-timeline-toolbar">
+            <div className="locale-timeline-head"><span>{timelineMode === "games" ? "1996" : "1997"}</span><b>{timelineMode === "games" ? "First playable language" : "First official anime localization"}</b><span>{timelineMode === "games" ? "2027+" : "2003+"}</span></div>
+            <label className="timeline-mode-control"><span>Timeline basis</span><select value={timelineMode} onChange={(event) => setTimelineMode(event.target.value as "games" | "anime")}><option value="games">Core main-series games</option><option value="anime">Official anime dubs</option></select></label>
           </div>
-          <p>Nodes mark the earliest documented official market arrival used by this exhibition; the Future node separates confirmed plans from evidence still under review.</p>
+          <div className="locale-timeline-track">
+            {activeTimeline.map((group) => <div className="locale-timeline-year" key={`${timelineMode}-${group.year}`}><div className="timeline-node-cluster">{group.entries.map((item) => <a href={item.href} className={`locale-timeline-node ${"future" in item && item.future ? "future" : ""}`} key={`${group.year}-${item.place}-${item.label}`} aria-label={`${group.year}: ${item.label}, ${item.place}`}><i /><span><b>{item.label}</b><small>{item.place}<br />{item.detail}</small></span></a>)}</div><time>{group.year}</time></div>)}
+          </div>
+          <p>{timelineMode === "games" ? "Each node marks the first time that language became selectable in a new main-series Pokémon game. Locales debuting in the same year share one clustered point; announced future support remains visually distinct." : "Each node marks the earliest documented official localized television broadcast in this exhibition. This view preserves dub histories and established regional names that began outside the games."}</p>
         </div>
         <label className="search-box">
           <span>⌕</span>
@@ -158,7 +187,7 @@ export default function Home() {
           {visibleLocales.map((locale, index) => (
             <a className={`locale-card ${locale.id === "kr" ? "featured" : ""}`} href={`/locales/${locale.slug}`} key={locale.id} style={{ "--delay": `${index * 45}ms` } as React.CSSProperties}>
               <div className="locale-top"><span className="flag">{locale.flag}</span><span className={`status ${locale.status === "Chapter live" ? "live" : ""}`}>{locale.status}</span></div>
-              {localeMedia[locale.id] && <figure className="locale-card-media"><img src={localeMedia[locale.id].src} alt={localeMedia[locale.id].alt} loading="lazy" /><figcaption>{localeMedia[locale.id].kind}</figcaption></figure>}
+              {localeMedia[locale.id] && <figure className={`locale-card-media media-${locale.id}`}><img src={localeMedia[locale.id].src} alt={localeMedia[locale.id].alt} loading="lazy" /><figcaption>{localeMedia[locale.id].kind}</figcaption></figure>}
               <div className="locale-local">{locale.local}</div>
               <h3>{locale.place}</h3>
               <div className="locale-language">{locale.languages}</div>
@@ -230,7 +259,7 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="case-study iberia-case">
+        <article className="case-study iberia-case" id="spanish-localization">
           <div className="case-meta"><span>Case note 002</span><b>Spanish & Portuguese</b><small>Europe · Latin America · Brazil</small></div>
           <div className="case-content">
             <div className="timestamp"><span>27</span><b>FEB<br />2025</b><small>official confirmation<br />Latin American Spanish</small></div>
@@ -245,7 +274,7 @@ export default function Home() {
                 <div><i>PT-BR</i><b>Brazilian Portuguese</b><span>Announced for Winds & Waves in 2027</span></div>
                 <div><i>PT-PT</i><b>European Portuguese</b><span>No core-game edition announced</span></div>
               </div>
-              <figure className="case-artifact"><img src="/exhibits/legends-za.jpg" alt="Pokémon Legends Z-A box art" loading="lazy" /><figcaption>Core-game artifact · first Latin American Spanish edition · 2025</figcaption></figure>
+              <figure className="case-artifact"><img src="/exhibits/spanish-red.jpg" alt="Spanish Pokémon Edición Roja Game Boy box" loading="lazy" /><figcaption>Localized core-game artifact · European Spanish debut · 1999</figcaption></figure>
               <aside className="footnote"><sup>2</sup><p><b>Spanish and Portuguese labels are product-specific.</b> An anime dub, website, trading card release, mobile game, and core game may each support a different set of locales at different dates. Pokélingua records the medium beside every language claim.</p></aside>
             </div>
           </div>
