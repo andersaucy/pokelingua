@@ -29,37 +29,38 @@ const brazilLocalized: Record<number, string> = { 772: "Tipo Nulo", 984: "Presa 
 
 const records = englishUsPokemon.map((english) => ({
   english,
-  french: frenchById.get(english.id)!,
-  german: germanById.get(english.id)!,
-  italian: italianById.get(english.id)!,
-  korean: koreanById.get(english.id)!,
-  chinese: chineseById.get(english.id)!,
-  vietnamese: vietnameseById.get(english.id)!,
-  spanish: spanishById.get(english.id)!,
-  russian: russianById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Cyrillic record indexed" },
-  thai: thaiById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Thai-script record indexed" },
-  hindi: hindiById.get(english.id) ?? { id: english.id, english: english.english, current: english.english, reading: "No official Devanāgarī record indexed" },
+  french: frenchById.get(english.id),
+  german: germanById.get(english.id),
+  italian: italianById.get(english.id),
+  korean: koreanById.get(english.id),
+  chinese: chineseById.get(english.id),
+  vietnamese: vietnameseById.get(english.id),
+  spanish: spanishById.get(english.id),
+  russian: russianById.get(english.id),
+  thai: thaiById.get(english.id),
+  hindi: hindiById.get(english.id),
 }));
 
 function searchText(record: (typeof records)[number]) {
   return [record.english.id, record.english.english, record.english.kana, record.english.hepburn, record.english.trademark,
-    record.french.french, record.french.legacy ?? "", record.german.german, record.italian.italian,
-    record.korean.hangul, record.korean.revised, record.korean.mccune, record.korean.officialRomanization,
-    record.korean.historical?.name ?? "", record.chinese.traditional, record.chinese.simplified, record.chinese.pinyin,
-    record.chinese.cantonese, ...record.chinese.historical.flatMap((item) => [item.name, item.reading]),
-    record.vietnamese.current, record.vietnamese.historical, record.spanish.spanish,
-    record.russian.current, record.russian.reading, record.thai.current, record.thai.reading,
-    record.hindi.current, record.hindi.reading, record.hindi.former ?? "", record.hindi.formerReading ?? "",
+    record.french?.french ?? "", record.french?.legacy ?? "", record.german?.german ?? "", record.italian?.italian ?? "",
+    record.korean?.hangul ?? "", record.korean?.revised ?? "", record.korean?.mccune ?? "", record.korean?.officialRomanization ?? "",
+    record.korean?.historical?.name ?? "", record.chinese?.traditional ?? "", record.chinese?.simplified ?? "", record.chinese?.pinyin ?? "",
+    record.chinese?.cantonese ?? "", ...(record.chinese?.historical ?? []).flatMap((item) => [item.name, item.reading]),
+    record.vietnamese?.current ?? "", record.vietnamese?.historical ?? "", record.spanish?.spanish ?? "",
+    record.russian?.current ?? "", record.russian?.reading ?? "", record.thai?.current ?? "", record.thai?.reading ?? "",
+    record.hindi?.current ?? "", record.hindi?.reading ?? "", record.hindi?.former ?? "", record.hindi?.formerReading ?? "",
     tamilScriptNames[record.english.id]?.name ?? "", teluguScriptNames[record.english.id]?.name ?? "",
     brazilLocalized[record.english.id] ?? record.english.english].join(" ").toLocaleLowerCase();
 }
 
 type CardSpec = { href: string; label: string; name: string; reading?: string; field: OriginField; locale?: NameLocale; year?: string; fallbackField?: OriginField; core: boolean };
 
-function GlobalNameCard({ href, label, name, reading, id, field, locale, year, fallbackField }: Omit<CardSpec, "core"> & { id: number }) {
-  return <div className="global-name-card">
+function GlobalNameCard({ href, label, name, reading, id, field, locale, year, fallbackField, core }: CardSpec & { id: number }) {
+  const isMissing = name === "N/A";
+  return <div className={`global-name-card${core ? "" : " global-name-card--media"}`}>
     <a href={href}><span>{label}</span><b>{name}</b>{reading && <small>{reading}</small>}</a>
-    <details><summary>Origin · {year ?? (locale ? nameYear(id, locale) : "N/A")}</summary><p>{nameOriginFor(id, field, fallbackField)}</p></details>
+    <details><summary>Origin · {isMissing ? "N/A" : year ?? (locale ? nameYear(id, locale) : "N/A")}</summary><p>{isMissing ? "No indexed locale name record is available for this species; no spelling has been inferred or borrowed." : nameOriginFor(id, field, fallbackField)}</p></details>
   </div>;
 }
 
@@ -85,23 +86,23 @@ export function GlobalPokemonSearch() {
         const cards: CardSpec[] = [
           { core: true, href: "/locales/japan#name-library", label: "Japan · 日本語", name: record.english.kana, reading: record.english.hepburn, field: "japanese", locale: "japan" },
           { core: true, href: "/locales/united-states#name-library", label: "United States · English", name: record.english.english, field: "english", locale: "united-states" },
-          { core: true, href: "/locales/germany#name-library", label: "Germany · Deutsch", name: record.german.german, field: "german", locale: "germany" },
-          { core: true, href: "/locales/italy#name-library", label: "Italy · Italiano", name: record.italian.italian, field: "italian", locale: "italy" },
-          { core: true, href: "/locales/france#name-library", label: "France · Français", name: record.french.french, field: "french", locale: "france" },
-          { core: true, href: "/locales/spain#name-library", label: "Spain · Español", name: record.spanish.spanish, field: "english", locale: "spain" },
-          { core: true, href: "/locales/south-korea#name-library", label: "South Korea · 한국어", name: record.korean.hangul, reading: record.korean.revised, field: "korean", locale: "south-korea" },
-          { core: true, href: "/locales/taiwan#name-library", label: "Traditional Chinese · Taiwan view", name: record.chinese.traditional, reading: record.chinese.pinyin, field: "chineseMandarin", locale: "taiwan" },
-          { core: true, href: "/locales/mainland-china#name-library", label: "Simplified Chinese · Mainland", name: record.chinese.simplified, reading: record.chinese.pinyin, field: "chineseMandarin", locale: "mainland-china" },
-          { core: false, href: "/locales/latin-america#name-library", label: "Latin America · Español", name: record.spanish.spanish, reading: "Regional core-game and dub locale", field: "english", locale: "latin-america" },
-          { core: false, href: "/locales/hong-kong#name-library", label: "Hong Kong · Cantonese", name: record.chinese.traditional, reading: record.chinese.cantonese, field: "chineseCantonese", locale: "hong-kong" },
-          { core: false, href: "/locales/vietnam#name-library", label: "Vietnam · current / earlier", name: record.vietnamese.current, reading: record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras", field: "english", locale: "vietnam" },
+          { core: true, href: "/locales/germany#name-library", label: "Germany · Deutsch", name: record.german?.german ?? "N/A", reading: record.german ? undefined : "No indexed German record for this species", field: "german", locale: "germany" },
+          { core: true, href: "/locales/italy#name-library", label: "Italy · Italiano", name: record.italian?.italian ?? "N/A", reading: record.italian ? undefined : "No indexed Italian record for this species", field: "italian", locale: "italy" },
+          { core: true, href: "/locales/france#name-library", label: "France · Français", name: record.french?.french ?? "N/A", reading: record.french ? undefined : "No indexed French record for this species", field: "french", locale: "france" },
+          { core: true, href: "/locales/spain#name-library", label: "Spain · Español", name: record.spanish?.spanish ?? "N/A", reading: record.spanish ? undefined : "No indexed Spanish record for this species", field: "english", locale: "spain" },
+          { core: true, href: "/locales/south-korea#name-library", label: "South Korea · 한국어", name: record.korean?.hangul ?? "N/A", reading: record.korean?.revised ?? "No indexed Korean record for this species", field: "korean", locale: "south-korea" },
+          { core: true, href: "/locales/taiwan#name-library", label: "Traditional Chinese · Taiwan view", name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.pinyin ?? "No indexed Traditional Chinese record for this species", field: "chineseMandarin", locale: "taiwan" },
+          { core: true, href: "/locales/mainland-china#name-library", label: "Simplified Chinese · Mainland", name: record.chinese?.simplified ?? "N/A", reading: record.chinese?.pinyin ?? "No indexed Simplified Chinese record for this species", field: "chineseMandarin", locale: "mainland-china" },
+          { core: false, href: "/locales/latin-america#name-library", label: "Latin America · Español", name: record.spanish?.spanish ?? "N/A", reading: record.spanish ? "Regional core-game and dub locale" : "No indexed Latin American Spanish record for this species", field: "english", locale: "latin-america" },
+          { core: false, href: "/locales/hong-kong#name-library", label: "Hong Kong · Cantonese", name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.cantonese ?? "No indexed Hong Kong Cantonese record for this species", field: "chineseCantonese", locale: "hong-kong" },
+          { core: false, href: "/locales/vietnam#name-library", label: "Vietnam · current / earlier", name: record.vietnamese?.current ?? "N/A", reading: record.vietnamese ? (record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras") : "No indexed Vietnamese record for this species", field: "english", locale: "vietnam" },
           { core: false, href: "/locales/brazil#name-library", label: "Brazil · Português brasileiro", name: brazil, reading: brazil === record.english.english ? "English spelling retained" : "Distinct Brazilian Portuguese record", field: "english", year: brazil === record.english.english ? "N/A" : record.english.id === 772 ? "2016" : "2022" },
-          { core: false, href: "/locales/russia#name-library", label: "Russia · Русский", name: record.russian.current, reading: record.russian.reading, field: "english", year: "N/A" },
-          { core: false, href: "/locales/thailand#name-library", label: "Thailand · ไทย", name: record.thai.current, reading: record.thai.reading, field: "japanese", year: "N/A" },
-          { core: false, href: "/locales/hindi-india#name-library", label: "Hindi in India · हिन्दी", name: record.hindi.current, reading: record.hindi.former ? `Former: ${record.hindi.former}` : record.hindi.reading, field: "english", year: "2025" },
-          { core: false, href: "/locales/tamil-india#name-library", label: "Tamil in India · தமிழ்", name: tamil?.name ?? record.english.english, reading: tamil ? "Official Tamil-script media record" : "English name retained in speech · script form N/A", field: "english", year: "N/A" },
-          { core: false, href: "/locales/telugu-india#name-library", label: "Telugu in India · తెలుగు", name: telugu?.name ?? record.english.english, reading: telugu ? "Official Telugu-script media record" : "English name retained in speech · script form N/A", field: "english", year: "N/A" },
-          { core: false, href: "/locales/turkey", label: "Türkiye · Türkçe dub", name: record.english.english, reading: "English-derived species name retained in the dub record", field: "english", year: "N/A" },
+          { core: false, href: "/locales/russia#name-library", label: "Russia · Русский", name: record.russian?.current ?? "N/A", reading: record.russian?.reading ?? "No indexed Russian record for this species", field: "english", year: "N/A" },
+          { core: false, href: "/locales/thailand#name-library", label: "Thailand · ไทย", name: record.thai?.current ?? "N/A", reading: record.thai?.reading ?? "No indexed Thai record for this species", field: "japanese", year: "N/A" },
+          { core: false, href: "/locales/hindi-india#name-library", label: "Hindi in India · हिन्दी", name: record.hindi?.current ?? "N/A", reading: record.hindi ? (record.hindi.former ? `Former: ${record.hindi.former}` : record.hindi.reading) : "No indexed Hindi record for this species", field: "english", year: "2025" },
+          { core: false, href: "/locales/tamil-india#name-library", label: "Tamil in India · தமிழ்", name: tamil?.name ?? "N/A", reading: tamil ? "Official Tamil-script media record" : "No indexed Tamil-script record for this species", field: "english", year: "N/A" },
+          { core: false, href: "/locales/telugu-india#name-library", label: "Telugu in India · తెలుగు", name: telugu?.name ?? "N/A", reading: telugu ? "Official Telugu-script media record" : "No indexed Telugu-script record for this species", field: "english", year: "N/A" },
+          { core: false, href: "/locales/turkey", label: "Türkiye · Türkçe dub", name: "N/A", reading: "No species-level Turkish name index is currently available", field: "english", year: "N/A" },
         ];
         const visibleCards = coreOnly ? cards.filter((card) => card.core) : cards;
         return <article className="global-result" key={record.english.id}>
@@ -111,6 +112,6 @@ export function GlobalPokemonSearch() {
         </div>
       </article>;})}
     </div>}
-    <p className="global-search-note">The checked view represents the nine selectable language traditions established in the core games; the expanded view separates those languages into the locale chapters and adds official anime-, service-, and script-based records. A repeated spelling is still evidence of a locale’s naming policy. {dateMethodNote}</p>
+    <p className="global-search-note">The checked view represents the nine selectable language traditions established in the core games; the expanded view separates those languages into the locale chapters and adds official anime-, service-, and script-based records. A repeated spelling is still evidence of a locale’s naming policy. N/A means the locale’s source index has no record for that species; Pokélingua does not infer or borrow a spelling to fill the gap. {dateMethodNote}</p>
   </section>;
 }
