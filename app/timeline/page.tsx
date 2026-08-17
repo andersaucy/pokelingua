@@ -56,7 +56,7 @@ export default function TimelinePage() {
   return <main className="timeline-chapter" id="top">
     <nav className="nav timeline-chapter-nav" aria-label="Timeline navigation">
       <a className="brand" href="/" aria-label="Pokélingua home"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
-      <div className="nav-links"><a href="/introduction">Introduction</a><a href="/#locales">Locales</a><a href="/#pokemon-search">Pokémon search</a><a href="/#method">Method</a></div>
+      <div className="nav-links"><a href="/introduction">Introduction</a><a href="/#locales">Locales</a><a href="/#pokemon-search">Pokémon search</a><a href="/name-routes">Name routes</a><a href="/#method">Method</a></div>
       <a className="nav-cta" href="/#locales">Explore locales <span>↗</span></a>
     </nav>
 

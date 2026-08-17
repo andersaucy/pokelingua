@@ -216,6 +216,7 @@ export default function Home() {
           <a href="/introduction">Introduction</a>
           <a href="#locales">Locales</a>
           <a href="#pokemon-search">Pokémon search</a>
+          <a href="/name-routes">Name routes</a>
           <a href="/timeline">Timeline</a>
           <a href="#featured-locale">Locale of the day</a>
           <a href="#method">About the archive</a>
@@ -374,6 +375,7 @@ export default function Home() {
       </section>
 
       <a className="timeline-portal" href="/timeline"><span>Chronology chapter</span><strong>Follow the decisions that made Pokémon global.</strong><p>Games, companies, anime dubs, and locale-specific naming policies now have a dedicated sourced timeline.</p><b>Open the timeline →</b></a>
+      <a className="timeline-portal name-routes-portal" href="/name-routes"><span>Comparative chapter</span><strong>See which source each naming system follows.</strong><p>Japanese sound, English reference names, local wordplay, hanzi, and mixed systems become one visual route map.</p><b>Open name routes →</b></a>
 
       <section className="method-section" id="method">
         <div className="section-kicker light">04 / Built as a public record</div>
