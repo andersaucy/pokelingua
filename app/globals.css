@@ -322,6 +322,8 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .locale-timeline-year .locale-timeline-node { position: relative; top: auto; left: auto; width: 18px; height: 18px; margin-left: -3px; transform: none; }
 .locale-timeline-year .locale-timeline-node:first-child { margin-left: 0; }
 .locale-timeline-year .locale-timeline-node > span { bottom: 29px; min-width: 190px; z-index: 5; }
+.locale-timeline-year .locale-timeline-node > span:has(img) { width: 225px; padding: 8px 8px 12px; }
+.locale-timeline-year .locale-timeline-node > span > img { display: block; width: 100%; height: 122px; margin-bottom: 10px; object-fit: contain; background: #e8dfd0; }
 .locale-timeline-year .locale-timeline-node > span small { margin-top: 5px; font: 13px/1.45 Georgia,serif !important; text-transform: none; }
 .locale-timeline-year time { margin-top: 13px; color: white; font: 700 13px/1 "Courier New",monospace; }
 .locale-timeline.mode-anime .locale-timeline-node > i { background: #8cc9ff; }
@@ -405,6 +407,7 @@ small, figcaption, kbd, code, .section-kicker, .chapter-rail span, .chapter-sour
 .dex-date-method { font-size: 16px; line-height: 1.6; }
 .dex-etymology > a { font-size: 16px !important; line-height: 1.5 !important; }
 .media-dex .dex-controls { grid-template-columns: 1fr auto; }
+.dex-record-source { display: inline-block; margin-top: 20px; border-bottom: 1px solid var(--acid); color: var(--acid); font: 700 16px/1.5 "Courier New",monospace; text-transform: uppercase; }
 
 /* Comfortable reading floor across the exhibition. */
 input, select, button { font-size: 16px !important; }

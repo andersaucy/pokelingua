@@ -34,7 +34,7 @@ const chapters = {
   thailand: { code: "TH", place: "Thailand", local: "ประเทศไทย", language: "Thai · ภาษาไทย", period: "2001—today", live: true, deck: "Japanese-rooted species names in Thai script, from television broadcasting to an official regional Pokédex and channel." },
   russia: { code: "RU", place: "Russia", local: "Россия", language: "Russian · русский", period: "2000—today", live: true, deck: "A Russian-language animation history built from the English adaptation, with retained species names and localized presentation." },
   turkey: { code: "TR", place: "Türkiye", local: "Türkiye", language: "Turkish · Türkçe", period: "2000—today", live: true, deck: "A Turkish television debut, a controversial interruption, and a later official return through games and digital animation." },
-  brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese", period: "1999—today", live: false, deck: "A major dub culture, a passionate fan base, and the late arrival of Portuguese in core games." },
+  brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese · português brasileiro", period: "1998—2027+", live: true, deck: "From localized Red and Blue packaging and a landmark television dub to Brazilian Portuguese becoming a confirmed core-game language." },
   vietnam: { code: "VN", place: "Vietnam", local: "Việt Nam", language: "Vietnamese · Tiếng Việt", period: "2002—today", live: true, deck: "From Japanese-rooted species names in Vietnamese media to the English-name standard announced in May 2026." },
   future: { code: "FWD", place: "Future localizations", local: "Evidence watch", language: "Confirmed additions & unresolved possibilities", period: "2027—forward", live: true, deck: "A sourced watchlist separating announced language support from plausible—but unconfirmed—future localization paths." },
 } as const;
@@ -379,6 +379,22 @@ function GermanChapter() {
 }
 
 const mediaLocaleCopy = {
+  brazil: {
+    opening: "Brazil’s Pokémon history is more than a language finally appearing in a future game. Localized Red and Blue editions reached the market in 1998, and the Brazilian Portuguese anime became a mass-media phenomenon the following year. Games, television, cards, mobile services, and dubbing studios built a substantial locale long before core-series game text was available in Portuguese.",
+    distinction: "Brazilian Portuguese and European Portuguese share a language family but not one media history, pronunciation standard, dubbing industry, or market. This chapter follows the Brazilian record specifically.",
+    arrivalDate: "1998", arrivalTitle: "Pokémon Red and Blue reach Brazil", arrivalText: "Gradiente distributed Pokémon – Versão Vermelha and Pokémon – Versão Azul. The packaging and market presentation were localized, but the Game Boy software itself did not offer Portuguese game text; the exact launch day remains unresolved.",
+    laterDate: "10 MAY 1999", laterTitle: "“Pokémon, Eu Escolho Você!” premieres", laterText: "The first Brazilian Portuguese anime episode aired on RecordTV during Eliana & Alegria. The dub became the locale’s central spoken vocabulary and expanded to Cartoon Network later that year.",
+    nameDate: "27 FEB 2026 → 2027", nameTitle: "Portuguese moves from surrounding media into the core games", nameText: "Nintendo’s Brazilian listing confirms Português Brasileiro as a selectable language in Pokémon Winds and Pokémon Waves, launching worldwide in 2027. The announcement date and the future release year are kept separate.",
+    sampleLabel: "Documented localized species name", sampleName: "Presa Grande", sampleMeta: "Great Tusk · Brazilian Portuguese official-media record",
+    media: "/exhibits/brazil-horizons.jpg", mediaAlt: "Brazilian Portuguese Pokémon Horizons poster", mediaLabel: "Brazilian Portuguese anime · 2024",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Brazil",
+    officialSource: "https://www.nintendo.com/pt-br/store/products/pokemon-waves-switch-2/",
+    digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Brazil#Pok%C3%A9mon_animation",
+    libraryTitle: "Brazilian Portuguese official-media index",
+    libraryStatus: "Most species retain their English spelling in Brazilian Portuguese, while Type: Null and the Paradox Pokémon have documented localized names. The table records both outcomes.",
+    libraryHref: "https://bulbapedia.bulbagarden.net/wiki/List_of_Brazilian_Portuguese_Pok%C3%A9mon_names",
+    libraryLink: "Open the Brazilian Portuguese name index",
+  },
   thailand: {
     opening: "Thailand’s Pokémon vocabulary grew first through television and licensed media, not through a Thai-language core game. The result is a real localization history with its own script, broadcasters, digital services, and official reference pages—even though the species names generally follow Japanese pronunciation.",
     distinction: "Thai is an established official media and service language. It is not currently a selectable language in the main-series games, so this chapter records transcription and usage instead of inventing a separate translated Pokédex.",
@@ -500,7 +516,7 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
         <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
       </div>
     </section>
-    {locale === "russia" || locale === "thailand" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
+    {locale === "brazil" || locale === "russia" || locale === "thailand" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
       <div><span>Name library status</span><h2>{copy.libraryTitle}</h2><b>{copy.sampleLabel} · {copy.sampleName}</b></div>
       <article><span>What the archive can support</span><p>{copy.libraryStatus}</p><p className="coverage-note">Example now on record: {copy.sampleMeta}</p><a className="library-status-link" href={copy.libraryHref} target={copy.libraryHref.startsWith("http") ? "_blank" : undefined} rel={copy.libraryHref.startsWith("http") ? "noreferrer" : undefined}>{copy.libraryLink} ↗</a></article>
     </section>}

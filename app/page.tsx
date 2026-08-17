@@ -157,6 +157,13 @@ const localeMedia: Record<string, { src: string; alt: string; kind: string }> = 
   in: { src: "/exhibits/india-horizons.jpg", alt: "Hungama Pokémon Horizons poster for India", kind: "Indian anime broadcast" },
 };
 
+function timelineMediaFor(href: string) {
+  if (href === "/locales/future") return { src: "/exhibits/winds-waves.jpg", alt: "Pokémon Winds and Waves announcement artwork", kind: "Announced core games · 2027" };
+  const slug = href.replace("/locales/", "");
+  const locale = locales.find((item) => item.slug === slug);
+  return locale ? localeMedia[locale.id] : undefined;
+}
+
 const milestones = [
   { year: "1996", title: "The starting point", text: "Pocket Monsters Red and Green launch in Japan. The names, world, and wordplay begin in Japanese.", type: "Games" },
   { year: "1998", title: "A new English identity", text: "Pokémon Red and Blue and the animated series arrive in the United States—with a localized cast of names.", type: "Names" },
@@ -241,7 +248,7 @@ export default function Home() {
             <label className="timeline-mode-control"><span>Timeline basis</span><select value={timelineMode} onChange={(event) => setTimelineMode(event.target.value as "games" | "anime")}><option value="games">Core main-series games</option><option value="anime">Official anime dubs</option></select></label>
           </div>
           <div className="locale-timeline-track">
-            {activeTimeline.map((group) => <div className="locale-timeline-year" key={`${timelineMode}-${group.year}`}><div className="timeline-node-cluster">{group.entries.map((item) => <a href={item.href} className={`locale-timeline-node ${"future" in item && item.future ? "future" : ""}`} key={`${group.year}-${item.place}-${item.label}`} aria-label={`${group.year}: ${item.label}, ${item.place}`}><i /><span><b>{item.label}</b><small>{item.place}<br />{item.detail}</small></span></a>)}</div><time>{group.year}</time></div>)}
+            {activeTimeline.map((group) => <div className="locale-timeline-year" key={`${timelineMode}-${group.year}`}><div className="timeline-node-cluster">{group.entries.map((item) => { const media = timelineMode === "games" ? timelineMediaFor(item.href) : undefined; return <a href={item.href} className={`locale-timeline-node ${"future" in item && item.future ? "future" : ""}`} key={`${group.year}-${item.place}-${item.label}`} aria-label={`${group.year}: ${item.label}, ${item.place}`}><i /><span>{media && <img src={media.src} alt={media.alt} loading="lazy" />}<b>{item.label}</b><small>{item.place}<br />{item.detail}</small></span></a>; })}</div><time>{group.year}</time></div>)}
           </div>
           <p>{timelineMode === "games" ? "Each node marks the first time that language became selectable in a new main-series Pokémon game. Locales debuting in the same year share one clustered point; announced future support remains visually distinct." : "Each node marks the earliest documented official localized television broadcast in this exhibition. This view preserves dub histories and established regional names that began outside the games."}</p>
         </div>

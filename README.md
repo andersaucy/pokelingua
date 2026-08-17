@@ -39,7 +39,7 @@ The current edition includes full core-game and official-media name libraries al
 - Tamil in India — regional dubbing, a dedicated official channel, and the shared English-based name standard
 - Telugu in India — regional dubbing, a dedicated official channel, and the shared English-based name standard
 
-The broader India overview and Brazil remain visible as research-stage chapters so the shape of the growing atlas is public. Anime-first chapters intentionally do not fabricate 1,025 translated names: where a locale retains Japanese or English species forms, the exhibition documents that naming practice and adds individual records only when a reliable source supports them.
+The broader India overview remains visible as a research-stage chapter so the shape of the growing atlas is public. Brazil now has a published chronology and official-media name table connecting its 1998–1999 arrival to the confirmed 2027 core-game language. Anime-first chapters intentionally do not fabricate 1,025 translated names: where a locale retains Japanese or English species forms, the exhibition documents that naming practice and adds script spellings only when official media directly supports them.
 
 ## Search names across the world
 
