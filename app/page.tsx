@@ -43,6 +43,7 @@ const locales: Locale[] = [
   { id: "br", slug: "brazil", flag: "BR", place: "Brazil", local: "Brasil", languages: "Brazilian Portuguese", note: "A long-running dub culture alongside games that historically arrived without Portuguese support.", years: "1999—today", coreGame: "Announced for 2027 · Winds / Waves", coreYear: 2027, animeYear: 1999 },
   { id: "tr", slug: "turkey", flag: "TR", place: "Türkiye", local: "Türkiye", languages: "Turkish", note: "A 2000 television debut, a controversial interruption, and a later official digital return in Turkish.", years: "2000—today", coreGame: "No Turkish core-game edition", coreYear: null, animeYear: 2000 },
   { id: "ru", slug: "russia", flag: "RU", place: "Russia", local: "Россия", languages: "Russian", note: "A dub built from the English adaptation, with retained species names and increasingly localized presentation.", years: "2000—today", coreGame: "No Russian core-game edition", coreYear: null, animeYear: 2000 },
+  { id: "id", slug: "indonesia", flag: "ID", place: "Indonesia", local: "Indonesia", languages: "Indonesian · Bahasa Indonesia", note: "An anime-first, mobile-scale market with Indonesian-language web publishing, apps, cards, events, and dubs.", years: "2001—today", coreGame: "No Indonesian core-game edition", coreYear: null, animeYear: 2001 },
   { id: "th", slug: "thailand", flag: "TH", place: "Thailand", local: "ประเทศไทย", languages: "Thai", note: "Japanese-rooted names in Thai script, from television broadcasting to an official regional Pokédex and channel.", years: "2001—today", coreGame: "No Thai core-game edition", coreYear: null, animeYear: 2001 },
   { id: "vn", slug: "vietnam", flag: "VN", place: "Vietnam", local: "Việt Nam", languages: "Vietnamese", note: "Japanese-rooted species names, Vietnamese-language media, and the English-name standard announced in May 2026.", years: "2002—today", coreGame: "No Vietnamese core-game edition", coreYear: null, animeYear: 2002 },
   { id: "hi", slug: "hindi-india", flag: "HI", place: "Hindi in India", local: "हिन्दी", languages: "Hindi", note: "From the 2003 television debut to official YouTube distribution and a documented species-name policy reversal.", years: "2003—today", coreGame: "No Hindi core-game edition", coreYear: null, animeYear: 2003 },
@@ -137,7 +138,10 @@ const animeLocalizationTimeline = [
     { label: "Turkish dub", place: "Türkiye", href: "/locales/turkey", detail: "First broadcast · 31 Jan" },
     { label: "Russian dub", place: "Russia", href: "/locales/russia", detail: "First broadcast · 18 Dec" },
   ] },
-  { year: 2001, entries: [{ label: "Thai dub", place: "Thailand", href: "/locales/thailand", detail: "First broadcast · 24 Mar" }] },
+  { year: 2001, entries: [
+    { label: "Indonesian dub", place: "Indonesia", href: "/locales/indonesia", detail: "First broadcast · 3 Mar" },
+    { label: "Thai dub", place: "Thailand", href: "/locales/thailand", detail: "First broadcast · 24 Mar" },
+  ] },
   { year: 2002, entries: [{ label: "Vietnamese voice-over", place: "Vietnam", href: "/locales/vietnam", detail: "First documented broadcast" }] },
   { year: 2003, entries: [{ label: "Hindi dub", place: "India", href: "/locales/hindi-india", detail: "First broadcast · 12 May" }] },
   { year: 2004, entries: [
@@ -163,6 +167,7 @@ const localeMedia: Record<string, { src: string; alt: string; kind: string }> = 
   br: { src: "/exhibits/brazil-horizons.jpg", alt: "Brazilian Portuguese Pokémon Horizontes anime poster", kind: "Brazilian Portuguese anime" },
   tr: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Turkish television debut", kind: "Turkish anime history · 2000" },
   ru: { src: "/exhibits/anime-original.jpg", alt: "Pokémon animated series artwork representing the Russian television debut", kind: "Russian anime history · 2000" },
+  id: { src: "/exhibits/indonesia-pokemon-go.png", alt: "Pokémon GO promotional art from the official Indonesian Pokémon apps portal", kind: "Indonesian mobile ecosystem" },
   th: { src: "/exhibits/thai-horizons.jpg", alt: "Official Pokémon Horizons Thai episode artwork", kind: "Thai official anime archive" },
   vn: { src: "/exhibits/vietnam-horizons.jpg", alt: "Vietnamese Pokémon Chân Trời Mới anime poster", kind: "Vietnamese anime" },
   hi: { src: "/exhibits/india-horizons.jpg", alt: "Pokémon Horizons India poster representing the official Hindi edition", kind: "Hindi anime archive" },

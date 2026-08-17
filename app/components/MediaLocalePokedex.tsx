@@ -6,7 +6,7 @@ import { tamilScriptNames, teluguScriptNames } from "../data/indianScriptNames";
 import mediaPokemon from "../data/mediaPokemon.json";
 import { NameEtymology, type OriginField } from "./NameEtymology";
 
-type Locale = "brazil" | "russia" | "thailand" | "hindi-india" | "tamil-india" | "telugu-india";
+type Locale = "brazil" | "russia" | "thailand" | "indonesia" | "hindi-india" | "tamil-india" | "telugu-india";
 type IndexedRecord = { id: number; english: string; current: string; reading: string; former?: string; formerReading?: string; formerRomanization?: string };
 type Entry = IndexedRecord & { medium: string; recordYear: string; attestedScript?: boolean; confirmedScript?: boolean; recordSource?: string };
 
@@ -56,6 +56,17 @@ const copy: Record<Locale, {
     source: "https://bulbapedia.bulbagarden.net/wiki/List_of_Thai_Pok%C3%A9mon_names",
     sourceLabel: "Thai-name index",
   },
+  indonesia: {
+    localeName: "Indonesian",
+    currentLabel: "Indonesian-media record",
+    readingLabel: "International name retained",
+    originField: "english",
+    medium: "Indonesian animation · official web / mobile services",
+    recordYear: "N/A",
+    intro: "Search the international species-name set used inside Indonesian-language Pokémon media. The repeated spelling is the finding: official Indonesian dialogue and presentation coexist with retained English proper names rather than a separately translated full species catalog.",
+    source: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia",
+    sourceLabel: "Indonesia media and naming history",
+  },
   "hindi-india": {
     localeName: "Hindi",
     currentLabel: "Current Hindi record",
@@ -100,6 +111,7 @@ function entriesFor(locale: Locale): Entry[] {
     const localized: Record<number, string> = { 772: "Tipo Nulo", 984: "Presa Grande", 985: "Cauda Brado", 986: "Capuz Bruto", 987: "Juba Sopro", 988: "Asa Rasteira", 989: "Choque Areia", 990: "Trilho Férreo", 991: "Pacote Férreo", 992: "Mãos Férreas", 993: "Jugulares Férreas", 994: "Mariposa Férrea", 995: "Espinhos Férreos", 1005: "Lua Estrondo", 1006: "Valentia Férrea", 1009: "Onda Ando", 1010: "Folhas Férreas", 1020: "Fogo Corrosão", 1021: "Raio Fúria", 1022: "Rocha Férrea", 1023: "Chifres Férreos" };
     return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: localized[entry.id] ?? entry.english, reading: localized[entry.id] ? "Localized Brazilian Portuguese species name" : "English spelling retained in Brazilian Portuguese", medium: metadata.medium, recordYear: entry.id === 772 ? "2016" : localized[entry.id] ? "2022" : "N/A" }));
   }
+  if (locale === "indonesia") return englishPokemon.map((entry) => ({ id: entry.id, english: entry.english, current: entry.english, reading: "International species name retained in Indonesian media", medium: metadata.medium, recordYear: metadata.recordYear }));
   const scriptNames = locale === "tamil-india" ? tamilScriptNames : teluguScriptNames;
   return englishPokemon.map((entry) => {
     const attested = scriptNames[entry.id];
@@ -130,10 +142,10 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
     <div className="dex-intro"><div><span>{metadata.localeName} name library / official-media record</span><h2>The dub belongs<br /><em>in the table.</em></h2></div><p>{metadata.intro}</p></div>
     <div className="dex-status" aria-label="Library coverage">
       <div><b>{entries.length.toLocaleString()}</b><span>Locale records indexed</span></div>
-      <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : locale === "tamil-india" || locale === "telugu-india" ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : locale === "tamil-india" || locale === "telugu-india" ? "Official script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : "Dub / official-media naming included"}</span></div>
+      <div><b>{locale === "hindi-india" ? entries.filter((entry) => entry.former).length.toLocaleString() : locale === "tamil-india" || locale === "telugu-india" ? attestedScriptCount : locale === "brazil" ? brazilLocalizedCount : locale === "indonesia" ? "2001" : "ANIME"}</b><span>{locale === "hindi-india" ? "Former localized Hindi names retained" : locale === "tamil-india" || locale === "telugu-india" ? "Official script spellings directly attested" : locale === "brazil" ? "Names localized beyond English spelling" : locale === "indonesia" ? "Earliest documented dub naming layer" : "Dub / official-media naming included"}</span></div>
       <p>The medium is part of every record. “Transcription” means the name crossed scripts; it does not claim that a new etymology or independently translated species name was created.</p>
     </div>
-    <div className={`dex-controls ${locale === "hindi-india" ? "has-history-filter" : ""}`}><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}{locale === "hindi-india" && <button className={changedOnly ? "active" : ""} type="button" aria-pressed={changedOnly} onClick={() => { setChangedOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Changed from former · {changedRecordCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
+    <div className={`dex-controls ${locale === "hindi-india" ? "has-history-filter" : ""}`}><label><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => { setQuery(event.target.value); setLimit(PAGE_SIZE); }} placeholder={`Search ${metadata.localeName}, English, or Pokédex no.…`} aria-label={`Search ${metadata.localeName} Pokémon name library`} /></label>{locale !== "brazil" && locale !== "indonesia" && <button className={scriptOnly ? "active" : ""} type="button" aria-pressed={scriptOnly} onClick={() => { setScriptOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Confirmed script only · {confirmedScriptCount.toLocaleString()}</button>}{locale === "hindi-india" && <button className={changedOnly ? "active" : ""} type="button" aria-pressed={changedOnly} onClick={() => { setChangedOnly((current) => !current); setExpanded(null); setLimit(PAGE_SIZE); }}>Changed from former · {changedRecordCount.toLocaleString()}</button>}<span>Showing {visible.length} of {matches.length}</span></div>
     <div className="dex-table" role="table" aria-label={`${metadata.localeName} Pokémon name library`}>
       <div className="dex-row dex-header" role="row"><span>Sprite / No.</span><span>English</span><span>{metadata.currentLabel}</span><span>Medium / former record</span><span /></div>
       {visible.map((entry) => {
@@ -148,7 +160,7 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
           </button>
           {isOpen && <div className="dex-detail">
             <div><span>{metadata.currentLabel}</span><b>{entry.current}</b><p>{entry.reading}</p><small>Documented use: {entry.medium}. First name year: {entry.recordYear}.</small>{entry.recordSource && <a className="dex-record-source" href={entry.recordSource} target="_blank" rel="noreferrer">Open the official media title ↗</a>}</div>
-            {entry.former ? <div><span>Former localized Hindi record</span><b>{entry.former}</b><p>{entry.formerReading}</p><small>Used by official Hindi services and selected animation from 2023; retired under the India-wide naming policy in September 2025. Additional Romanization: {entry.formerRomanization ?? "N/A"}.</small></div> : <div className="dex-empty-history"><span>Translation note</span><p>{locale === "thailand" ? "This Thai spelling represents the Japanese species name in Thai script." : locale === "russia" ? "This Cyrillic spelling generally represents the English species name in Russian orthography." : locale === "brazil" ? entry.current === entry.english ? "Brazilian Portuguese retains this English spelling; pronunciation and surrounding terminology can still be localized." : "This species has a distinct documented Brazilian Portuguese name." : entry.attestedScript ? "The English-derived spoken name is shown here in a script spelling directly attested by official locale media." : "The English-derived name is used in the dub, but no authoritative script spelling is yet indexed for this species."}</p></div>}
+            {entry.former ? <div><span>Former localized Hindi record</span><b>{entry.former}</b><p>{entry.formerReading}</p><small>Used by official Hindi services and selected animation from 2023; retired under the India-wide naming policy in September 2025. Additional Romanization: {entry.formerRomanization ?? "N/A"}.</small></div> : <div className="dex-empty-history"><span>Translation note</span><p>{locale === "thailand" ? "This Thai spelling represents the Japanese species name in Thai script." : locale === "russia" ? "This Cyrillic spelling generally represents the English species name in Russian orthography." : locale === "indonesia" ? "Indonesian-language media retains this international species name; surrounding dialogue, titles, and presentation are localized." : locale === "brazil" ? entry.current === entry.english ? "Brazilian Portuguese retains this English spelling; pronunciation and surrounding terminology can still be localized." : "This species has a distinct documented Brazilian Portuguese name." : entry.attestedScript ? "The English-derived spoken name is shown here in a script spelling directly attested by official locale media." : "The English-derived name is used in the dub, but no authoritative script spelling is yet indexed for this species."}</p></div>}
             <NameEtymology id={entry.id} name={entry.english} items={[{ label: `${entry.current} · source-name origin`, field: metadata.originField, year: entry.recordYear }]} />
           </div>}
         </div>;

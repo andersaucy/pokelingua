@@ -32,6 +32,7 @@ const chapters = {
   "tamil-india": { code: "TA", place: "Tamil in India", local: "தமிழ்", language: "Tamil · தமிழ்", period: "2004—today", live: true, deck: "A regional dub history, its own official digital channel, and a naming practice tied to the English species vocabulary." },
   "telugu-india": { code: "TE", place: "Telugu in India", local: "తెలుగు", language: "Telugu · తెలుగు", period: "2004—today", live: true, deck: "A regional dub history, its own official digital channel, and a naming practice tied to the English species vocabulary." },
   thailand: { code: "TH", place: "Thailand", local: "ประเทศไทย", language: "Thai · ภาษาไทย", period: "2001—today", live: true, deck: "Japanese-rooted species names in Thai script, from television broadcasting to an official regional Pokédex and channel." },
+  indonesia: { code: "ID", place: "Indonesia", local: "Indonesia", language: "Indonesian · Bahasa Indonesia", period: "2001—today", live: true, deck: "An anime-first, mobile-scale Pokémon market where Indonesian-language media, apps, cards, and events form a locale without a selectable core-game language." },
   russia: { code: "RU", place: "Russia", local: "Россия", language: "Russian · русский", period: "2000—today", live: true, deck: "A Russian-language animation history built from the English adaptation, with retained species names and localized presentation." },
   turkey: { code: "TR", place: "Türkiye", local: "Türkiye", language: "Turkish · Türkçe", period: "2000—today", live: true, deck: "A Turkish television debut, a controversial interruption, and a later official return through games and digital animation." },
   brazil: { code: "BR", place: "Brazil", local: "Brasil", language: "Brazilian Portuguese · português brasileiro", period: "1998—2027+", live: true, deck: "From localized Red and Blue packaging and a landmark television dub to Brazilian Portuguese becoming a confirmed core-game language." },
@@ -59,6 +60,7 @@ const localeArtifactWalls: Record<Slug, string[]> = {
   "tamil-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
   "telugu-india": ["/exhibits/india-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/x-box.jpg"],
   thailand: ["/exhibits/thai-horizons.jpg", "/exhibits/anime-original.jpg", "/exhibits/sun-moon.jpg"],
+  indonesia: ["/exhibits/indonesia-pokemon-go.png", "/exhibits/indonesia-tcg-pocket.png", "/exhibits/indonesia-pokemon-unite.png"],
   russia: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
   turkey: ["/exhibits/anime-original.jpg", "/exhibits/x-box.jpg", "/exhibits/red-blue.jpg"],
   brazil: ["/exhibits/brazil-horizons.jpg", "/exhibits/red-blue.jpg", "/exhibits/winds-waves.jpg"],
@@ -447,6 +449,22 @@ const mediaLocaleCopy = {
     libraryHref: "https://th.portal-pokemon.com/play/pokedex",
     libraryLink: "Browse the official Thai Pokédex",
   },
+  indonesia: {
+    opening: "Indonesia shows why Pokémon globalization cannot be measured only by the language menu of a console game. The anime established an Indonesian voice in 2001; today an official Bahasa Indonesia portal connects animation, mobile games, cards, merchandise, and events for one of Southeast Asia’s largest digital audiences.",
+    distinction: "Indonesian is an official Pokémon media and market language, but it is not a selectable main-series game language. Its strongest documented localization layers are dubbing, web publishing, the Indonesian trading-card ecosystem, and mobile distribution.",
+    arrivalDate: "03 MAR 2001", arrivalTitle: "The Indonesian anime premieres on SCTV", arrivalText: "Episode one opened Pokémon’s first documented official Indonesian-language run. The dub generally followed the Japanese production while retaining English proper names, creating a localized performance without a newly translated species catalog.",
+    laterDate: "06 AUG 2021", laterTitle: "An official Indonesian digital archive begins", laterText: "The official Pokémon Indonesia YouTube channel published the first five Indonesian-dubbed XY episodes. Journeys followed in 2022, and Horizons began official television and YouTube releases in April 2024.",
+    nameDate: "2001—TODAY", nameTitle: "Indonesian dialogue, international species names", nameText: "The documented dub practice generally retains English proper names for Pokémon. Pokélingua records this as a real locale decision rather than filling the table with invented Bahasa Indonesia translations.",
+    sampleLabel: "Documented naming practice", sampleName: "Pikachu", sampleMeta: "International species name retained · Indonesian-language performance",
+    media: "/exhibits/indonesia-pokemon-go.png", mediaAlt: "Pokémon GO promotional art displayed on the official Indonesian Pokémon apps portal", mediaLabel: "Official Indonesian apps portal · Pokémon GO",
+    historySource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia",
+    officialSource: "https://id.portal-pokemon.com/apps/",
+    digitalSource: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia#Pok%C3%A9mon_anime",
+    libraryTitle: "Indonesian official-media record",
+    libraryStatus: "The Indonesian dub generally retains the international English species names. The table makes that policy searchable and labels its evidence level; it does not claim a separate translated 1,025-name Bahasa Indonesia canon.",
+    libraryHref: "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_in_Indonesia",
+    libraryLink: "Open the Indonesia history index",
+  },
   russia: {
     opening: "Russia’s Pokémon history began with a television dub made from the English-language adaptation. That production route shaped more than dialogue: familiar English character and species names were retained so the animation could remain legible beside imported cards and international branding.",
     distinction: "Russian is an official dub and interface language in parts of the franchise, but not a selectable core-game language. Cyrillic presentation therefore belongs in the archive without being mistaken for an independently renamed full Pokédex.",
@@ -544,6 +562,16 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
       <div className="chapter-rail"><span>Local perspective</span><b>01</b></div>
       <article><p className="dropcap">{copy.opening}</p><aside><b>Why this chapter exists</b><p>{copy.distinction}</p></aside></article>
     </section>
+    {locale === "indonesia" && <section className="indonesia-mobile-exhibit">
+      <div className="indonesia-mobile-head"><span>Market lens / mobile at scale</span><h2>The phone is part of<br /><em>the localization story.</em></h2><p>Google’s 2025 Southeast Asia report attributes roughly 40% of the region’s mobile-game downloads and 35% of game-app revenue to Indonesia. Pokémon’s official Indonesian portal meets that audience with a dedicated app catalog rather than a localized core-game edition.</p><a href="https://blog.google/intl/id-id/company-news/outreach-initiatives/e-conomy-sea-2025-ekonomi-digital-indonesia-mendekati-gmv-us100-miliar/" target="_blank" rel="noreferrer">Read Google’s Indonesia market report ↗</a></div>
+      <div className="indonesia-app-grid">
+        <a href="https://id.portal-pokemon.com/topics/pokemon_go/" target="_blank" rel="noreferrer"><img src="/exhibits/indonesia-pokemon-go.png" alt="Pokémon GO logo and promotional art" /><span>Location-based play</span><h3>Pokémon GO</h3><p>An official Indonesian information page explains the game and its real-world play loop.</p></a>
+        <a href="https://id.portal-pokemon.com/apps/" target="_blank" rel="noreferrer"><img src="/exhibits/indonesia-tcg-pocket.png" alt="Pokémon Trading Card Game Pocket logo and promotional art" /><span>Card collection on mobile</span><h3>Pokémon TCG Pocket</h3><p>The app sits beside a mature, separately localized Indonesian tabletop TCG ecosystem.</p></a>
+        <a href="https://id.portal-pokemon.com/topics/210818140837_unite/" target="_blank" rel="noreferrer"><img src="/exhibits/indonesia-pokemon-unite.png" alt="Pokémon UNITE app icon" /><span>22 SEP 2021 · smartphone</span><h3>Pokémon UNITE</h3><p>The Indonesian announcement supplies a precise mobile release date and local store links.</p></a>
+        <a href="https://id.portal-pokemon.com/apps/" target="_blank" rel="noreferrer"><img src="/exhibits/indonesia-pokemon-sleep.png" alt="Pokémon Sleep app icon" /><span>Everyday-life application</span><h3>Pokémon Sleep</h3><p>Part of an Indonesian portal catalog extending beyond battles into daily routines.</p></a>
+      </div>
+      <aside><b>Cards form another infrastructure</b><p>The Indonesian-language Pokémon Trading Card Game has its own official product site, store and event finder, rules, organized play, and Asia Championship Series pathway.</p><a href="https://asia.pokemon-card.com/id/" target="_blank" rel="noreferrer">Enter the Indonesian TCG portal ↗</a></aside>
+    </section>}
     {locale in romanizationCopy && <RomanizationGuide locale={locale as RomanizationLocale} />}
     <section className="chapter-timeline">
       <div className="chapter-rail"><span>Time markers</span><b>02</b></div>
@@ -552,7 +580,7 @@ function MediaLocaleChapter({ locale }: { locale: keyof typeof mediaLocaleCopy }
         <article className="media-name-event"><time>{copy.nameDate}</time><div><span>Naming practice</span><h2>{copy.nameTitle}</h2><p>{copy.nameText}</p><a href={copy.officialSource} target="_blank" rel="noreferrer">Locale evidence ↗</a></div></article>
       </div>
     </section>
-    {locale === "brazil" || locale === "russia" || locale === "thailand" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
+    {locale === "brazil" || locale === "russia" || locale === "thailand" || locale === "indonesia" || locale === "hindi-india" || locale === "tamil-india" || locale === "telugu-india" ? <MediaLocalePokedex locale={locale} /> : <section className="naming-practice" id="name-library">
       <div><span>Name library status</span><h2>{copy.libraryTitle}</h2><b>{copy.sampleLabel} · {copy.sampleName}</b></div>
       <article><span>What the archive can support</span><p>{copy.libraryStatus}</p><p className="coverage-note">Example now on record: {copy.sampleMeta}</p><a className="library-status-link" href={copy.libraryHref} target={copy.libraryHref.startsWith("http") ? "_blank" : undefined} rel={copy.libraryHref.startsWith("http") ? "noreferrer" : undefined}>{copy.libraryLink} ↗</a></article>
     </section>}
