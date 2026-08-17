@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import { GlobalPokemonSearch } from "./components/GlobalPokemonSearch";
 
 type Locale = {
@@ -43,6 +43,24 @@ const locales: Locale[] = [
 ];
 
 const curatedLocaleOrder = new Map(locales.map((locale, index) => [locale.id, index]));
+const featuredLocales = locales.filter((locale) => locale.id !== "alt");
+
+function localDateKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+
+function subscribeToCalendarDay(onChange: () => void) {
+  const timer = window.setInterval(onChange, 60_000);
+  return () => window.clearInterval(timer);
+}
+
+function featuredLocaleFor(dateKey: string) {
+  if (dateKey === "server") return featuredLocales[0];
+  const [year, month, day] = dateKey.split("-").map(Number);
+  const dayNumber = Math.floor(Date.UTC(year, month - 1, day) / 86_400_000);
+  return featuredLocales[((dayNumber % featuredLocales.length) + featuredLocales.length) % featuredLocales.length];
+}
 
 function compareLocales(a: Locale, b: Locale, basis: "games" | "anime") {
   if (a.id === "alt") return b.id === "alt" ? 0 : 1;
@@ -158,6 +176,10 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
   const [localeSort, setLocaleSort] = useState<"games" | "anime">("games");
+  const calendarDay = useSyncExternalStore(subscribeToCalendarDay, localDateKey, () => "server");
+  const featuredLocale = featuredLocaleFor(calendarDay);
+  const featuredDate = calendarDay === "server" ? "Daily rotation" : new Intl.DateTimeFormat("en-US", { day: "2-digit", month: "short", year: "numeric" }).format(new Date(`${calendarDay}T12:00:00`));
+  const featuredAnimeMarker = animeMarkerBySlug[featuredLocale.slug];
 
   const visibleLocales = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -183,7 +205,7 @@ export default function Home() {
           <a href="#pokemon-search">Pokémon search</a>
           <a href="#timeline">Timeline</a>
           <a href="#locale-notes">Locale notes</a>
-          <a href="#korea">Stories</a>
+          <a href="#featured-locale">Featured locale</a>
           <a href="#method">About the archive</a>
         </div>
         <a className="nav-cta" href="#locales">Explore the atlas <span>↗</span></a>
@@ -257,31 +279,30 @@ export default function Home() {
 
       <GlobalPokemonSearch />
 
-      <section className="story-section" id="korea">
+      <section className="story-section" id="featured-locale" aria-live="polite">
         <div className="story-aside">
-          <div className="section-kicker light">Featured locale / 001</div>
-          <div className="hangul" aria-hidden="true">포켓몬</div>
-          <div className="story-index">KR<br />37° N<br />127° E</div>
+          <div className="section-kicker light">Featured locale / {featuredDate}</div>
+          <div className="hangul featured-script" aria-hidden="true">{featuredLocale.local}</div>
+          <div className="story-index">{featuredLocale.flag}<br />{featuredLocale.coreYear ? `GAME ${featuredLocale.coreYear}` : "ANIME-FIRST"}<br />ROTATES DAILY</div>
         </div>
         <article className="story-body">
-          <div className="story-label"><span>대한민국</span> South Korea</div>
-          <h2>A world that could not simply be imported.</h2>
-          <p className="story-lede">When Pokémon first spread beyond Japan, South Korea was in the middle of deciding how Japanese popular culture could enter the country at all.</p>
+          <div className="story-label"><span>{featuredLocale.local}</span> {featuredLocale.place}</div>
+          <h2>Today’s stop:<br /><em>{featuredLocale.place}.</em></h2>
+          <p className="story-lede">{featuredLocale.note}</p>
           <div className="story-columns">
-            <p>For decades, official imports of Japanese popular culture were restricted. In October 1998, the government announced the first stage of a gradual opening. Pokémon’s Korean history unfolded inside that larger cultural transition—not in a vacuum.</p>
-            <p>That context helps explain why localization is not just a list of translated names. Distribution routes, Korean-language presentation, television, games, and eventually a dedicated local company all shaped what “Pokémon in Korea” became.</p>
+            <p><b>Core-game marker.</b> {featuredLocale.coreGame}. This records the first selectable main-series language where one exists; anime-first locales remain part of the atlas even without a translated core-game edition.</p>
+            <p><b>Media marker.</b> {featuredAnimeMarker ?? "No official anime debut marker is indexed yet."} The complete chapter follows names, scripts, broadcasts, releases, and the evidence behind this locale’s chronology.</p>
           </div>
           <div className="fact-strip">
-            <div><b>1998</b><span>First stage of Korea’s opening to Japanese popular culture</span></div>
-            <div><b>2006</b><span>Pokémon Korea, Inc. established</span></div>
-            <div><b>Now</b><span>A distinct locale across games, animation, events & retail</span></div>
+            <div><b>{featuredLocale.coreYear ?? "—"}</b><span>{featuredLocale.coreYear ? "First selectable core-game language" : "No core-game language edition"}</span></div>
+            <div><b>{featuredLocale.animeYear ?? "—"}</b><span>{featuredLocale.animeYear ? "First indexed anime / broadcast marker" : "Anime marker not indexed"}</span></div>
+            <div><b>{featuredLocale.flag}</b><span>{featuredLocale.languages} · {featuredLocale.years}</span></div>
           </div>
           <div className="source-row">
-            <span>Sources for this excerpt</span>
-            <a href="https://theme.archives.go.kr/next/chronology/archiveDetail.do?evntId=0049291994&flag=2" target="_blank" rel="noreferrer">National Archives of Korea ↗</a>
-            <a href="https://corporate.pokemon.co.jp/en/aboutus/history" target="_blank" rel="noreferrer">The Pokémon Company ↗</a>
+            <span>Daily exhibition rotation</span>
+            <a href={`/locales/${featuredLocale.slug}`}>Open this chapter’s evidence trail ↗</a>
           </div>
-          <a className="chapter-link" href="/locales/south-korea">Enter the complete South Korea chapter <span>→</span></a>
+          <a className="chapter-link" href={`/locales/${featuredLocale.slug}`}>Enter the complete {featuredLocale.place} chapter <span>→</span></a>
         </article>
       </section>
 

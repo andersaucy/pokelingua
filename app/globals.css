@@ -63,11 +63,14 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
 .story-aside { padding: 70px 4vw; border-right: 1px solid rgba(255,255,255,.25); position: relative; overflow: hidden; }
 .section-kicker.light { border-color: rgba(255,255,255,.3); }
 .hangul { position: absolute; writing-mode: vertical-rl; font-weight: 900; font-size: clamp(100px, 14vw, 230px); opacity: .065; top: 150px; right: -20px; letter-spacing: -.12em; }
+.featured-script { max-height: 610px; overflow: hidden; font-size: clamp(82px, 11vw, 190px); line-height: .84; }
 .story-index { position: absolute; bottom: 70px; font: 700 11px/1.7 "Courier New", monospace; letter-spacing: .15em; }
 .story-body { padding: 85px 7vw 70px; }
 .story-label { font: 700 11px "Courier New", monospace; text-transform: uppercase; letter-spacing: .13em; margin-bottom: 46px; }
 .story-label span { border: 1px solid rgba(255,255,255,.5); border-radius: 50px; padding: 9px 13px; margin-right: 10px; }
 .story-body h2 { max-width: 850px; }
+.story-body h2 em { font-family: Georgia,serif; font-weight: 400; }
+.story-columns b { color: var(--acid); }
 .story-lede { font: 25px/1.45 Georgia, serif; max-width: 750px; border-left: 4px solid var(--acid); padding-left: 24px; margin: 55px 0 42px; }
 .story-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; font: 16px/1.7 Georgia, serif; color: rgba(255,255,255,.82); }
 .fact-strip { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 55px; border-top: 1px solid rgba(255,255,255,.35); border-bottom: 1px solid rgba(255,255,255,.35); }
