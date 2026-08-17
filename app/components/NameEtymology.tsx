@@ -1,5 +1,5 @@
 import etymologies from "../data/nameEtymologies.json";
-import { dateMethodNote, nameYear, type NameLocale } from "../data/nameDates";
+import { nameYear, type NameLocale } from "../data/nameDates";
 
 export type OriginField = "english" | "japanese" | "french" | "german" | "italian" | "korean" | "chineseMandarin" | "chineseCantonese" | "vietnamese";
 type OriginItem = { label: string; field: OriginField; fallbackField?: OriginField; locale?: NameLocale; year?: string };
@@ -29,7 +29,6 @@ export function NameEtymology({ id, name, items }: { id: number; name: string; i
     <div className="dex-origin-grid">
       {visible.map((item) => <section key={`${item.label}-${item.field}`}><b>{item.label}</b><time>First documented name year · {item.year ?? (item.locale ? nameYear(id, item.locale) : "N/A")}</time><p>{item.text}</p></section>)}
     </div>
-    <p className="dex-date-method">{dateMethodNote}</p>
     <a href={articleUrl} target="_blank" rel="noreferrer">Source note for {name} ↗</a>
   </div>;
 }

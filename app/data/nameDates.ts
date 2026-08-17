@@ -22,5 +22,3 @@ export function nameYear(id: number, locale: NameLocale) {
   const generation = generationFor(id);
   return generation < 0 ? "N/A" : years[locale][generation]?.toString() ?? "N/A";
 }
-
-export const dateMethodNote = "Year denotes the earliest defensible introduction of this locale’s current name through a localized core game or coordinated naming standard. N/A means the archive cannot yet support a species-level first-use year; it does not mean the name was unused.";

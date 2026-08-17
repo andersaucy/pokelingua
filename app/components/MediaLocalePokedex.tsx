@@ -156,6 +156,6 @@ export function MediaLocalePokedex({ locale }: { locale: Locale }) {
       {!visible.length && <div className="dex-no-results">No indexed record matches “{query}”.</div>}
     </div>
     {visible.length < matches.length && <div className="dex-load-more"><button onClick={() => setLimit((current) => current + PAGE_SIZE)}>Load {Math.min(PAGE_SIZE, matches.length - visible.length)} more</button><button className="text-load" onClick={() => setLimit(matches.length)}>Show all {matches.length}</button></div>}
-    <div className="dex-citation"><span>Coverage & method</span><p>Names are indexed as official-media records, with source script, romanization, medium, and historical status kept separate. Missing exact first-use dates are shown as N/A rather than estimated from a generation launch.</p><a href={metadata.source} target="_blank" rel="noreferrer">{metadata.sourceLabel} ↗</a></div>
+    <div className="dex-citation"><span>Coverage & method</span><p>Names are indexed as official-media records, with source script, romanization, medium, and historical status kept separate.</p><a href={metadata.source} target="_blank" rel="noreferrer">{metadata.sourceLabel} ↗</a></div>
   </section>;
 }

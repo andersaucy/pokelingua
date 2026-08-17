@@ -57,7 +57,7 @@ Inside each locale, the complete Pokédex can be searched by local name, English
 - documented historical spellings or names where evidence is available
 - script and romanization distinctions
 - an indexed name etymology with a link to its source note
-- the earliest defensible year for that locale’s current name, or `N/A` where the archive cannot yet support a species-level date
+- the earliest defensible year for that locale’s current name
 
 No name row opens automatically; the visitor chooses which record to inspect. Chapters written in non-Latin scripts also include a “Reading the script” guide that separates the official script form from its romanization system. The current guides cover Hepburn-style Japanese readings, Yale-style Cantonese and Jyutping, Hanyu Pinyin and Taiwan’s Wade–Giles context, Revised Romanization and McCune–Reischauer Korean, plus further-study references for Thai, Russian, Hindi, Tamil, and Telugu.
 
@@ -75,7 +75,7 @@ Pokélingua separates language from locale. “Traditional Chinese,” for examp
 
 Dates identify what happened in a particular medium: a game release, television broadcast, corporate milestone, terminology change, official upload, or preserved public reaction. Primary and official sources are preferred; secondary indexes are used transparently where they consolidate records that would otherwise remain scattered.
 
-The first-name year is deliberately conservative. Generation launch years are used when a localized core game or coordinated naming standard supplies the first defensible date; `N/A` signals missing species-level evidence, not that the name was absent. The exhibition also places documented game box art and anime imagery beside the events they illustrate, preserving an exhibit-label relationship between object and claim.
+The first-name year is deliberately conservative. Generation launch years are used when a localized core game or coordinated naming standard supplies the first defensible date. The exhibition also places documented game box art and anime imagery beside the events they illustrate, preserving an exhibit-label relationship between object and claim.
 
 ## Run locally
 
