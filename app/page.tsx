@@ -207,12 +207,36 @@ export default function Home() {
   const heroBall = heroBallVariants[heroBallIndex];
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
   const [localeSort, setLocaleSort] = useState<"games" | "anime">("games");
   const calendarDay = useSyncExternalStore(subscribeToCalendarDay, localDateKey, () => "server");
   const featuredLocale = featuredLocaleFor(calendarDay);
   const featuredDate = calendarDay === "server" ? "Daily rotation" : new Intl.DateTimeFormat("en-US", { day: "2-digit", month: "short", year: "numeric" }).format(new Date(`${calendarDay}T12:00:00`));
   const featuredAnimeMarker = animeMarkerBySlug[featuredLocale.slug];
+
+  useEffect(() => {
+    const syncSearchHash = () => {
+      if (window.location.hash === "#pokemon-search") setSearchOpen(true);
+    };
+    syncSearchHash();
+    window.addEventListener("hashchange", syncSearchHash);
+    return () => window.removeEventListener("hashchange", syncSearchHash);
+  }, []);
+
+  useEffect(() => {
+    if (!searchOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSearchOpen(false);
+    };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [searchOpen]);
 
   const visibleLocales = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -233,13 +257,12 @@ export default function Home() {
         </a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu">Menu</button>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <a href="/introduction">Introduction</a>
+          <a href="/about">About the Exhibit</a>
           <a href="#locales">Locales</a>
-          <a href="#pokemon-search">Pokémon search</a>
+          <button type="button" onClick={() => { setSearchOpen(true); setMenuOpen(false); }}>Pokémon search</button>
           <a href="/name-routes">Name routes</a>
-          <a href="/timeline">Timeline</a>
+          <a href="/history">History</a>
           <a href="#featured-locale">Locale of the day</a>
-          <a href="#method">About the archive</a>
         </div>
         <a className="nav-cta" href="#locales">Explore the atlas <span>↗</span></a>
       </nav>
@@ -260,7 +283,7 @@ export default function Home() {
             <div className="hero-morph-object"><div className={`hero-pokeball ${heroBall.className}`}><i /><em>{heroBall.symbol}</em><b /></div></div>
           </div>
         </div>
-        <div className="hero-poster-bar hero-introduction-link"><a href="/introduction">Enter the introduction to see how Pokémon became a case study in cultural globalization across names, languages, games, animation, and time. <span>→</span></a></div>
+        <div className="hero-poster-bar hero-introduction-link"><a href="/about">Enter About the Exhibit to see how Pokémon became a case study in cultural globalization across names, languages, games, animation, and time. <span>→</span></a></div>
       </section>
 
       <section className="intro-section" id="locales">
@@ -308,8 +331,6 @@ export default function Home() {
         {visibleLocales.length === 0 && <div className="empty">That locale is not in this first research set—yet.</div>}
       </section>
 
-      <GlobalPokemonSearch />
-
       <section className="story-section" id="featured-locale" aria-live="polite">
         <div className="story-aside">
           <div className="section-kicker light">Locale of the day / {featuredDate}</div>
@@ -336,6 +357,19 @@ export default function Home() {
           <a className="chapter-link" href={`/locales/${featuredLocale.slug}`}>Enter the complete {featuredLocale.place} chapter <span>→</span></a>
         </article>
       </section>
+
+      <button className="pokedex-search-fab" type="button" onClick={() => setSearchOpen(true)} aria-haspopup="dialog" aria-expanded={searchOpen}>
+        <span className="pokedex-fab-icon" aria-hidden="true"><i /><b /><em /></span>
+        <span><small>Open the</small>Pokémon search</span>
+      </button>
+
+      {searchOpen && <div className="pokemon-search-overlay">
+        <button className="pokemon-search-backdrop" type="button" aria-label="Close Pokémon search" onClick={() => setSearchOpen(false)} />
+        <aside className="pokemon-search-drawer" role="dialog" aria-modal="true" aria-label="Global Pokémon name search">
+          <header className="pokemon-search-drawer-bar"><div><span>Portable research desk</span><b>Search the multilingual Pokédex</b></div><button type="button" onClick={() => setSearchOpen(false)} aria-label="Close Pokémon search">Close <span>×</span></button></header>
+          <GlobalPokemonSearch />
+        </aside>
+      </div>}
 
       <section className="notes-section" id="locale-notes">
         <div className="section-kicker">03 / When one language is not one locale</div>
@@ -394,21 +428,8 @@ export default function Home() {
         </article>
       </section>
 
-      <a className="timeline-portal" href="/timeline"><span>Chronology chapter</span><strong>Follow the decisions that made Pokémon global.</strong><p>Games, companies, anime dubs, and locale-specific naming policies now have a dedicated sourced timeline.</p><b>Open the timeline →</b></a>
+      <a className="timeline-portal" href="/history"><span>History chapter</span><strong>Follow the decisions that made Pokémon global.</strong><p>Games, companies, anime dubs, and locale-specific naming policies now have a dedicated sourced history.</p><b>Open History →</b></a>
       <a className="timeline-portal name-routes-portal" href="/name-routes"><span>Comparative chapter</span><strong>See which source each naming system follows.</strong><p>Japanese sound, English reference names, local wordplay, hanzi, and mixed systems become one visual route map.</p><b>Open name routes →</b></a>
-
-      <section className="method-section" id="method">
-        <div className="section-kicker light">04 / Built as a public record</div>
-        <div className="method-grid">
-          <h2>Every name has<br />a history.<br /><em>Every date needs<br />a source.</em></h2>
-          <div className="principles">
-            <div><span>01</span><h3>Locale, not just language</h3><p>Territory, script, distributor, platform, and audience stay attached to every record.</p></div>
-            <div><span>02</span><h3>Versions are preserved</h3><p>A revised official name does not erase what fans encountered before it.</p></div>
-            <div><span>03</span><h3>Evidence stays visible</h3><p>Official sources, archives, and reliable secondary research sit beside the claim.</p></div>
-          </div>
-        </div>
-        <div className="manifesto">Not affiliated with or endorsed by Nintendo, Creatures, GAME FREAK, or The Pokémon Company. Pokélingua is an independent research and cultural-history project.</div>
-      </section>
 
       <footer><a className="brand footer-brand" href="#top"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a><p>A living atlas of Pokémon localization.</p><a href="https://github.com/andersaucy/pokelingua" target="_blank" rel="noreferrer">Open research, built in public ↗</a></footer>
     </main>

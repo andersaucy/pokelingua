@@ -55,20 +55,20 @@ const milestones: Milestone[] = [
   { year: "2027", date: "ANNOUNCED", category: "Games", title: "Brazilian Portuguese is scheduled to become playable", text: "Winds and Waves is the first announced main-series game with Brazilian Portuguese text. Exact release timing and species-name implementation remain future evidence questions until the product arrives.", source: "https://www.nintendo.com/pt-br/store/products/pokemon-waves-switch-2/", sourceLabel: "Official Nintendo Brazil listing", localeHref: "/locales/future", localeLabel: "Future evidence desk" },
 ];
 
-export default function TimelinePage() {
+export default function HistoryPage() {
   const [activeFilter, setActiveFilter] = useState<(typeof filters)[number]>("All");
   const visibleMilestones = useMemo(() => activeFilter === "All" ? milestones : milestones.filter((item) => item.category === activeFilter), [activeFilter]);
 
   return <main className="timeline-chapter" id="top">
-    <nav className="nav timeline-chapter-nav" aria-label="Timeline navigation">
+    <nav className="nav timeline-chapter-nav" aria-label="History navigation">
       <a className="brand" href="/" aria-label="Pokélingua home"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
-      <div className="nav-links"><a href="/introduction">Introduction</a><a href="/#locales">Locales</a><a href="/#pokemon-search">Pokémon search</a><a href="/name-routes">Name routes</a><a href="/#method">Method</a></div>
+      <div className="nav-links"><a href="/about">About the Exhibit</a><a href="/#locales">Locales</a><a href="/#pokemon-search">Pokémon search</a><a href="/name-routes">Name routes</a></div>
       <a className="nav-cta" href="/#locales">Explore locales <span>↗</span></a>
     </nav>
 
     <header className="timeline-chapter-hero">
       <div className="timeline-chapter-index"><span>Chronology chapter / 01</span><b>1996<br />—<br />2027</b><small>Documented past<br />announced future</small></div>
-      <div className="timeline-chapter-intro"><span>Pokémon across borders and media</span><h1>One phenomenon.<br /><em>Many clocks.</em></h1><p>A game can launch after a television dub. A company can arrive decades after its audience. A standardized name can follow years of regional use. This timeline keeps those events in chronological conversation without pretending they are the same kind of milestone.</p><div><a className="primary-button" href="#chronology">Enter the chronology <span>↓</span></a><a className="text-link" href="/introduction">Read the exhibition introduction <span>↗</span></a></div></div>
+      <div className="timeline-chapter-intro"><span>Pokémon across borders and media</span><h1>One phenomenon.<br /><em>Many clocks.</em></h1><p>A game can launch after a television dub. A company can arrive decades after its audience. A standardized name can follow years of regional use. This history keeps those events in chronological conversation without pretending they are the same kind of milestone.</p><div><a className="primary-button" href="#chronology">Enter the chronology <span>↓</span></a><a className="text-link" href="/about">Read About the Exhibit <span>↗</span></a></div></div>
     </header>
 
     <section className="timeline-chapter-method">

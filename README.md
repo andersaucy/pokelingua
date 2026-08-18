@@ -4,7 +4,7 @@
 
 Pokélingua is a living digital exhibition about how Pokémon crossed borders. It treats localization as cultural history—not merely translation—by connecting creature names to a particular locale, script, medium, release, company decision, and moment in time.
 
-[Visit the live exhibition](https://pokelingua.vercel.app) · [Read the introduction](https://pokelingua.vercel.app/introduction) · [Explore the chronology](https://pokelingua.vercel.app/timeline)
+[Visit the live exhibition](https://pokelingua.vercel.app) · [Read About the Exhibit](https://pokelingua.vercel.app/about) · [Explore History](https://pokelingua.vercel.app/history)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandersaucy%2Fpokelingua&project-name=pokelingua&repository-name=pokelingua)
 
@@ -22,7 +22,7 @@ That is why Hong Kong, Taiwan, and mainland China are not compressed into one �
 
 ## Explore the exhibition
 
-The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. Its compact visual timeline offers the same two locale-arrival lenses and continues to a Future evidence desk for announced localizations. A separate [`/timeline`](https://pokelingua.vercel.app/timeline) exhibition chapter expands the chronology across Company, Games, Anime, and Locales, with an evidence link attached to every curated milestone. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
+The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. Its compact visual timeline offers the same two locale-arrival lenses and continues to a Future evidence desk for announced localizations. A separate [`/history`](https://pokelingua.vercel.app/history) exhibition chapter expands the chronology across Company, Games, Anime, and Locales, with an evidence link attached to every curated milestone. A floating Pokédex opens the multilingual Pokémon search as a side drawer on desktop and an overlay on mobile, keeping the locale atlas visible beneath it. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
 
 The current edition includes full core-game and official-media name libraries alongside anime-first localization chapters:
 
