@@ -13,7 +13,7 @@ const exhibitLenses = [
 
 const readingRoutes = [
   { label: "By place", title: "Enter a locale", text: "Follow one territory’s arrivals, naming systems, scripts, broadcasters, releases, and revisions.", href: "/#locales", action: "Open the locale atlas" },
-  { label: "By creature", title: "Search one Pokémon", text: "Hold the species constant and compare what its name became across the completed language archives.", href: "/#pokemon-search", action: "Search across languages" },
+  { label: "By creature", title: "Open the Pokédex", text: "Hold the species constant and compare what its name became across the completed language archives.", href: "#pokedex", action: "Compare across languages" },
   { label: "By time", title: "Follow the chronology", text: "Compare corporate expansion, playable game languages, official anime dubs, and locale-specific naming decisions.", href: "/history", action: "Open History" },
   { label: "By naming route", title: "Trace the source", text: "See which locales rebuild Japanese meaning, preserve Japanese sound, inherit English names, or create another route.", href: "/name-routes", action: "Follow the names" },
 ];

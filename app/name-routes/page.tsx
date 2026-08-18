@@ -80,7 +80,7 @@ export default function NameRoutesPage() {
     <section className="one-pokemon-routes" id="one-pokemon">
       <div className="one-pokemon-head"><span>Controlled comparison / #0001</span><h2>Hold the creature still.<br /><em>Watch the strategy change.</em></h2><p>Bulbasaur demonstrates why “translated” and “not translated” are inadequate labels. Each route preserves a different part of the source name.</p></div>
       <div className="bulbasaur-route-grid">{bulbasaurRoutes.map((item) => <article className={`route-${item.route}`} key={item.code}><span>{item.code}</span><b lang={item.code === "ZH" ? "zh-Hant" : undefined}>{item.script}</b><small>{item.reading}</small><p>{item.origin}</p></article>)}</div>
-      <a href="/#pokemon-search">Compare another Pokémon across the multilingual archive →</a>
+      <a href="#pokedex">Open another Pokémon in the multilingual Pokédex →</a>
     </section>
 
     <section className="locale-route-ledger" id="locale-ledger">

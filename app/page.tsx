@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
-import { GlobalPokemonSearch } from "./components/GlobalPokemonSearch";
 
 type Locale = {
   id: string;
@@ -207,36 +206,12 @@ export default function Home() {
   const heroBall = heroBallVariants[heroBallIndex];
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const [timelineMode, setTimelineMode] = useState<"games" | "anime">("games");
   const [localeSort, setLocaleSort] = useState<"games" | "anime">("games");
   const calendarDay = useSyncExternalStore(subscribeToCalendarDay, localDateKey, () => "server");
   const featuredLocale = featuredLocaleFor(calendarDay);
   const featuredDate = calendarDay === "server" ? "Daily rotation" : new Intl.DateTimeFormat("en-US", { day: "2-digit", month: "short", year: "numeric" }).format(new Date(`${calendarDay}T12:00:00`));
   const featuredAnimeMarker = animeMarkerBySlug[featuredLocale.slug];
-
-  useEffect(() => {
-    const syncSearchHash = () => {
-      if (window.location.hash === "#pokemon-search") setSearchOpen(true);
-    };
-    syncSearchHash();
-    window.addEventListener("hashchange", syncSearchHash);
-    return () => window.removeEventListener("hashchange", syncSearchHash);
-  }, []);
-
-  useEffect(() => {
-    if (!searchOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setSearchOpen(false);
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", closeOnEscape);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      window.removeEventListener("keydown", closeOnEscape);
-    };
-  }, [searchOpen]);
 
   const visibleLocales = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -259,7 +234,6 @@ export default function Home() {
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="/about">About the Exhibit</a>
           <a href="#locales">Locales</a>
-          <button type="button" onClick={() => { setSearchOpen(true); setMenuOpen(false); }}>Pokémon search</button>
           <a href="/name-routes">Name routes</a>
           <a href="/history">History</a>
           <a href="#featured-locale">Locale of the day</a>
@@ -357,19 +331,6 @@ export default function Home() {
           <a className="chapter-link" href={`/locales/${featuredLocale.slug}`}>Enter the complete {featuredLocale.place} chapter <span>→</span></a>
         </article>
       </section>
-
-      <button className="pokedex-search-fab" type="button" onClick={() => setSearchOpen(true)} aria-haspopup="dialog" aria-expanded={searchOpen}>
-        <span className="pokedex-fab-icon" aria-hidden="true"><i /><b /><em /></span>
-        <span><small>Open the</small>Pokémon search</span>
-      </button>
-
-      {searchOpen && <div className="pokemon-search-overlay">
-        <button className="pokemon-search-backdrop" type="button" aria-label="Close Pokémon search" onClick={() => setSearchOpen(false)} />
-        <aside className="pokemon-search-drawer" role="dialog" aria-modal="true" aria-label="Global Pokémon name search">
-          <header className="pokemon-search-drawer-bar"><div><span>Portable research desk</span><b>Search the multilingual Pokédex</b></div><button type="button" onClick={() => setSearchOpen(false)} aria-label="Close Pokémon search">Close <span>×</span></button></header>
-          <GlobalPokemonSearch />
-        </aside>
-      </div>}
 
       <section className="notes-section" id="locale-notes">
         <div className="section-kicker">03 / When one language is not one locale</div>

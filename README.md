@@ -22,7 +22,7 @@ That is why Hong Kong, Taiwan, and mainland China are not compressed into one �
 
 ## Explore the exhibition
 
-The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. Its compact visual timeline offers the same two locale-arrival lenses and continues to a Future evidence desk for announced localizations. A separate [`/history`](https://pokelingua.vercel.app/history) exhibition chapter expands the chronology across Company, Games, Anime, and Locales, with an evidence link attached to every curated milestone. A floating Pokédex opens the multilingual Pokémon search as a side drawer on desktop and an overlay on mobile, keeping the locale atlas visible beneath it. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
+The homepage locale grid can be sorted by either the first localized core-series game or the first official anime dub; locales without the selected milestone move to the end. Its compact visual timeline offers the same two locale-arrival lenses and continues to a Future evidence desk for announced localizations. A separate [`/history`](https://pokelingua.vercel.app/history) exhibition chapter expands the chronology across Company, Games, Anime, and Locales, with an evidence link attached to every curated milestone. A floating Pokédex is available throughout the entire exhibition, opening as a side drawer on desktop and an overlay on mobile while preserving the page beneath it. Each finished name-library chapter combines an arrival brief, dated timeline, localization notes, sources, and a searchable index covering all 1,025 Pokémon through Pecharunt.
 
 The current edition includes full core-game and official-media name libraries alongside anime-first localization chapters:
 
@@ -55,7 +55,7 @@ The broader India overview remains visible as a research-stage chapter so the sh
 
 ## Search names across the world
 
-The homepage has a dedicated multilingual Pokémon search. A visitor can enter a name in English, Japanese, French, German, Italian, Spanish, Korean, Chinese, Arabic, Hebrew, or another indexed script and see the matching species aligned across all 25 published locale records, including documented retained-name policies.
+The site-wide Pokédex accepts names in English, Japanese, French, German, Italian, Spanish, Korean, Chinese, Arabic, Hebrew, or another indexed script and aligns the matching species across all 25 published locale records, including documented retained-name policies.
 
 Inside each locale, the complete Pokédex can be searched by local name, English name, readings or romanizations where relevant, and National Pokédex number. Expanding a row reveals:
 
