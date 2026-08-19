@@ -83,35 +83,6 @@ Dates identify what happened in a particular medium: a game release, television 
 
 The first-name year is deliberately conservative. Generation launch years are used when a localized core game or coordinated naming standard supplies the first defensible date. The exhibition also places documented game box art and anime imagery beside the events they illustrate, preserving an exhibit-label relationship between object and claim.
 
-## Run locally
-
-You need [Node.js 22.13 or newer](https://nodejs.org/) and npm.
-
-```bash
-npm --version
-git clone https://github.com/andersaucy/pokelingua.git
-cd pokelingua
-npm install
-npm run dev
-```
-
-Then open [http://localhost:3000](http://localhost:3000). Changes to the source update the local page while the development server is running.
-
-## Build and deploy
-
-Create a production build locally with:
-
-```bash
-npm run build
-npm start
-```
-
-The project uses Next.js and requires no environment variables for its current feature set.
-
-- For a new copy, use the **Deploy with Vercel** button near the top of this README.
-- For the existing public site, Vercel is connected to the GitHub repository. Pushing to `main` triggers a fresh production deployment while the published exhibition remains online.
-- The production site is [pokelingua.vercel.app](https://pokelingua.vercel.app).
-
 ## Project status
 
 Pokélingua is an independent, evolving research exhibition. The interface and full current-name indexes are operational; historical coverage will continue to deepen as dated, medium-specific evidence is verified.
