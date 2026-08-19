@@ -6,8 +6,6 @@ Pokélingua is a living digital exhibition about how Pokémon crossed borders. I
 
 [Visit the live exhibition](https://pokelingua.vercel.app) · [Read the introduction](https://pokelingua.vercel.app/introduction) · [Explore the chronology](https://pokelingua.vercel.app/timeline)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandersaucy%2Fpokelingua&project-name=pokelingua&repository-name=pokelingua)
-
 ## Why this exhibition exists
 
 Pokémon’s worldwide success was not a matter of exporting one unchanged object. Japanese concepts were repeatedly interpreted through new names, scripts, voices, release strategies, broadcasters, products, and regional policies. A television dub could establish a vocabulary years before a translated game; an older name could remain culturally meaningful long after an official terminology change.
