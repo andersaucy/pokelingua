@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DonateButton } from "../components/DonateButton";
 
 export const metadata: Metadata = {
   title: "About the Exhibit — Pokélingua",
@@ -24,6 +25,7 @@ export default function AboutExhibitPage() {
       <a className="brand" href="/" aria-label="Pokélingua homepage"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
       <div className="nav-links"><a href="#premise">Premise</a><a href="#lenses">Exhibit lenses</a><a href="#reading">How to explore</a></div>
       <a className="nav-cta" href="/#locales">Enter the atlas <span>↗</span></a>
+      <DonateButton />
     </nav>
 
     <header className="intro-hero" id="top">

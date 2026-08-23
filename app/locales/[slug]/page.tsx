@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { DonateButton } from "../../components/DonateButton";
 import { EnglishUsPokedex } from "../../components/EnglishUsPokedex";
 import { FrenchPokedex } from "../../components/FrenchPokedex";
 import { GermanPokedex } from "../../components/GermanPokedex";
@@ -717,6 +718,7 @@ export default async function LocalePage({ params }: { params: Promise<{ slug: s
       <a className="brand" href="/"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
       <a className="back-link" href="/#locales">← All locales</a>
       <span className="chapter-number">Locale chapter / {chapter.code}</span>
+      <DonateButton />
     </nav>
     <header className="locale-hero">
       <div className="locale-artifact-wall" aria-hidden="true">{localeArtifactWalls[slug as Slug].map((src, index) => <img src={src} alt="" key={`${src}-${index}`} />)}</div>

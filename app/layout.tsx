@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DonateButton } from "./components/DonateButton";
 import { PokedexDrawer } from "./components/PokedexDrawer";
 
 export const metadata: Metadata = {
@@ -24,5 +23,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}<DonateButton /><PokedexDrawer /></body></html>;
+  return <html lang="en"><body>{children}<PokedexDrawer /></body></html>;
 }

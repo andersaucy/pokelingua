@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { DonateButton } from "./components/DonateButton";
 
 type Locale = {
   id: string;
@@ -239,6 +240,7 @@ export default function Home() {
           <a href="#featured-locale">Locale of the day</a>
         </div>
         <a className="nav-cta" href="#locales">Explore the atlas <span>↗</span></a>
+        <DonateButton />
       </nav>
 
       <section className="hero-poster" id="top" aria-labelledby="hero-title">

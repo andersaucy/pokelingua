@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { DonateButton } from "../components/DonateButton";
 
 type Category = "Company" | "Games" | "Anime" | "Locales";
 
@@ -64,6 +65,7 @@ export default function HistoryPage() {
       <a className="brand" href="/" aria-label="Pokélingua home"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
       <div className="nav-links"><a href="/about">About the Exhibit</a><a href="/#locales">Locales</a><a href="/name-routes">Name routes</a></div>
       <a className="nav-cta" href="/#locales">Explore locales <span>↗</span></a>
+      <DonateButton />
     </nav>
 
     <header className="timeline-chapter-hero">

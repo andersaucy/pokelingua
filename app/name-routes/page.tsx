@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DonateButton } from "../components/DonateButton";
 
 export const metadata: Metadata = {
   title: "Name Routes — Pokélingua",
@@ -60,6 +61,7 @@ export default function NameRoutesPage() {
       <a className="brand" href="/" aria-label="Pokélingua home"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
       <div className="nav-links"><a href="#routes">Routes</a><a href="#one-pokemon">One Pokémon</a><a href="#locale-ledger">All locales</a><a href="#reflection">Reflection</a></div>
       <a className="nav-cta" href="/#locales">Explore locales <span>↗</span></a>
+      <DonateButton />
     </nav>
 
     <header className="name-routes-hero">
