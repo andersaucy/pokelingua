@@ -81,7 +81,7 @@ export function GlobalPokemonSearch() {
   const matches = useMemo(() => normalized.length < 2 ? [] : records.filter((record) => searchText(record).includes(normalized)).slice(0, 12), [normalized]);
 
   return <section className="global-search" id="pokemon-search">
-    <div className="section-kicker">02 / Search across languages</div>
+    <div className="section-kicker">Pokédex / Search across languages</div>
     <div className="global-search-head"><div><span>One species · every indexed locale</span><h2>What is this Pokémon<br /><em>called around the world?</em></h2></div><p>Search a name from any indexed game, dub, script, or historical locale record. Compare the core games’ official nine-language set—or open the full exhibition-wide view.</p></div>
     <label className="pokemon-search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Charmander, Glumanda, Salamèche, 파이리, 小火龍, or Hitokage…" aria-label="Search Pokémon names across all languages" /><kbd>{normalized.length >= 2 ? `${matches.length}${matches.length === 12 ? "+" : ""} matches` : "1,025 species"}</kbd></label>
     <label className="global-search-mode"><input type="checkbox" checked={coreOnly} onChange={(event) => setCoreOnly(event.target.checked)} /><span><b>Core-game nine only</b><small>Uncheck to compare all 25 locale records currently indexed across the exhibition.</small></span></label>

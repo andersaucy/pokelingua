@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Introduction — Pokélingua",
+  title: "About the Exhibit — Pokélingua",
   description: "Why Pokémon localization is a history of cultural globalization across names, games, animation, and regional media.",
 };
 
@@ -13,21 +13,21 @@ const exhibitLenses = [
 
 const readingRoutes = [
   { label: "By place", title: "Enter a locale", text: "Follow one territory’s arrivals, naming systems, scripts, broadcasters, releases, and revisions.", href: "/#locales", action: "Open the locale atlas" },
-  { label: "By creature", title: "Search one Pokémon", text: "Hold the species constant and compare what its name became across the completed language archives.", href: "/#pokemon-search", action: "Search across languages" },
-  { label: "By time", title: "Follow the chronology", text: "Compare corporate expansion, playable game languages, official anime dubs, and locale-specific naming decisions.", href: "/timeline", action: "Travel through time" },
+  { label: "By creature", title: "Open the Pokédex", text: "Hold the species constant and compare what its name became across the completed language archives.", href: "#pokedex", action: "Compare across languages" },
+  { label: "By time", title: "Follow the chronology", text: "Compare corporate expansion, playable game languages, official anime dubs, and locale-specific naming decisions.", href: "/history", action: "Open History" },
   { label: "By naming route", title: "Trace the source", text: "See which locales rebuild Japanese meaning, preserve Japanese sound, inherit English names, or create another route.", href: "/name-routes", action: "Follow the names" },
 ];
 
-export default function IntroductionPage() {
+export default function AboutExhibitPage() {
   return <main className="introduction-page">
-    <nav className="nav intro-nav" aria-label="Introduction navigation">
+    <nav className="nav intro-nav" aria-label="About the Exhibit navigation">
       <a className="brand" href="/" aria-label="Pokélingua homepage"><span className="brand-mark" aria-hidden="true"><i /></span><span>Pokélingua</span></a>
       <div className="nav-links"><a href="#premise">Premise</a><a href="#lenses">Exhibit lenses</a><a href="#reading">How to explore</a></div>
       <a className="nav-cta" href="/#locales">Enter the atlas <span>↗</span></a>
     </nav>
 
     <header className="intro-hero" id="top">
-      <div className="intro-hero-index"><span>Curatorial statement</span><b>INTRO<br />000</b><small>Names · media · markets · memory</small></div>
+      <div className="intro-hero-index"><span>Curatorial statement</span><b>ABOUT<br />000</b><small>Names · media · markets · memory</small></div>
       <div className="intro-hero-copy">
         <p className="eyebrow"><span className="pulse" /> Why this exhibition exists</p>
         <h1>How a local world became<br /><em>a global language.</em></h1>
