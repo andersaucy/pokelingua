@@ -786,9 +786,10 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
 .map-filters input[type="radio"] { appearance: none; width: 18px; height: 18px; border: 2px solid var(--ink); border-radius: 50%; position: relative; cursor: pointer; }
 .map-filters input[type="radio"]:checked { background: var(--orange); border-color: var(--orange); }
 .map-filters input[type="radio"]:checked:after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: white; }
-.world-map { position: relative; background: var(--cream); border: 2px solid var(--ink); padding: 32px; margin-bottom: 42px; box-shadow: 0 4px 12px rgba(24,33,28,.08); }
+.world-map { position: relative; background: #b8d8e8; border: 2px solid var(--ink); padding: 24px; margin-bottom: 42px; box-shadow: 0 4px 12px rgba(24,33,28,.08); }
 .world-map svg { display: block; width: 100%; height: auto; }
 .continents { transition: fill .3s; }
+.continents:hover { fill: #c5e5c5; }
 .locale-marker-link { cursor: pointer; }
 .locale-marker circle { transition: all .25s cubic-bezier(.4,0,.2,1); }
 .locale-marker.hovered circle { filter: drop-shadow(0 2px 8px rgba(255,107,53,.4)); }
