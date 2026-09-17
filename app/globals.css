@@ -773,3 +773,41 @@ body :where(p, li, dd, blockquote) { letter-spacing: .002em; }
   .timeline-chapter-intro h1 { font-size: 55px; }
   .timeline-chapter-intro > div { align-items: flex-start; flex-direction: column; }
 }
+
+/* Map page styles */
+.map-page { min-height: 100vh; display: flex; flex-direction: column; }
+.map-container { flex: 1; padding: 64px 4vw 84px; max-width: 1440px; margin: 0 auto; width: 100%; }
+.map-header { margin-bottom: 52px; }
+.map-header h1 { font-family: var(--font-museum-display); font-size: clamp(38px,5.5vw,72px); line-height: 1.1; font-weight: 800; margin: 22px 0 28px; letter-spacing: -.04em; }
+.map-header p { max-width: 720px; color: rgba(24,33,28,.72); font-size: 18px; line-height: 1.65; margin-bottom: 32px; }
+.map-filters { display: flex; gap: 24px; flex-wrap: wrap; }
+.map-filters label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 600; padding: 12px 18px; border: 2px solid rgba(24,33,28,.15); background: transparent; transition: all .2s; }
+.map-filters label:hover { border-color: var(--acid); background: rgba(158,216,232,.08); }
+.map-filters input[type="radio"] { appearance: none; width: 18px; height: 18px; border: 2px solid var(--ink); border-radius: 50%; position: relative; cursor: pointer; }
+.map-filters input[type="radio"]:checked { background: var(--orange); border-color: var(--orange); }
+.map-filters input[type="radio"]:checked:after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: white; }
+.world-map { position: relative; background: var(--cream); border: 2px solid var(--ink); padding: 32px; margin-bottom: 42px; box-shadow: 0 4px 12px rgba(24,33,28,.08); }
+.world-map svg { display: block; width: 100%; height: auto; }
+.continents { transition: fill .3s; }
+.locale-marker-link { cursor: pointer; }
+.locale-marker circle { transition: all .25s cubic-bezier(.4,0,.2,1); }
+.locale-marker.hovered circle { filter: drop-shadow(0 2px 8px rgba(255,107,53,.4)); }
+.locale-marker text { font-size: 10px; pointer-events: none; user-select: none; }
+.map-info-panel { position: absolute; top: 42px; right: 42px; background: var(--cream); border: 2px solid var(--ink); padding: 24px; width: 280px; box-shadow: 0 8px 24px rgba(24,33,28,.12); animation: map-info-in .3s ease; z-index: 10; }
+@keyframes map-info-in { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+.map-info-flag { font-size: 42px; line-height: 1; margin-bottom: 12px; }
+.map-info-content h3 { font-family: var(--font-museum-display); font-size: 22px; font-weight: 800; margin: 0 0 6px; letter-spacing: -.02em; }
+.map-info-local { font-size: 18px; color: rgba(24,33,28,.62); margin-bottom: 8px; }
+.map-info-languages { font-size: 13px; font-weight: 600; color: rgba(24,33,28,.48); margin-bottom: 14px; text-transform: uppercase; letter-spacing: .05em; }
+.map-info-timeline { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.map-info-badge { display: inline-block; padding: 5px 10px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; border-radius: 3px; }
+.map-info-badge.game { background: rgba(255,107,53,.15); color: #c43c1f; border: 1px solid rgba(255,107,53,.3); }
+.map-info-badge.anime { background: rgba(158,216,232,.15); color: #1c5f73; border: 1px solid rgba(158,216,232,.4); }
+.map-info-cta { font-size: 13px; font-weight: 700; color: var(--orange); margin-top: 8px; }
+.map-legend { display: flex; gap: 32px; flex-wrap: wrap; align-items: flex-start; padding: 28px; background: rgba(158,216,232,.08); border: 1px solid rgba(158,216,232,.24); }
+.legend-item { display: flex; align-items: center; gap: 12px; }
+.legend-marker { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--ink); flex-shrink: 0; }
+.legend-marker.game-marker { background: #ff6b35; }
+.legend-marker.anime-marker { background: #ffc34d; }
+.legend-item span { font-size: 14px; font-weight: 600; }
+.legend-note { flex-basis: 100%; margin: 8px 0 0; font-size: 14px; line-height: 1.6; color: rgba(24,33,28,.62); }

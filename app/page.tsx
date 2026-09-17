@@ -235,6 +235,7 @@ export default function Home() {
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="/about">About the Exhibit</a>
           <a href="#locales">Locales</a>
+          <a href="/map">World Map</a>
           <a href="/name-routes">Name routes</a>
           <a href="/history">History</a>
           <a href="#featured-locale">Locale of the day</a>
