@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PokedexDrawer } from "./components/PokedexDrawer";
 
@@ -20,8 +22,11 @@ export const metadata: Metadata = {
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Pokélingua — One world. Many Pokémon." }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}<PokedexDrawer /></body></html>;
+  return <html lang="en"><body>{children}<PokedexDrawer /><Analytics /><SpeedInsights /></body></html>;
 }

@@ -8,6 +8,12 @@ Pokélingua is a living digital exhibition about how Pokémon crossed borders. I
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandersaucy%2Fpokelingua&project-name=pokelingua&repository-name=pokelingua)
 
+## Measurement and search visibility
+
+The production layout includes Vercel Web Analytics and Speed Insights on every route. Enable both products for the `pokelingua` project in the Vercel dashboard after deployment to begin collecting privacy-conscious traffic and real-user performance data.
+
+Search-engine discovery is supported by [`/sitemap.xml`](https://pokelingua.vercel.app/sitemap.xml), [`/robots.txt`](https://pokelingua.vercel.app/robots.txt), and canonical redirects from the former Introduction and Timeline URLs. To verify the URL-prefix property in Google Search Console, copy the token from Google’s HTML-tag method into the `GOOGLE_SITE_VERIFICATION` production environment variable in Vercel, redeploy, verify ownership, and submit `https://pokelingua.vercel.app/sitemap.xml`.
+
 ## Why this exhibition exists
 
 Pokémon’s worldwide success was not a matter of exporting one unchanged object. Japanese concepts were repeatedly interpreted through new names, scripts, voices, release strategies, broadcasters, products, and regional policies. A television dub could establish a vocabulary years before a translated game; an older name could remain culturally meaningful long after an official terminology change.

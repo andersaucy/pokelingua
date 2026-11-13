@@ -12,6 +12,8 @@
     "lint": "eslint . --ignore-pattern .next"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6"
