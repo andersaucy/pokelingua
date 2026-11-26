@@ -14,6 +14,70 @@ import { arabicScriptNames, hebrewScriptNames } from "../data/regionalScriptName
 import { spanishPokemon } from "../data/spanishPokemon";
 import { nameYear, type NameLocale } from "../data/nameDates";
 import { nameOriginFor, type OriginField } from "./NameEtymology";
+import { useLang } from "./LanguageProvider";
+
+const copy = {
+  en: {
+    kicker: "Pokédex / Search across languages",
+    eyebrow: "One species · every indexed locale",
+    title: "What is this Pokémon",
+    titleEm: "called around the world?",
+    intro: "Search a name from any indexed game, dub, script, or historical locale record. Compare the core games’ official nine-language set—or open the full exhibition-wide view.",
+    placeholder: "Try Charmander, Glumanda, Salamèche, 파이리, 小火龍, or Hitokage…",
+    searchLabel: "Search Pokémon names across all languages",
+    matches: (n: number, more: boolean) => `${n}${more ? "+" : ""} matches`,
+    species: "1,025 species",
+    coreOnly: "Core-game nine only",
+    coreOnlyNote: "Uncheck to compare all 25 locale records currently indexed across the exhibition.",
+    suggest: "Try a multilingual trail",
+    oneMore: "Type one more character to begin searching the full multilingual index.",
+    noMatch: (query: string) => `No indexed species name matches “${query}”. Try another spelling, reading, script, or Pokédex number.`,
+    note: "The checked view represents the nine selectable language traditions established in the core games; the expanded view separates those languages into the locale chapters and adds official anime-, service-, and script-based records. A repeated spelling is still evidence of a locale’s naming policy.",
+    origin: "Origin · ",
+    na: "N/A",
+    labels: { japan: "Japan · 日本語", us: "United States · English", germany: "Germany · Deutsch", italy: "Italy · Italiano", france: "France · Français", spain: "Spain · Español", korea: "South Korea · 한국어", taiwan: "Traditional Chinese · Taiwan view", mainland: "Simplified Chinese · Mainland", latam: "Latin America · Español", hongKong: "Hong Kong · Cantonese", vietnam: "Vietnam · current / earlier", brazil: "Brazil · Português brasileiro", philippines: "Philippines · Filipino / English", portugal: "Portugal · Português europeu", arab: "Arab world · العربية", israel: "Israel · עברית", malaysia: "Malaysia · Bahasa Melayu / English", indonesia: "Indonesia · Bahasa Indonesia", russia: "Russia · Русский", thailand: "Thailand · ไทย", hindi: "Hindi in India · हिन्दी", tamil: "Tamil in India · தமிழ்", telugu: "Telugu in India · తెలుగు", turkiye: "Türkiye · Türkçe dub" },
+    latamNote: "Regional core-game and dub locale",
+    earlier: (name: string) => `Earlier: ${name}`,
+    sameEras: "Same across indexed eras",
+    englishRetained: "English spelling retained",
+    brazilDistinct: "Distinct Brazilian Portuguese record",
+    retainedLocale: "International name retained in locale media",
+    retainedIndonesia: "International name retained in Indonesian media",
+    former: (name: string) => `Former: ${name}`,
+    tamilNote: "Official Tamil-script media record",
+    teluguNote: "Official Telugu-script media record",
+  },
+  es: {
+    kicker: "Pokédex / Búsqueda entre idiomas",
+    eyebrow: "Una especie · todas las regiones indexadas",
+    title: "¿Cómo se llama este Pokémon",
+    titleEm: "en todo el mundo?",
+    intro: "Busca un nombre de cualquier juego, doblaje, escritura o registro regional histórico indexado. Compara el conjunto oficial de nueve idiomas de los juegos principales—o abre la vista completa de toda la exposición.",
+    placeholder: "Prueba Charmander, Glumanda, Salamèche, 파이리, 小火龍 o Hitokage…",
+    searchLabel: "Busca nombres de Pokémon en todos los idiomas",
+    matches: (n: number, more: boolean) => `${n.toLocaleString("es")}${more ? "+" : ""} resultados`,
+    species: "1.025 especies",
+    coreOnly: "Solo los nueve de los juegos principales",
+    coreOnlyNote: "Desmárcalo para comparar los 25 registros regionales que la exposición indexa actualmente.",
+    suggest: "Prueba un rastro multilingüe",
+    oneMore: "Escribe un carácter más para empezar a buscar en todo el índice multilingüe.",
+    noMatch: (query: string) => `Ningún nombre de especie indexado coincide con “${query}”. Prueba otra grafía, lectura, escritura o número de la Pokédex.`,
+    note: "La vista marcada representa las nueve tradiciones lingüísticas seleccionables establecidas en los juegos principales; la vista ampliada separa esos idiomas en los capítulos regionales y añade registros oficiales del anime, de servicios y de sistemas de escritura. Una grafía repetida sigue siendo prueba de la política de nombres de una región.",
+    origin: "Origen · ",
+    na: "N/D",
+    labels: { japan: "Japón · 日本語", us: "Estados Unidos · English", germany: "Alemania · Deutsch", italy: "Italia · Italiano", france: "Francia · Français", spain: "España · Español", korea: "Corea del Sur · 한국어", taiwan: "Chino tradicional · vista de Taiwán", mainland: "Chino simplificado · China continental", latam: "Latinoamérica · Español", hongKong: "Hong Kong · cantonés", vietnam: "Vietnam · actual / anterior", brazil: "Brasil · Português brasileiro", philippines: "Filipinas · Filipino / English", portugal: "Portugal · Português europeu", arab: "Mundo árabe · العربية", israel: "Israel · עברית", malaysia: "Malasia · Bahasa Melayu / English", indonesia: "Indonesia · Bahasa Indonesia", russia: "Rusia · Русский", thailand: "Tailandia · ไทย", hindi: "Hindi en la India · हिन्दी", tamil: "Tamil en la India · தமிழ்", telugu: "Telugu en la India · తెలుగు", turkiye: "Turquía · doblaje en Türkçe" },
+    latamNote: "Región con juego principal y doblaje",
+    earlier: (name: string) => `Anterior: ${name}`,
+    sameEras: "Igual en todas las épocas indexadas",
+    englishRetained: "Se conserva la grafía inglesa",
+    brazilDistinct: "Registro propio en portugués brasileño",
+    retainedLocale: "Nombre internacional conservado en los medios de la región",
+    retainedIndonesia: "Nombre internacional conservado en los medios indonesios",
+    former: (name: string) => `Antes: ${name}`,
+    tamilNote: "Registro mediático oficial en escritura tamil",
+    teluguNote: "Registro mediático oficial en escritura telugu",
+  },
+};
 
 const frenchById = new Map(frenchPokemon.map((entry) => [entry.id, entry]));
 const germanById = new Map(germanPokemon.map((entry) => [entry.id, entry]));
@@ -65,29 +129,33 @@ function displayedYear(card: CardSpec, id: number) {
 }
 
 function GlobalNameCard({ label, name, reading, id, field, locale, year, fallbackField, core }: CardSpec & { id: number }) {
+  const lang = useLang();
+  const t = copy[lang];
   const isMissing = name === "N/A";
+  const show = (value: string) => value === "N/A" ? t.na : value;
   return <div className={`global-name-card${core ? "" : " global-name-card--media"}`}>
     <details>
-      <summary className="global-name-summary"><span>{label}</span><b>{name}</b>{reading && <small>{reading}</small>}</summary>
-      <div className="global-name-origin"><strong>Origin · {displayedYear({ label, name, reading, field, locale, year, fallbackField, core }, id)}</strong><p>{isMissing ? "N/A" : nameOriginFor(id, field, fallbackField)}</p></div>
+      <summary className="global-name-summary"><span>{label}</span><b>{show(name)}</b>{reading && <small>{reading}</small>}</summary>
+      <div className="global-name-origin"><strong>{t.origin}{show(displayedYear({ label, name, reading, field, locale, year, fallbackField, core }, id))}</strong><p>{isMissing ? t.na : show(nameOriginFor(id, field, fallbackField, lang))}</p></div>
     </details>
   </div>;
 }
 
 export function GlobalPokemonSearch() {
+  const t = copy[useLang()];
   const [query, setQuery] = useState("");
   const [coreOnly, setCoreOnly] = useState(true);
   const normalized = query.trim().toLocaleLowerCase();
   const matches = useMemo(() => normalized.length < 2 ? [] : records.filter((record) => searchText(record).includes(normalized)).slice(0, 12), [normalized]);
 
   return <section className="global-search" id="pokemon-search">
-    <div className="section-kicker">Pokédex / Search across languages</div>
-    <div className="global-search-head"><div><span>One species · every indexed locale</span><h2>What is this Pokémon<br /><em>called around the world?</em></h2></div><p>Search a name from any indexed game, dub, script, or historical locale record. Compare the core games’ official nine-language set—or open the full exhibition-wide view.</p></div>
-    <label className="pokemon-search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Charmander, Glumanda, Salamèche, 파이리, 小火龍, or Hitokage…" aria-label="Search Pokémon names across all languages" /><kbd>{normalized.length >= 2 ? `${matches.length}${matches.length === 12 ? "+" : ""} matches` : "1,025 species"}</kbd></label>
-    <label className="global-search-mode"><input type="checkbox" checked={coreOnly} onChange={(event) => setCoreOnly(event.target.checked)} /><span><b>Core-game nine only</b><small>Uncheck to compare all 25 locale records currently indexed across the exhibition.</small></span></label>
-    {!normalized && <div className="search-suggestion-row"><span>Try a multilingual trail</span>{["Pikachu", "Bisasam", "Salamèche", "파이리", "比卡超", "Hitokage"].map((name) => <button onClick={() => setQuery(name)} key={name}>{name}</button>)}</div>}
-    {normalized.length === 1 && <p className="global-search-prompt">Type one more character to begin searching the full multilingual index.</p>}
-    {normalized.length >= 2 && !matches.length && <p className="global-search-prompt">No indexed species name matches “{query}”. Try another spelling, reading, script, or Pokédex number.</p>}
+    <div className="section-kicker">{t.kicker}</div>
+    <div className="global-search-head"><div><span>{t.eyebrow}</span><h2>{t.title}<br /><em>{t.titleEm}</em></h2></div><p>{t.intro}</p></div>
+    <label className="pokemon-search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t.placeholder} aria-label={t.searchLabel} /><kbd>{normalized.length >= 2 ? t.matches(matches.length, matches.length === 12) : t.species}</kbd></label>
+    <label className="global-search-mode"><input type="checkbox" checked={coreOnly} onChange={(event) => setCoreOnly(event.target.checked)} /><span><b>{t.coreOnly}</b><small>{t.coreOnlyNote}</small></span></label>
+    {!normalized && <div className="search-suggestion-row"><span>{t.suggest}</span>{["Pikachu", "Bisasam", "Salamèche", "파이리", "比卡超", "Hitokage"].map((name) => <button onClick={() => setQuery(name)} key={name}>{name}</button>)}</div>}
+    {normalized.length === 1 && <p className="global-search-prompt">{t.oneMore}</p>}
+    {normalized.length >= 2 && !matches.length && <p className="global-search-prompt">{t.noMatch(query)}</p>}
     {!!matches.length && <div className="global-results">
       {matches.map((record) => {
         const tamil = tamilScriptNames[record.english.id];
@@ -96,31 +164,31 @@ export function GlobalPokemonSearch() {
         const arabic = arabicScriptNames[record.english.id];
         const hebrew = hebrewScriptNames[record.english.id];
         const cards: CardSpec[] = [
-          { core: true, label: "Japan · 日本語", name: record.english.kana, reading: record.english.hepburn, field: "japanese", locale: "japan" },
-          { core: true, label: "United States · English", name: record.english.english, field: "english", locale: "united-states" },
-          { core: true, label: "Germany · Deutsch", name: record.german?.german ?? "N/A", field: "german", locale: "germany" },
-          { core: true, label: "Italy · Italiano", name: record.italian?.italian ?? "N/A", field: "italian", locale: "italy" },
-          { core: true, label: "France · Français", name: record.french?.french ?? "N/A", field: "french", locale: "france" },
-          { core: true, label: "Spain · Español", name: record.spanish?.spanish ?? "N/A", field: "english", locale: "spain" },
-          { core: true, label: "South Korea · 한국어", name: record.korean?.hangul ?? "N/A", reading: record.korean?.revised, field: "korean", locale: "south-korea" },
-          { core: true, label: "Traditional Chinese · Taiwan view", name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.pinyin, field: "chineseMandarin", locale: "taiwan" },
-          { core: true, label: "Simplified Chinese · Mainland", name: record.chinese?.simplified ?? "N/A", reading: record.chinese?.pinyin, field: "chineseMandarin", locale: "mainland-china" },
-          { core: false, label: "Latin America · Español", name: record.spanish?.spanish ?? "N/A", reading: record.spanish ? "Regional core-game and dub locale" : undefined, field: "english", locale: "latin-america" },
-          { core: false, label: "Hong Kong · Cantonese", name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.cantonese, field: "chineseCantonese", locale: "hong-kong" },
-          { core: false, label: "Vietnam · current / earlier", name: record.vietnamese?.current ?? "N/A", reading: record.vietnamese ? (record.vietnamese.changed ? `Earlier: ${record.vietnamese.historical}` : "Same across indexed eras") : undefined, field: "english", locale: "vietnam" },
-          { core: false, label: "Brazil · Português brasileiro", name: brazil, reading: brazil === record.english.english ? "English spelling retained" : "Distinct Brazilian Portuguese record", field: "english", year: brazil === record.english.english ? "N/A" : record.english.id === 772 ? "2016" : "2022" },
-          { core: false, label: "Philippines · Filipino / English", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
-          { core: false, label: "Portugal · Português europeu", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
-          { core: false, label: "Arab world · العربية", name: arabic?.name ?? "N/A", reading: arabic?.reading, field: "english", year: "N/A" },
-          { core: false, label: "Israel · עברית", name: hebrew?.name ?? "N/A", reading: hebrew?.reading, field: "english", year: "N/A" },
-          { core: false, label: "Malaysia · Bahasa Melayu / English", name: record.english.english, reading: "International name retained in locale media", field: "english", year: "N/A" },
-          { core: false, label: "Indonesia · Bahasa Indonesia", name: record.english.english, reading: "International name retained in Indonesian media", field: "english", year: "N/A" },
-          { core: false, label: "Russia · Русский", name: record.russian?.current ?? "N/A", reading: record.russian?.reading, field: "english", year: "N/A" },
-          { core: false, label: "Thailand · ไทย", name: record.thai?.current ?? "N/A", reading: record.thai?.reading, field: "japanese", year: "N/A" },
-          { core: false, label: "Hindi in India · हिन्दी", name: record.hindi?.current ?? "N/A", reading: record.hindi ? (record.hindi.former ? `Former: ${record.hindi.former}` : record.hindi.reading) : undefined, field: "english", year: "2025" },
-          { core: false, label: "Tamil in India · தமிழ்", name: tamil?.name ?? "N/A", reading: tamil ? "Official Tamil-script media record" : undefined, field: "english", year: "N/A" },
-          { core: false, label: "Telugu in India · తెలుగు", name: telugu?.name ?? "N/A", reading: telugu ? "Official Telugu-script media record" : undefined, field: "english", year: "N/A" },
-          { core: false, label: "Türkiye · Türkçe dub", name: "N/A", field: "english", year: "N/A" },
+          { core: true, label: t.labels.japan, name: record.english.kana, reading: record.english.hepburn, field: "japanese", locale: "japan" },
+          { core: true, label: t.labels.us, name: record.english.english, field: "english", locale: "united-states" },
+          { core: true, label: t.labels.germany, name: record.german?.german ?? "N/A", field: "german", locale: "germany" },
+          { core: true, label: t.labels.italy, name: record.italian?.italian ?? "N/A", field: "italian", locale: "italy" },
+          { core: true, label: t.labels.france, name: record.french?.french ?? "N/A", field: "french", locale: "france" },
+          { core: true, label: t.labels.spain, name: record.spanish?.spanish ?? "N/A", field: "english", locale: "spain" },
+          { core: true, label: t.labels.korea, name: record.korean?.hangul ?? "N/A", reading: record.korean?.revised, field: "korean", locale: "south-korea" },
+          { core: true, label: t.labels.taiwan, name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.pinyin, field: "chineseMandarin", locale: "taiwan" },
+          { core: true, label: t.labels.mainland, name: record.chinese?.simplified ?? "N/A", reading: record.chinese?.pinyin, field: "chineseMandarin", locale: "mainland-china" },
+          { core: false, label: t.labels.latam, name: record.spanish?.spanish ?? "N/A", reading: record.spanish ? t.latamNote : undefined, field: "english", locale: "latin-america" },
+          { core: false, label: t.labels.hongKong, name: record.chinese?.traditional ?? "N/A", reading: record.chinese?.cantonese, field: "chineseCantonese", locale: "hong-kong" },
+          { core: false, label: t.labels.vietnam, name: record.vietnamese?.current ?? "N/A", reading: record.vietnamese ? (record.vietnamese.changed ? t.earlier(record.vietnamese.historical) : t.sameEras) : undefined, field: "english", locale: "vietnam" },
+          { core: false, label: t.labels.brazil, name: brazil, reading: brazil === record.english.english ? t.englishRetained : t.brazilDistinct, field: "english", year: brazil === record.english.english ? "N/A" : record.english.id === 772 ? "2016" : "2022" },
+          { core: false, label: t.labels.philippines, name: record.english.english, reading: t.retainedLocale, field: "english", year: "N/A" },
+          { core: false, label: t.labels.portugal, name: record.english.english, reading: t.retainedLocale, field: "english", year: "N/A" },
+          { core: false, label: t.labels.arab, name: arabic?.name ?? "N/A", reading: arabic?.reading, field: "english", year: "N/A" },
+          { core: false, label: t.labels.israel, name: hebrew?.name ?? "N/A", reading: hebrew?.reading, field: "english", year: "N/A" },
+          { core: false, label: t.labels.malaysia, name: record.english.english, reading: t.retainedLocale, field: "english", year: "N/A" },
+          { core: false, label: t.labels.indonesia, name: record.english.english, reading: t.retainedIndonesia, field: "english", year: "N/A" },
+          { core: false, label: t.labels.russia, name: record.russian?.current ?? "N/A", reading: record.russian?.reading, field: "english", year: "N/A" },
+          { core: false, label: t.labels.thailand, name: record.thai?.current ?? "N/A", reading: record.thai?.reading, field: "japanese", year: "N/A" },
+          { core: false, label: t.labels.hindi, name: record.hindi?.current ?? "N/A", reading: record.hindi ? (record.hindi.former ? t.former(record.hindi.former) : record.hindi.reading) : undefined, field: "english", year: "2025" },
+          { core: false, label: t.labels.tamil, name: tamil?.name ?? "N/A", reading: tamil ? t.tamilNote : undefined, field: "english", year: "N/A" },
+          { core: false, label: t.labels.telugu, name: telugu?.name ?? "N/A", reading: telugu ? t.teluguNote : undefined, field: "english", year: "N/A" },
+          { core: false, label: t.labels.turkiye, name: "N/A", field: "english", year: "N/A" },
         ];
         const visibleCards = coreOnly
           ? cards.filter((card) => card.core)
@@ -134,6 +202,6 @@ export function GlobalPokemonSearch() {
         </div>
       </article>;})}
     </div>}
-    <p className="global-search-note">The checked view represents the nine selectable language traditions established in the core games; the expanded view separates those languages into the locale chapters and adds official anime-, service-, and script-based records. A repeated spelling is still evidence of a locale’s naming policy.</p>
+    <p className="global-search-note">{t.note}</p>
   </section>;
 }
